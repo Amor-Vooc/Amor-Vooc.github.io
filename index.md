@@ -8,34 +8,16 @@
 
 若有未能正常运行的情况，欢迎到[开源页面](https://github.com/Amor-Vooc/Vizpower-)提交Pull Requests
 
-### Markdown
+### 版权警告
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+本软件已在Github开源，请遵守Github开源协议。
 
 ```markdown
-Syntax highlighted code block
+本软件为免费软件，禁止倒卖，如发现将追究责任。
 
-# Header 1
-## Header 2
-### Header 3
+还麻烦大家多多推广
+空间这条说说转发，谢谢了
+但...别传到老师那里了~
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Amor-Vooc/Amor-Vooc.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
