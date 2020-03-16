@@ -1,8 +1,9 @@
-## Welcome to GitHub Pages
+## Welcome to Amano陽菜's website
 
-You can use the [editor on GitHub](https://github.com/Amor-Vooc/Amor-Vooc.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+下载PC最新版自动签到 [下载链接](https://github.com/Amor-Vooc/-.exe/tree/master) 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+更新日志：放弃高级模式，直接改为模糊识别；由签到特征图识别改为窗口识别，极大提高识别率，理论识别率100%；新增运行日志，记录签到时间。
+注意事项：由易语言编写，报毒正常，请放心使用。检测间隔为3s，自动签到有延迟属正常情况，会在3s内尝试自动签到。
 
 ### Markdown
 
