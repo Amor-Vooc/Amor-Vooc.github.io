@@ -1,16 +1,16 @@
 ## Welcome to Amano陽菜's website
 
-### 当前最新版本：V5.8
+### 当前最新版本：V5.9
 
 ### 公告：目前可能出现一些电脑无法下载和检测更新，初步判断是PC自身问题，已经在5.8版尝试修复
 
-下载PC最新版自动签到 [下载链接](https://raw.githubusercontent.com/Amor-Vooc/-.exe/master/%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B05.8.exe) [备用链接](https://github.com/Amor-Vooc/-.exe)
+下载PC最新版自动签到 [下载链接](https://raw.githubusercontent.com/Amor-Vooc/-.exe/master/%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B05.9.exe) [备用链接](https://github.com/Amor-Vooc/-.exe)
 
 更新日志：
 
-         ①微改UI布局，新增“检查更新”功能；
+         ①现在可在程序里手动检测更新，如有更新会有按钮“查看更新”出现；
 
-         ②现在可在程序里手动检测更新，如有更新会有按钮“查看更新”出现；
+         ②优化检测模块
          
          ③更新了检测更新的网址，防止外来链接突然GG导致无法推送更新。
 
