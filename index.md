@@ -2,7 +2,7 @@
 
 ### 当前最新版本：V5.7
 
-下载PC最新版自动签到 [下载链接](https://github.com/Amor-Vooc/-.exe/tree/master) 
+下载PC最新版自动签到 [下载链接](https://raw.githubusercontent.com/Amor-Vooc/-.exe/master/%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B05.7.exe) 
 
 更新日志：
 
