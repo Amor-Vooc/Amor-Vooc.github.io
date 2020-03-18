@@ -22,7 +22,7 @@
 
 若有未能正常运行的情况，欢迎到[开源页面](https://gitee.com/DTX-QAQ/Vizpower)提交Pull Requests
 
-### 版权警告·丁同勖
+### 版权警告
 
 本软件已在Github开源，请遵守Github开源协议。
 
