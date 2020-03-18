@@ -1,18 +1,18 @@
 ## Welcome to Amano陽菜's website
 
-### 当前最新版本：V6.0
+### 当前最新版本：V6.1
 
-### 公告：目前可能出现一些电脑无法下载，检测更新和查看公告，原因是服务器连接不稳定，暂时没有解决方案
+### 公告：目前可能出现一些电脑无法下载，检测更新和查看公告，原因是服务器连接不稳定，已在6.1版本尝试解决
 
-下载PC最新版自动签到 [下载链接](https://raw.githubusercontent.com/Amor-Vooc/-.exe/master/%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B06.0.exe) [备用链接](https://github.com/Amor-Vooc/-.exe)
+下载PC最新版自动签到 [下载链接](https://gitee.com/DTX-QAQ/wxbzdqd.exe/raw/master/%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B06.0.exe)
 
 更新日志：
 
          ①现在可在程序里手动检测更新，如有更新会有按钮“查看更新”出现；
 
-         ②优化检测模块
+         ②作者现在可以选择是否开放软件；
          
-         ③更新了检测更新的网址，防止外来链接突然GG导致无法推送更新。
+         ③更新了检测更新和联网公告的网址，更加稳定。
 
 注意事项：
 
@@ -20,7 +20,7 @@
 
          ②检测间隔为3s，自动签到有延迟属正常情况，会在3s内尝试自动签到。
 
-若有未能正常运行的情况，欢迎到[开源页面](https://github.com/Amor-Vooc/Vizpower-)提交Pull Requests
+若有未能正常运行的情况，欢迎到[开源页面](https://gitee.com/DTX-QAQ/Vizpower)提交Pull Requests
 
 ### 版权警告
 
