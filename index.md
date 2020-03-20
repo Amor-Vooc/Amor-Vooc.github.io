@@ -4,8 +4,7 @@
 
 ### 公告：目前可能出现一些电脑无法下载，检测更新和查看公告，原因是服务器连接不稳定，已在6.1版本尝试解决
 
-下载PC最新版自动签到 [蓝奏云简便在线下载](https://www.lanzous.com/iag1pwj) [码云高速下载](https://gitee.com/DTX-QAQ/wxbzdqd.exe/raw/master/%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B06.1.exe) [GitHub下载](https://github.com/Amor-Vooc/-.exe)
-
+下载PC最新版自动签到 [蓝奏云简便在线下载](https://www.lanzous.com/iag1pwj)
 更新日志：
 
          ①美化了桌面图标，空白部分变为透明
