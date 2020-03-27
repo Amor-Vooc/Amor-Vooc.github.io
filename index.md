@@ -5,7 +5,7 @@
 ### 当前最新版本：V6.2
 
 
-下载PC最新版自动签到 [蓝奏云下载](https://www.lanzous.com/iamnlde)
+下载PC最新版无限宝自动签到 [蓝奏云下载](https://www.lanzous.com/iamnlde)
 
 更新日志：
 
