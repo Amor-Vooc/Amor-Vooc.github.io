@@ -1,5 +1,7 @@
 ## Welcome to Amano陽菜's website
 
+#If you are from twitter, this is my QQ number：1774880736
+
 ### 当前最新版本：V6.2
 
 
