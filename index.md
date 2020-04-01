@@ -6,7 +6,7 @@
 
 注意事项：由易语言编写，报毒正常，请放心使用。
 
-下载PC最新版无限宝自动签到 [蓝奏云下载](https://www.lanzous.com/iatekad)
+下载PC最新版无限宝自动签到 [蓝奏云下载](https://www.lanzous.com/iav57zi)
 
 更新日志：
 
