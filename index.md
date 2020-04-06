@@ -1,10 +1,6 @@
 # Welcome to Amano陽菜's website
 
-## If you are from twitter, this is my QQ number：
-<dl>
-<dt>1774880736</dt>
-</dl>
-
+## If you are from twitter, this is my QQ number：_1774880736_
 * * *
 ## 无限宝自动签到
 
@@ -28,13 +24,13 @@
         
 
 若有未能正常运行的情况，欢迎到[开源页面](https://gitee.com/DTX-QAQ/Vizpower)提交Pull Requests 或 QQ联系我：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1774880736&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:1774880736:41" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
-
+* * *
 ### ☢版权警告
 
 本软件已在Github开源，请遵守Github开源协议。
 
 本软件为免费软件，仅供学习参考，禁止倒卖，如发现将追究责任。
-
+* * *
 ### 软件推广
 
 ```markdown
