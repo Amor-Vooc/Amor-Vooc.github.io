@@ -8,6 +8,8 @@
 
 下载PC最新版无限宝自动签到 ☛[蓝奏云下载](https://www.lanzous.com/iav57zi)☚
 
+到Blibili给我来个三联呗─━ _ ─━✧[专栏链接](https://www.bilibili.com/read/cv5456123)
+
 ☣注意事项：由易语言编写，报毒正常，请放心使用。
 
 更新日志：
