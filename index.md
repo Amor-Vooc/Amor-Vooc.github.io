@@ -4,9 +4,9 @@
 
 ### 当前最新版本：V6.3
 
-注意事项：由易语言编写，报毒正常，请放心使用。
+☣注意事项：由易语言编写，报毒正常，请放心使用。
 
-下载PC最新版无限宝自动签到→ [蓝奏云下载](https://www.lanzous.com/iav57zi)←
+下载PC最新版无限宝自动签到 ☛[蓝奏云下载](https://www.lanzous.com/iav57zi)☚
 
 更新日志：
 
@@ -23,7 +23,7 @@
 
 若有未能正常运行的情况，欢迎到[开源页面](https://gitee.com/DTX-QAQ/Vizpower)提交Pull Requests 或 QQ联系我：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1774880736&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:1774880736:41" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
 
-### 版权警告
+### ☢版权警告
 
 本软件已在Github开源，请遵守Github开源协议。
 
