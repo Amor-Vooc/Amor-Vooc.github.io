@@ -1,6 +1,6 @@
 # Welcome to Amano陽菜's website
 
-## If you are from twitter, this is my QQ number：_1774880736_
+## If you are from twitter, this is my QQ number：[_1774880736_]
 * * *
 ## 无限宝自动签到
 
