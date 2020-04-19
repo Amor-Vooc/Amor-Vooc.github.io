@@ -4,7 +4,7 @@
 * * *
 ## 无限宝自动签到
 
-### 当前最新版本：V6.3（最后更新于2020-04-11）
+### 当前最新版本：V6.3（最后更新于2020-04-18）
 
 下载PC最新版无限宝自动签到 ☛[蓝奏云下载](https://dtx-qaq.lanzous.com/b015clf2h)☚ ☛[百度网盘下载](https://pan.baidu.com/s/10nB5xybj8mXqjefVrci_xg) 提取码：w3wo☚
 
