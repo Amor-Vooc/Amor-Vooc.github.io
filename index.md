@@ -1,4 +1,4 @@
-# Welcome to Amano陽菜's website（内含无限宝自动签到）
+# Welcome to Amano陽菜&丁同勖's website（内含无限宝自动签到）
 
 ## If you are from twitter, this is my QQ number：_1774880736_
 * * *
@@ -45,7 +45,6 @@
 ```markdown
 
 还麻烦大家多多推广，说不定有的人需要呢。
-空间这条说说如果可以麻烦转发一下，谢谢了。
 推广固然好，但...别传到老师那里了～
 我的支付宝账号：1774880736@qq.com 欢迎大家打赏支持我的开发
 
