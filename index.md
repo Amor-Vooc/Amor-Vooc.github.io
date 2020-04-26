@@ -2,7 +2,8 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="icon" sizes="any" mask href="//www.baidu.com/img/baidu.svg">
 <title>站点属性_帮助百度了解你_站长工具_网站支持_百度搜索资源平台</title>
-
+<body>
+          
 # Welcome to Amano陽菜&丁同勖's website（内含无限宝自动签到）
 
 ## If you are from twitter, this is my QQ number：_1774880736_
