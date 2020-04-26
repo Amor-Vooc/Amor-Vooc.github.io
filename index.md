@@ -1,3 +1,4 @@
+<link rel="icon" sizes="any" mask href="//www.baidu.com/img/baidu.svg">
 # Welcome to Amano陽菜&丁同勖's website（内含无限宝自动签到）
 
 ## If you are from twitter, this is my QQ number：_1774880736_
