@@ -1,4 +1,3 @@
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="icon" sizes="any" mask href="//www.baidu.com/img/baidu.svg">
 <title>站点属性_帮助百度了解你_站长工具_网站支持_百度搜索资源平台</title>
