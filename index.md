@@ -1,3 +1,4 @@
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
 # Welcome to Amano陽菜&丁同勖's website（内含无限宝自动签到）
 
 ## If you are from twitter, this is my QQ number：_1774880736_
