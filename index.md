@@ -1,5 +1,6 @@
 <script src="https://cdn.bootcss.com/vue/2.6.11/vue.min.js"></script>
-    <script src="https://lab.magiconch.com/nbnhhsh/nbnhhsh.user.js"></script>
+<script src="https://lab.magiconch.com/nbnhhsh/nbnhhsh.user.js"></script>
+
 # Welcome to Amano陽菜&丁同勖's website（内含无限宝自动签到）
 
 ## If you are from twitter, this is my QQ number：_1774880736_
