@@ -77,3 +77,4 @@ layout: default
 
 ```
 ![Branching](https://gitee.com/DTX-QAQ/Vizpower/raw/master/PAY.png)
+[Link to another page](./123.html).
