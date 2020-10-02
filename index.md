@@ -1,7 +1,3 @@
----
-layout: default
----
-
 # Welcome to Amano陽菜&丁同勖's website（内含无限宝自动签到）
 
 ## If you are from twitter, this is my QQ number：_1774880736_
@@ -62,9 +58,9 @@ layout: default
 
 ```markdown
 
-还麻烦大家多多推广，说不定有的人需要呢！谢谢啦～
+还麻烦大家多多推广，说不定有的人需要呢！谢谢你啦～
 推广固然好，但...别传到老师那里了～
-我的支付宝账号：1774880736@qq.com 微信账号：d1774880736 欢迎大家打赏支持我的开发
+我(丁同勖)的支付宝账号：1774880736@qq.com 微信账号：d1774880736 欢迎大家打赏支持我的开发
 
 ```
 ![Branching](https://gitee.com/DTX-QAQ/Vizpower/raw/master/PAY.png)
