@@ -1,7 +1,7 @@
 # Welcome to Amano陽菜&丁同勖's website（内含无限宝自动签到）
 
 ## If you are from twitter, this is my QQ number：_1774880736_
-
+>[个人主站](https://dtx-qaq.gitee.io/)
 网站最后更新于2020-10-02
 * * *
 ## 无限宝自动签到
