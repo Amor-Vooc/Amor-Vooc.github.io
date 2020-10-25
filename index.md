@@ -7,11 +7,11 @@
 * * *
 ## 无限宝自动签到
 
-### 当前最新版本：V6.5
+### 当前最新版本：V6.6
 
 #### 此版本未经测试，可能有重大BUG，如无法使用请退回6.4（退回地址在蓝奏云下载“文件描述”中）
 
->下载PC最新版无限宝自动签到 ☛[蓝奏云下载](https://dtx-qaq.lanzoui.com/ikHFWhpkemd)☚ ☛[百度网盘下载](https://pan.baidu.com/s/17LRA3WMkuJbySdPjaNUagQ) 提取码：1234☚
+>下载PC最新版无限宝自动签到 ☛[蓝奏云下载](https://dtx-qaq.lanzoui.com/iOpvPhq1jve)☚ ☛[百度网盘下载](https://pan.baidu.com/s/1svAuFjgqJLQ8i6-7X1n9ZQ) 提取码：1234☚
 >
 >到Blibili给我来个三联呗(〃'▽'〃)[专栏链接](https://www.bilibili.com/read/cv5456123)
 
