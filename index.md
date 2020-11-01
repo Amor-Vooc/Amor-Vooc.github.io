@@ -11,13 +11,7 @@
 
 #### 此版本未经测试，可能有重大BUG，如无法使用请退回6.4（退回地址在蓝奏云下载“文件描述”中）
 
->下载PC最新版无限宝自动签到 <li class="friends_li">
-            <a href="https://dtx-qaq.lanzoui.com/iOpvPhq1jve" target="_blank" class="search-title">蓝奏云下载
-</a>
-        </li>  <li class="friends_li">
-            <a href="https://pan.baidu.com/s/1svAuFjgqJLQ8i6-7X1n9ZQ" target="_blank" class="search-title">百度网盘下载
-</a>
-        </li>提取码：1234☛[蓝奏云下载](https://dtx-qaq.lanzoui.com/iOpvPhq1jve)☚ ☛[百度网盘下载](https://pan.baidu.com/s/1svAuFjgqJLQ8i6-7X1n9ZQ) 提取码：1234☚
+>下载PC最新版无限宝自动签到 <li class="friends_li"><a href="https://dtx-qaq.lanzoui.com/iOpvPhq1jve" target="_blank" class="search-title">蓝奏云下载</a></li>  <li class="friends_li"><a href="https://pan.baidu.com/s/1svAuFjgqJLQ8i6-7X1n9ZQ" target="_blank" class="search-title">百度网盘下载</a></li>提取码：1234☛[蓝奏云下载](https://dtx-qaq.lanzoui.com/iOpvPhq1jve)☚ ☛[百度网盘下载](https://pan.baidu.com/s/1svAuFjgqJLQ8i6-7X1n9ZQ) 提取码：1234☚
 >
 >到Blibili给我来个三联呗(〃'▽'〃)[专栏链接](https://www.bilibili.com/read/cv5456123)
 
