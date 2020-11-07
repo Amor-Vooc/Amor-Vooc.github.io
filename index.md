@@ -14,12 +14,11 @@
 >下载PC最新版无限宝自动签到 ☛[蓝奏云下载](https://dtx-qaq.lanzoui.com/iOpvPhq1jve)☚ ☛[百度网盘下载](https://pan.baidu.com/s/1svAuFjgqJLQ8i6-7X1n9ZQ) 提取码：1234☚
 >
 >到Blibili给我来个三联呗(〃'▽'〃)[专栏链接](https://www.bilibili.com/read/cv5456123)
-
+* * *
 ## 无限宝第三方插件
 
 [无限宝第三方插件官网](https://klxn.gitee.io/wxb),助你更好使用无限宝的利器~
-
-* [打赏感谢名单](./THANKS.html)
+* * *
 
 ☣注意事项：
           
@@ -30,8 +29,9 @@
           无限宝签到理论持续时间为20s
          
 * [更新日志](./update.html)
-         
-         
+
+* [打赏感谢名单](./THANKS.html)
+                 
 若有未能正常运行的情况，欢迎到[开源页面](https://gitee.com/DTX-QAQ/Vizpower)提交Pull Requests 或 QQ联系我：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1774880736&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:1774880736:41" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
 * * *
 ### ☢版权警告
