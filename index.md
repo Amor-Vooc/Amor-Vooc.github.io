@@ -1,7 +1,8 @@
 # Welcome to Amano陽菜&丁同勖's website（内含无限宝自动签到）
 
 ## If you are from twitter, this is my QQ number：_1774880736_
->[个人主站](https://dtx-qaq.gitee.io/)
+
+<a href="https://dtx-qaq.gitee.io/"><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%8C%89%E9%92%AE/me.png"></a>
 
 本网站最后更新于2020-10-24
 * * *
@@ -11,7 +12,7 @@
 
 #### 此版本未经测试，可能有重大BUG，如无法使用请退回6.4（退回地址在蓝奏云下载“文件描述”中）
 
->下载PC最新版无限宝自动签到 ☛[蓝奏云下载](https://dtx-qaq.lanzoui.com/iOpvPhq1jve)☚ ☛[百度网盘下载](https://pan.baidu.com/s/1svAuFjgqJLQ8i6-7X1n9ZQ) 提取码：1234☚
+>下载PC最新版无限宝自动签到 ☛<a href="https://pan.baidu.com/s/1svAuFjgqJLQ8i6-7X1n9ZQ"><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%8C%89%E9%92%AE/lzy.png"></a>(https://dtx-qaq.lanzoui.com/iOpvPhq1jve)☚ ☛<a href="https://pan.baidu.com/s/1svAuFjgqJLQ8i6-7X1n9ZQ"><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%8C%89%E9%92%AE/bdwp.png">提取码：1234</a>☚
 >
 >到Blibili给我来个三联呗(〃'▽'〃)[专栏链接](https://www.bilibili.com/read/cv5456123)
 
