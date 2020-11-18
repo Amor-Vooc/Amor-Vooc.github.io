@@ -12,7 +12,7 @@
 
 #### 此版本未经测试，可能有重大BUG，如无法使用请退回6.4（退回地址在蓝奏云下载“文件描述”中）
 
->下载PC最新版无限宝自动签到 ☛<a href="https://pan.baidu.com/s/1svAuFjgqJLQ8i6-7X1n9ZQ"><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%8C%89%E9%92%AE/lzy.png"></a>(https://dtx-qaq.lanzoui.com/iOpvPhq1jve)☚ ☛<a href="https://pan.baidu.com/s/1svAuFjgqJLQ8i6-7X1n9ZQ"><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%8C%89%E9%92%AE/bdwp.png">提取码：1234</a>☚
+>下载PC最新版无限宝自动签到 ☛<a href="https://dtx-qaq.lanzoui.com/iOpvPhq1jve"><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%8C%89%E9%92%AE/lzy.png"></a>☚ ☛<a href="https://pan.baidu.com/s/1svAuFjgqJLQ8i6-7X1n9ZQ"><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%8C%89%E9%92%AE/bdwp.png">提取码：1234</a>☚
 >
 >到Blibili给我来个三联呗(〃'▽'〃)[专栏链接](https://www.bilibili.com/read/cv5456123)
 
