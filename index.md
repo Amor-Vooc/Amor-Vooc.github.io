@@ -1,4 +1,4 @@
-# Welcome to Amano陽菜&丁同勖's website（内含无限宝自动签到）
+# [已失效]无限宝自动签到发布页
 
 ## If you are from twitter, this is my QQ number：_1774880736_
 
