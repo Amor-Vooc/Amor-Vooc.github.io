@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Amano陽菜&amp;丁同勖</title>
+  
+  
+  <link href="https://dtx-qaq.gitee.io/atom.xml" rel="self"/>
+  
+  <link href="https://dtx-qaq.gitee.io/"/>
+  <updated>2024-03-09T05:36:32.000Z</updated>
+  <id>https://dtx-qaq.gitee.io/</id>
+  
+  <author>
+    <name>Amano陽菜&amp;丁同勖</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基于 Root 环境下的 Fake Location 虚拟定位</title>
+    <link href="https://dtx-qaq.gitee.io/2024/03/09/%E5%9F%BA%E4%BA%8ERoot%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84Fake%20Location%E8%99%9A%E6%8B%9F%E5%AE%9A%E4%BD%8D%E6%95%99%E7%A8%8B/Fake-Location/"/>
+    <id>https://dtx-qaq.gitee.io/2024/03/09/%E5%9F%BA%E4%BA%8ERoot%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84Fake%20Location%E8%99%9A%E6%8B%9F%E5%AE%9A%E4%BD%8D%E6%95%99%E7%A8%8B/Fake-Location/</id>
+    <published>2024-03-08T18:59:41.000Z</published>
+    <updated>2024-03-09T05:36:32.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;文章内含已Root虚拟机资源。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;成功实现虚拟定位后，可实现包括但不限于以下操作：减轻校园跑步打卡压力、游戏改战区、点亮地图/足迹……&lt;br&gt;&lt;img src=&quot;https://s2.loli.net/2024/03/09/2eWFJYGtjyEfwci.jpg&quot; alt=&quot;41d10a457499b9070bc577c17c34a0efa7540f39.jpg&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://dtx-qaq.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="破解" scheme="https://dtx-qaq.gitee.io/categories/%E6%8A%80%E6%9C%AF/%E7%A0%B4%E8%A7%A3/"/>
+    
+    
+    <category term="同天智慧校园" scheme="https://dtx-qaq.gitee.io/tags/%E5%90%8C%E5%A4%A9%E6%99%BA%E6%85%A7%E6%A0%A1%E5%9B%AD/"/>
+    
+    <category term="破解" scheme="https://dtx-qaq.gitee.io/tags/%E7%A0%B4%E8%A7%A3/"/>
+    
+    <category term="重庆邮电大学" scheme="https://dtx-qaq.gitee.io/tags/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6/"/>
+    
+    <category term="Root" scheme="https://dtx-qaq.gitee.io/tags/Root/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2024新年快乐！</title>
+    <link href="https://dtx-qaq.gitee.io/2024/01/01/2024%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/2024%20new%20year/"/>
+    <id>https://dtx-qaq.gitee.io/2024/01/01/2024%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/2024%20new%20year/</id>
+    <published>2023-12-31T16:00:00.000Z</published>
+    <updated>2024-01-05T11:34:52.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;新-年-快-乐！&quot;&gt;&lt;a href=&quot;#新-年-快-乐！&quot; class=&quot;headerlink&quot; title=&quot;新 年 快 乐！&quot;&gt;&lt;/a&gt;新 年 快 乐！&lt;/h1&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>红岩杯 CTF 我的 WP</title>
+    <link href="https://dtx-qaq.gitee.io/2023/11/12/FULLWP/CTFFULL/"/>
+    <id>https://dtx-qaq.gitee.io/2023/11/12/FULLWP/CTFFULL/</id>
+    <published>2023-11-12T10:36:42.000Z</published>
+    <updated>2023-11-12T10:45:50.000Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;这是重邮-CTF-新生赛“红岩杯”我做出来的题的WP&quot;&gt;&lt;a href=&quot;#这是重邮-CTF-新生赛“红岩杯”我做出来的题的WP&quot; class=&quot;headerlink&quot; title=&quot;这是重邮 CTF 新生赛“红岩杯”我做出来的题的WP&quot;&gt;&lt;/a&gt;这是重邮 CTF 新生赛“红岩杯”我做出来的题的WP&lt;/h1&gt;&lt;p&gt;千辛万苦打了一个星期，结果离三等奖还差91分呜呜呜呜&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://dtx-qaq.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="CTF" scheme="https://dtx-qaq.gitee.io/categories/%E6%8A%80%E6%9C%AF/CTF/"/>
+    
+    
+    <category term="技术" scheme="https://dtx-qaq.gitee.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="CTF" scheme="https://dtx-qaq.gitee.io/tags/CTF/"/>
+    
+    <category term="wp" scheme="https://dtx-qaq.gitee.io/tags/wp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>极递云课Windows版辅助套件（应官方要求已经停止开放下载）</title>
+    <link href="https://dtx-qaq.gitee.io/2022/11/01/%E6%9E%81%E9%80%92%E4%BA%91%E8%AF%BEWindows%E7%89%88%E8%BE%85%E5%8A%A9%E5%A5%97%E4%BB%B6/gtClass-Auto/"/>
+    <id>https://dtx-qaq.gitee.io/2022/11/01/%E6%9E%81%E9%80%92%E4%BA%91%E8%AF%BEWindows%E7%89%88%E8%BE%85%E5%8A%A9%E5%A5%97%E4%BB%B6/gtClass-Auto/</id>
+    <published>2022-11-01T02:51:02.000Z</published>
+    <updated>2024-06-06T16:23:00.186Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;极递云课-自动签到-amp-解除锁屏-amp-显示教师控件-amp-自动上课并切换课堂&quot;&gt;&lt;a href=&quot;#极递云课-自动签到-amp-解除锁屏-amp-显示教师控件-amp-自动上课并切换课堂&quot; class=&quot;headerlink&quot; title=&quot;极递云课 自动签到 &amp;amp; 解除锁屏 &amp;amp; 显示教师控件 &amp;amp; 自动上课并切换课堂&quot;&gt;&lt;/a&gt;极递云课 自动签到 &amp;amp; 解除锁屏 &amp;amp; 显示教师控件 &amp;amp; 自动上课并切换课堂&lt;/h1&gt;&lt;p&gt;&lt;code&gt;“极递云课第三方登录器”仅 合肥皖智中学 可用（不知道莲花校区行不行），其他学校软件会无法正常登陆&lt;/code&gt;&lt;br&gt;&lt;code&gt;“极递云课小助手”普遍适用&lt;/code&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://dtx-qaq.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="破解" scheme="https://dtx-qaq.gitee.io/categories/%E6%8A%80%E6%9C%AF/%E7%A0%B4%E8%A7%A3/"/>
+    
+    
+    <category term="技术" scheme="https://dtx-qaq.gitee.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="极递云课" scheme="https://dtx-qaq.gitee.io/tags/%E6%9E%81%E9%80%92%E4%BA%91%E8%AF%BE/"/>
+    
+    <category term="网课" scheme="https://dtx-qaq.gitee.io/tags/%E7%BD%91%E8%AF%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>高考很大，生活更大</title>
+    <link href="https://dtx-qaq.gitee.io/2021/06/07/%E9%AB%98%E8%80%83%E5%BE%88%E5%A4%A7%EF%BC%8C%E7%94%9F%E6%B4%BB%E6%9B%B4%E5%A4%A7/The%20National%20College%20Entrance%20Examination%20of%202021/"/>
+    <id>https://dtx-qaq.gitee.io/2021/06/07/%E9%AB%98%E8%80%83%E5%BE%88%E5%A4%A7%EF%BC%8C%E7%94%9F%E6%B4%BB%E6%9B%B4%E5%A4%A7/The%20National%20College%20Entrance%20Examination%20of%202021/</id>
+    <published>2021-06-07T01:00:00.000Z</published>
+    <updated>2021-07-12T08:08:22.000Z</updated>
+    
+    
+    <summary type="html">&lt;h6 id=&quot;——写在高考日&quot;&gt;&lt;a href=&quot;#——写在高考日&quot; class=&quot;headerlink&quot; title=&quot;——写在高考日&quot;&gt;&lt;/a&gt;——写在高考日&lt;/h6&gt;</summary>
+    
+    
+    
+    <category term="文章" scheme="https://dtx-qaq.gitee.io/categories/%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="高考" scheme="https://dtx-qaq.gitee.io/tags/%E9%AB%98%E8%80%83/"/>
+    
+    <category term="文章" scheme="https://dtx-qaq.gitee.io/tags/%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2021新年快乐！</title>
+    <link href="https://dtx-qaq.gitee.io/2021/01/01/2021%E6%96%B0%E5%B9%B4/2021%20new%20year/"/>
+    <id>https://dtx-qaq.gitee.io/2021/01/01/2021%E6%96%B0%E5%B9%B4/2021%20new%20year/</id>
+    <published>2020-12-31T16:00:00.000Z</published>
+    <updated>2021-02-15T13:44:42.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;新-年-快-乐！&quot;&gt;&lt;a href=&quot;#新-年-快-乐！&quot; class=&quot;headerlink&quot; title=&quot;新 年 快 乐！&quot;&gt;&lt;/a&gt;新 年 快 乐！&lt;/h1&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2020即将过去</title>
+    <link href="https://dtx-qaq.gitee.io/2020/12/31/2020%E7%BA%AA%E5%BF%B5/2020%E7%BA%AA%E5%BF%B5/"/>
+    <id>https://dtx-qaq.gitee.io/2020/12/31/2020%E7%BA%AA%E5%BF%B5/2020%E7%BA%AA%E5%BF%B5/</id>
+    <published>2020-12-31T15:59:07.000Z</published>
+    <updated>2021-02-15T13:44:40.000Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;2020：&quot;&gt;&lt;a href=&quot;#2020：&quot; class=&quot;headerlink&quot; title=&quot;2020：&quot;&gt;&lt;/a&gt;2020：&lt;/h1&gt;&lt;p&gt;2020年元旦，UPUPOO转让暴毙&lt;/p&gt;
+&lt;p&gt;年初《我的三体章北海传》播出&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于极域电子教室</title>
+    <link href="https://dtx-qaq.gitee.io/2020/10/17/%E5%85%B3%E4%BA%8E%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/JIYU/"/>
+    <id>https://dtx-qaq.gitee.io/2020/10/17/%E5%85%B3%E4%BA%8E%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/JIYU/</id>
+    <published>2020-10-17T11:51:02.000Z</published>
+    <updated>2020-11-19T11:15:32.000Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;阅前提示&quot;&gt;&lt;a href=&quot;#阅前提示&quot; class=&quot;headerlink&quot; title=&quot;阅前提示:&quot;&gt;&lt;/a&gt;阅前提示:&lt;/h1&gt;&lt;p&gt;1.在&lt;strong&gt;断连状态&lt;/strong&gt;下将&lt;strong&gt;无法&lt;/strong&gt;接收教师端发出的文件&lt;/p&gt;
+&lt;p&gt;2.在老师讲重点的时候仍然要&lt;strong&gt;注意听讲&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;3.在&lt;strong&gt;较长时间&lt;/strong&gt;后方法可能会&lt;strong&gt;失效&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;4.大部分机房都有&lt;strong&gt;冰点还原精灵&lt;/strong&gt;，可以&lt;strong&gt;随便造&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://dtx-qaq.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="破解" scheme="https://dtx-qaq.gitee.io/categories/%E6%8A%80%E6%9C%AF/%E7%A0%B4%E8%A7%A3/"/>
+    
+    
+    <category term="技术" scheme="https://dtx-qaq.gitee.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="极域电子教室" scheme="https://dtx-qaq.gitee.io/tags/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MarkDown测试</title>
+    <link href="https://dtx-qaq.gitee.io/2020/10/07/MarkDown/MarkDown/"/>
+    <id>https://dtx-qaq.gitee.io/2020/10/07/MarkDown/MarkDown/</id>
+    <published>2020-10-07T14:18:00.000Z</published>
+    <updated>2021-02-15T13:44:36.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文章用于测试MarkDown效果&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="测试功能" scheme="https://dtx-qaq.gitee.io/categories/%E6%B5%8B%E8%AF%95%E5%8A%9F%E8%83%BD/"/>
+    
+    
+    <category term="测试功能" scheme="https://dtx-qaq.gitee.io/tags/%E6%B5%8B%E8%AF%95%E5%8A%9F%E8%83%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>图片视频测试</title>
+    <link href="https://dtx-qaq.gitee.io/2020/10/06/%E5%9B%BE%E7%89%87%E8%A7%86%E9%A2%91%E6%B5%8B%E8%AF%95/test/"/>
+    <id>https://dtx-qaq.gitee.io/2020/10/06/%E5%9B%BE%E7%89%87%E8%A7%86%E9%A2%91%E6%B5%8B%E8%AF%95/test/</id>
+    <published>2020-10-06T02:06:00.000Z</published>
+    <updated>2024-03-08T15:30:30.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文章用于测试图片插入和B站视频嵌入&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="测试功能" scheme="https://dtx-qaq.gitee.io/categories/%E6%B5%8B%E8%AF%95%E5%8A%9F%E8%83%BD/"/>
+    
+    
+    <category term="测试功能" scheme="https://dtx-qaq.gitee.io/tags/%E6%B5%8B%E8%AF%95%E5%8A%9F%E8%83%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>忆·抗争无限宝</title>
+    <link href="https://dtx-qaq.gitee.io/2020/10/04/%E5%BF%86%C2%B7%E6%8A%97%E4%BA%89%E6%97%A0%E9%99%90%E5%AE%9D/Vizpower/"/>
+    <id>https://dtx-qaq.gitee.io/2020/10/04/%E5%BF%86%C2%B7%E6%8A%97%E4%BA%89%E6%97%A0%E9%99%90%E5%AE%9D/Vizpower/</id>
+    <published>2020-10-04T11:51:02.000Z</published>
+    <updated>2024-03-06T14:59:10.000Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;来源&quot;&gt;&lt;a href=&quot;#来源&quot; class=&quot;headerlink&quot; title=&quot;来源&quot;&gt;&lt;/a&gt;来源&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;转载自群文件“我们都爱无限宝”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;作者：&lt;em&gt;盛北熙; 吴瑞阳(阳坨RYAN); WXRIW; 方小科(**东西); STBBRD&lt;/em&gt;&lt;br&gt;&lt;code&gt;我们都♥无限宝 | WE LOVE VIZPOWER&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;纸上得来终觉浅，绝知此事要躬行。纪念抗争无限宝的数百个日夜。谨以此文献给我们逝去的青春。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="回忆" scheme="https://dtx-qaq.gitee.io/categories/%E5%9B%9E%E5%BF%86/"/>
+    
+    <category term="无限宝" scheme="https://dtx-qaq.gitee.io/categories/%E5%9B%9E%E5%BF%86/%E6%97%A0%E9%99%90%E5%AE%9D/"/>
+    
+    
+    <category term="无限宝" scheme="https://dtx-qaq.gitee.io/tags/%E6%97%A0%E9%99%90%E5%AE%9D/"/>
+    
+    <category term="回忆" scheme="https://dtx-qaq.gitee.io/tags/%E5%9B%9E%E5%BF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>8·4黎巴嫩首都爆炸事故</title>
+    <link href="https://dtx-qaq.gitee.io/2020/08/10/8%C2%B74%E9%BB%8E%E5%B7%B4%E5%AB%A9%E9%A6%96%E9%83%BD%E7%88%86%E7%82%B8%E4%BA%8B%E6%95%85/EITCOL/"/>
+    <id>https://dtx-qaq.gitee.io/2020/08/10/8%C2%B74%E9%BB%8E%E5%B7%B4%E5%AB%A9%E9%A6%96%E9%83%BD%E7%88%86%E7%82%B8%E4%BA%8B%E6%95%85/EITCOL/</id>
+    <published>2020-08-10T12:17:42.000Z</published>
+    <updated>2021-07-12T07:54:36.000Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;贝鲁特大爆炸————8·4黎巴嫩首都爆炸事故&quot;&gt;&lt;a href=&quot;#贝鲁特大爆炸————8·4黎巴嫩首都爆炸事故&quot; class=&quot;headerlink&quot; title=&quot;贝鲁特大爆炸————8·4黎巴嫩首都爆炸事故&quot;&gt;&lt;/a&gt;贝鲁特大爆炸————8·4黎巴嫩首都爆炸事故&lt;/h1&gt;&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;2020年8月4日下午6时左右，&lt;strong&gt;黎巴嫩首都&lt;/strong&gt;贝鲁特港口区发生巨大爆炸，爆炸接连发生两次，爆炸威力相当于&lt;strong&gt;广岛原子弹&lt;/strong&gt;爆炸当量的&lt;strong&gt;十分之一&lt;/strong&gt;，导致多栋房屋受损，玻璃被震碎，天上升起红色烟雾 。爆炸发生后，黎巴嫩总理迪亚卜视察爆炸现场，宣布&lt;strong&gt;8月5日&lt;/strong&gt;为&lt;strong&gt;国家哀悼日&lt;/strong&gt; ，并表示黎巴嫩将向国际社会寻求帮助。&lt;/p&gt;
+&lt;p&gt;此次爆炸造成&lt;strong&gt;至少190人死亡、6500多人受伤&lt;/strong&gt;（伤亡结果为预估结果），&lt;strong&gt;3人失踪，30万人无家可归&lt;/strong&gt;，损失高达&lt;strong&gt;150亿美元&lt;/strong&gt;。黎巴嫩当局8月17日宣布，贝鲁特紧急状态延长至9月18日。&lt;/p&gt;
+&lt;p&gt;2020年8月17日，当地媒体报道，黎巴嫩司法部门宣布了贝鲁特爆炸案的初步调查结果，贝鲁特港口12号仓库的管理存在&lt;strong&gt;严重疏忽&lt;/strong&gt;，因为仓库内除了发生爆炸的&lt;strong&gt;2750吨硝酸铵&lt;/strong&gt;，还存放了&lt;strong&gt;大量&lt;/strong&gt;的烟花和爆竹。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="纪实" scheme="https://dtx-qaq.gitee.io/categories/%E7%BA%AA%E5%AE%9E/"/>
+    
+    <category term="灾难" scheme="https://dtx-qaq.gitee.io/categories/%E7%BA%AA%E5%AE%9E/%E7%81%BE%E9%9A%BE/"/>
+    
+    
+    <category term="灾难" scheme="https://dtx-qaq.gitee.io/tags/%E7%81%BE%E9%9A%BE/"/>
+    
+    <category term="纪实" scheme="https://dtx-qaq.gitee.io/tags/%E7%BA%AA%E5%AE%9E/"/>
+    
+  </entry>
+  
+</feed>
