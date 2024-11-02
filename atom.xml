@@ -6,7 +6,7 @@
   <link href="https://amor-vooc-github-io.pages.dev/atom.xml" rel="self"/>
   
   <link href="https://amor-vooc-github-io.pages.dev/"/>
-  <updated>2024-03-09T05:36:32.000Z</updated>
+  <updated>2024-11-02T16:59:30.250Z</updated>
   <id>https://amor-vooc-github-io.pages.dev/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>基于 Root 环境下的 Fake Location 虚拟定位</title>
-    <link href="https://amor-vooc-github-io.pages.dev/2024/03/09/%E5%9F%BA%E4%BA%8ERoot%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84Fake%20Location%E8%99%9A%E6%8B%9F%E5%AE%9A%E4%BD%8D%E6%95%99%E7%A8%8B/Fake-Location/"/>
-    <id>https://amor-vooc-github-io.pages.dev/2024/03/09/%E5%9F%BA%E4%BA%8ERoot%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84Fake%20Location%E8%99%9A%E6%8B%9F%E5%AE%9A%E4%BD%8D%E6%95%99%E7%A8%8B/Fake-Location/</id>
-    <published>2024-03-08T18:59:41.000Z</published>
-    <updated>2024-03-09T05:36:32.000Z</updated>
+    <link href="https://amor-vooc-github-io.pages.dev/2024/11/02/%E5%9F%BA%E4%BA%8ERoot%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84Fake%20Location%E8%99%9A%E6%8B%9F%E5%AE%9A%E4%BD%8D%E6%95%99%E7%A8%8B/Fake-Location/"/>
+    <id>https://amor-vooc-github-io.pages.dev/2024/11/02/%E5%9F%BA%E4%BA%8ERoot%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84Fake%20Location%E8%99%9A%E6%8B%9F%E5%AE%9A%E4%BD%8D%E6%95%99%E7%A8%8B/Fake-Location/</id>
+    <published>2024-11-02T13:59:41.000Z</published>
+    <updated>2024-11-02T16:59:30.250Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;strong&gt;文章内含已Root虚拟机资源。&lt;/strong&gt;&lt;/p&gt;
@@ -41,6 +41,37 @@
     <category term="重庆邮电大学" scheme="https://amor-vooc-github-io.pages.dev/tags/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6/"/>
     
     <category term="Root" scheme="https://amor-vooc-github-io.pages.dev/tags/Root/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客静态托管迁移记录</title>
+    <link href="https://amor-vooc-github-io.pages.dev/2024/07/15/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/BlogMove/"/>
+    <id>https://amor-vooc-github-io.pages.dev/2024/07/15/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/BlogMove/</id>
+    <published>2024-07-15T15:34:14.000Z</published>
+    <updated>2024-08-31T04:48:00.119Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;博客迁移&quot;&gt;&lt;a href=&quot;#博客迁移&quot; class=&quot;headerlink&quot; title=&quot;博客迁移&quot;&gt;&lt;/a&gt;博客迁移&lt;/h1&gt;&lt;h2 id=&quot;迁移原因&quot;&gt;&lt;a href=&quot;#迁移原因&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://amor-vooc-github-io.pages.dev/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="博客" scheme="https://amor-vooc-github-io.pages.dev/categories/%E6%8A%80%E6%9C%AF/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="技术" scheme="https://amor-vooc-github-io.pages.dev/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="博客" scheme="https://amor-vooc-github-io.pages.dev/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="Github Pages" scheme="https://amor-vooc-github-io.pages.dev/tags/Github-Pages/"/>
     
   </entry>
   
