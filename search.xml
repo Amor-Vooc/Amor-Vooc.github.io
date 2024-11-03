@@ -12,7 +12,7 @@
 <p>所有下载的资源仅供学习，请于 24 H 后自行删除。</p>
 <p>本教程为第二版，第一版已失效删除，请配置过第一版的朋友关闭之前老版的模块防止冲突，并按后续步骤更新模块和软件（从第三步开始即可），以更新至第二版方案。</p>
 <hr>
-<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><p>本教程所需的所有资源：<a href="https://www.alipan.com/s/3VtQP7NMjNv">阿里云盘资源链接</a></p>
+<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><p>本教程所需的所有资源：<a href="https://www.alipan.com/s/hEwenMJHz3M">阿里云盘资源链接</a></p>
 <p>（超过蓝奏云单次文件大小，只能用阿里云盘了。由于阿里云盘<strong>不支持</strong> .zip 和 .apk 文件分享，所以创建的是自释放程序 .exe ，请在 Windows 端运行解压）。</p>
 <h2 id="第一步-·-安装-影子虚拟机"><a href="#第一步-·-安装-影子虚拟机" class="headerlink" title="第一步 · 安装 影子虚拟机"></a>第一步 · 安装 影子虚拟机</h2><p>安装 <code>影子虚拟机240_美化版_带面具lsp.apk</code> ，这个虚拟机已 Root 并刷入 Magisk 模块与 LSPosed ，可以直接进行下一步。（如果你的手机这个虚拟机软件闪退，请自行寻找解决方法，如：<a href="https://blog.csdn.net/Amy_mumu/article/details/125989066">安卓 12 以上对 APP 进程数量有限制导致虚拟机闪退的解决办法</a>，或自行寻找不闪退的已 ROOT 虚拟机）</p>
 <h2 id="第二步-·-配置虚拟机环境和-Magisk"><a href="#第二步-·-配置虚拟机环境和-Magisk" class="headerlink" title="第二步 · 配置虚拟机环境和 Magisk"></a>第二步 · 配置虚拟机环境和 Magisk</h2><h3 id="配置虚拟机环境"><a href="#配置虚拟机环境" class="headerlink" title="配置虚拟机环境"></a>配置虚拟机环境</h3><ol>
@@ -32,11 +32,11 @@
 <h3 id="配置-Magisk"><a href="#配置-Magisk" class="headerlink" title="配置 Magisk"></a>配置 Magisk</h3></li>
 <li><p>待虚拟机重启后，打开 <strong>Magisk 软件</strong>，点击右下角<strong>模块</strong>，<strong>打开所有模块</strong>，随后重启虚拟机<br><img src="https://s2.loli.net/2024/11/02/SD8zZhsqkv73nGm.png" alt="打开模块"></p>
 </li>
-<li><p>待虚拟机重启后，再<strong>打开 Magisk 软件</strong>，确认<strong>所有模块均已启用</strong>，如果掉了，重复<strong>配置 Magisk 的步骤 1.</strong> 直到<strong>重启后</strong>三个模块全为启用状态（后续使用时如果软件没有正常破解，或打开 LSPosed 闪退，请也按<strong>配置 Magisk 的步骤 1.</strong> 检查模块状态）。</p>
+<li><p>待虚拟机重启后，再<strong>打开 Magisk 软件</strong>，确认<strong>所有模块均已启用</strong>，如果掉了，重复<strong>上一步</strong> 直到<strong>重启后</strong>三个模块全为启用状态（后续使用时如果软件没有正常破解，或打开 LSPosed 闪退，请也按<strong>上一步</strong> 检查模块状态）。</p>
 </li>
 </ol>
-<h2 id="第三步-·-导入并安装软件"><a href="#第三步-·-导入并安装软件" class="headerlink" title="第三步 · 导入并安装软件"></a>第三步 · 导入并安装软件</h2><p>打开虚拟机，用桌面右下角<strong>文件中转</strong>功能将 <code>Fake Location.apk</code>、<code>MT管理器.apk</code>、<code>HookVip-3.5.6.apk</code> 3 个安装包全部转入虚拟机并安装。</p>
-<p>由于更新了更强劲的 HookVip 模块，可以<strong>通杀全版本 Fake Location</strong> ，可以直接安装分享的最新版 Fake Location。</p>
+<h2 id="第三步-·-导入并安装软件"><a href="#第三步-·-导入并安装软件" class="headerlink" title="第三步 · 导入并安装软件"></a>第三步 · 导入并安装软件</h2><p>打开虚拟机，用桌面右下角<strong>文件中转</strong>功能将 <code>Fake Location.apk</code>、<code>MT管理器.apk</code>、<code>HookVip-3.5.4.apk</code> 3 个安装包全部转入虚拟机并安装。</p>
+<p>由于更新了更强劲的 HookVip 模块，可以<strong>通杀全版本 Fake Location</strong> ，可以直接安装分享的最新版 Fake Location。（请使用 HookVip 的 <strong>3.5.4 版本</strong>，最新版已知会导致<strong>闪退</strong>）</p>
 <h2 id="第四步-·-配置-LSPosed"><a href="#第四步-·-配置-LSPosed" class="headerlink" title="第四步 · 配置 LSPosed"></a>第四步 · 配置 LSPosed</h2><p><code>以下设置是为了破解 Fake Location 以使用高级功能。</code></p>
 <ol>
 <li><p>打开 <strong>LSPosed</strong> ，点击<strong>模块</strong>（你们的应该只有 HookVip 这一个模块，其他模块是我干别的用的，不用理会），点击 <strong>HookVip</strong> 进入设置页面<br><img src="https://s2.loli.net/2024/11/02/3qFhuMDvP4i2JOT.png" alt="进入模块设置"></p>
@@ -74,9 +74,9 @@
 </li>
 </ul>
 <h3 id="刷脸部分（以太极运动场为例）"><a href="#刷脸部分（以太极运动场为例）" class="headerlink" title="刷脸部分（以太极运动场为例）"></a>刷脸部分（以太极运动场为例）</h3><ul>
-<li><p>开始跑步后，在靠近入口的<strong>第 1 组摄像头</strong>刷<strong>一次脸</strong>，然后横穿操场在<strong>第 2 组摄像头</strong>刷<strong>第二次脸</strong>，然后横穿返回<strong>第 1 组摄像头</strong>刷<strong>第三次脸</strong>，不用横穿操场，等待间隔一分钟后再在<strong>第 1 组摄像头</strong>刷<strong>第四次脸</strong>，不用横穿操场，等待间隔一分钟后再在<strong>第 1 组摄像头</strong>刷<strong>第五次脸</strong>。（<strong>间隔一分钟</strong>是为了防止被标记成<strong>同一组摄像头重复刷脸</strong>）</p>
+<li><p>开始跑步后，在靠近入口的<strong>第 1 组摄像头</strong>刷<strong>一次脸</strong>，然后横穿操场在<strong>第 2 组摄像头</strong>刷<strong>第二次脸</strong>，然后横穿返回<strong>第 1 组摄像头</strong>刷<strong>第三次脸</strong></p>
 </li>
-<li><p>最后得到 <strong>12111</strong> 组合的刷脸结果，即可通过刷脸检测（其实 <strong>1211</strong> 的<strong>四次刷脸</strong>也可以过检测，但是五次保守一点）。</p>
+<li><p>最后得到 <strong>121</strong> 组合的刷脸结果，即可通过刷脸检测。</p>
 </li>
 </ul>
 <h3 id="结束条件（非常重要）！！！"><a href="#结束条件（非常重要）！！！" class="headerlink" title="结束条件（非常重要）！！！"></a>结束条件（非常重要）！！！</h3><p>三个条件：</p>
