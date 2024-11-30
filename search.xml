@@ -1,6 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>邮宝聊天室项目运行环境配置</title>
+    <url>/2024/11/30/%E9%82%AE%E5%AE%9D%E8%81%8A%E5%A4%A9%E5%AE%A4%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Fake-Location/</url>
+    <content><![CDATA[<p>本教程仅供 <strong>薪火杯组内成员</strong> 配置运行环境的教程，不公开项目源码。</p>
+<span id="more"></span>
+
+<h1 id="邮宝聊天室项目运行环境配置"><a href="#邮宝聊天室项目运行环境配置" class="headerlink" title="邮宝聊天室项目运行环境配置"></a>邮宝聊天室项目运行环境配置</h1><h2 id="需要安装的软件"><a href="#需要安装的软件" class="headerlink" title="需要安装的软件"></a>需要安装的软件</h2><ul>
+<li><a href="https://www.oracle.com/java/technologies/javase/jdk22-archive-downloads.html">jdk</a></li>
+<li><a href="https://nodejs.org/zh-cn">node.js</a></li>
+<li><a href="https://dev.mysql.com/downloads/installer/">MySQL</a></li>
+<li><a href="https://www.alipan.com/s/ycfqZdqffBL">Navicat Premium 17</a> 和 <a href="https://dtx-qaq.lanzoul.com/ixvN92gpxwhg">破解补丁</a></li>
+<li><a href="https://www.jetbrains.com/zh-cn/idea/download/?section=windows">IDEA</a></li>
+<li><a href="https://code.visualstudio.com/">Visual Studio Code (如果有IDEA终极版就不用了)</a></li>
+<li><a href="https://dtx-qaq.lanzoul.com/iW81N2gpsm2b">maven (我已经帮你们打包好了)</a></li>
+</ul>
+<h3 id="jdk-安装教程"><a href="#jdk-安装教程" class="headerlink" title="jdk 安装教程"></a>jdk 安装教程</h3><p><a href="https://www.oracle.com/java/technologies/javase/jdk22-archive-downloads.html">点击打开 jdk 下载页面</a></p>
+<p>点击图片所示位置下载对应版本</p>
+<p><img src="https://s2.loli.net/2024/11/30/ClxY2HhIBnUr56G.png" alt="jdk下载"></p>
+<p>下载完成后根据 <a href="https://www.bilibili.com/opus/996875387017363456">jdk 安装教程</a> 进行安装。</p>
+<p><strong>！！！一定要记住自己的安装路径！！！</strong>。</p>
+<p>配置环境变量 <strong>JAVA_HOME</strong> 时注意修改成 <strong>自己的安装路径</strong>。</p>
+<h3 id="node-js-安装教程"><a href="#node-js-安装教程" class="headerlink" title="node.js 安装教程"></a>node.js 安装教程</h3><p><a href="https://nodejs.org/zh-cn">点击打开 node.js 下载页面</a></p>
+<p>一路默认安装即可。</p>
+<p>安装完成后，使用 <code>Win + R</code> 打开运行框，输入 <code>cmd</code> 后回车打开命令行，在命令行输入 <code>node -v</code> 和 <code>npm -v</code> 验证是否安装成功（成功安装会显示版本号，不成功会报错，报错来找我）。</p>
+<p>安装完成后，由于仓库默认下载位置在国外，我们要把下载源切换为国内华为源，防止下载过慢甚至出错。</p>
+<p>在刚刚打开的命令行中输入命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry https://mirrors.huaweicloud.com/repository/npm/</span><br></pre></td></tr></table></figure>
+
+<p>来设置成华为镜像源。</p>
+<h3 id="MySQL-安装教程"><a href="#MySQL-安装教程" class="headerlink" title="MySQL 安装教程"></a>MySQL 安装教程</h3><p><a href="https://dev.mysql.com/downloads/installer/">点击打开 MySQL 下载页面</a></p>
+<p>点击图片所示位置下载对应版本</p>
+<p><img src="https://s2.loli.net/2024/11/30/Ru7lv6fms4ZeQ2K.png" alt="MySQL下载"></p>
+<p>下载完成后根据 <a href="https://www.bilibili.com/video/BV1zC41187tM?spm_id_from=333.788.videopod.episodes&vd_source=641ddec1506b8f023585079febd43f1e&p=2">MySQL 安装教程</a> 进行安装。</p>
+<p><strong>注意：一定要记住自己的设置的数据库密码！！！，建议就为 123456</strong></p>
+<h3 id="Navicat-安装教程"><a href="#Navicat-安装教程" class="headerlink" title="Navicat 安装教程"></a>Navicat 安装教程</h3><p><a href="https://www.alipan.com/s/ycfqZdqffBL">点击打开 Navicat Premium 17 下载页面</a></p>
+<p>默认安装即可。<strong>记住安装路径</strong> 后面破解会用到！！！！</p>
+<p><a href="https://dtx-qaq.lanzoul.com/ixvN92gpxwhg">点击下载破解补丁</a></p>
+<p>下载完后解压，跟着步骤破解：</p>
+<ol>
+<li>运行一下已经安装的 Navicat 。然后完全退出程序</li>
+<li>双击无限试用 Navicat.bat 脚本</li>
+<li>将 winmm.dll 拖进 navicat 的安装路径下</li>
+</ol>
+<p>破解完成后，打开 Navicat ，按下方图示连接你的 MySQL 数据库：</p>
+<p><img src="https://s2.loli.net/2024/11/30/3ySWzhN7K1VqjXG.png" alt="新建连接"></p>
+<p><img src="https://s2.loli.net/2024/11/30/xfB4EhV9tCPSXqd.png" alt="输入账号密码"></p>
+<p>点击确定即可</p>
+<h3 id="IDEA-安装教程"><a href="#IDEA-安装教程" class="headerlink" title="IDEA 安装教程"></a>IDEA 安装教程</h3><p><a href="https://www.jetbrains.com/zh-cn/idea/download/?section=windows">点击打开 IDEA 下载页面</a></p>
+<p><img src="https://s2.loli.net/2024/11/30/O3TkcUPfi2FgE7I.png" alt="选择版本下载"></p>
+<p>下载完后默认打安装就行</p>
+<h3 id="Visual-Studio-Code-安装教程"><a href="#Visual-Studio-Code-安装教程" class="headerlink" title="Visual Studio Code 安装教程"></a>Visual Studio Code 安装教程</h3><p><a href="https://code.visualstudio.com/">点击打开 Visual Studio Code 下载页面</a></p>
+<p>下载完后默认安装就行</p>
+<h2 id="配置项目运行环境"><a href="#配置项目运行环境" class="headerlink" title="配置项目运行环境"></a>配置项目运行环境</h2><h3 id="下载并解压我在微信群分享的压缩包"><a href="#下载并解压我在微信群分享的压缩包" class="headerlink" title="下载并解压我在微信群分享的压缩包"></a>下载并解压我在微信群分享的压缩包</h3><h3 id="配置-MySQL-数据库"><a href="#配置-MySQL-数据库" class="headerlink" title="配置 MySQL 数据库"></a>配置 MySQL 数据库</h3><p>打开 Navicat</p>
+<ol>
+<li>右键位置 1 ，打开菜单，新建数据库</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/11/30/X3ace9xYTVn6NyK.png" alt="新建数据库"></p>
+<ol start="2">
+<li>输入数据库名称 <code>cqupt_chat</code> ，调节字符集和排序规则和下图一致，点击确定</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/11/30/7AeyUmMk2PLT9w8.png" alt="调节字符集和排序规则"></p>
+<ol start="3">
+<li>双击你刚刚新建的 <code>cqupt_chat</code> 数据库，前面的图标变绿后，再右键它打开菜单，选择 <code>运行 SQL 文件</code></li>
+</ol>
+<p><img src="https://s2.loli.net/2024/11/30/lvd7ngexsEHTq5j.png" alt="运行 SQL 文件"></p>
+<ol start="4">
+<li>按步骤选择从 <strong>我微信发的压缩包</strong> 中解压出的 <code>cqupt_chat.sql</code> 文件</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/11/30/SFh6nO5kuJ23x4s.png" alt="PixPin_2024-11-30_19-06-19.png"></p>
+<ol start="5">
+<li>修改数据库访问权限，按图示操作</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/11/30/3l1jROeuxIFdkT8.png" alt="打开命令列"></p>
+<p>依次输入以下命令（一定要带结尾分号）：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">use mysql;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">select user,host from user;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">update user set host=&#x27;%&#x27; where user=&#x27;root&#x27;;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flush privileges;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s2.loli.net/2024/11/30/vIpXWyogQTzFS3A.png" alt="运行结果"></p>
+<h3 id="配置后端-SpringBoot-项目"><a href="#配置后端-SpringBoot-项目" class="headerlink" title="配置后端 SpringBoot 项目"></a>配置后端 SpringBoot 项目</h3><p>打开 IDEA</p>
+<ol>
+<li><p>右上角 <code>File -&gt; Open</code>，选择从 <strong>我微信发的压缩包</strong> 中解压出的 <code>cqupt_chat</code> 中的 <code>springboot</code> 文件夹打开</p>
+</li>
+<li><p>调整 <code>Maven</code> 设置</p>
+</li>
+</ol>
+<p><a href="https://dtx-qaq.lanzoul.com/iW81N2gpsm2b">点击下载 Maven</a> 后，解压到随便一个位置，但是要记住位置，后面要用。</p>
+<p><img src="https://s2.loli.net/2024/11/30/2JEYemTuQMiyHl1.png" alt="打开设置"></p>
+<ul>
+<li><p><code>Maven 主路径</code> 选择刚刚解压的 Maven 文件夹位置。</p>
+</li>
+<li><p><code>用户设置文件</code> 勾选 <code>重写</code> ，然后选择刚刚解压的 Maven 文件夹位置下的 <code>conf</code> 文件夹下的 <code>setting.xml</code> 文件。</p>
+</li>
+</ul>
+<p><img src="https://s2.loli.net/2024/11/30/zgsXiYhMKFBVA16.png" alt="调整 Maven 设置"></p>
+<ol start="3">
+<li>调整编码</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/11/30/wEsjS2eGqV3TzKu.png" alt="调整编码"></p>
+<ol start="4">
+<li>加载 Maven 依赖</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/11/30/KIn93hrWVQu1EZR.png" alt="开始加载依赖"></p>
+<p>下载依赖时右下角应该有一个蓝色的进度条，等一段时间依赖下载完成后消失，重新打开 IDEA ，这时 <code>pom.xml</code> 文件应该没有红色字体。</p>
+<p><img src="https://s2.loli.net/2024/11/30/8UFo1ldr9C6tYmK.png" alt="没有红色文字"></p>
+<ol start="5">
+<li>配置数据库连接</li>
+</ol>
+<ul>
+<li><p>在 IDEA 中双击打开 <code>springboot/src/main/resources/application.yml</code> 文件</p>
+</li>
+<li><p>修改 <code>password</code> 为你自己的数据库密码</p>
+</li>
+<li><p>3 的部分为之前导入的数据库名字 <code>cqupt_chat</code> （默认也是 <code>cqupt_chat</code> ）。</p>
+</li>
+</ul>
+<p><img src="https://s2.loli.net/2024/12/01/x7CdwvkW5cRmEUs.png" alt="PixPin_2024-11-30_23-57-03.png"></p>
+<p><strong>至此，后端环境配置完成</strong></p>
+<h3 id="配置前端-Vue-项目"><a href="#配置前端-Vue-项目" class="headerlink" title="配置前端 Vue 项目"></a>配置前端 Vue 项目</h3><p>打开 Visual Studio Code</p>
+<ol>
+<li>找到从 <strong>我微信发的压缩包</strong> 中解压出的 <code>cqupt_chat</code> 中的 <code>vue</code> 文件夹打开</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/12/01/htuJ8dvY1q6eNfC.png" alt="打开文件夹"></p>
+<p><img src="https://s2.loli.net/2024/12/01/gSjo7J3cDaFkAEL.png" alt="打开项目"></p>
+<ol start="2">
+<li>在集成终端中（打开方式见下图）按顺序输入</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g @vue/cli</span><br></pre></td></tr></table></figure>
+<p>等待上一条命令执行结束，输入</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<p>这两个命令用来安装依赖，<strong>每个命令运行可能都需要一段时间</strong>，耐心等待。</p>
+<p><img src="https://s2.loli.net/2024/12/01/CAN6GkpbvMnaows.png" alt="安装vue"></p>
+<p><strong>至此，前端环境配置完成</strong></p>
+<h2 id="运行项目"><a href="#运行项目" class="headerlink" title="运行项目"></a>运行项目</h2><h3 id="MySQL-数据库运行"><a href="#MySQL-数据库运行" class="headerlink" title="MySQL 数据库运行"></a>MySQL 数据库运行</h3><p>按 <code>Ctrl + Shift + Esc</code> 快捷键打开任务管理器，然后按下图操作（如果已经是正在运行可以忽略）</p>
+<p><img src="https://s2.loli.net/2024/12/01/Dit86Wak7SdjsgO.png" alt="开启MySQL服务"></p>
+<h3 id="后端-SpringBoot-项目运行"><a href="#后端-SpringBoot-项目运行" class="headerlink" title="后端 SpringBoot 项目运行"></a>后端 SpringBoot 项目运行</h3><p>打开 IDEA</p>
+<ol>
+<li><p>选择 <code>File -&gt; Open</code>，选择从 <strong>我微信发的压缩包</strong> 中解压出的 <code>cqupt_chat</code> 中的 <code>springboot</code> 文件夹打开</p>
+</li>
+<li><p>双击打开 <code>springboot/src/main/java/com.example/SpringbootApplication</code> 文件, 按下图操作</p>
+</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/12/01/VDL85BO6Mdlk3xQ.png" alt="后端运行"></p>
+<h3 id="前端-Vue-项目运行"><a href="#前端-Vue-项目运行" class="headerlink" title="前端 Vue 项目运行"></a>前端 Vue 项目运行</h3><p>打开 Visual Studio Code</p>
+<ol>
+<li>找到从 <strong>我微信发的压缩包</strong> 中解压出的 <code>cqupt_chat</code> 中的 <code>vue</code> 文件夹打开</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/12/01/gSjo7J3cDaFkAEL.png" alt="打开项目"></p>
+<p><img src="https://s2.loli.net/2024/12/01/rajvJ7OZ4BxAmdY.png" alt="启用npm脚本"></p>
+<p><img src="https://s2.loli.net/2024/12/01/kEXFihyQWSjDLNr.png" alt="前端运行"></p>
+<h3 id="项目启动完毕"><a href="#项目启动完毕" class="headerlink" title="项目启动完毕"></a>项目启动完毕</h3><p>大家的账号为 <code>姓名</code></p>
+<p>密码默认 <code>123456</code></p>
+<p>登录后就可以使用了</p>
+<p><img src="https://s2.loli.net/2024/12/01/LodAMt1zsXNTcxC.png" alt="登录页面"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>开发</category>
+      </categories>
+      <tags>
+        <tag>重庆邮电大学</tag>
+        <tag>前后端分离</tag>
+        <tag>Vue</tag>
+        <tag>SpringBoot</tag>
+        <tag>薪火杯</tag>
+        <tag>环境配置教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于 Root 环境下的 Fake Location 虚拟定位</title>
     <url>/2024/11/02/%E5%9F%BA%E4%BA%8ERoot%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84Fake%20Location%E8%99%9A%E6%8B%9F%E5%AE%9A%E4%BD%8D%E6%95%99%E7%A8%8B/Fake-Location/</url>
     <content><![CDATA[<p><strong>文章内含已Root虚拟机资源。</strong></p>

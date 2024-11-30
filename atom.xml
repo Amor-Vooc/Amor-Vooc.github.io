@@ -6,7 +6,7 @@
   <link href="https://amor-vooc-github-io.pages.dev/atom.xml" rel="self"/>
   
   <link href="https://amor-vooc-github-io.pages.dev/"/>
-  <updated>2024-11-03T09:00:38.082Z</updated>
+  <updated>2024-11-30T16:59:50.578Z</updated>
   <id>https://amor-vooc-github-io.pages.dev/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>邮宝聊天室项目运行环境配置</title>
+    <link href="https://amor-vooc-github-io.pages.dev/2024/11/30/%E9%82%AE%E5%AE%9D%E8%81%8A%E5%A4%A9%E5%AE%A4%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Fake-Location/"/>
+    <id>https://amor-vooc-github-io.pages.dev/2024/11/30/%E9%82%AE%E5%AE%9D%E8%81%8A%E5%A4%A9%E5%AE%A4%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Fake-Location/</id>
+    <published>2024-11-30T13:59:41.000Z</published>
+    <updated>2024-11-30T16:59:50.578Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本教程仅供 &lt;strong&gt;薪火杯组内成员&lt;/strong&gt; 配置运行环境的教程，不公开项目源码。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://amor-vooc-github-io.pages.dev/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="开发" scheme="https://amor-vooc-github-io.pages.dev/categories/%E6%8A%80%E6%9C%AF/%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="重庆邮电大学" scheme="https://amor-vooc-github-io.pages.dev/tags/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6/"/>
+    
+    <category term="前后端分离" scheme="https://amor-vooc-github-io.pages.dev/tags/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB/"/>
+    
+    <category term="Vue" scheme="https://amor-vooc-github-io.pages.dev/tags/Vue/"/>
+    
+    <category term="SpringBoot" scheme="https://amor-vooc-github-io.pages.dev/tags/SpringBoot/"/>
+    
+    <category term="薪火杯" scheme="https://amor-vooc-github-io.pages.dev/tags/%E8%96%AA%E7%81%AB%E6%9D%AF/"/>
+    
+    <category term="环境配置教程" scheme="https://amor-vooc-github-io.pages.dev/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>基于 Root 环境下的 Fake Location 虚拟定位</title>
