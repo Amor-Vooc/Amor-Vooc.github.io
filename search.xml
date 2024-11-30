@@ -1,291 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>邮宝聊天室项目运行环境配置</title>
-    <url>/2024/11/30/%E9%82%AE%E5%AE%9D%E8%81%8A%E5%A4%A9%E5%AE%A4%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Fake-Location/</url>
-    <content><![CDATA[<p>本教程仅供 <strong>薪火杯组内成员</strong> 配置运行环境的教程，不公开项目源码。</p>
+    <title>2020即将过去</title>
+    <url>/2020/12/31/2020%E7%BA%AA%E5%BF%B5/2020%E7%BA%AA%E5%BF%B5/</url>
+    <content><![CDATA[<h1 id="2020："><a href="#2020：" class="headerlink" title="2020："></a>2020：</h1><p>2020年元旦，UPUPOO转让暴毙</p>
+<p>年初《我的三体章北海传》播出</p>
 <span id="more"></span>
-
-<h1 id="邮宝聊天室项目运行环境配置"><a href="#邮宝聊天室项目运行环境配置" class="headerlink" title="邮宝聊天室项目运行环境配置"></a>邮宝聊天室项目运行环境配置</h1><h2 id="需要安装的软件"><a href="#需要安装的软件" class="headerlink" title="需要安装的软件"></a>需要安装的软件</h2><ul>
-<li><a href="https://www.oracle.com/java/technologies/javase/jdk22-archive-downloads.html">jdk</a></li>
-<li><a href="https://nodejs.org/zh-cn">node.js</a></li>
-<li><a href="https://dev.mysql.com/downloads/installer/">MySQL</a></li>
-<li><a href="https://www.alipan.com/s/ycfqZdqffBL">Navicat Premium 17</a> 和 <a href="https://dtx-qaq.lanzoul.com/ixvN92gpxwhg">破解补丁</a></li>
-<li><a href="https://www.jetbrains.com/zh-cn/idea/download/?section=windows">IDEA</a></li>
-<li><a href="https://code.visualstudio.com/">Visual Studio Code (如果有IDEA终极版就不用了)</a></li>
-<li><a href="https://dtx-qaq.lanzoul.com/iW81N2gpsm2b">maven (我已经帮你们打包好了)</a></li>
-</ul>
-<h3 id="jdk-安装教程"><a href="#jdk-安装教程" class="headerlink" title="jdk 安装教程"></a>jdk 安装教程</h3><p><a href="https://www.oracle.com/java/technologies/javase/jdk22-archive-downloads.html">点击打开 jdk 下载页面</a></p>
-<p>点击图片所示位置下载对应版本</p>
-<p><img src="https://s2.loli.net/2024/11/30/ClxY2HhIBnUr56G.png" alt="jdk下载"></p>
-<p>下载完成后根据 <a href="https://www.bilibili.com/opus/996875387017363456">jdk 安装教程</a> 进行安装。</p>
-<p><strong>！！！一定要记住自己的安装路径！！！</strong>。</p>
-<p>配置环境变量 <strong>JAVA_HOME</strong> 时注意修改成 <strong>自己的安装路径</strong>。</p>
-<h3 id="node-js-安装教程"><a href="#node-js-安装教程" class="headerlink" title="node.js 安装教程"></a>node.js 安装教程</h3><p><a href="https://nodejs.org/zh-cn">点击打开 node.js 下载页面</a></p>
-<p>一路默认安装即可。</p>
-<p>安装完成后，使用 <code>Win + R</code> 打开运行框，输入 <code>cmd</code> 后回车打开命令行，在命令行输入 <code>node -v</code> 和 <code>npm -v</code> 验证是否安装成功（成功安装会显示版本号，不成功会报错，报错来找我）。</p>
-<p>安装完成后，由于仓库默认下载位置在国外，我们要把下载源切换为国内华为源，防止下载过慢甚至出错。</p>
-<p>在刚刚打开的命令行中输入命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry https://mirrors.huaweicloud.com/repository/npm/</span><br></pre></td></tr></table></figure>
-
-<p>来设置成华为镜像源。</p>
-<h3 id="MySQL-安装教程"><a href="#MySQL-安装教程" class="headerlink" title="MySQL 安装教程"></a>MySQL 安装教程</h3><p><a href="https://dev.mysql.com/downloads/installer/">点击打开 MySQL 下载页面</a></p>
-<p>点击图片所示位置下载对应版本</p>
-<p><img src="https://s2.loli.net/2024/11/30/Ru7lv6fms4ZeQ2K.png" alt="MySQL下载"></p>
-<p>下载完成后根据 <a href="https://www.bilibili.com/video/BV1zC41187tM?spm_id_from=333.788.videopod.episodes&vd_source=641ddec1506b8f023585079febd43f1e&p=2">MySQL 安装教程</a> 进行安装。</p>
-<p><strong>注意：一定要记住自己的设置的数据库密码！！！，建议就为 123456</strong></p>
-<h3 id="Navicat-安装教程"><a href="#Navicat-安装教程" class="headerlink" title="Navicat 安装教程"></a>Navicat 安装教程</h3><p><a href="https://www.alipan.com/s/ycfqZdqffBL">点击打开 Navicat Premium 17 下载页面</a></p>
-<p>默认安装即可。<strong>记住安装路径</strong> 后面破解会用到！！！！</p>
-<p><a href="https://dtx-qaq.lanzoul.com/ixvN92gpxwhg">点击下载破解补丁</a></p>
-<p>下载完后解压，跟着步骤破解：</p>
-<ol>
-<li>运行一下已经安装的 Navicat 。然后完全退出程序</li>
-<li>双击无限试用 Navicat.bat 脚本</li>
-<li>将 winmm.dll 拖进 navicat 的安装路径下</li>
-</ol>
-<p>破解完成后，打开 Navicat ，按下方图示连接你的 MySQL 数据库：</p>
-<p><img src="https://s2.loli.net/2024/11/30/3ySWzhN7K1VqjXG.png" alt="新建连接"></p>
-<p><img src="https://s2.loli.net/2024/11/30/xfB4EhV9tCPSXqd.png" alt="输入账号密码"></p>
-<p>点击确定即可</p>
-<h3 id="IDEA-安装教程"><a href="#IDEA-安装教程" class="headerlink" title="IDEA 安装教程"></a>IDEA 安装教程</h3><p><a href="https://www.jetbrains.com/zh-cn/idea/download/?section=windows">点击打开 IDEA 下载页面</a></p>
-<p><img src="https://s2.loli.net/2024/11/30/O3TkcUPfi2FgE7I.png" alt="选择版本下载"></p>
-<p>下载完后默认打安装就行</p>
-<h3 id="Visual-Studio-Code-安装教程"><a href="#Visual-Studio-Code-安装教程" class="headerlink" title="Visual Studio Code 安装教程"></a>Visual Studio Code 安装教程</h3><p><a href="https://code.visualstudio.com/">点击打开 Visual Studio Code 下载页面</a></p>
-<p>下载完后默认安装就行</p>
-<h2 id="配置项目运行环境"><a href="#配置项目运行环境" class="headerlink" title="配置项目运行环境"></a>配置项目运行环境</h2><h3 id="下载并解压我在微信群分享的压缩包"><a href="#下载并解压我在微信群分享的压缩包" class="headerlink" title="下载并解压我在微信群分享的压缩包"></a>下载并解压我在微信群分享的压缩包</h3><h3 id="配置-MySQL-数据库"><a href="#配置-MySQL-数据库" class="headerlink" title="配置 MySQL 数据库"></a>配置 MySQL 数据库</h3><p>打开 Navicat</p>
-<ol>
-<li>右键位置 1 ，打开菜单，新建数据库</li>
-</ol>
-<p><img src="https://s2.loli.net/2024/11/30/X3ace9xYTVn6NyK.png" alt="新建数据库"></p>
-<ol start="2">
-<li>输入数据库名称 <code>cqupt_chat</code> ，调节字符集和排序规则和下图一致，点击确定</li>
-</ol>
-<p><img src="https://s2.loli.net/2024/11/30/7AeyUmMk2PLT9w8.png" alt="调节字符集和排序规则"></p>
-<ol start="3">
-<li>双击你刚刚新建的 <code>cqupt_chat</code> 数据库，前面的图标变绿后，再右键它打开菜单，选择 <code>运行 SQL 文件</code></li>
-</ol>
-<p><img src="https://s2.loli.net/2024/11/30/lvd7ngexsEHTq5j.png" alt="运行 SQL 文件"></p>
-<ol start="4">
-<li>按步骤选择从 <strong>我微信发的压缩包</strong> 中解压出的 <code>cqupt_chat.sql</code> 文件</li>
-</ol>
-<p><img src="https://s2.loli.net/2024/11/30/SFh6nO5kuJ23x4s.png" alt="PixPin_2024-11-30_19-06-19.png"></p>
-<ol start="5">
-<li>修改数据库访问权限，按图示操作</li>
-</ol>
-<p><img src="https://s2.loli.net/2024/11/30/3l1jROeuxIFdkT8.png" alt="打开命令列"></p>
-<p>依次输入以下命令（一定要带结尾分号）：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">use mysql;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">select user,host from user;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">update user set host=&#x27;%&#x27; where user=&#x27;root&#x27;;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flush privileges;</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://s2.loli.net/2024/11/30/vIpXWyogQTzFS3A.png" alt="运行结果"></p>
-<h3 id="配置后端-SpringBoot-项目"><a href="#配置后端-SpringBoot-项目" class="headerlink" title="配置后端 SpringBoot 项目"></a>配置后端 SpringBoot 项目</h3><p>打开 IDEA</p>
-<ol>
-<li><p>右上角 <code>File -&gt; Open</code>，选择从 <strong>我微信发的压缩包</strong> 中解压出的 <code>cqupt_chat</code> 中的 <code>springboot</code> 文件夹打开</p>
-</li>
-<li><p>调整 <code>Maven</code> 设置</p>
-</li>
-</ol>
-<p><a href="https://dtx-qaq.lanzoul.com/iW81N2gpsm2b">点击下载 Maven</a> 后，解压到随便一个位置，但是要记住位置，后面要用。</p>
-<p><img src="https://s2.loli.net/2024/11/30/2JEYemTuQMiyHl1.png" alt="打开设置"></p>
-<ul>
-<li><p><code>Maven 主路径</code> 选择刚刚解压的 Maven 文件夹位置。</p>
-</li>
-<li><p><code>用户设置文件</code> 勾选 <code>重写</code> ，然后选择刚刚解压的 Maven 文件夹位置下的 <code>conf</code> 文件夹下的 <code>setting.xml</code> 文件。</p>
-</li>
-</ul>
-<p><img src="https://s2.loli.net/2024/11/30/zgsXiYhMKFBVA16.png" alt="调整 Maven 设置"></p>
-<ol start="3">
-<li>调整编码</li>
-</ol>
-<p><img src="https://s2.loli.net/2024/11/30/wEsjS2eGqV3TzKu.png" alt="调整编码"></p>
-<ol start="4">
-<li>加载 Maven 依赖</li>
-</ol>
-<p><img src="https://s2.loli.net/2024/11/30/KIn93hrWVQu1EZR.png" alt="开始加载依赖"></p>
-<p>下载依赖时右下角应该有一个蓝色的进度条，等一段时间依赖下载完成后消失，重新打开 IDEA ，这时 <code>pom.xml</code> 文件应该没有红色字体。</p>
-<p><img src="https://s2.loli.net/2024/11/30/8UFo1ldr9C6tYmK.png" alt="没有红色文字"></p>
-<ol start="5">
-<li>配置数据库连接</li>
-</ol>
-<ul>
-<li><p>在 IDEA 中双击打开 <code>springboot/src/main/resources/application.yml</code> 文件</p>
-</li>
-<li><p>修改 <code>password</code> 为你自己的数据库密码</p>
-</li>
-<li><p>3 的部分为之前导入的数据库名字 <code>cqupt_chat</code> （默认也是 <code>cqupt_chat</code> ）。</p>
-</li>
-</ul>
-<p><img src="https://s2.loli.net/2024/12/01/x7CdwvkW5cRmEUs.png" alt="PixPin_2024-11-30_23-57-03.png"></p>
-<p><strong>至此，后端环境配置完成</strong></p>
-<h3 id="配置前端-Vue-项目"><a href="#配置前端-Vue-项目" class="headerlink" title="配置前端 Vue 项目"></a>配置前端 Vue 项目</h3><p>打开 Visual Studio Code</p>
-<ol>
-<li>找到从 <strong>我微信发的压缩包</strong> 中解压出的 <code>cqupt_chat</code> 中的 <code>vue</code> 文件夹打开</li>
-</ol>
-<p><img src="https://s2.loli.net/2024/12/01/htuJ8dvY1q6eNfC.png" alt="打开文件夹"></p>
-<p><img src="https://s2.loli.net/2024/12/01/gSjo7J3cDaFkAEL.png" alt="打开项目"></p>
-<ol start="2">
-<li>在集成终端中（打开方式见下图）按顺序输入</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g @vue/cli</span><br></pre></td></tr></table></figure>
-<p>等待上一条命令执行结束，输入</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
-
-<p>这两个命令用来安装依赖，<strong>每个命令运行可能都需要一段时间</strong>，耐心等待。</p>
-<p><img src="https://s2.loli.net/2024/12/01/CAN6GkpbvMnaows.png" alt="安装vue"></p>
-<p><strong>至此，前端环境配置完成</strong></p>
-<h2 id="运行项目"><a href="#运行项目" class="headerlink" title="运行项目"></a>运行项目</h2><h3 id="MySQL-数据库运行"><a href="#MySQL-数据库运行" class="headerlink" title="MySQL 数据库运行"></a>MySQL 数据库运行</h3><p>按 <code>Ctrl + Shift + Esc</code> 快捷键打开任务管理器，然后按下图操作（如果已经是正在运行可以忽略）</p>
-<p><img src="https://s2.loli.net/2024/12/01/Dit86Wak7SdjsgO.png" alt="开启MySQL服务"></p>
-<h3 id="后端-SpringBoot-项目运行"><a href="#后端-SpringBoot-项目运行" class="headerlink" title="后端 SpringBoot 项目运行"></a>后端 SpringBoot 项目运行</h3><p>打开 IDEA</p>
-<ol>
-<li><p>选择 <code>File -&gt; Open</code>，选择从 <strong>我微信发的压缩包</strong> 中解压出的 <code>cqupt_chat</code> 中的 <code>springboot</code> 文件夹打开</p>
-</li>
-<li><p>双击打开 <code>springboot/src/main/java/com.example/SpringbootApplication</code> 文件, 按下图操作</p>
-</li>
-</ol>
-<p><img src="https://s2.loli.net/2024/12/01/VDL85BO6Mdlk3xQ.png" alt="后端运行"></p>
-<h3 id="前端-Vue-项目运行"><a href="#前端-Vue-项目运行" class="headerlink" title="前端 Vue 项目运行"></a>前端 Vue 项目运行</h3><p>打开 Visual Studio Code</p>
-<ol>
-<li>找到从 <strong>我微信发的压缩包</strong> 中解压出的 <code>cqupt_chat</code> 中的 <code>vue</code> 文件夹打开</li>
-</ol>
-<p><img src="https://s2.loli.net/2024/12/01/gSjo7J3cDaFkAEL.png" alt="打开项目"></p>
-<p><img src="https://s2.loli.net/2024/12/01/rajvJ7OZ4BxAmdY.png" alt="启用npm脚本"></p>
-<p><img src="https://s2.loli.net/2024/12/01/kEXFihyQWSjDLNr.png" alt="前端运行"></p>
-<h3 id="项目启动完毕"><a href="#项目启动完毕" class="headerlink" title="项目启动完毕"></a>项目启动完毕</h3><p>大家的账号为 <code>姓名</code></p>
-<p>密码默认 <code>123456</code></p>
-<p>登录后就可以使用了</p>
-<p><img src="https://s2.loli.net/2024/12/01/LodAMt1zsXNTcxC.png" alt="登录页面"></p>
+<p>第一次刷脸支付<br><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/2020%E7%BA%AA%E5%BF%B5/%E5%88%B7%E8%84%B8.png" alt="第一次刷脸支付"></p>
+<p>第一个个人网站<br><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/2020%E7%BA%AA%E5%BF%B5/%E4%B8%AA%E7%BD%91.png" alt="第一个个人网站"></p>
+<p>第一次上手写程序（太久没更新，现在“过期”了，小牛接手后拿源码改了滑动签到）<br><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/2020%E7%BA%AA%E5%BF%B5/%E7%BC%96%E7%A8%8B.png" alt="第一次上手写程序"></p>
+<p>2020.4.3老番茄成为B站第一个1000万粉UP主</p>
+<p>黎巴嫩政府辞职</p>
+<p>鸽了1年的2077终于在年底发售</p>
+<p>还有那一塌糊涂的中考</p>
+<p>Adobe Flash一路走好</p>
+<p>……</p>
+<p>随便想一想，就有这么多事啊，有好也有坏<br>希望明年能如意吧<br><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/2020%E7%BA%AA%E5%BF%B5/%E5%B0%8F%E5%8D%81%E7%A5%9D%E7%A6%8F.png" alt="小十的话"></p>
 ]]></content>
-      <categories>
-        <category>技术</category>
-        <category>开发</category>
-      </categories>
-      <tags>
-        <tag>重庆邮电大学</tag>
-        <tag>前后端分离</tag>
-        <tag>Vue</tag>
-        <tag>SpringBoot</tag>
-        <tag>薪火杯</tag>
-        <tag>环境配置教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于 Root 环境下的 Fake Location 虚拟定位</title>
-    <url>/2024/11/02/%E5%9F%BA%E4%BA%8ERoot%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84Fake%20Location%E8%99%9A%E6%8B%9F%E5%AE%9A%E4%BD%8D%E6%95%99%E7%A8%8B/Fake-Location/</url>
-    <content><![CDATA[<p><strong>文章内含已Root虚拟机资源。</strong></p>
-<p>成功实现虚拟定位后，可实现包括但不限于以下操作：减轻校园跑步打卡压力、游戏改战区、点亮地图/足迹……<br><img src="https://s2.loli.net/2024/03/09/2eWFJYGtjyEfwci.jpg" alt="41d10a457499b9070bc577c17c34a0efa7540f39.jpg"></p>
-<span id="more"></span>
-
-<h1 id="风险警告"><a href="#风险警告" class="headerlink" title="风险警告"></a>风险警告</h1><p><code>在 Root 环境内可能出现的风险，如：账号被冻结/封禁、腾讯 TP 监测无法通过、部分软件不允许在 Root 环境下运行……</code></p>
-<p>在遵循本教程操作前应悉知可能存在的风险，并自行决定是否继续学习操作，对造成的损失作者不负任何责任。</p>
-<p>所有下载的资源仅供学习，请于 24 H 后自行删除。</p>
-<p>本教程为第二版，第一版已失效删除，请配置过第一版的朋友关闭之前老版的模块防止冲突，并按后续步骤更新模块和软件（从第三步开始即可），以更新至第二版方案。</p>
-<hr>
-<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><p>本教程所需的所有资源：<a href="https://www.alipan.com/s/hEwenMJHz3M">阿里云盘资源链接</a></p>
-<p>（超过蓝奏云单次文件大小，只能用阿里云盘了。由于阿里云盘<strong>不支持</strong> .zip 和 .apk 文件分享，所以创建的是自释放程序 .exe ，请在 Windows 端运行解压）。</p>
-<h2 id="第一步-·-安装-影子虚拟机"><a href="#第一步-·-安装-影子虚拟机" class="headerlink" title="第一步 · 安装 影子虚拟机"></a>第一步 · 安装 影子虚拟机</h2><p>安装 <code>影子虚拟机240_美化版_带面具lsp.apk</code> ，这个虚拟机已 Root 并刷入 Magisk 模块与 LSPosed ，可以直接进行下一步。（如果你的手机这个虚拟机软件闪退，请自行寻找解决方法，如：<a href="https://blog.csdn.net/Amy_mumu/article/details/125989066">安卓 12 以上对 APP 进程数量有限制导致虚拟机闪退的解决办法</a>，或自行寻找不闪退的已 ROOT 虚拟机）</p>
-<h2 id="第二步-·-配置虚拟机环境和-Magisk"><a href="#第二步-·-配置虚拟机环境和-Magisk" class="headerlink" title="第二步 · 配置虚拟机环境和 Magisk"></a>第二步 · 配置虚拟机环境和 Magisk</h2><h3 id="配置虚拟机环境"><a href="#配置虚拟机环境" class="headerlink" title="配置虚拟机环境"></a>配置虚拟机环境</h3><ol>
-<li><p>打开虚拟机，按要求赋予<strong>所有权限</strong>（特别是<strong>悬浮窗权限</strong>）。第一次运行需要等待自动配置安卓，会慢一点。</p>
-</li>
-<li><p>进入虚拟机后，可以看到右侧有<strong>蓝色 V 形</strong>悬浮窗。<br><img src="https://s2.loli.net/2024/11/02/smERhZj9DgXNFlw.png" alt="悬浮窗"></p>
-</li>
-<li><p>点击它，打开<strong>设置</strong>。<br><img src="https://s2.loli.net/2024/11/02/xmihrNReYlJsyKQ.png" alt="设置"></p>
-</li>
-<li><p>点击 <strong>Magisk 支持</strong><br><img src="https://s2.loli.net/2024/11/02/WPrHaRZVIn4ESgT.png" alt="面具支持"></p>
-</li>
-<li><p>把灰色滑块<strong>打开</strong>变成蓝色滑块，在弹出的窗口中选择<strong>稍后重启</strong><br><img src="https://s2.loli.net/2024/11/02/p2saNACxzScihHZ.png" alt="开启面具"></p>
-</li>
-<li><p>再回到设置界面，点击<strong>超级用户设置</strong><br><img src="https://s2.loli.net/2024/11/02/e6fEABiku7DxHWT.png" alt="超级用户设置"></p>
-</li>
-<li><p>将蓝色滑块<strong>关闭</strong>成灰色，在弹出的窗口中选择<strong>立即重启</strong><br><img src="https://s2.loli.net/2024/11/02/NlacJ5AGReKI7jn.png" alt="关闭超级用户"></p>
-<h3 id="配置-Magisk"><a href="#配置-Magisk" class="headerlink" title="配置 Magisk"></a>配置 Magisk</h3></li>
-<li><p>待虚拟机重启后，打开 <strong>Magisk 软件</strong>，点击右下角<strong>模块</strong>，<strong>打开所有模块</strong>，随后重启虚拟机<br><img src="https://s2.loli.net/2024/11/02/SD8zZhsqkv73nGm.png" alt="打开模块"></p>
-</li>
-<li><p>待虚拟机重启后，再<strong>打开 Magisk 软件</strong>，确认<strong>所有模块均已启用</strong>，如果掉了，重复<strong>上一步</strong> 直到<strong>重启后</strong>三个模块全为启用状态（后续使用时如果软件没有正常破解，或打开 LSPosed 闪退，请也按<strong>上一步</strong> 检查模块状态）。</p>
-</li>
-</ol>
-<h2 id="第三步-·-导入并安装软件"><a href="#第三步-·-导入并安装软件" class="headerlink" title="第三步 · 导入并安装软件"></a>第三步 · 导入并安装软件</h2><p>打开虚拟机，用桌面右下角<strong>文件中转</strong>功能将 <code>Fake Location.apk</code>、<code>MT管理器.apk</code>、<code>HookVip-3.5.4.apk</code> 3 个安装包全部转入虚拟机并安装。</p>
-<p>由于更新了更强劲的 HookVip 模块，可以<strong>通杀全版本 Fake Location</strong> ，可以直接安装分享的最新版 Fake Location。（请使用 HookVip 的 <strong>3.5.4 版本</strong>，最新版已知会导致<strong>闪退</strong>）</p>
-<h2 id="第四步-·-配置-LSPosed"><a href="#第四步-·-配置-LSPosed" class="headerlink" title="第四步 · 配置 LSPosed"></a>第四步 · 配置 LSPosed</h2><p><code>以下设置是为了破解 Fake Location 以使用高级功能。</code></p>
-<ol>
-<li><p>打开 <strong>LSPosed</strong> ，点击<strong>模块</strong>（你们的应该只有 HookVip 这一个模块，其他模块是我干别的用的，不用理会），点击 <strong>HookVip</strong> 进入设置页面<br><img src="https://s2.loli.net/2024/11/02/3qFhuMDvP4i2JOT.png" alt="进入模块设置"></p>
-</li>
-<li><p>先点<strong>齿轮按钮</strong>打开一下这个模块，如果有提示就按提示操作。然后返回这个界面，<strong>勾选 Fake Location</strong> 即可破解会员权限<br><img src="https://s2.loli.net/2024/11/02/WbX4CIlgLyP6Qjh.png" alt="勾选 Fake Location"></p>
-</li>
-</ol>
-<h2 id="第五步-·-权限设置"><a href="#第五步-·-权限设置" class="headerlink" title="第五步 · 权限设置"></a>第五步 · 权限设置</h2><p>有时使用 Fake Location 会<strong>遇到卡死问题</strong>，这是因为系统权限处于严格状态，改成宽松状态即可，接下来是教程。</p>
-<p>打开 <strong>MT管理器</strong> ，点击左上角三个杠，点击<strong>终端模拟器</strong>，<code>第一次使用可能要安装</code>。</p>
-<p><img src="https://s2.loli.net/2024/03/09/34aVcDvTjAZw7ul.png" alt="权限设置8"></p>
-<ul>
-<li>打开命令行后输入</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">su</span><br></pre></td></tr></table></figure>
-<p>并回车。</p>
-<p>前面的 → 变为 # 说明有效。</p>
-<ul>
-<li>再输入</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">setenforce 0</span><br></pre></td></tr></table></figure>
-
-<p>并回车。</p>
-<p>不提示任何东西，不报错说明成功。请重启虚拟机以确保更改全部应用。</p>
-<p><img src="https://s2.loli.net/2024/03/09/9BSUrWREXzvgkNd.png" alt="权限设置9"></p>
-<h2 id="第六步-·-设置-Fake-Location-系统就绪时间"><a href="#第六步-·-设置-Fake-Location-系统就绪时间" class="headerlink" title="第六步 · 设置 Fake Location 系统就绪时间"></a>第六步 · 设置 Fake Location 系统就绪时间</h2><p>由于默认系统就绪时间太长，可能导致<strong>虚拟机启动后要多等待十几分钟才能开始模拟定位</strong>，所以我们要修改系统就绪时间</p>
-<p>打开 Fake Location ，点击右上角三个杠，点击<strong>设置</strong>，在<strong>系统就绪时间</strong>中设置一个较短的时间，建议为 5000 毫秒（即 5 秒）。</p>
-<p><img src="https://s2.loli.net/2024/11/02/WDsw5GFBiT2OoZ4.png" alt="设置 Fake Location 系统就绪时间"></p>
-<p><code>恭喜你，自此所有设置都已完成，已经可以顺利使用虚拟定位了。接下来是虚拟定位实战举例。</code></p>
-<h1 id="实战运用·同天智慧校园"><a href="#实战运用·同天智慧校园" class="headerlink" title="实战运用·同天智慧校园"></a>实战运用·同天智慧校园</h1><h2 id="使用-Fake-Location-进行体育跑步打卡。"><a href="#使用-Fake-Location-进行体育跑步打卡。" class="headerlink" title="使用 Fake Location 进行体育跑步打卡。"></a>使用 Fake Location 进行体育跑步打卡。</h2><h3 id="定位部分"><a href="#定位部分" class="headerlink" title="定位部分"></a>定位部分</h3><ul>
-<li><p>打开 <strong>Fake Location</strong> ，点击<strong>加号</strong>添加位置，在地图上找到太极运动场，单击<strong>跑道区域（避开禁区）</strong>，点击右下角勾选定位置，点击<strong>启动模拟</strong>。</p>
-</li>
-<li><p>成功启动模拟后，打开<strong>摇杆</strong>，在弹出的<strong>摇杆悬浮窗界面</strong>点击右下方<strong>方块</strong>打开设置，速度设置为<strong>汽车</strong>，打开<strong>步频模拟</strong>和<strong>GPS定位模拟</strong>。</p>
-</li>
-<li><p>打开同天智慧校园开始跑步，使用摇杆将位置调整到要移动的下一个位置，等待路径红线出现（移动时不会出现红线，需要等待，出现红线才代表小程序记录了你的移动），重复操作即可。（由于同天智慧校园的已知问题，可能会有很大几率不记录里程（吞里程），多拉几次总会记上一次的。）</p>
-</li>
-</ul>
-<h3 id="刷脸部分（以太极运动场为例）"><a href="#刷脸部分（以太极运动场为例）" class="headerlink" title="刷脸部分（以太极运动场为例）"></a>刷脸部分（以太极运动场为例）</h3><ul>
-<li><p>开始跑步后，在靠近入口的<strong>第 1 组摄像头</strong>刷<strong>一次脸</strong>，然后横穿操场在<strong>第 2 组摄像头</strong>刷<strong>第二次脸</strong>，然后横穿返回<strong>第 1 组摄像头</strong>刷<strong>第三次脸</strong></p>
-</li>
-<li><p>最后得到 <strong>121</strong> 组合的刷脸结果，即可通过刷脸检测。</p>
-</li>
-</ul>
-<h3 id="结束条件（非常重要）！！！"><a href="#结束条件（非常重要）！！！" class="headerlink" title="结束条件（非常重要）！！！"></a>结束条件（非常重要）！！！</h3><p>三个条件：</p>
-<ul>
-<li><strong>定位部分</strong>程累计到 <strong>2 公里</strong></li>
-<li><strong>刷脸部分已完成</strong></li>
-<li><strong>配速降到 4 分/公里</strong></li>
-</ul>
-<p>三个条件都已达成，即可结束运动。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-        <category>破解</category>
-      </categories>
-      <tags>
-        <tag>同天智慧校园</tag>
-        <tag>破解</tag>
-        <tag>重庆邮电大学</tag>
-        <tag>Root</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客静态托管迁移记录</title>
-    <url>/2024/07/15/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/BlogMove/</url>
-    <content><![CDATA[<h1 id="博客迁移"><a href="#博客迁移" class="headerlink" title="博客迁移"></a>博客迁移</h1><h2 id="迁移原因"><a href="#迁移原因" class="headerlink" title="迁移原因"></a>迁移原因</h2><p>我的博客网站的<strong>最早期版本</strong>是静态托管在 <code>Github Pages</code> 上的，后来由于<strong>国内访问速度过慢</strong>的原因迁移到了 <code>Gitee Pages</code> 托管。但今年年初 <code>Gitee</code> 莫名抽风，<strong>无限期暂停</strong>了 <code>Gitee Pages</code> 的托管服务（其实之前还有个实名认证风波，我就不应该对国内的开源社区抱有希望）。</p>
-<p>由于 <code>Gitee Pages</code> 托管服务停止，我不得不重新将博客网站迁移到 <code>Github Pages</code> ，并决定使用 <code>Cloudflare</code> 的托管服务作备份。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>博客</tag>
-        <tag>Github Pages</tag>
-      </tags>
   </entry>
   <entry>
     <title>2024新年快乐！</title>
@@ -293,6 +24,96 @@
     <content><![CDATA[<h1 id="新-年-快-乐！"><a href="#新-年-快-乐！" class="headerlink" title="新 年 快 乐！"></a>新 年 快 乐！</h1><p><img src="https://s2.loli.net/2024/01/05/ltpaB4VwyMG7f5C.jpg" alt="新年快乐！"></p>
 <p><code>这一年,遇见,获得,失去,成长,释怀,完结,我与旧事归于尽,来年依旧迎花开.</code></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>2021新年快乐！</title>
+    <url>/2021/01/01/2021%E6%96%B0%E5%B9%B4/2021%20new%20year/</url>
+    <content><![CDATA[<h1 id="新-年-快-乐！"><a href="#新-年-快-乐！" class="headerlink" title="新 年 快 乐！"></a>新 年 快 乐！</h1><p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/2021%E6%96%B0%E5%B9%B4/2021%E6%96%B0%E5%B9%B4.png" alt="新年好"></p>
+<p><code>所求皆如愿,所行化坦途,多喜乐,长安宁.</code></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>8·4黎巴嫩首都爆炸事故</title>
+    <url>/2020/08/10/8%C2%B74%E9%BB%8E%E5%B7%B4%E5%AB%A9%E9%A6%96%E9%83%BD%E7%88%86%E7%82%B8%E4%BA%8B%E6%95%85/EITCOL/</url>
+    <content><![CDATA[<h1 id="贝鲁特大爆炸————8·4黎巴嫩首都爆炸事故"><a href="#贝鲁特大爆炸————8·4黎巴嫩首都爆炸事故" class="headerlink" title="贝鲁特大爆炸————8·4黎巴嫩首都爆炸事故"></a>贝鲁特大爆炸————8·4黎巴嫩首都爆炸事故</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>2020年8月4日下午6时左右，<strong>黎巴嫩首都</strong>贝鲁特港口区发生巨大爆炸，爆炸接连发生两次，爆炸威力相当于<strong>广岛原子弹</strong>爆炸当量的<strong>十分之一</strong>，导致多栋房屋受损，玻璃被震碎，天上升起红色烟雾 。爆炸发生后，黎巴嫩总理迪亚卜视察爆炸现场，宣布<strong>8月5日</strong>为<strong>国家哀悼日</strong> ，并表示黎巴嫩将向国际社会寻求帮助。</p>
+<p>此次爆炸造成<strong>至少190人死亡、6500多人受伤</strong>（伤亡结果为预估结果），<strong>3人失踪，30万人无家可归</strong>，损失高达<strong>150亿美元</strong>。黎巴嫩当局8月17日宣布，贝鲁特紧急状态延长至9月18日。</p>
+<p>2020年8月17日，当地媒体报道，黎巴嫩司法部门宣布了贝鲁特爆炸案的初步调查结果，贝鲁特港口12号仓库的管理存在<strong>严重疏忽</strong>，因为仓库内除了发生爆炸的<strong>2750吨硝酸铵</strong>，还存放了<strong>大量</strong>的烟花和爆竹。</p>
+<span id="more"></span>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E8%B4%9D%E9%B2%81%E7%89%B9%E6%B8%AF%E5%8F%A3%E5%A4%A7%E7%88%86%E7%82%B8/%E6%B8%AF%E5%8F%A3%E9%99%84%E8%BF%91%E5%AE%8C%E5%85%A8%E8%A2%AB%E7%82%B8%E6%AF%811.jpg" alt="港口附近完全被炸毁"></p>
+<h2 id="记录视频"><a href="#记录视频" class="headerlink" title="记录视频"></a>记录视频</h2><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+    <iframe src="//player.bilibili.com/player.html?aid=841670253&bvid=BV1J54y1i7DZ&cid=222503314&page=1"  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe>
+</div>
+
+
+<h2 id="事故经过"><a href="#事故经过" class="headerlink" title="事故经过"></a>事故经过</h2><p>黎巴嫩当地时间2020年8月4日下午6时左右，黎巴嫩首都贝鲁特港口区发生巨大爆炸，爆炸接连发生两次，导致多栋房屋受损，玻璃被震碎，天上升起红色烟雾。</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E8%B4%9D%E9%B2%81%E7%89%B9%E6%B8%AF%E5%8F%A3%E5%A4%A7%E7%88%86%E7%82%B8/%E7%88%86%E7%82%B8%E7%9E%AC%E9%97%B4.png" alt="爆炸瞬间"></p>
+<p>爆炸波及<strong>240公里</strong>，起先是一股浓烟向天上弥漫，随后浓烟当中出现零星的爆炸火光，大约5秒后，巨大的火龙冲天而起，夹杂着小型爆炸的冲击波在<strong>一秒内席卷了视线内可见的建筑物</strong>。外围的白色烟尘率先向外扩散，火红色的蘑菇云紧随其后。目击者巴查·甘塔司说：<code>“就像世界末日一样，到处都是摇摇晃晃受伤的人，满地都是玻璃、坏掉的汽车。太可怕了！” </code></p>
+<p>一位驻黎巴嫩的外媒记者幸运的离起爆地点较远，在他的描述中，爆炸更<code>“像一场特大地震。” </code></p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E8%B4%9D%E9%B2%81%E7%89%B9%E6%B8%AF%E5%8F%A3%E5%A4%A7%E7%88%86%E7%82%B8/%E6%B8%AF%E5%8F%A3%E9%99%84%E8%BF%91%E5%AE%8C%E5%85%A8%E8%A2%AB%E7%82%B8%E6%AF%812.jpg" alt="港口附近完全被炸毁"></p>
+<p>爆炸导致贝鲁特多个街区严重受损，到处可见破损的建筑物和散落的玻璃碎片。在爆炸地点附近的阿什拉斐叶街区，居民比拉尔说，事发时整个街区<code>“就像遭受一场灾难”</code>，许多人受伤。据当地媒体报道，距爆炸地点<strong>10多公里</strong>的总统府建筑也受损。事发近两个小时后，现场依然浓烟滚滚，一些集装箱在爆炸中被掀飞、变形，旁边的仓库一片狼藉，纸箱等物品四处散落。</p>
+<h2 id="事故伤亡"><a href="#事故伤亡" class="headerlink" title="事故伤亡"></a>事故伤亡</h2><h6 id="截至2020年8月4日晚"><a href="#截至2020年8月4日晚" class="headerlink" title="截至2020年8月4日晚"></a>截至2020年8月4日晚</h6><p>初步统计显示，爆炸造成至少<strong>73人死亡，3000多人受伤</strong>。</p>
+<h6 id="截至2020年8月5日"><a href="#截至2020年8月5日" class="headerlink" title="截至2020年8月5日"></a>截至2020年8月5日</h6><p>黎巴嫩卫生部门称，爆炸已造成<strong>78人死亡、4000多人受伤</strong>。<strong>黎巴嫩总理哈桑·迪亚卜的妻子和女儿</strong>在爆炸中受伤，<strong>黎巴嫩长枪党秘书长</strong>在爆炸中身亡，<strong>国有电力公司董事长</strong>重伤垂死。贝鲁特省长表示，贝鲁特港口大爆炸发生后，<strong>10名救援人员遇难</strong>。联合国秘书长副发言人法尔汉·哈克（Farhan Haq）表示，共有<strong>48名联合国工作人员</strong>在爆炸中受伤。</p>
+<h6 id="截至2020年8月5日上午"><a href="#截至2020年8月5日上午" class="headerlink" title="截至2020年8月5日上午"></a>截至2020年8月5日上午</h6><p>黎巴嫩《每日星报》等多家媒体援引黎巴嫩红十字会的消息报道称，事故已造成超过<strong>100人死亡，4000多人受伤</strong>。</p>
+<h6 id="截至2020年8月5日-1"><a href="#截至2020年8月5日-1" class="headerlink" title="截至2020年8月5日"></a>截至2020年8月5日</h6><p>中国驻黎巴嫩大使馆证实，<strong>一名中国公民</strong>在黎巴嫩首都贝鲁特港口区爆炸中受轻伤。伤者是一名在黎中资企业员工，被碎玻璃划伤，在接受救治。</p>
+<h6 id="截至2020年8月5日-2"><a href="#截至2020年8月5日-2" class="headerlink" title="截至2020年8月5日"></a>截至2020年8月5日</h6><p><strong>荷兰驻黎巴嫩大使的夫人</strong>在爆炸中身受重伤，已经被送往医院救治。荷兰外交部发言人还表示，爆炸导致荷兰驻黎巴嫩大使馆严重受损，还造成<strong>使馆方面4人受伤</strong>。当地时间2020年8月8日，荷兰外交部表示，<strong>荷兰驻黎巴嫩大使夫人海德维赫斯·瓦尔特曼·莫利雷</strong>在贝鲁特大爆炸中受重伤，于当地时间8日去世。</p>
+<h6 id="截至2020年8月5日-3"><a href="#截至2020年8月5日-3" class="headerlink" title="截至2020年8月5日"></a>截至2020年8月5日</h6><p>黎巴嫩卫生部长表示，爆炸造成的<strong>死亡人数已经升至135人，约5000人受伤</strong>，仍有<strong>数十人下落不明</strong>。</p>
+<h6 id="截至2020年8月6日"><a href="#截至2020年8月6日" class="headerlink" title="截至2020年8月6日"></a>截至2020年8月6日</h6><p>德国外交部表示，<strong>德国驻贝鲁特大使馆的一名工作人员</strong>因爆炸死亡。该爆炸造成的<strong>死亡人数上升至137人，另有至少5000人受伤</strong>。随着搜寻失踪人员的工作继续进行，死亡人数预计还会上升。</p>
+<h6 id="截至2020年8月7日"><a href="#截至2020年8月7日" class="headerlink" title="截至2020年8月7日"></a>截至2020年8月7日</h6><p>该爆炸造成的<strong>死亡人数上升至157人，5000多人受伤</strong>，另有<strong>数十人依然下落不明</strong>。</p>
+<h6 id="截至2020年8月9日"><a href="#截至2020年8月9日" class="headerlink" title="截至2020年8月9日"></a>截至2020年8月9日</h6><p>黎巴嫩卫生部媒体办公室公布贝鲁特港口爆炸事件最新死伤数字，<strong>遇难人数上升至158人，逾6000人受伤</strong>，仍有<strong>21人失踪</strong>。</p>
+<h6 id="截至2020年08月11日下午"><a href="#截至2020年08月11日下午" class="headerlink" title="截至2020年08月11日下午"></a>截至2020年08月11日下午</h6><p>黎巴嫩看守政府卫生部长公布贝鲁特港口爆炸最新死伤数字，<strong>遇难人数已上升至171人，失踪人数在30到40人之间</strong>。<strong>大约1500名伤者</strong>需要特殊护理，<strong>120名患者</strong>仍处于<strong>重症状态</strong>。 </p>
+<h6 id="截至2020年08月17日"><a href="#截至2020年08月17日" class="headerlink" title="截至2020年08月17日"></a>截至2020年08月17日</h6><p>黎巴嫩大爆炸已造成至少<strong>177人死亡、6000多人受伤</strong>，另有<strong>数十人失踪</strong>。</p>
+<h6 id="截至2020年08月30日"><a href="#截至2020年08月30日" class="headerlink" title="截至2020年08月30日"></a>截至2020年08月30日</h6><p>贝鲁特港口爆炸事件中的<strong>死亡人数已上升至190人，超过6500人受伤，3人失踪</strong>。</p>
+<h2 id="事故处置"><a href="#事故处置" class="headerlink" title="事故处置"></a>事故处置</h2><h4 id="现场救援"><a href="#现场救援" class="headerlink" title="现场救援"></a>现场救援</h4><p>截至黎巴嫩当地时间2020年8月4日晚上9时30分，爆炸现场大火还在燃烧，消防车辆、救护车辆以及工程车辆在赶往现场，救护伤员并对现场进行清理。现场已被<strong>部队封锁</strong>，多个建筑受损。贝鲁特医院急诊已人满为患，伤者被送往城外医院进行救治。</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E8%B4%9D%E9%B2%81%E7%89%B9%E6%B8%AF%E5%8F%A3%E5%A4%A7%E7%88%86%E7%82%B8/%E7%88%86%E7%82%B8%E5%90%8E%E7%8E%B0%E5%9C%BA.png" alt="爆炸后现场"></p>
+<p>2020年8月4日，黎巴嫩最高国防委员会已宣布贝鲁特<strong>进入紧急状态</strong>。</p>
+<p>2020年8月17日，黎巴嫩当局宣布，将这一<strong>紧急状态延长</strong>一个月至9月18日。</p>
+<h4 id="涉案调查"><a href="#涉案调查" class="headerlink" title="涉案调查"></a>涉案调查</h4><p>2020年8月17日，<strong>黎巴嫩海关关长达希尔</strong>因涉嫌黎首都贝鲁特港口区爆炸案于当天被捕，负责贝鲁特港口区爆炸案调查的法官索万当天在对达希尔进行<strong>约4个半小时问询</strong>后下令将其逮捕。索万迄今已对<strong>25名涉案人员</strong>提出指控，其中包括<strong>前海关关长迈尔希、贝鲁特港总经理库雷特姆</strong>等。</p>
+<p>2020年9月1日，一名黎巴嫩司法消息人士称，通过调查爆炸案而确定的<strong>25名相关人员</strong>，目前都已被黎巴嫩当局拘留。该消息人士称，当地时间2020年9月1日，首席调查法官法蒂·萨万对<strong>最后4名涉事者</strong>进行审问后，对他们发出了逮捕令。据报道，这4人分别是<strong>港口军事情报部门的负责人</strong>、<strong>国家安全局的少校</strong>和<strong>2名安全总局</strong>的成员。据称，他们所属的安全机构，以及黎巴嫩军队和黎巴嫩海关当局，是负责监督港口安全的主要机构。</p>
+<p>2020年10月1日，贝鲁特港爆炸案调查官法迪（Fadi Sawan）向存放<strong>硝酸铵</strong>的涉案船只的船东和船长签发逮捕令，并请求国际刑警组织协助逮捕，二人均为俄罗斯籍。</p>
+<h2 id="事故回应"><a href="#事故回应" class="headerlink" title="事故回应"></a>事故回应</h2><h4 id="黎巴嫩"><a href="#黎巴嫩" class="headerlink" title="黎巴嫩"></a>黎巴嫩</h4><p>2020年8月4日，黎巴嫩卫生部长哈桑说，因贝鲁特的医院收治能力有限，他呼吁将伤亡人员分散至周边医院，同时号召<strong>所有医护人员</strong>参与救治伤员。</p>
+<p>2020年8月4日，黎总理迪亚卜视察爆炸现场，随后宣布8月5日为<strong>全国哀悼日</strong>，政府将拨付<strong>1000亿里拉</strong>的紧急救援资金，并表示黎巴嫩将向国际社会寻求帮助。</p>
+<p>2020年8月4日晚，黎巴嫩总统奥恩在总统府推特账号上发文说，港口仓库内存放<strong>2750吨硝酸铵</strong>长达<strong>6年</strong>之久且缺乏安全措施，“令人难以接受”。他呼吁在贝鲁特实施为期两周的紧急状态，并严惩爆炸责任人。</p>
+<p>当地时间2020年8月7日，黎巴嫩总统米歇尔·奥恩表示，<strong>拒绝</strong>有关就贝鲁特爆炸事件展开国际调查的呼吁。</p>
+<h4 id="联合国"><a href="#联合国" class="headerlink" title="联合国"></a>联合国</h4><p>事故发生后，<strong>联合国秘书长</strong>安东尼奥·古特雷斯向遇难人员表示哀悼。</p>
+<p><strong>第74届联合国大会主席</strong>穆罕默德·班迪也对爆炸事件表示关注。他向在爆炸中失去亲人的家庭表示最深切的慰问，并祝愿伤者早日康复。他同时向黎巴嫩表达声援。</p>
+<h4 id="德国"><a href="#德国" class="headerlink" title="德国"></a>德国</h4><p>德国外交部表示，爆炸发生地点位于德国驻贝鲁特使馆附近，不能排除死伤人员中有德国公民。</p>
+<h4 id="美国"><a href="#美国" class="headerlink" title="美国"></a>美国</h4><p>美国东部时间2020年8月4日下午，美国总统特朗普在举行的白宫记者会上说，美国对贝鲁特发生巨大爆炸深表同情，为所有受害者及其家属祈祷，并表示美国随时准备援助黎巴嫩。</p>
+<h4 id="俄罗斯"><a href="#俄罗斯" class="headerlink" title="俄罗斯"></a>俄罗斯</h4><p>2020年8月4日，克里姆林宫网站发布公告说，俄罗斯总统普京就黎巴嫩首都港口区发生爆炸向黎巴嫩总统奥恩致慰问电。普京说：<code>“请转达对遇难者家属和亲人的同情和支持，并祝所有伤者早日康复。”</code></p>
+<h4 id="以色列"><a href="#以色列" class="headerlink" title="以色列"></a>以色列</h4><p>2020年8月4日晚，以色列总理办公室发表声明说，总理内塔尼亚胡在批准向黎巴嫩<strong>提供人道主义和医疗援助</strong>后，将通过联合国特别协调员为黎巴嫩<strong>进一步提供援助</strong>。以色列外交部和国防部发表一份联合声明说，以色列已经通过国际安全和外交等渠道向黎巴嫩政府提供人道主义和医疗援助。据以色列媒体报道，以色列是通过联合国驻黎巴嫩临时部队（联黎部队）、联合国和法国等渠道向黎巴嫩提供援助的。<strong>以色列尚未与黎巴嫩建交</strong>。</p>
+<h4 id="中国"><a href="#中国" class="headerlink" title="中国"></a>中国</h4><p>2020年8月5日，中国驻黎巴嫩大使馆通报，<strong>中国赴黎巴嫩维和部队</strong>迅速组织官兵掌握事故情况，清点物资和机械，确保接到救援命令后能立即出动。</p>
+<p>2020年8月5日，中国外交部发言人汪文斌在外交部例行记者会上表示，中方对黎巴嫩发生重大爆炸造成大量人员伤亡事件，深感震惊和悲痛。对遇难者表示深切哀悼，向伤者和遇难者家属表示诚挚的慰问。祝愿伤者早日康复。中方愿为黎方妥处有关事件，实现国家的发展积极提供<strong>力所能及的帮助</strong>。</p>
+<p>2020年8月5日，国家主席习近平就黎巴嫩贝鲁特发生重大爆炸事件向黎巴嫩总统奥恩致慰问电：<code>“谨代表中国政府和中国人民，并以我个人的名义，对遇难者表示深切的哀悼，向伤者和遇难者家属致以诚挚的慰问，祝愿伤者早日康复。”</code></p>
+<h2 id="事故影响"><a href="#事故影响" class="headerlink" title="事故影响"></a>事故影响</h2><p><strong>美国地质调查局</strong>收集的数据显示，爆炸产生的地震波相当于<strong>3.3级地震</strong>，实际威力更是<strong>大于3.3级地震</strong>。附近居民形容爆炸事故<code>“就像一颗原子弹（爆炸）”</code>。</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E8%B4%9D%E9%B2%81%E7%89%B9%E6%B8%AF%E5%8F%A3%E5%A4%A7%E7%88%86%E7%82%B8/%E7%88%86%E7%82%B8%E5%89%8D%E5%8D%AB%E6%98%9F%E5%9B%BE.jpg" alt="爆炸前卫星图"></p>
+<p>根据法新社提供的现场情况，爆炸发生的<strong>港口已经被夷为平地</strong>，距离爆炸地点<strong>半径10公里以内</strong>的建筑物<strong>全部被破坏</strong>，碎玻璃、石块挤满了街道。港口<strong>半径100米内</strong>的建筑在<strong>1秒内被夷为平地</strong>，<strong>6公里以外</strong>的机场受损。</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E8%B4%9D%E9%B2%81%E7%89%B9%E6%B8%AF%E5%8F%A3%E5%A4%A7%E7%88%86%E7%82%B8/%E7%88%86%E7%82%B8%E5%90%8E%E5%8D%AB%E6%98%9F%E5%9B%BE.jpg" alt="爆炸后卫星图"></p>
+<p>贝鲁特美国大学医学中心医院因为爆炸，急救室被<strong>炸去了一半</strong>，剩余的部分无法收容几百个挤在门口的病人。该医学中心门口的救护车、军车、小轿车上都<strong>挤满了受伤的病人</strong>，但也没有医院可以转移了。更为严重的是爆炸<strong>破坏了电力系统</strong>，医院的许多<strong>抢救设备无法使用</strong>。</p>
+<p>从黎巴嫩国家媒体提供的照片来看，<strong>总理府的门窗</strong>全部被爆炸震的掉在地上；<strong>总统官邸巴卜达宫</strong>的破坏更为严重；<strong>黎巴嫩前总理的房子</strong>也因爆炸损坏。</p>
+<p>截至2020年8月5日，现场状况相对稳定，官方没有公布是否有次生灾害的可能性。贝鲁特市长表示，爆炸造成<strong>30万人</strong>无家可归。据公开资料显示，黎巴嫩首都贝鲁特的人口占黎全国人口的40%，约有150万人，因此受该事故影响而无家可归的<strong>30万人</strong>，占贝鲁特人口的20%。损失高达<strong>30亿美元</strong>。此外，爆炸导致该国仅剩<strong>不足一个月的粮食储备</strong>。</p>
+<p>2020年8月5日，贝鲁特市长阿布德对媒体表示，该次爆炸造成的经济损失预计将达到<strong>100亿至150亿美元</strong>。<code>“贝鲁特已经成为一个满目疮痍的城市，半个城市都被毁了，数十万民众在2-3个月内都无法回到自己家中，这是黎巴嫩现代史上遭遇的最大危机”</code>。</p>
+<p>2020年8月8日，黎巴嫩首都贝鲁特有数千人参加集会，要求<strong>政府辞职</strong>和<strong>实施改革</strong>。集会很快演变成示威者与执法人员的<strong>大规模冲突</strong>。示威者占领了四个部委和银行协会的办公楼。冲突造成<strong>700多人受伤</strong>和<strong>一名执法人员死亡</strong>。</p>
+<p>当地时间2020年8月10日晚，黎巴嫩总理哈桑·迪亚卜发表电视讲话，宣布<strong>该届政府辞职</strong>。</p>
+<p>当地时间2020年8月30日，黎巴嫩部长会议主席发布报告，贝鲁特港口爆炸造成<strong>30万人</strong>无家可归，损失高达<strong>150亿美元</strong>。此外有<strong>5万栋房屋</strong>、<strong>9家大型医院</strong>和<strong>178所学校</strong>受损。</p>
+<h2 id="事故原因"><a href="#事故原因" class="headerlink" title="事故原因"></a>事故原因</h2><p>2020年8月4日，<strong>以色列</strong>方面发布消息，与该事件无关。</p>
+<p>有报道称，爆炸是由于化学物质的自燃而导致的。黎巴嫩安全部门负责人阿巴斯·易卜拉欣表示，港口仓库中储存着可燃化学物质。黎巴嫩总理哈桑·迪亚卜指出爆炸发生地附近储存了<strong>约2750吨</strong>的硝酸铵，这些硝酸铵在<strong>多年前</strong>被黎巴嫩海关扣押，储存在港口区内，爆炸或与硝酸铵储存不当有关。</p>
+<p>2020年8月17日，当地媒体报道，黎巴嫩司法部门宣布了贝鲁特爆炸案的初步调查结果，确认不存在传言中的导弹或飞机，也不存在袭击导致这场灾难的可能性。调查结果显示，贝鲁特港口<strong>12号仓库</strong>的管理存在<strong>严重疏忽</strong>，因为仓库内除了发生爆炸的<strong>2750吨硝酸铵</strong>，还存放了<strong>大量</strong>的烟花和爆竹。</p>
+<h2 id="国际援助"><a href="#国际援助" class="headerlink" title="国际援助"></a>国际援助</h2><h4 id="伊拉克"><a href="#伊拉克" class="headerlink" title="伊拉克"></a>伊拉克</h4><p>伊拉克当地时间2020年8月4日晚间，<strong>伊拉克总理卡迪米</strong>、<strong>总统萨利赫</strong>及<strong>议长哈布希</strong>分别就贝鲁特发生爆炸一事声援黎巴嫩政府及人民，向事件遇难者表示哀悼，并表明伊拉克政府对黎巴嫩的坚定支持。总理卡迪米向伊拉克卫生部做出指示，迅速组建一支医疗队，为黎巴嫩提供紧急援助。医疗队由多科室的医护人员组成，将携带必要的药品与医疗用品，于2020年8月5日启程前往黎巴嫩，为当地民众提供医疗救援。</p>
+<h4 id="英国"><a href="#英国" class="headerlink" title="英国"></a>英国</h4><p>据BBC报道，英国首相表示，<strong>随时准备</strong>为黎巴嫩提供任何必要援助。</p>
+<h4 id="伊朗"><a href="#伊朗" class="headerlink" title="伊朗"></a>伊朗</h4><p>据BBC报道，伊朗外长表示，<strong>随时准备</strong>为黎巴嫩提供任何必要援助</p>
+<h4 id="加拿大"><a href="#加拿大" class="headerlink" title="加拿大"></a>加拿大</h4><p>加拿大当地时间2020年8月5日晚，<strong>加拿大政府</strong>在渥太华宣布，将为黎巴嫩贝鲁特发生的重大爆炸事件向黎方提供<strong>500万加元</strong>的<strong>人道主义援助</strong>。<strong>加拿大全球事务部(外交部)**表示，这笔援助中，包括经加拿大红十字会向黎巴嫩红十字会等当地人道主义合作伙伴提供的</strong>150万加元**首期资金，旨在帮助满足受此次事件影响的民众的紧急需求。加方表示，其捐款将用于支持贝鲁特当地紧急医疗服务，并提供庇护所、食品和其他必需品等援助。</p>
+<h4 id="中国-1"><a href="#中国-1" class="headerlink" title="中国"></a>中国</h4><p>2020年8月6日，中国<strong>第18批赴黎巴嫩维和医疗分队</strong>接到<strong>联合国驻黎巴嫩临时部队司令部</strong>通知，中国赴黎维和医疗分队清点药品准备救援；8月9日，中国政府中东问题特使翟隽在紧急援助黎巴嫩<strong>高级别视频协调</strong>会上宣布<strong>中国政府</strong>将为黎巴嫩提供<strong>100万美元现汇</strong>援助，用于支持黎方救治贝鲁特港爆炸事件中的受伤民众，并向蒙受巨大损失或流离失所的家庭提供援助。</p>
+<h4 id="世界银行"><a href="#世界银行" class="headerlink" title="世界银行"></a>世界银行</h4><p>2020年8月5日，世界银行表示，他们已准备评估黎巴嫩首都贝鲁特港口爆炸事故的损失和重建需求，将努力<strong>动员公共及私人融资</strong>以帮助其开展城市<strong>灾后重建</strong>。世界银行在一份官方声明中表示，将对现有资源进行重新规划，寻求更多的资金来帮助这个城市的受灾民众重建生活。但世界银行目前并未说明哪些资源将用于黎巴嫩首都的灾后重建。</p>
+<h4 id="紧急援助黎巴嫩高级别视频协调会"><a href="#紧急援助黎巴嫩高级别视频协调会" class="headerlink" title="紧急援助黎巴嫩高级别视频协调会"></a>紧急援助黎巴嫩高级别视频协调会</h4><p>2020年8月9日，<strong>紧急援助黎巴嫩高级别视频协调会</strong>由联合国和法国共同举办，来自_联合国、法国、美国、中国、俄罗斯、西班牙、意大利、埃及、卡塔尔以及国际货币基金组织、世界银行、国际红十字与红新月会、欧盟_等<strong>国家</strong>和<strong>国际组织的三十多位国家元首、政府首脑或代表以及负责人</strong>与会。与会各方承诺短期内为黎巴嫩提供<strong>2.527亿欧元</strong>紧急援助。</p>
+<h4 id="联合国-1"><a href="#联合国-1" class="headerlink" title="联合国"></a>联合国</h4><p>2020年8月11日，正在黎巴嫩的<strong>世界粮食计划署总干事比斯利</strong>又证实，已经向黎巴嫩筹调运输了<strong>1.75万吨面粉</strong>；此外，粮食计划署还将向黎巴嫩提供能<strong>满足三个月需求</strong>的小麦和谷物。运送粮食的船已改道至黎巴嫩另一座重要港口城市的黎波里和南部的赛达港卸货——而据黎巴嫩媒体报道，贝鲁特港预计本周也将开始<strong>恢复使用</strong>。</p>
+]]></content>
+      <categories>
+        <category>纪实</category>
+        <category>灾难</category>
+      </categories>
+      <tags>
+        <tag>灾难</tag>
+        <tag>纪实</tag>
+      </tags>
   </entry>
   <entry>
     <title>红岩杯 CTF 我的 WP</title>
@@ -631,194 +452,6 @@
       </tags>
   </entry>
   <entry>
-    <title>极递云课Windows版辅助套件（应官方要求已经停止开放下载）</title>
-    <url>/2022/11/01/%E6%9E%81%E9%80%92%E4%BA%91%E8%AF%BEWindows%E7%89%88%E8%BE%85%E5%8A%A9%E5%A5%97%E4%BB%B6/gtClass-Auto/</url>
-    <content><![CDATA[<h1 id="极递云课-自动签到-amp-解除锁屏-amp-显示教师控件-amp-自动上课并切换课堂"><a href="#极递云课-自动签到-amp-解除锁屏-amp-显示教师控件-amp-自动上课并切换课堂" class="headerlink" title="极递云课 自动签到 &amp; 解除锁屏 &amp; 显示教师控件 &amp; 自动上课并切换课堂"></a>极递云课 自动签到 &amp; 解除锁屏 &amp; 显示教师控件 &amp; 自动上课并切换课堂</h1><p><code>“极递云课第三方登录器”仅 合肥皖智中学 可用（不知道莲花校区行不行），其他学校软件会无法正常登陆</code><br><code>“极递云课小助手”普遍适用</code></p>
-<span id="more"></span>
-<p>软件可能被杀毒软件报毒，但这是我亲手写的，不包含病毒（我的能力还写不出来），请放心添加信任。</p>
-<h2 id="套件安装教程"><a href="#套件安装教程" class="headerlink" title="套件安装教程"></a>套件安装教程</h2><h3 id="官方启动器-安装"><a href="#官方启动器-安装" class="headerlink" title="官方启动器 安装"></a>官方启动器 安装</h3><p>到<a href="https://hfwzzx.gtclass.cn/">极递云课合肥皖智中学专网</a>下载PC版启动器。<br>并将其安装到<code>默认路径</code>。</p>
-<h3 id="极递云课小助手-安装"><a href="#极递云课小助手-安装" class="headerlink" title="极递云课小助手 安装"></a>极递云课小助手 安装</h3><p>下载<a href="https://dtx-qaq.lanzoul.com/iSDtN0ey2n2b">极递云课小助手安装器</a>，打开后，点击安装按钮，提示安装成功即可。<br>此软件包含 <strong>自动签到 &amp; 解除锁屏 &amp; 教师控件</strong> 功能，教师控件可让你看到同学进出课堂，并且能在老师的文档上画画。软件运行时，可用快捷键 <strong>F6</strong> 打开解除锁屏界面， <strong>F7</strong> 使用显示教师控件功能。</p>
-<p>安装成功后，无论是从 官方网站 手动进入课堂还是通过 极递云课第三方登录器 自动进入课堂，都可以自动同时运行 极递云课小助手，无需再手动操作打开。</p>
-<h3 id="极递云课第三方登录器-安装"><a href="#极递云课第三方登录器-安装" class="headerlink" title="极递云课第三方登录器 安装"></a>极递云课第三方登录器 安装</h3><p><code>这个软件新鲜出炉，未经长久测试，可能有重大Bug</code></p>
-<p>下载<a href="https://dtx-qaq.lanzoul.com/iFOFd0eyqtdc">极递云课第三方登录器</a>，无需安装，打开即可使用，打开后输入账号密码并勾选自动登录，程序会获取当天课表(如果当天没课，则会获取下一次有课那天的课表)并<strong>自动启动课堂</strong>和<strong>切换课堂</strong></p>
-<p>如果你甚至懒得关闭进入课堂后自动打开的音视频设置界面，可以拿弹窗拦截软件拦截（火绒、360都有）</p>
-<p>如果需要开机自动运行，<del>我懒，没写开机启动功能</del>请自行按如下方法操作：</p>
-<p>1.桌面上右键<strong>极递云课第三方登录器</strong>图标，新建快捷方式。 </p>
-<p>2.按 Win + R 键打开运行窗口，输入指令<code>shell:startup</code>，并将第一步的快捷方式拉入打开的文件夹。可能会有杀软拦截，允许并添加信任即可。</p>
-<p>以上便完成全部安装过程，可以更愉快的上网课啦~</p>
-<h3 id="演示视频"><a href="#演示视频" class="headerlink" title="演示视频"></a>演示视频</h3><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
-    <iframe src="//player.bilibili.com/player.html?aid=1451683095&bvid=BV17i421o79Z&cid=1463285801&page=1"  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe>
-</div>
-]]></content>
-      <categories>
-        <category>技术</category>
-        <category>破解</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>极递云课</tag>
-        <tag>网课</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>高考很大，生活更大</title>
-    <url>/2021/06/07/%E9%AB%98%E8%80%83%E5%BE%88%E5%A4%A7%EF%BC%8C%E7%94%9F%E6%B4%BB%E6%9B%B4%E5%A4%A7/The%20National%20College%20Entrance%20Examination%20of%202021/</url>
-    <content><![CDATA[<h6 id="——写在高考日"><a href="#——写在高考日" class="headerlink" title="——写在高考日"></a>——写在高考日</h6><span id="more"></span>
-<p>写给考生和未来的自己：</p>
-<p>人的畏惧来源大致有二：一是过去的不可更改性；二是未来的不可预知性。而高考正好占了这两点。过去不可更改：你是学霸也好，学渣也罢，无论你复习得怎么样都成了定数。“当天上星河转命已定盘，待绝笔墨痕干宿敌已来犯”，高考这个宿敌来了。被高考煎熬了许久，也该向这个死敌宣战了。不论你高考的目的如何，不论你为了谁，为了什么而踏进考场，这都是一场与你自己的较量，既然选择了远方，便只顾风雨兼程，愿你们前程似锦，未来可期。</p>
-<p>多年之后总有一个瞬间，你会意识到高考也许是你此生最简单的一场考试。因为有太多人和你一样在乎你的这场考试，甚至比你更在乎。你可以在十字路口，单凭一张准考证拦下警车。在那个时刻，单凭「高考」两个字，你可以在路上一路畅行无碍。那时你根本想象不到，接下来的人生有多少「考试」要独自面对。你会碰上无数次来不及和赶不上的时刻，你会发现将那两个字替换成任何别的情景，心仪工作的面试，心爱女孩的约会，除非关乎生死的大事，否则都不会再有这样的魔力。</p>
-<p>据说高考阅卷老师批阅作文，平均时间是一篇 40 秒。曾经人们为此愤愤，觉得在这样短的时间内做决断真是草率。可是接下来的人生中，你会发现 40 秒的时间，简直是尊重。你会用多长时间决定，一个观点你是赞同还是反对？你会用多长时间决定，一本书要不要买下来？你会用多长时间决定，投奔一家公司？你会用多长时间决定，一个人值不值得做你的朋友？你会用多长时间决定，奔向或逃离一座城市？你会用多长时间决定，爱上一个人，然后闯进 ta 的生活？够 40 秒吗？</p>
-<p>在高考之前，人生似乎是一条单行线，几乎所有的人都要排着队，从一条路上穿过。高考之后，是穿过山谷进入平原。眼前有无数方向，以前排成一队的所有人，踏上了不同的小径。路，越来越多，与你结伴的人，越来越少。你曾经痛恨学校安排的课程，老师布置的作业，枯燥乏味的课本和成堆的辅导书，和那个唯一的目标——高考。你想的最多的是，高考过后，你的人生你来做主。突然有一天，你发现你真的有了掌控权。你决定自己每天要学些什么，你决定自己每天要做些什么，你决定你的目标是什么。你发现，这一切原来没有那么简单。你让自己不堪重负，或是无所事事，找来找去总是找不到那个平衡点。这时你又开始怀念，那些曾经安排好的课程，安排好的作业，安排好的目标，安排好的日子。你花了更多的时间，花了更多的金钱，只为再给自己找一个老师，找一段「安排」。到底是只有唯一答案的考卷更难，还是满是正确答案的人生更难？这道题，本身就很难。</p>
-<p>你要忍，忍到春暖花开；你要走，走到灯火通明；你要看过世界辽阔，再评判是好是坏；你要卯足劲变好，再旗鼓相当站在不敢想象的人身边；你要变成想象中的样子，这件事，一步都不能让。上人生的旅途罢，前途很远，也很暗。然而不要怕，不怕的人的面前才有路。</p>
-<p>高考很大，生活更大。</p>
-<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E9%AB%98%E8%80%83%E5%BE%88%E5%A4%A7%EF%BC%8C%E7%94%9F%E6%B4%BB%E6%9B%B4%E5%A4%A7/%E8%B7%83%E9%BE%99%E9%97%A8.jpg" alt="跃龙门"></p>
-]]></content>
-      <categories>
-        <category>文章</category>
-      </categories>
-      <tags>
-        <tag>高考</tag>
-        <tag>文章</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2021新年快乐！</title>
-    <url>/2021/01/01/2021%E6%96%B0%E5%B9%B4/2021%20new%20year/</url>
-    <content><![CDATA[<h1 id="新-年-快-乐！"><a href="#新-年-快-乐！" class="headerlink" title="新 年 快 乐！"></a>新 年 快 乐！</h1><p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/2021%E6%96%B0%E5%B9%B4/2021%E6%96%B0%E5%B9%B4.png" alt="新年好"></p>
-<p><code>所求皆如愿,所行化坦途,多喜乐,长安宁.</code></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>2020即将过去</title>
-    <url>/2020/12/31/2020%E7%BA%AA%E5%BF%B5/2020%E7%BA%AA%E5%BF%B5/</url>
-    <content><![CDATA[<h1 id="2020："><a href="#2020：" class="headerlink" title="2020："></a>2020：</h1><p>2020年元旦，UPUPOO转让暴毙</p>
-<p>年初《我的三体章北海传》播出</p>
-<span id="more"></span>
-<p>第一次刷脸支付<br><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/2020%E7%BA%AA%E5%BF%B5/%E5%88%B7%E8%84%B8.png" alt="第一次刷脸支付"></p>
-<p>第一个个人网站<br><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/2020%E7%BA%AA%E5%BF%B5/%E4%B8%AA%E7%BD%91.png" alt="第一个个人网站"></p>
-<p>第一次上手写程序（太久没更新，现在“过期”了，小牛接手后拿源码改了滑动签到）<br><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/2020%E7%BA%AA%E5%BF%B5/%E7%BC%96%E7%A8%8B.png" alt="第一次上手写程序"></p>
-<p>2020.4.3老番茄成为B站第一个1000万粉UP主</p>
-<p>黎巴嫩政府辞职</p>
-<p>鸽了1年的2077终于在年底发售</p>
-<p>还有那一塌糊涂的中考</p>
-<p>Adobe Flash一路走好</p>
-<p>……</p>
-<p>随便想一想，就有这么多事啊，有好也有坏<br>希望明年能如意吧<br><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/2020%E7%BA%AA%E5%BF%B5/%E5%B0%8F%E5%8D%81%E7%A5%9D%E7%A6%8F.png" alt="小十的话"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>关于极域电子教室</title>
-    <url>/2020/10/17/%E5%85%B3%E4%BA%8E%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/JIYU/</url>
-    <content><![CDATA[<h1 id="阅前提示"><a href="#阅前提示" class="headerlink" title="阅前提示:"></a>阅前提示:</h1><p>1.在<strong>断连状态</strong>下将<strong>无法</strong>接收教师端发出的文件</p>
-<p>2.在老师讲重点的时候仍然要<strong>注意听讲</strong></p>
-<p>3.在<strong>较长时间</strong>后方法可能会<strong>失效</strong></p>
-<p>4.大部分机房都有<strong>冰点还原精灵</strong>，可以<strong>随便造</strong></p>
-<span id="more"></span>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>让信息技术课变得索然无味的极域电子教室↓↓↓</p>
-<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E4%B8%BB%E8%A7%92.webp" alt="极域电子教室"></p>
-<p>而且一般手段<strong>无法解决</strong>它</p>
-<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E6%90%9E%E4%B8%8D%E5%AE%9A.webp" alt="无法通过任务管理器直接终止进程"></p>
-<hr>
-<h2 id="1-方法一·最常规"><a href="#1-方法一·最常规" class="headerlink" title="1.方法一·最常规"></a>1.方法一·最常规</h2><blockquote>
-<p>此方法在已经受到教师控制的电脑上无法操作</p>
-</blockquote>
-<p>首先<strong>Win+R</strong>打开-运行-输入<code>services.msc</code></p>
-<p>然后按<strong>Enter回车键</strong>打开本地服务</p>
-<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1.webp" alt="本地服务界面"></p>
-<p>找到<strong>S</strong>开头的一系列服务</p>
-<p>在其中找到<strong>Student Service</strong>服务，右键它，点击属性</p>
-<p>(我的笔记本没有极域电子教室，就用另一个服务<strong>代替</strong>演示一下)</p>
-<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E5%85%B7%E4%BD%93%E6%AD%A5%E9%AA%A4.webp" alt="具体步骤图示"></p>
-<p>随后出现下图的对话框，<strong>等待</strong>系统完成操作即可</p>
-<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C.webp" alt="系统操作"></p>
-<p>然后就是熟悉的<strong>Ctrl+Shift+Esc</strong>打开<strong>任务管理器</strong></p>
-<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86%E5%99%A8.webp" alt="任务管理器"></p>
-<p>在进程中找到<strong>S</strong>开头的一系列进程</p>
-<p>在其中找到<strong>StudentMain.exe</strong>进程，右键它，点击<strong>结束进程</strong></p>
-<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E7%9B%AE%E6%A0%87%E8%BF%9B%E7%A8%8B.webp" alt="目标进程"></p>
-<p>即可脱离老师的<strong>监视与控制</strong></p>
-<hr>
-<h2 id="2-方法二·NTSD"><a href="#2-方法二·NTSD" class="headerlink" title="2.方法二·NTSD"></a>2.方法二·NTSD</h2><blockquote>
-<p>此方法在已受到教师控制的电脑上无法操作</p>
-</blockquote>
-<p><strong>Xp</strong>可直接使用，<strong>Win7及以上</strong>要使用U盘或者网络拷入ntsd.exe文件(拷入<strong>C:\Windows\System32</strong>)</p>
-<p>上一步完成后<strong>Win+R</strong>打开-运行-，输入<code>cmd</code>然后按<strong>Enter回车键</strong></p>
-<p>在弹出的Dos命令框内输入<code>ntsd -c q -pn StudentMain.exe</code></p>
-<p>大部分情况下可行，运行完就已断连</p>
-<hr>
-<h2 id="3-方法三·网络"><a href="#3-方法三·网络" class="headerlink" title="3.方法三·网络"></a>3.方法三·网络</h2><blockquote>
-<p>Tips:<br>   1.如果有聪明的老师设置了断网锁屏那还是省省吧<br>   2.云机房这属于自杀行为</p>
-</blockquote>
-<h5 id="拔网线"><a href="#拔网线" class="headerlink" title="拔网线"></a>拔网线</h5><p>最<strong>暴力快捷</strong>的方法</p>
-<p>弯腰<strong>拔掉</strong>主机后闪着光的<strong>网线</strong>即可<strong>脱离控制</strong></p>
-<h5 id="禁用网络"><a href="#禁用网络" class="headerlink" title="禁用网络"></a>禁用网络</h5><p>比拔网线<strong>优雅一点</strong></p>
-<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E6%96%B9%E6%B3%95%E6%B3%A8%E9%87%8A.webp" alt="方法注释"></p>
-<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E6%AD%A5%E9%AA%A41.webp" alt="步骤1"></p>
-<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E6%AD%A5%E9%AA%A42.webp" alt="步骤2"></p>
-<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E6%AD%A5%E9%AA%A43.webp" alt="步骤3"></p>
-<ul>
-<li>关闭网络的<strong>方法很多</strong>，可以自行查找</li>
-</ul>
-<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><p><strong>脱离控制</strong>但是你也<strong>上不了网</strong>了、、、如果你喜欢玩扫雷也不错</p>
-<hr>
-<h2 id="4-方法四·找密码"><a href="#4-方法四·找密码" class="headerlink" title="4.方法四·找密码"></a>4.方法四·找密码</h2><p>这个方法<strong>年事已高</strong>可能已经<strong>失效</strong>了</p>
-<p><strong>Win+R</strong>打开-运行-，输入<code>regedit</code>然后按<strong>Enter回车键</strong></p>
-<p>在弹出的<strong>注册表编辑器</strong>找到目录：HKEY_LOCAL_MACHINE\SOFTWARE\TopSomain\e-Learning Class Standard\1.00\</p>
-<p>网上有很多不同版本的<strong>注册表目录</strong>，可以自行百度查找</p>
-<p>再找一找名称是<strong>uninstallpasswd</strong>的注册表项，后面有一个值是passwdXXXXXX，那么passwd后面的XXXXXX就是这台电脑的<strong>极域电子教室密码</strong></p>
-<p>如果你<strong>没找到</strong>，或者是看到一堆你不认识的<strong>字符串</strong>，那就放弃这个方法吧</p>
-<p>找到密码后右键状态栏里的极域电子教室，点击设置，输入密码，点击确定，然后即可<strong>为所欲为</strong></p>
-<hr>
-<h2 id="5-方法五·安全模式-网络安全模式"><a href="#5-方法五·安全模式-网络安全模式" class="headerlink" title="5.方法五·安全模式/网络安全模式"></a>5.方法五·安全模式/网络安全模式</h2><blockquote>
-<p>Tips:<br>   网络安全模式<strong>可能</strong>在<strong>已被控制</strong>的电脑上仍<strong>有效</strong>(未经测试)<br>   有的机房里面的电脑使用了<strong>软件保护卡</strong>，安全模式和PE都无法使用</p>
-</blockquote>
-<h5 id="网络安全模式"><a href="#网络安全模式" class="headerlink" title="网络安全模式"></a>网络安全模式</h5><p>在<strong>启动</strong>电脑的时候不停地按下<strong>F8</strong>或按住<strong>Ctrl</strong>进入选择项</p>
-<p>用’↑’’↓’键选择<strong>网络安全模式</strong>按回车进入(注意是<strong>网络安全模式</strong>，<strong>实在不行</strong>再使用<strong>啥也干不了</strong>的<strong>安全模式</strong>)</p>
-<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E9%80%89%E6%8B%A9%E9%A1%B9%E7%95%8C%E9%9D%A2.webp" alt="选择项界面"></p>
-<p>若是不放心可<strong>重复方法一</strong>关闭网络安全模式下的学生端</p>
-<hr>
-<h2 id="6-方法六·Taskkill"><a href="#6-方法六·Taskkill" class="headerlink" title="6.方法六·Taskkill"></a>6.方法六·Taskkill</h2><blockquote>
-<p>Tips：此方法仍需要<strong>ntsd</strong></p>
-</blockquote>
-<p>又是熟悉的<strong>Win+R</strong>打开-运行-，输入<code>cmd</code>然后按<strong>Enter回车键</strong></p>
-<p>这次输入<code>taskkill /im studentmain.exe /f</code></p>
-<p>如果成功了就<strong>直接关闭</strong>了学生端</p>
-<p>但是大部分情况有<strong>防杀进程</strong></p>
-<p>此时会显示下图</p>
-<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF.webp" alt="错误信息"></p>
-<p>记下后面的<strong>pid码</strong></p>
-<p>继续输入<code>ntsd /p PID</code>将<strong>PID</strong>改为刚才记下的<strong>pid码</strong></p>
-<p>然后再回车，即完成此方法</p>
-<hr>
-<h2 id="7-方法七·利用Windows关机特色"><a href="#7-方法七·利用Windows关机特色" class="headerlink" title="7.方法七·利用Windows关机特色"></a>7.方法七·利用Windows关机特色</h2><p>开机后在桌面新建一个文本文档</p>
-<p>随便写点东西，<strong>不保存</strong>，然后按<strong>关机键</strong></p>
-<p>Windows系统会<strong>开始关闭程序</strong>，但是由于<strong>文本文档没保存</strong>，会显示一个可以<strong>取消关机</strong>的界面(考验手速)，如果你点到了，那么恭喜，一般情况下学生端应该<strong>已经关闭</strong>，但是此时你的<strong>电脑没关闭</strong>，开始<strong>快乐</strong>吧</p>
-<hr>
-<h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><p>若是打开浏览器显示<strong>此网页已被锁定</strong></p>
-<p>大部分情况是部分<strong>特定域名被屏蔽</strong></p>
-<p>建议自己<strong>背一两个搜索引擎域名</strong>方便使用</p>
-<blockquote>
-<p>网络上仍有许多方法关闭学生端<br>欢迎补充</p>
-</blockquote>
-<hr>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>祝大家国庆中秋双节快乐！</p>
-<ul>
-<li><code>时逢华诞玉轮圆，双喜临门不夜天</code></li>
-</ul>
-<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E5%9B%BD%E5%BA%86%E4%B8%AD%E7%A7%8B%E5%BF%AB%E4%B9%90.webp" alt="国庆中秋快乐"></p>
-<hr>
-<p><a href="https://www.bilibili.com/read/cv7800202">在Bilibili阅读本文</a></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-        <category>破解</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>极域电子教室</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MarkDown测试</title>
     <url>/2020/10/07/MarkDown/MarkDown/</url>
     <content><![CDATA[<p>本文章用于测试MarkDown效果</p>
@@ -936,6 +569,118 @@
       </tags>
   </entry>
   <entry>
+    <title>关于极域电子教室</title>
+    <url>/2020/10/17/%E5%85%B3%E4%BA%8E%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/JIYU/</url>
+    <content><![CDATA[<h1 id="阅前提示"><a href="#阅前提示" class="headerlink" title="阅前提示:"></a>阅前提示:</h1><p>1.在<strong>断连状态</strong>下将<strong>无法</strong>接收教师端发出的文件</p>
+<p>2.在老师讲重点的时候仍然要<strong>注意听讲</strong></p>
+<p>3.在<strong>较长时间</strong>后方法可能会<strong>失效</strong></p>
+<p>4.大部分机房都有<strong>冰点还原精灵</strong>，可以<strong>随便造</strong></p>
+<span id="more"></span>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>让信息技术课变得索然无味的极域电子教室↓↓↓</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E4%B8%BB%E8%A7%92.webp" alt="极域电子教室"></p>
+<p>而且一般手段<strong>无法解决</strong>它</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E6%90%9E%E4%B8%8D%E5%AE%9A.webp" alt="无法通过任务管理器直接终止进程"></p>
+<hr>
+<h2 id="1-方法一·最常规"><a href="#1-方法一·最常规" class="headerlink" title="1.方法一·最常规"></a>1.方法一·最常规</h2><blockquote>
+<p>此方法在已经受到教师控制的电脑上无法操作</p>
+</blockquote>
+<p>首先<strong>Win+R</strong>打开-运行-输入<code>services.msc</code></p>
+<p>然后按<strong>Enter回车键</strong>打开本地服务</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1.webp" alt="本地服务界面"></p>
+<p>找到<strong>S</strong>开头的一系列服务</p>
+<p>在其中找到<strong>Student Service</strong>服务，右键它，点击属性</p>
+<p>(我的笔记本没有极域电子教室，就用另一个服务<strong>代替</strong>演示一下)</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E5%85%B7%E4%BD%93%E6%AD%A5%E9%AA%A4.webp" alt="具体步骤图示"></p>
+<p>随后出现下图的对话框，<strong>等待</strong>系统完成操作即可</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C.webp" alt="系统操作"></p>
+<p>然后就是熟悉的<strong>Ctrl+Shift+Esc</strong>打开<strong>任务管理器</strong></p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86%E5%99%A8.webp" alt="任务管理器"></p>
+<p>在进程中找到<strong>S</strong>开头的一系列进程</p>
+<p>在其中找到<strong>StudentMain.exe</strong>进程，右键它，点击<strong>结束进程</strong></p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E7%9B%AE%E6%A0%87%E8%BF%9B%E7%A8%8B.webp" alt="目标进程"></p>
+<p>即可脱离老师的<strong>监视与控制</strong></p>
+<hr>
+<h2 id="2-方法二·NTSD"><a href="#2-方法二·NTSD" class="headerlink" title="2.方法二·NTSD"></a>2.方法二·NTSD</h2><blockquote>
+<p>此方法在已受到教师控制的电脑上无法操作</p>
+</blockquote>
+<p><strong>Xp</strong>可直接使用，<strong>Win7及以上</strong>要使用U盘或者网络拷入ntsd.exe文件(拷入<strong>C:\Windows\System32</strong>)</p>
+<p>上一步完成后<strong>Win+R</strong>打开-运行-，输入<code>cmd</code>然后按<strong>Enter回车键</strong></p>
+<p>在弹出的Dos命令框内输入<code>ntsd -c q -pn StudentMain.exe</code></p>
+<p>大部分情况下可行，运行完就已断连</p>
+<hr>
+<h2 id="3-方法三·网络"><a href="#3-方法三·网络" class="headerlink" title="3.方法三·网络"></a>3.方法三·网络</h2><blockquote>
+<p>Tips:<br>   1.如果有聪明的老师设置了断网锁屏那还是省省吧<br>   2.云机房这属于自杀行为</p>
+</blockquote>
+<h5 id="拔网线"><a href="#拔网线" class="headerlink" title="拔网线"></a>拔网线</h5><p>最<strong>暴力快捷</strong>的方法</p>
+<p>弯腰<strong>拔掉</strong>主机后闪着光的<strong>网线</strong>即可<strong>脱离控制</strong></p>
+<h5 id="禁用网络"><a href="#禁用网络" class="headerlink" title="禁用网络"></a>禁用网络</h5><p>比拔网线<strong>优雅一点</strong></p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E6%96%B9%E6%B3%95%E6%B3%A8%E9%87%8A.webp" alt="方法注释"></p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E6%AD%A5%E9%AA%A41.webp" alt="步骤1"></p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E6%AD%A5%E9%AA%A42.webp" alt="步骤2"></p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E6%AD%A5%E9%AA%A43.webp" alt="步骤3"></p>
+<ul>
+<li>关闭网络的<strong>方法很多</strong>，可以自行查找</li>
+</ul>
+<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><p><strong>脱离控制</strong>但是你也<strong>上不了网</strong>了、、、如果你喜欢玩扫雷也不错</p>
+<hr>
+<h2 id="4-方法四·找密码"><a href="#4-方法四·找密码" class="headerlink" title="4.方法四·找密码"></a>4.方法四·找密码</h2><p>这个方法<strong>年事已高</strong>可能已经<strong>失效</strong>了</p>
+<p><strong>Win+R</strong>打开-运行-，输入<code>regedit</code>然后按<strong>Enter回车键</strong></p>
+<p>在弹出的<strong>注册表编辑器</strong>找到目录：HKEY_LOCAL_MACHINE\SOFTWARE\TopSomain\e-Learning Class Standard\1.00\</p>
+<p>网上有很多不同版本的<strong>注册表目录</strong>，可以自行百度查找</p>
+<p>再找一找名称是<strong>uninstallpasswd</strong>的注册表项，后面有一个值是passwdXXXXXX，那么passwd后面的XXXXXX就是这台电脑的<strong>极域电子教室密码</strong></p>
+<p>如果你<strong>没找到</strong>，或者是看到一堆你不认识的<strong>字符串</strong>，那就放弃这个方法吧</p>
+<p>找到密码后右键状态栏里的极域电子教室，点击设置，输入密码，点击确定，然后即可<strong>为所欲为</strong></p>
+<hr>
+<h2 id="5-方法五·安全模式-网络安全模式"><a href="#5-方法五·安全模式-网络安全模式" class="headerlink" title="5.方法五·安全模式/网络安全模式"></a>5.方法五·安全模式/网络安全模式</h2><blockquote>
+<p>Tips:<br>   网络安全模式<strong>可能</strong>在<strong>已被控制</strong>的电脑上仍<strong>有效</strong>(未经测试)<br>   有的机房里面的电脑使用了<strong>软件保护卡</strong>，安全模式和PE都无法使用</p>
+</blockquote>
+<h5 id="网络安全模式"><a href="#网络安全模式" class="headerlink" title="网络安全模式"></a>网络安全模式</h5><p>在<strong>启动</strong>电脑的时候不停地按下<strong>F8</strong>或按住<strong>Ctrl</strong>进入选择项</p>
+<p>用’↑’’↓’键选择<strong>网络安全模式</strong>按回车进入(注意是<strong>网络安全模式</strong>，<strong>实在不行</strong>再使用<strong>啥也干不了</strong>的<strong>安全模式</strong>)</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E9%80%89%E6%8B%A9%E9%A1%B9%E7%95%8C%E9%9D%A2.webp" alt="选择项界面"></p>
+<p>若是不放心可<strong>重复方法一</strong>关闭网络安全模式下的学生端</p>
+<hr>
+<h2 id="6-方法六·Taskkill"><a href="#6-方法六·Taskkill" class="headerlink" title="6.方法六·Taskkill"></a>6.方法六·Taskkill</h2><blockquote>
+<p>Tips：此方法仍需要<strong>ntsd</strong></p>
+</blockquote>
+<p>又是熟悉的<strong>Win+R</strong>打开-运行-，输入<code>cmd</code>然后按<strong>Enter回车键</strong></p>
+<p>这次输入<code>taskkill /im studentmain.exe /f</code></p>
+<p>如果成功了就<strong>直接关闭</strong>了学生端</p>
+<p>但是大部分情况有<strong>防杀进程</strong></p>
+<p>此时会显示下图</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF.webp" alt="错误信息"></p>
+<p>记下后面的<strong>pid码</strong></p>
+<p>继续输入<code>ntsd /p PID</code>将<strong>PID</strong>改为刚才记下的<strong>pid码</strong></p>
+<p>然后再回车，即完成此方法</p>
+<hr>
+<h2 id="7-方法七·利用Windows关机特色"><a href="#7-方法七·利用Windows关机特色" class="headerlink" title="7.方法七·利用Windows关机特色"></a>7.方法七·利用Windows关机特色</h2><p>开机后在桌面新建一个文本文档</p>
+<p>随便写点东西，<strong>不保存</strong>，然后按<strong>关机键</strong></p>
+<p>Windows系统会<strong>开始关闭程序</strong>，但是由于<strong>文本文档没保存</strong>，会显示一个可以<strong>取消关机</strong>的界面(考验手速)，如果你点到了，那么恭喜，一般情况下学生端应该<strong>已经关闭</strong>，但是此时你的<strong>电脑没关闭</strong>，开始<strong>快乐</strong>吧</p>
+<hr>
+<h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><p>若是打开浏览器显示<strong>此网页已被锁定</strong></p>
+<p>大部分情况是部分<strong>特定域名被屏蔽</strong></p>
+<p>建议自己<strong>背一两个搜索引擎域名</strong>方便使用</p>
+<blockquote>
+<p>网络上仍有许多方法关闭学生端<br>欢迎补充</p>
+</blockquote>
+<hr>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>祝大家国庆中秋双节快乐！</p>
+<ul>
+<li><code>时逢华诞玉轮圆，双喜临门不夜天</code></li>
+</ul>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E6%9E%81%E5%9F%9F%E7%94%B5%E5%AD%90%E6%95%99%E5%AE%A4/%E5%9B%BD%E5%BA%86%E4%B8%AD%E7%A7%8B%E5%BF%AB%E4%B9%90.webp" alt="国庆中秋快乐"></p>
+<hr>
+<p><a href="https://www.bilibili.com/read/cv7800202">在Bilibili阅读本文</a></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>破解</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>极域电子教室</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>图片视频测试</title>
     <url>/2020/10/06/%E5%9B%BE%E7%89%87%E8%A7%86%E9%A2%91%E6%B5%8B%E8%AF%95/test/</url>
     <content><![CDATA[<p>本文章用于测试图片插入和B站视频嵌入</p>
@@ -957,6 +702,104 @@
       </categories>
       <tags>
         <tag>测试功能</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于 Root 环境下的 Fake Location 虚拟定位</title>
+    <url>/2024/11/02/%E5%9F%BA%E4%BA%8ERoot%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84Fake%20Location%E8%99%9A%E6%8B%9F%E5%AE%9A%E4%BD%8D%E6%95%99%E7%A8%8B/Fake-Location/</url>
+    <content><![CDATA[<p><strong>文章内含已Root虚拟机资源。</strong></p>
+<p>成功实现虚拟定位后，可实现包括但不限于以下操作：减轻校园跑步打卡压力、游戏改战区、点亮地图/足迹……<br><img src="https://s2.loli.net/2024/03/09/2eWFJYGtjyEfwci.jpg" alt="41d10a457499b9070bc577c17c34a0efa7540f39.jpg"></p>
+<span id="more"></span>
+
+<h1 id="风险警告"><a href="#风险警告" class="headerlink" title="风险警告"></a>风险警告</h1><p><code>在 Root 环境内可能出现的风险，如：账号被冻结/封禁、腾讯 TP 监测无法通过、部分软件不允许在 Root 环境下运行……</code></p>
+<p>在遵循本教程操作前应悉知可能存在的风险，并自行决定是否继续学习操作，对造成的损失作者不负任何责任。</p>
+<p>所有下载的资源仅供学习，请于 24 H 后自行删除。</p>
+<p>本教程为第二版，第一版已失效删除，请配置过第一版的朋友关闭之前老版的模块防止冲突，并按后续步骤更新模块和软件（从第三步开始即可），以更新至第二版方案。</p>
+<hr>
+<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><p>本教程所需的所有资源：<a href="https://www.alipan.com/s/hEwenMJHz3M">阿里云盘资源链接</a></p>
+<p>（超过蓝奏云单次文件大小，只能用阿里云盘了。由于阿里云盘<strong>不支持</strong> .zip 和 .apk 文件分享，所以创建的是自释放程序 .exe ，请在 Windows 端运行解压）。</p>
+<h2 id="第一步-·-安装-影子虚拟机"><a href="#第一步-·-安装-影子虚拟机" class="headerlink" title="第一步 · 安装 影子虚拟机"></a>第一步 · 安装 影子虚拟机</h2><p>安装 <code>影子虚拟机240_美化版_带面具lsp.apk</code> ，这个虚拟机已 Root 并刷入 Magisk 模块与 LSPosed ，可以直接进行下一步。（如果你的手机这个虚拟机软件闪退，请自行寻找解决方法，如：<a href="https://blog.csdn.net/Amy_mumu/article/details/125989066">安卓 12 以上对 APP 进程数量有限制导致虚拟机闪退的解决办法</a>，或自行寻找不闪退的已 ROOT 虚拟机）</p>
+<h2 id="第二步-·-配置虚拟机环境和-Magisk"><a href="#第二步-·-配置虚拟机环境和-Magisk" class="headerlink" title="第二步 · 配置虚拟机环境和 Magisk"></a>第二步 · 配置虚拟机环境和 Magisk</h2><h3 id="配置虚拟机环境"><a href="#配置虚拟机环境" class="headerlink" title="配置虚拟机环境"></a>配置虚拟机环境</h3><ol>
+<li><p>打开虚拟机，按要求赋予<strong>所有权限</strong>（特别是<strong>悬浮窗权限</strong>）。第一次运行需要等待自动配置安卓，会慢一点。</p>
+</li>
+<li><p>进入虚拟机后，可以看到右侧有<strong>蓝色 V 形</strong>悬浮窗。<br><img src="https://s2.loli.net/2024/11/02/smERhZj9DgXNFlw.png" alt="悬浮窗"></p>
+</li>
+<li><p>点击它，打开<strong>设置</strong>。<br><img src="https://s2.loli.net/2024/11/02/xmihrNReYlJsyKQ.png" alt="设置"></p>
+</li>
+<li><p>点击 <strong>Magisk 支持</strong><br><img src="https://s2.loli.net/2024/11/02/WPrHaRZVIn4ESgT.png" alt="面具支持"></p>
+</li>
+<li><p>把灰色滑块<strong>打开</strong>变成蓝色滑块，在弹出的窗口中选择<strong>稍后重启</strong><br><img src="https://s2.loli.net/2024/11/02/p2saNACxzScihHZ.png" alt="开启面具"></p>
+</li>
+<li><p>再回到设置界面，点击<strong>超级用户设置</strong><br><img src="https://s2.loli.net/2024/11/02/e6fEABiku7DxHWT.png" alt="超级用户设置"></p>
+</li>
+<li><p>将蓝色滑块<strong>关闭</strong>成灰色，在弹出的窗口中选择<strong>立即重启</strong><br><img src="https://s2.loli.net/2024/11/02/NlacJ5AGReKI7jn.png" alt="关闭超级用户"></p>
+<h3 id="配置-Magisk"><a href="#配置-Magisk" class="headerlink" title="配置 Magisk"></a>配置 Magisk</h3></li>
+<li><p>待虚拟机重启后，打开 <strong>Magisk 软件</strong>，点击右下角<strong>模块</strong>，<strong>打开所有模块</strong>，随后重启虚拟机<br><img src="https://s2.loli.net/2024/11/02/SD8zZhsqkv73nGm.png" alt="打开模块"></p>
+</li>
+<li><p>待虚拟机重启后，再<strong>打开 Magisk 软件</strong>，确认<strong>所有模块均已启用</strong>，如果掉了，重复<strong>上一步</strong> 直到<strong>重启后</strong>三个模块全为启用状态（后续使用时如果软件没有正常破解，或打开 LSPosed 闪退，请也按<strong>上一步</strong> 检查模块状态）。</p>
+</li>
+</ol>
+<h2 id="第三步-·-导入并安装软件"><a href="#第三步-·-导入并安装软件" class="headerlink" title="第三步 · 导入并安装软件"></a>第三步 · 导入并安装软件</h2><p>打开虚拟机，用桌面右下角<strong>文件中转</strong>功能将 <code>Fake Location.apk</code>、<code>MT管理器.apk</code>、<code>HookVip-3.5.4.apk</code> 3 个安装包全部转入虚拟机并安装。</p>
+<p>由于更新了更强劲的 HookVip 模块，可以<strong>通杀全版本 Fake Location</strong> ，可以直接安装分享的最新版 Fake Location。（请使用 HookVip 的 <strong>3.5.4 版本</strong>，最新版已知会导致<strong>闪退</strong>）</p>
+<h2 id="第四步-·-配置-LSPosed"><a href="#第四步-·-配置-LSPosed" class="headerlink" title="第四步 · 配置 LSPosed"></a>第四步 · 配置 LSPosed</h2><p><code>以下设置是为了破解 Fake Location 以使用高级功能。</code></p>
+<ol>
+<li><p>打开 <strong>LSPosed</strong> ，点击<strong>模块</strong>（你们的应该只有 HookVip 这一个模块，其他模块是我干别的用的，不用理会），点击 <strong>HookVip</strong> 进入设置页面<br><img src="https://s2.loli.net/2024/11/02/3qFhuMDvP4i2JOT.png" alt="进入模块设置"></p>
+</li>
+<li><p>先点<strong>齿轮按钮</strong>打开一下这个模块，如果有提示就按提示操作。然后返回这个界面，<strong>勾选 Fake Location</strong> 即可破解会员权限<br><img src="https://s2.loli.net/2024/11/02/WbX4CIlgLyP6Qjh.png" alt="勾选 Fake Location"></p>
+</li>
+</ol>
+<h2 id="第五步-·-权限设置"><a href="#第五步-·-权限设置" class="headerlink" title="第五步 · 权限设置"></a>第五步 · 权限设置</h2><p>有时使用 Fake Location 会<strong>遇到卡死问题</strong>，这是因为系统权限处于严格状态，改成宽松状态即可，接下来是教程。</p>
+<p>打开 <strong>MT管理器</strong> ，点击左上角三个杠，点击<strong>终端模拟器</strong>，<code>第一次使用可能要安装</code>。</p>
+<p><img src="https://s2.loli.net/2024/03/09/34aVcDvTjAZw7ul.png" alt="权限设置8"></p>
+<ul>
+<li>打开命令行后输入</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">su</span><br></pre></td></tr></table></figure>
+<p>并回车。</p>
+<p>前面的 → 变为 # 说明有效。</p>
+<ul>
+<li>再输入</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">setenforce 0</span><br></pre></td></tr></table></figure>
+
+<p>并回车。</p>
+<p>不提示任何东西，不报错说明成功。请重启虚拟机以确保更改全部应用。</p>
+<p><img src="https://s2.loli.net/2024/03/09/9BSUrWREXzvgkNd.png" alt="权限设置9"></p>
+<h2 id="第六步-·-设置-Fake-Location-系统就绪时间"><a href="#第六步-·-设置-Fake-Location-系统就绪时间" class="headerlink" title="第六步 · 设置 Fake Location 系统就绪时间"></a>第六步 · 设置 Fake Location 系统就绪时间</h2><p>由于默认系统就绪时间太长，可能导致<strong>虚拟机启动后要多等待十几分钟才能开始模拟定位</strong>，所以我们要修改系统就绪时间</p>
+<p>打开 Fake Location ，点击右上角三个杠，点击<strong>设置</strong>，在<strong>系统就绪时间</strong>中设置一个较短的时间，建议为 5000 毫秒（即 5 秒）。</p>
+<p><img src="https://s2.loli.net/2024/11/02/WDsw5GFBiT2OoZ4.png" alt="设置 Fake Location 系统就绪时间"></p>
+<p><code>恭喜你，自此所有设置都已完成，已经可以顺利使用虚拟定位了。接下来是虚拟定位实战举例。</code></p>
+<h1 id="实战运用·同天智慧校园"><a href="#实战运用·同天智慧校园" class="headerlink" title="实战运用·同天智慧校园"></a>实战运用·同天智慧校园</h1><h2 id="使用-Fake-Location-进行体育跑步打卡。"><a href="#使用-Fake-Location-进行体育跑步打卡。" class="headerlink" title="使用 Fake Location 进行体育跑步打卡。"></a>使用 Fake Location 进行体育跑步打卡。</h2><h3 id="定位部分"><a href="#定位部分" class="headerlink" title="定位部分"></a>定位部分</h3><ul>
+<li><p>打开 <strong>Fake Location</strong> ，点击<strong>加号</strong>添加位置，在地图上找到太极运动场，单击<strong>跑道区域（避开禁区）</strong>，点击右下角勾选定位置，点击<strong>启动模拟</strong>。</p>
+</li>
+<li><p>成功启动模拟后，打开<strong>摇杆</strong>，在弹出的<strong>摇杆悬浮窗界面</strong>点击右下方<strong>方块</strong>打开设置，速度设置为<strong>汽车</strong>，打开<strong>步频模拟</strong>和<strong>GPS定位模拟</strong>。</p>
+</li>
+<li><p>打开同天智慧校园开始跑步，使用摇杆将位置调整到要移动的下一个位置，等待路径红线出现（移动时不会出现红线，需要等待，出现红线才代表小程序记录了你的移动），重复操作即可。（由于同天智慧校园的已知问题，可能会有很大几率不记录里程（吞里程），多拉几次总会记上一次的。）</p>
+</li>
+</ul>
+<h3 id="刷脸部分（以太极运动场为例）"><a href="#刷脸部分（以太极运动场为例）" class="headerlink" title="刷脸部分（以太极运动场为例）"></a>刷脸部分（以太极运动场为例）</h3><ul>
+<li><p>开始跑步后，在靠近入口的<strong>第 1 组摄像头</strong>刷<strong>一次脸</strong>，然后横穿操场在<strong>第 2 组摄像头</strong>刷<strong>第二次脸</strong>，然后横穿返回<strong>第 1 组摄像头</strong>刷<strong>第三次脸</strong></p>
+</li>
+<li><p>最后得到 <strong>121</strong> 组合的刷脸结果，即可通过刷脸检测。</p>
+</li>
+</ul>
+<h3 id="结束条件（非常重要）！！！"><a href="#结束条件（非常重要）！！！" class="headerlink" title="结束条件（非常重要）！！！"></a>结束条件（非常重要）！！！</h3><p>三个条件：</p>
+<ul>
+<li><strong>定位部分</strong>程累计到 <strong>2 公里</strong></li>
+<li><strong>刷脸部分已完成</strong></li>
+<li><strong>配速降到 4 分/公里</strong></li>
+</ul>
+<p>三个条件都已达成，即可结束运动。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>破解</category>
+      </categories>
+      <tags>
+        <tag>同天智慧校园</tag>
+        <tag>破解</tag>
+        <tag>重庆邮电大学</tag>
+        <tag>Root</tag>
       </tags>
   </entry>
   <entry>
@@ -1113,86 +956,243 @@ STBBRD排的版被我重新排了……排版微调太累了！</dd>
       </tags>
   </entry>
   <entry>
-    <title>8·4黎巴嫩首都爆炸事故</title>
-    <url>/2020/08/10/8%C2%B74%E9%BB%8E%E5%B7%B4%E5%AB%A9%E9%A6%96%E9%83%BD%E7%88%86%E7%82%B8%E4%BA%8B%E6%95%85/EITCOL/</url>
-    <content><![CDATA[<h1 id="贝鲁特大爆炸————8·4黎巴嫩首都爆炸事故"><a href="#贝鲁特大爆炸————8·4黎巴嫩首都爆炸事故" class="headerlink" title="贝鲁特大爆炸————8·4黎巴嫩首都爆炸事故"></a>贝鲁特大爆炸————8·4黎巴嫩首都爆炸事故</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>2020年8月4日下午6时左右，<strong>黎巴嫩首都</strong>贝鲁特港口区发生巨大爆炸，爆炸接连发生两次，爆炸威力相当于<strong>广岛原子弹</strong>爆炸当量的<strong>十分之一</strong>，导致多栋房屋受损，玻璃被震碎，天上升起红色烟雾 。爆炸发生后，黎巴嫩总理迪亚卜视察爆炸现场，宣布<strong>8月5日</strong>为<strong>国家哀悼日</strong> ，并表示黎巴嫩将向国际社会寻求帮助。</p>
-<p>此次爆炸造成<strong>至少190人死亡、6500多人受伤</strong>（伤亡结果为预估结果），<strong>3人失踪，30万人无家可归</strong>，损失高达<strong>150亿美元</strong>。黎巴嫩当局8月17日宣布，贝鲁特紧急状态延长至9月18日。</p>
-<p>2020年8月17日，当地媒体报道，黎巴嫩司法部门宣布了贝鲁特爆炸案的初步调查结果，贝鲁特港口12号仓库的管理存在<strong>严重疏忽</strong>，因为仓库内除了发生爆炸的<strong>2750吨硝酸铵</strong>，还存放了<strong>大量</strong>的烟花和爆竹。</p>
-<span id="more"></span>
-<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E8%B4%9D%E9%B2%81%E7%89%B9%E6%B8%AF%E5%8F%A3%E5%A4%A7%E7%88%86%E7%82%B8/%E6%B8%AF%E5%8F%A3%E9%99%84%E8%BF%91%E5%AE%8C%E5%85%A8%E8%A2%AB%E7%82%B8%E6%AF%811.jpg" alt="港口附近完全被炸毁"></p>
-<h2 id="记录视频"><a href="#记录视频" class="headerlink" title="记录视频"></a>记录视频</h2><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
-    <iframe src="//player.bilibili.com/player.html?aid=841670253&bvid=BV1J54y1i7DZ&cid=222503314&page=1"  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe>
-</div>
-
-
-<h2 id="事故经过"><a href="#事故经过" class="headerlink" title="事故经过"></a>事故经过</h2><p>黎巴嫩当地时间2020年8月4日下午6时左右，黎巴嫩首都贝鲁特港口区发生巨大爆炸，爆炸接连发生两次，导致多栋房屋受损，玻璃被震碎，天上升起红色烟雾。</p>
-<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E8%B4%9D%E9%B2%81%E7%89%B9%E6%B8%AF%E5%8F%A3%E5%A4%A7%E7%88%86%E7%82%B8/%E7%88%86%E7%82%B8%E7%9E%AC%E9%97%B4.png" alt="爆炸瞬间"></p>
-<p>爆炸波及<strong>240公里</strong>，起先是一股浓烟向天上弥漫，随后浓烟当中出现零星的爆炸火光，大约5秒后，巨大的火龙冲天而起，夹杂着小型爆炸的冲击波在<strong>一秒内席卷了视线内可见的建筑物</strong>。外围的白色烟尘率先向外扩散，火红色的蘑菇云紧随其后。目击者巴查·甘塔司说：<code>“就像世界末日一样，到处都是摇摇晃晃受伤的人，满地都是玻璃、坏掉的汽车。太可怕了！” </code></p>
-<p>一位驻黎巴嫩的外媒记者幸运的离起爆地点较远，在他的描述中，爆炸更<code>“像一场特大地震。” </code></p>
-<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E8%B4%9D%E9%B2%81%E7%89%B9%E6%B8%AF%E5%8F%A3%E5%A4%A7%E7%88%86%E7%82%B8/%E6%B8%AF%E5%8F%A3%E9%99%84%E8%BF%91%E5%AE%8C%E5%85%A8%E8%A2%AB%E7%82%B8%E6%AF%812.jpg" alt="港口附近完全被炸毁"></p>
-<p>爆炸导致贝鲁特多个街区严重受损，到处可见破损的建筑物和散落的玻璃碎片。在爆炸地点附近的阿什拉斐叶街区，居民比拉尔说，事发时整个街区<code>“就像遭受一场灾难”</code>，许多人受伤。据当地媒体报道，距爆炸地点<strong>10多公里</strong>的总统府建筑也受损。事发近两个小时后，现场依然浓烟滚滚，一些集装箱在爆炸中被掀飞、变形，旁边的仓库一片狼藉，纸箱等物品四处散落。</p>
-<h2 id="事故伤亡"><a href="#事故伤亡" class="headerlink" title="事故伤亡"></a>事故伤亡</h2><h6 id="截至2020年8月4日晚"><a href="#截至2020年8月4日晚" class="headerlink" title="截至2020年8月4日晚"></a>截至2020年8月4日晚</h6><p>初步统计显示，爆炸造成至少<strong>73人死亡，3000多人受伤</strong>。</p>
-<h6 id="截至2020年8月5日"><a href="#截至2020年8月5日" class="headerlink" title="截至2020年8月5日"></a>截至2020年8月5日</h6><p>黎巴嫩卫生部门称，爆炸已造成<strong>78人死亡、4000多人受伤</strong>。<strong>黎巴嫩总理哈桑·迪亚卜的妻子和女儿</strong>在爆炸中受伤，<strong>黎巴嫩长枪党秘书长</strong>在爆炸中身亡，<strong>国有电力公司董事长</strong>重伤垂死。贝鲁特省长表示，贝鲁特港口大爆炸发生后，<strong>10名救援人员遇难</strong>。联合国秘书长副发言人法尔汉·哈克（Farhan Haq）表示，共有<strong>48名联合国工作人员</strong>在爆炸中受伤。</p>
-<h6 id="截至2020年8月5日上午"><a href="#截至2020年8月5日上午" class="headerlink" title="截至2020年8月5日上午"></a>截至2020年8月5日上午</h6><p>黎巴嫩《每日星报》等多家媒体援引黎巴嫩红十字会的消息报道称，事故已造成超过<strong>100人死亡，4000多人受伤</strong>。</p>
-<h6 id="截至2020年8月5日-1"><a href="#截至2020年8月5日-1" class="headerlink" title="截至2020年8月5日"></a>截至2020年8月5日</h6><p>中国驻黎巴嫩大使馆证实，<strong>一名中国公民</strong>在黎巴嫩首都贝鲁特港口区爆炸中受轻伤。伤者是一名在黎中资企业员工，被碎玻璃划伤，在接受救治。</p>
-<h6 id="截至2020年8月5日-2"><a href="#截至2020年8月5日-2" class="headerlink" title="截至2020年8月5日"></a>截至2020年8月5日</h6><p><strong>荷兰驻黎巴嫩大使的夫人</strong>在爆炸中身受重伤，已经被送往医院救治。荷兰外交部发言人还表示，爆炸导致荷兰驻黎巴嫩大使馆严重受损，还造成<strong>使馆方面4人受伤</strong>。当地时间2020年8月8日，荷兰外交部表示，<strong>荷兰驻黎巴嫩大使夫人海德维赫斯·瓦尔特曼·莫利雷</strong>在贝鲁特大爆炸中受重伤，于当地时间8日去世。</p>
-<h6 id="截至2020年8月5日-3"><a href="#截至2020年8月5日-3" class="headerlink" title="截至2020年8月5日"></a>截至2020年8月5日</h6><p>黎巴嫩卫生部长表示，爆炸造成的<strong>死亡人数已经升至135人，约5000人受伤</strong>，仍有<strong>数十人下落不明</strong>。</p>
-<h6 id="截至2020年8月6日"><a href="#截至2020年8月6日" class="headerlink" title="截至2020年8月6日"></a>截至2020年8月6日</h6><p>德国外交部表示，<strong>德国驻贝鲁特大使馆的一名工作人员</strong>因爆炸死亡。该爆炸造成的<strong>死亡人数上升至137人，另有至少5000人受伤</strong>。随着搜寻失踪人员的工作继续进行，死亡人数预计还会上升。</p>
-<h6 id="截至2020年8月7日"><a href="#截至2020年8月7日" class="headerlink" title="截至2020年8月7日"></a>截至2020年8月7日</h6><p>该爆炸造成的<strong>死亡人数上升至157人，5000多人受伤</strong>，另有<strong>数十人依然下落不明</strong>。</p>
-<h6 id="截至2020年8月9日"><a href="#截至2020年8月9日" class="headerlink" title="截至2020年8月9日"></a>截至2020年8月9日</h6><p>黎巴嫩卫生部媒体办公室公布贝鲁特港口爆炸事件最新死伤数字，<strong>遇难人数上升至158人，逾6000人受伤</strong>，仍有<strong>21人失踪</strong>。</p>
-<h6 id="截至2020年08月11日下午"><a href="#截至2020年08月11日下午" class="headerlink" title="截至2020年08月11日下午"></a>截至2020年08月11日下午</h6><p>黎巴嫩看守政府卫生部长公布贝鲁特港口爆炸最新死伤数字，<strong>遇难人数已上升至171人，失踪人数在30到40人之间</strong>。<strong>大约1500名伤者</strong>需要特殊护理，<strong>120名患者</strong>仍处于<strong>重症状态</strong>。 </p>
-<h6 id="截至2020年08月17日"><a href="#截至2020年08月17日" class="headerlink" title="截至2020年08月17日"></a>截至2020年08月17日</h6><p>黎巴嫩大爆炸已造成至少<strong>177人死亡、6000多人受伤</strong>，另有<strong>数十人失踪</strong>。</p>
-<h6 id="截至2020年08月30日"><a href="#截至2020年08月30日" class="headerlink" title="截至2020年08月30日"></a>截至2020年08月30日</h6><p>贝鲁特港口爆炸事件中的<strong>死亡人数已上升至190人，超过6500人受伤，3人失踪</strong>。</p>
-<h2 id="事故处置"><a href="#事故处置" class="headerlink" title="事故处置"></a>事故处置</h2><h4 id="现场救援"><a href="#现场救援" class="headerlink" title="现场救援"></a>现场救援</h4><p>截至黎巴嫩当地时间2020年8月4日晚上9时30分，爆炸现场大火还在燃烧，消防车辆、救护车辆以及工程车辆在赶往现场，救护伤员并对现场进行清理。现场已被<strong>部队封锁</strong>，多个建筑受损。贝鲁特医院急诊已人满为患，伤者被送往城外医院进行救治。</p>
-<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E8%B4%9D%E9%B2%81%E7%89%B9%E6%B8%AF%E5%8F%A3%E5%A4%A7%E7%88%86%E7%82%B8/%E7%88%86%E7%82%B8%E5%90%8E%E7%8E%B0%E5%9C%BA.png" alt="爆炸后现场"></p>
-<p>2020年8月4日，黎巴嫩最高国防委员会已宣布贝鲁特<strong>进入紧急状态</strong>。</p>
-<p>2020年8月17日，黎巴嫩当局宣布，将这一<strong>紧急状态延长</strong>一个月至9月18日。</p>
-<h4 id="涉案调查"><a href="#涉案调查" class="headerlink" title="涉案调查"></a>涉案调查</h4><p>2020年8月17日，<strong>黎巴嫩海关关长达希尔</strong>因涉嫌黎首都贝鲁特港口区爆炸案于当天被捕，负责贝鲁特港口区爆炸案调查的法官索万当天在对达希尔进行<strong>约4个半小时问询</strong>后下令将其逮捕。索万迄今已对<strong>25名涉案人员</strong>提出指控，其中包括<strong>前海关关长迈尔希、贝鲁特港总经理库雷特姆</strong>等。</p>
-<p>2020年9月1日，一名黎巴嫩司法消息人士称，通过调查爆炸案而确定的<strong>25名相关人员</strong>，目前都已被黎巴嫩当局拘留。该消息人士称，当地时间2020年9月1日，首席调查法官法蒂·萨万对<strong>最后4名涉事者</strong>进行审问后，对他们发出了逮捕令。据报道，这4人分别是<strong>港口军事情报部门的负责人</strong>、<strong>国家安全局的少校</strong>和<strong>2名安全总局</strong>的成员。据称，他们所属的安全机构，以及黎巴嫩军队和黎巴嫩海关当局，是负责监督港口安全的主要机构。</p>
-<p>2020年10月1日，贝鲁特港爆炸案调查官法迪（Fadi Sawan）向存放<strong>硝酸铵</strong>的涉案船只的船东和船长签发逮捕令，并请求国际刑警组织协助逮捕，二人均为俄罗斯籍。</p>
-<h2 id="事故回应"><a href="#事故回应" class="headerlink" title="事故回应"></a>事故回应</h2><h4 id="黎巴嫩"><a href="#黎巴嫩" class="headerlink" title="黎巴嫩"></a>黎巴嫩</h4><p>2020年8月4日，黎巴嫩卫生部长哈桑说，因贝鲁特的医院收治能力有限，他呼吁将伤亡人员分散至周边医院，同时号召<strong>所有医护人员</strong>参与救治伤员。</p>
-<p>2020年8月4日，黎总理迪亚卜视察爆炸现场，随后宣布8月5日为<strong>全国哀悼日</strong>，政府将拨付<strong>1000亿里拉</strong>的紧急救援资金，并表示黎巴嫩将向国际社会寻求帮助。</p>
-<p>2020年8月4日晚，黎巴嫩总统奥恩在总统府推特账号上发文说，港口仓库内存放<strong>2750吨硝酸铵</strong>长达<strong>6年</strong>之久且缺乏安全措施，“令人难以接受”。他呼吁在贝鲁特实施为期两周的紧急状态，并严惩爆炸责任人。</p>
-<p>当地时间2020年8月7日，黎巴嫩总统米歇尔·奥恩表示，<strong>拒绝</strong>有关就贝鲁特爆炸事件展开国际调查的呼吁。</p>
-<h4 id="联合国"><a href="#联合国" class="headerlink" title="联合国"></a>联合国</h4><p>事故发生后，<strong>联合国秘书长</strong>安东尼奥·古特雷斯向遇难人员表示哀悼。</p>
-<p><strong>第74届联合国大会主席</strong>穆罕默德·班迪也对爆炸事件表示关注。他向在爆炸中失去亲人的家庭表示最深切的慰问，并祝愿伤者早日康复。他同时向黎巴嫩表达声援。</p>
-<h4 id="德国"><a href="#德国" class="headerlink" title="德国"></a>德国</h4><p>德国外交部表示，爆炸发生地点位于德国驻贝鲁特使馆附近，不能排除死伤人员中有德国公民。</p>
-<h4 id="美国"><a href="#美国" class="headerlink" title="美国"></a>美国</h4><p>美国东部时间2020年8月4日下午，美国总统特朗普在举行的白宫记者会上说，美国对贝鲁特发生巨大爆炸深表同情，为所有受害者及其家属祈祷，并表示美国随时准备援助黎巴嫩。</p>
-<h4 id="俄罗斯"><a href="#俄罗斯" class="headerlink" title="俄罗斯"></a>俄罗斯</h4><p>2020年8月4日，克里姆林宫网站发布公告说，俄罗斯总统普京就黎巴嫩首都港口区发生爆炸向黎巴嫩总统奥恩致慰问电。普京说：<code>“请转达对遇难者家属和亲人的同情和支持，并祝所有伤者早日康复。”</code></p>
-<h4 id="以色列"><a href="#以色列" class="headerlink" title="以色列"></a>以色列</h4><p>2020年8月4日晚，以色列总理办公室发表声明说，总理内塔尼亚胡在批准向黎巴嫩<strong>提供人道主义和医疗援助</strong>后，将通过联合国特别协调员为黎巴嫩<strong>进一步提供援助</strong>。以色列外交部和国防部发表一份联合声明说，以色列已经通过国际安全和外交等渠道向黎巴嫩政府提供人道主义和医疗援助。据以色列媒体报道，以色列是通过联合国驻黎巴嫩临时部队（联黎部队）、联合国和法国等渠道向黎巴嫩提供援助的。<strong>以色列尚未与黎巴嫩建交</strong>。</p>
-<h4 id="中国"><a href="#中国" class="headerlink" title="中国"></a>中国</h4><p>2020年8月5日，中国驻黎巴嫩大使馆通报，<strong>中国赴黎巴嫩维和部队</strong>迅速组织官兵掌握事故情况，清点物资和机械，确保接到救援命令后能立即出动。</p>
-<p>2020年8月5日，中国外交部发言人汪文斌在外交部例行记者会上表示，中方对黎巴嫩发生重大爆炸造成大量人员伤亡事件，深感震惊和悲痛。对遇难者表示深切哀悼，向伤者和遇难者家属表示诚挚的慰问。祝愿伤者早日康复。中方愿为黎方妥处有关事件，实现国家的发展积极提供<strong>力所能及的帮助</strong>。</p>
-<p>2020年8月5日，国家主席习近平就黎巴嫩贝鲁特发生重大爆炸事件向黎巴嫩总统奥恩致慰问电：<code>“谨代表中国政府和中国人民，并以我个人的名义，对遇难者表示深切的哀悼，向伤者和遇难者家属致以诚挚的慰问，祝愿伤者早日康复。”</code></p>
-<h2 id="事故影响"><a href="#事故影响" class="headerlink" title="事故影响"></a>事故影响</h2><p><strong>美国地质调查局</strong>收集的数据显示，爆炸产生的地震波相当于<strong>3.3级地震</strong>，实际威力更是<strong>大于3.3级地震</strong>。附近居民形容爆炸事故<code>“就像一颗原子弹（爆炸）”</code>。</p>
-<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E8%B4%9D%E9%B2%81%E7%89%B9%E6%B8%AF%E5%8F%A3%E5%A4%A7%E7%88%86%E7%82%B8/%E7%88%86%E7%82%B8%E5%89%8D%E5%8D%AB%E6%98%9F%E5%9B%BE.jpg" alt="爆炸前卫星图"></p>
-<p>根据法新社提供的现场情况，爆炸发生的<strong>港口已经被夷为平地</strong>，距离爆炸地点<strong>半径10公里以内</strong>的建筑物<strong>全部被破坏</strong>，碎玻璃、石块挤满了街道。港口<strong>半径100米内</strong>的建筑在<strong>1秒内被夷为平地</strong>，<strong>6公里以外</strong>的机场受损。</p>
-<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E8%B4%9D%E9%B2%81%E7%89%B9%E6%B8%AF%E5%8F%A3%E5%A4%A7%E7%88%86%E7%82%B8/%E7%88%86%E7%82%B8%E5%90%8E%E5%8D%AB%E6%98%9F%E5%9B%BE.jpg" alt="爆炸后卫星图"></p>
-<p>贝鲁特美国大学医学中心医院因为爆炸，急救室被<strong>炸去了一半</strong>，剩余的部分无法收容几百个挤在门口的病人。该医学中心门口的救护车、军车、小轿车上都<strong>挤满了受伤的病人</strong>，但也没有医院可以转移了。更为严重的是爆炸<strong>破坏了电力系统</strong>，医院的许多<strong>抢救设备无法使用</strong>。</p>
-<p>从黎巴嫩国家媒体提供的照片来看，<strong>总理府的门窗</strong>全部被爆炸震的掉在地上；<strong>总统官邸巴卜达宫</strong>的破坏更为严重；<strong>黎巴嫩前总理的房子</strong>也因爆炸损坏。</p>
-<p>截至2020年8月5日，现场状况相对稳定，官方没有公布是否有次生灾害的可能性。贝鲁特市长表示，爆炸造成<strong>30万人</strong>无家可归。据公开资料显示，黎巴嫩首都贝鲁特的人口占黎全国人口的40%，约有150万人，因此受该事故影响而无家可归的<strong>30万人</strong>，占贝鲁特人口的20%。损失高达<strong>30亿美元</strong>。此外，爆炸导致该国仅剩<strong>不足一个月的粮食储备</strong>。</p>
-<p>2020年8月5日，贝鲁特市长阿布德对媒体表示，该次爆炸造成的经济损失预计将达到<strong>100亿至150亿美元</strong>。<code>“贝鲁特已经成为一个满目疮痍的城市，半个城市都被毁了，数十万民众在2-3个月内都无法回到自己家中，这是黎巴嫩现代史上遭遇的最大危机”</code>。</p>
-<p>2020年8月8日，黎巴嫩首都贝鲁特有数千人参加集会，要求<strong>政府辞职</strong>和<strong>实施改革</strong>。集会很快演变成示威者与执法人员的<strong>大规模冲突</strong>。示威者占领了四个部委和银行协会的办公楼。冲突造成<strong>700多人受伤</strong>和<strong>一名执法人员死亡</strong>。</p>
-<p>当地时间2020年8月10日晚，黎巴嫩总理哈桑·迪亚卜发表电视讲话，宣布<strong>该届政府辞职</strong>。</p>
-<p>当地时间2020年8月30日，黎巴嫩部长会议主席发布报告，贝鲁特港口爆炸造成<strong>30万人</strong>无家可归，损失高达<strong>150亿美元</strong>。此外有<strong>5万栋房屋</strong>、<strong>9家大型医院</strong>和<strong>178所学校</strong>受损。</p>
-<h2 id="事故原因"><a href="#事故原因" class="headerlink" title="事故原因"></a>事故原因</h2><p>2020年8月4日，<strong>以色列</strong>方面发布消息，与该事件无关。</p>
-<p>有报道称，爆炸是由于化学物质的自燃而导致的。黎巴嫩安全部门负责人阿巴斯·易卜拉欣表示，港口仓库中储存着可燃化学物质。黎巴嫩总理哈桑·迪亚卜指出爆炸发生地附近储存了<strong>约2750吨</strong>的硝酸铵，这些硝酸铵在<strong>多年前</strong>被黎巴嫩海关扣押，储存在港口区内，爆炸或与硝酸铵储存不当有关。</p>
-<p>2020年8月17日，当地媒体报道，黎巴嫩司法部门宣布了贝鲁特爆炸案的初步调查结果，确认不存在传言中的导弹或飞机，也不存在袭击导致这场灾难的可能性。调查结果显示，贝鲁特港口<strong>12号仓库</strong>的管理存在<strong>严重疏忽</strong>，因为仓库内除了发生爆炸的<strong>2750吨硝酸铵</strong>，还存放了<strong>大量</strong>的烟花和爆竹。</p>
-<h2 id="国际援助"><a href="#国际援助" class="headerlink" title="国际援助"></a>国际援助</h2><h4 id="伊拉克"><a href="#伊拉克" class="headerlink" title="伊拉克"></a>伊拉克</h4><p>伊拉克当地时间2020年8月4日晚间，<strong>伊拉克总理卡迪米</strong>、<strong>总统萨利赫</strong>及<strong>议长哈布希</strong>分别就贝鲁特发生爆炸一事声援黎巴嫩政府及人民，向事件遇难者表示哀悼，并表明伊拉克政府对黎巴嫩的坚定支持。总理卡迪米向伊拉克卫生部做出指示，迅速组建一支医疗队，为黎巴嫩提供紧急援助。医疗队由多科室的医护人员组成，将携带必要的药品与医疗用品，于2020年8月5日启程前往黎巴嫩，为当地民众提供医疗救援。</p>
-<h4 id="英国"><a href="#英国" class="headerlink" title="英国"></a>英国</h4><p>据BBC报道，英国首相表示，<strong>随时准备</strong>为黎巴嫩提供任何必要援助。</p>
-<h4 id="伊朗"><a href="#伊朗" class="headerlink" title="伊朗"></a>伊朗</h4><p>据BBC报道，伊朗外长表示，<strong>随时准备</strong>为黎巴嫩提供任何必要援助</p>
-<h4 id="加拿大"><a href="#加拿大" class="headerlink" title="加拿大"></a>加拿大</h4><p>加拿大当地时间2020年8月5日晚，<strong>加拿大政府</strong>在渥太华宣布，将为黎巴嫩贝鲁特发生的重大爆炸事件向黎方提供<strong>500万加元</strong>的<strong>人道主义援助</strong>。<strong>加拿大全球事务部(外交部)**表示，这笔援助中，包括经加拿大红十字会向黎巴嫩红十字会等当地人道主义合作伙伴提供的</strong>150万加元**首期资金，旨在帮助满足受此次事件影响的民众的紧急需求。加方表示，其捐款将用于支持贝鲁特当地紧急医疗服务，并提供庇护所、食品和其他必需品等援助。</p>
-<h4 id="中国-1"><a href="#中国-1" class="headerlink" title="中国"></a>中国</h4><p>2020年8月6日，中国<strong>第18批赴黎巴嫩维和医疗分队</strong>接到<strong>联合国驻黎巴嫩临时部队司令部</strong>通知，中国赴黎维和医疗分队清点药品准备救援；8月9日，中国政府中东问题特使翟隽在紧急援助黎巴嫩<strong>高级别视频协调</strong>会上宣布<strong>中国政府</strong>将为黎巴嫩提供<strong>100万美元现汇</strong>援助，用于支持黎方救治贝鲁特港爆炸事件中的受伤民众，并向蒙受巨大损失或流离失所的家庭提供援助。</p>
-<h4 id="世界银行"><a href="#世界银行" class="headerlink" title="世界银行"></a>世界银行</h4><p>2020年8月5日，世界银行表示，他们已准备评估黎巴嫩首都贝鲁特港口爆炸事故的损失和重建需求，将努力<strong>动员公共及私人融资</strong>以帮助其开展城市<strong>灾后重建</strong>。世界银行在一份官方声明中表示，将对现有资源进行重新规划，寻求更多的资金来帮助这个城市的受灾民众重建生活。但世界银行目前并未说明哪些资源将用于黎巴嫩首都的灾后重建。</p>
-<h4 id="紧急援助黎巴嫩高级别视频协调会"><a href="#紧急援助黎巴嫩高级别视频协调会" class="headerlink" title="紧急援助黎巴嫩高级别视频协调会"></a>紧急援助黎巴嫩高级别视频协调会</h4><p>2020年8月9日，<strong>紧急援助黎巴嫩高级别视频协调会</strong>由联合国和法国共同举办，来自_联合国、法国、美国、中国、俄罗斯、西班牙、意大利、埃及、卡塔尔以及国际货币基金组织、世界银行、国际红十字与红新月会、欧盟_等<strong>国家</strong>和<strong>国际组织的三十多位国家元首、政府首脑或代表以及负责人</strong>与会。与会各方承诺短期内为黎巴嫩提供<strong>2.527亿欧元</strong>紧急援助。</p>
-<h4 id="联合国-1"><a href="#联合国-1" class="headerlink" title="联合国"></a>联合国</h4><p>2020年8月11日，正在黎巴嫩的<strong>世界粮食计划署总干事比斯利</strong>又证实，已经向黎巴嫩筹调运输了<strong>1.75万吨面粉</strong>；此外，粮食计划署还将向黎巴嫩提供能<strong>满足三个月需求</strong>的小麦和谷物。运送粮食的船已改道至黎巴嫩另一座重要港口城市的黎波里和南部的赛达港卸货——而据黎巴嫩媒体报道，贝鲁特港预计本周也将开始<strong>恢复使用</strong>。</p>
+    <title>博客静态托管迁移记录</title>
+    <url>/2024/07/15/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/BlogMove/</url>
+    <content><![CDATA[<h1 id="博客迁移"><a href="#博客迁移" class="headerlink" title="博客迁移"></a>博客迁移</h1><h2 id="迁移原因"><a href="#迁移原因" class="headerlink" title="迁移原因"></a>迁移原因</h2><p>我的博客网站的<strong>最早期版本</strong>是静态托管在 <code>Github Pages</code> 上的，后来由于<strong>国内访问速度过慢</strong>的原因迁移到了 <code>Gitee Pages</code> 托管。但今年年初 <code>Gitee</code> 莫名抽风，<strong>无限期暂停</strong>了 <code>Gitee Pages</code> 的托管服务（其实之前还有个实名认证风波，我就不应该对国内的开源社区抱有希望）。</p>
+<p>由于 <code>Gitee Pages</code> 托管服务停止，我不得不重新将博客网站迁移到 <code>Github Pages</code> ，并决定使用 <code>Cloudflare</code> 的托管服务作备份。</p>
 ]]></content>
       <categories>
-        <category>纪实</category>
-        <category>灾难</category>
+        <category>技术</category>
+        <category>博客</category>
       </categories>
       <tags>
-        <tag>灾难</tag>
-        <tag>纪实</tag>
+        <tag>技术</tag>
+        <tag>博客</tag>
+        <tag>Github Pages</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>极递云课Windows版辅助套件（应官方要求已经停止开放下载）</title>
+    <url>/2022/11/01/%E6%9E%81%E9%80%92%E4%BA%91%E8%AF%BEWindows%E7%89%88%E8%BE%85%E5%8A%A9%E5%A5%97%E4%BB%B6/gtClass-Auto/</url>
+    <content><![CDATA[<h1 id="极递云课-自动签到-amp-解除锁屏-amp-显示教师控件-amp-自动上课并切换课堂"><a href="#极递云课-自动签到-amp-解除锁屏-amp-显示教师控件-amp-自动上课并切换课堂" class="headerlink" title="极递云课 自动签到 &amp; 解除锁屏 &amp; 显示教师控件 &amp; 自动上课并切换课堂"></a>极递云课 自动签到 &amp; 解除锁屏 &amp; 显示教师控件 &amp; 自动上课并切换课堂</h1><p><code>“极递云课第三方登录器”仅 合肥皖智中学 可用（不知道莲花校区行不行），其他学校软件会无法正常登陆</code><br><code>“极递云课小助手”普遍适用</code></p>
+<span id="more"></span>
+<p>软件可能被杀毒软件报毒，但这是我亲手写的，不包含病毒（我的能力还写不出来），请放心添加信任。</p>
+<h2 id="套件安装教程"><a href="#套件安装教程" class="headerlink" title="套件安装教程"></a>套件安装教程</h2><h3 id="官方启动器-安装"><a href="#官方启动器-安装" class="headerlink" title="官方启动器 安装"></a>官方启动器 安装</h3><p>到<a href="https://hfwzzx.gtclass.cn/">极递云课合肥皖智中学专网</a>下载PC版启动器。<br>并将其安装到<code>默认路径</code>。</p>
+<h3 id="极递云课小助手-安装"><a href="#极递云课小助手-安装" class="headerlink" title="极递云课小助手 安装"></a>极递云课小助手 安装</h3><p>下载<a href="https://dtx-qaq.lanzoul.com/iSDtN0ey2n2b">极递云课小助手安装器</a>，打开后，点击安装按钮，提示安装成功即可。<br>此软件包含 <strong>自动签到 &amp; 解除锁屏 &amp; 教师控件</strong> 功能，教师控件可让你看到同学进出课堂，并且能在老师的文档上画画。软件运行时，可用快捷键 <strong>F6</strong> 打开解除锁屏界面， <strong>F7</strong> 使用显示教师控件功能。</p>
+<p>安装成功后，无论是从 官方网站 手动进入课堂还是通过 极递云课第三方登录器 自动进入课堂，都可以自动同时运行 极递云课小助手，无需再手动操作打开。</p>
+<h3 id="极递云课第三方登录器-安装"><a href="#极递云课第三方登录器-安装" class="headerlink" title="极递云课第三方登录器 安装"></a>极递云课第三方登录器 安装</h3><p><code>这个软件新鲜出炉，未经长久测试，可能有重大Bug</code></p>
+<p>下载<a href="https://dtx-qaq.lanzoul.com/iFOFd0eyqtdc">极递云课第三方登录器</a>，无需安装，打开即可使用，打开后输入账号密码并勾选自动登录，程序会获取当天课表(如果当天没课，则会获取下一次有课那天的课表)并<strong>自动启动课堂</strong>和<strong>切换课堂</strong></p>
+<p>如果你甚至懒得关闭进入课堂后自动打开的音视频设置界面，可以拿弹窗拦截软件拦截（火绒、360都有）</p>
+<p>如果需要开机自动运行，<del>我懒，没写开机启动功能</del>请自行按如下方法操作：</p>
+<p>1.桌面上右键<strong>极递云课第三方登录器</strong>图标，新建快捷方式。 </p>
+<p>2.按 Win + R 键打开运行窗口，输入指令<code>shell:startup</code>，并将第一步的快捷方式拉入打开的文件夹。可能会有杀软拦截，允许并添加信任即可。</p>
+<p>以上便完成全部安装过程，可以更愉快的上网课啦~</p>
+<h3 id="演示视频"><a href="#演示视频" class="headerlink" title="演示视频"></a>演示视频</h3><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+    <iframe src="//player.bilibili.com/player.html?aid=1451683095&bvid=BV17i421o79Z&cid=1463285801&page=1"  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe>
+</div>
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>破解</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>极递云课</tag>
+        <tag>网课</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>邮宝聊天室项目运行环境配置</title>
+    <url>/2024/11/30/%E9%82%AE%E5%AE%9D%E8%81%8A%E5%A4%A9%E5%AE%A4%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Fake-Location/</url>
+    <content><![CDATA[<p>本教程仅供 <strong>薪火杯组内成员</strong> 配置运行环境的教程，不公开项目源码。</p>
+<span id="more"></span>
+
+<h1 id="邮宝聊天室项目运行环境配置"><a href="#邮宝聊天室项目运行环境配置" class="headerlink" title="邮宝聊天室项目运行环境配置"></a>邮宝聊天室项目运行环境配置</h1><h2 id="需要安装的软件"><a href="#需要安装的软件" class="headerlink" title="需要安装的软件"></a>需要安装的软件</h2><ul>
+<li><a href="https://www.oracle.com/java/technologies/javase/jdk22-archive-downloads.html">jdk</a></li>
+<li><a href="https://nodejs.org/zh-cn">node.js</a></li>
+<li><a href="https://dev.mysql.com/downloads/installer/">MySQL</a></li>
+<li><a href="https://www.alipan.com/s/ycfqZdqffBL">Navicat Premium 17</a> 和 <a href="https://dtx-qaq.lanzoul.com/ixvN92gpxwhg">破解补丁</a></li>
+<li><a href="https://www.jetbrains.com/zh-cn/idea/download/?section=windows">IDEA</a></li>
+<li><a href="https://code.visualstudio.com/">Visual Studio Code (如果有IDEA终极版就不用了)</a></li>
+<li><a href="https://dtx-qaq.lanzoul.com/iW81N2gpsm2b">maven (我已经帮你们打包好了)</a></li>
+</ul>
+<h3 id="jdk-安装教程"><a href="#jdk-安装教程" class="headerlink" title="jdk 安装教程"></a>jdk 安装教程</h3><p><a href="https://www.oracle.com/java/technologies/javase/jdk22-archive-downloads.html">点击打开 jdk 下载页面</a></p>
+<p>点击图片所示位置下载对应版本</p>
+<p><img src="https://s2.loli.net/2024/11/30/ClxY2HhIBnUr56G.png" alt="jdk下载"></p>
+<p>下载完成后根据 <a href="https://www.bilibili.com/opus/996875387017363456">jdk 安装教程</a> 进行安装。</p>
+<p><strong>！！！一定要记住自己的安装路径！！！</strong>。</p>
+<p>配置环境变量 <strong>JAVA_HOME</strong> 时注意修改成 <strong>自己的安装路径</strong>。</p>
+<h3 id="node-js-安装教程"><a href="#node-js-安装教程" class="headerlink" title="node.js 安装教程"></a>node.js 安装教程</h3><p><a href="https://nodejs.org/zh-cn">点击打开 node.js 下载页面</a></p>
+<p>一路默认安装即可。</p>
+<p>安装完成后，使用 <code>Win + R</code> 打开运行框，输入 <code>cmd</code> 后回车打开命令行，在命令行输入 <code>node -v</code> 和 <code>npm -v</code> 验证是否安装成功（成功安装会显示版本号，不成功会报错，报错来找我）。</p>
+<p>安装完成后，由于仓库默认下载位置在国外，我们要把下载源切换为国内华为源，防止下载过慢甚至出错。</p>
+<p>在刚刚打开的命令行中输入命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry https://mirrors.huaweicloud.com/repository/npm/</span><br></pre></td></tr></table></figure>
+
+<p>来设置成华为镜像源。</p>
+<h3 id="MySQL-安装教程"><a href="#MySQL-安装教程" class="headerlink" title="MySQL 安装教程"></a>MySQL 安装教程</h3><p><a href="https://dev.mysql.com/downloads/installer/">点击打开 MySQL 下载页面</a></p>
+<p>点击图片所示位置下载对应版本</p>
+<p><img src="https://s2.loli.net/2024/11/30/Ru7lv6fms4ZeQ2K.png" alt="MySQL下载"></p>
+<p>下载完成后根据 <a href="https://www.bilibili.com/video/BV1zC41187tM?spm_id_from=333.788.videopod.episodes&vd_source=641ddec1506b8f023585079febd43f1e&p=2">MySQL 安装教程</a> 进行安装。</p>
+<p><strong>注意：一定要记住自己的设置的数据库密码！！！，建议就为 123456</strong></p>
+<h3 id="Navicat-安装教程"><a href="#Navicat-安装教程" class="headerlink" title="Navicat 安装教程"></a>Navicat 安装教程</h3><p><a href="https://www.alipan.com/s/ycfqZdqffBL">点击打开 Navicat Premium 17 下载页面</a></p>
+<p>默认安装即可。<strong>记住安装路径</strong> 后面破解会用到！！！！</p>
+<p><a href="https://dtx-qaq.lanzoul.com/ixvN92gpxwhg">点击下载破解补丁</a></p>
+<p>下载完后解压，跟着步骤破解：</p>
+<ol>
+<li>运行一下已经安装的 Navicat 。然后完全退出程序</li>
+<li>双击无限试用 Navicat.bat 脚本</li>
+<li>将 winmm.dll 拖进 navicat 的安装路径下</li>
+</ol>
+<p>破解完成后，打开 Navicat ，按下方图示连接你的 MySQL 数据库：</p>
+<p><img src="https://s2.loli.net/2024/11/30/3ySWzhN7K1VqjXG.png" alt="新建连接"></p>
+<p><img src="https://s2.loli.net/2024/11/30/xfB4EhV9tCPSXqd.png" alt="输入账号密码"></p>
+<p>点击确定即可</p>
+<h3 id="IDEA-安装教程"><a href="#IDEA-安装教程" class="headerlink" title="IDEA 安装教程"></a>IDEA 安装教程</h3><p><a href="https://www.jetbrains.com/zh-cn/idea/download/?section=windows">点击打开 IDEA 下载页面</a></p>
+<p><img src="https://s2.loli.net/2024/11/30/O3TkcUPfi2FgE7I.png" alt="选择版本下载"></p>
+<p>下载完后默认打安装就行</p>
+<h3 id="Visual-Studio-Code-安装教程"><a href="#Visual-Studio-Code-安装教程" class="headerlink" title="Visual Studio Code 安装教程"></a>Visual Studio Code 安装教程</h3><p><a href="https://code.visualstudio.com/">点击打开 Visual Studio Code 下载页面</a></p>
+<p>下载完后默认安装就行</p>
+<h2 id="配置项目运行环境"><a href="#配置项目运行环境" class="headerlink" title="配置项目运行环境"></a>配置项目运行环境</h2><h3 id="下载并解压我在微信群分享的压缩包"><a href="#下载并解压我在微信群分享的压缩包" class="headerlink" title="下载并解压我在微信群分享的压缩包"></a>下载并解压我在微信群分享的压缩包</h3><h3 id="配置-MySQL-数据库"><a href="#配置-MySQL-数据库" class="headerlink" title="配置 MySQL 数据库"></a>配置 MySQL 数据库</h3><p>打开 Navicat</p>
+<ol>
+<li>右键位置 1 ，打开菜单，新建数据库</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/11/30/X3ace9xYTVn6NyK.png" alt="新建数据库"></p>
+<ol start="2">
+<li>输入数据库名称 <code>cqupt_chat</code> ，调节字符集和排序规则和下图一致，点击确定</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/11/30/7AeyUmMk2PLT9w8.png" alt="调节字符集和排序规则"></p>
+<ol start="3">
+<li>双击你刚刚新建的 <code>cqupt_chat</code> 数据库，前面的图标变绿后，再右键它打开菜单，选择 <code>运行 SQL 文件</code></li>
+</ol>
+<p><img src="https://s2.loli.net/2024/11/30/lvd7ngexsEHTq5j.png" alt="运行 SQL 文件"></p>
+<ol start="4">
+<li>按步骤选择从 <strong>我微信发的压缩包</strong> 中解压出的 <code>cqupt_chat.sql</code> 文件</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/11/30/SFh6nO5kuJ23x4s.png" alt="PixPin_2024-11-30_19-06-19.png"></p>
+<ol start="5">
+<li>修改数据库访问权限，按图示操作</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/11/30/3l1jROeuxIFdkT8.png" alt="打开命令列"></p>
+<p>依次输入以下命令（一定要带结尾分号）：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">use mysql;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">select user,host from user;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">update user set host=&#x27;%&#x27; where user=&#x27;root&#x27;;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flush privileges;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s2.loli.net/2024/11/30/vIpXWyogQTzFS3A.png" alt="运行结果"></p>
+<h3 id="配置后端-SpringBoot-项目"><a href="#配置后端-SpringBoot-项目" class="headerlink" title="配置后端 SpringBoot 项目"></a>配置后端 SpringBoot 项目</h3><p>打开 IDEA</p>
+<ol>
+<li><p>右上角 <code>File -&gt; Open</code>，选择从 <strong>我微信发的压缩包</strong> 中解压出的 <code>cqupt_chat</code> 中的 <code>springboot</code> 文件夹打开</p>
+</li>
+<li><p>调整 <code>Maven</code> 设置</p>
+</li>
+</ol>
+<p><a href="https://dtx-qaq.lanzoul.com/iW81N2gpsm2b">点击下载 Maven</a> 后，解压到随便一个位置，但是要记住位置，后面要用。</p>
+<p><img src="https://s2.loli.net/2024/11/30/2JEYemTuQMiyHl1.png" alt="打开设置"></p>
+<ul>
+<li><p><code>Maven 主路径</code> 选择刚刚解压的 Maven 文件夹位置。</p>
+</li>
+<li><p><code>用户设置文件</code> 勾选 <code>重写</code> ，然后选择刚刚解压的 Maven 文件夹位置下的 <code>conf</code> 文件夹下的 <code>setting.xml</code> 文件。</p>
+</li>
+</ul>
+<p><img src="https://s2.loli.net/2024/11/30/zgsXiYhMKFBVA16.png" alt="调整 Maven 设置"></p>
+<ol start="3">
+<li>调整编码</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/11/30/wEsjS2eGqV3TzKu.png" alt="调整编码"></p>
+<ol start="4">
+<li>加载 Maven 依赖</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/11/30/KIn93hrWVQu1EZR.png" alt="开始加载依赖"></p>
+<p>下载依赖时右下角应该有一个蓝色的进度条，等一段时间依赖下载完成后消失，重新打开 IDEA ，这时 <code>pom.xml</code> 文件应该没有红色字体。</p>
+<p><img src="https://s2.loli.net/2024/11/30/8UFo1ldr9C6tYmK.png" alt="没有红色文字"></p>
+<ol start="5">
+<li>配置数据库连接</li>
+</ol>
+<ul>
+<li><p>在 IDEA 中双击打开 <code>springboot/src/main/resources/application.yml</code> 文件</p>
+</li>
+<li><p>修改 <code>password</code> 为你自己的数据库密码</p>
+</li>
+<li><p>3 的部分为之前导入的数据库名字 <code>cqupt_chat</code> （默认也是 <code>cqupt_chat</code> ）。</p>
+</li>
+</ul>
+<p><img src="https://s2.loli.net/2024/12/01/x7CdwvkW5cRmEUs.png" alt="PixPin_2024-11-30_23-57-03.png"></p>
+<p><strong>至此，后端环境配置完成</strong></p>
+<h3 id="配置前端-Vue-项目"><a href="#配置前端-Vue-项目" class="headerlink" title="配置前端 Vue 项目"></a>配置前端 Vue 项目</h3><p>打开 Visual Studio Code</p>
+<ol>
+<li>找到从 <strong>我微信发的压缩包</strong> 中解压出的 <code>cqupt_chat</code> 中的 <code>vue</code> 文件夹打开</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/12/01/htuJ8dvY1q6eNfC.png" alt="打开文件夹"></p>
+<p><img src="https://s2.loli.net/2024/12/01/gSjo7J3cDaFkAEL.png" alt="打开项目"></p>
+<ol start="2">
+<li>在集成终端中（打开方式见下图）按顺序输入</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g @vue/cli</span><br></pre></td></tr></table></figure>
+<p>等待上一条命令执行结束，输入</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<p>这两个命令用来安装依赖，<strong>每个命令运行可能都需要一段时间</strong>，耐心等待。</p>
+<p><img src="https://s2.loli.net/2024/12/01/CAN6GkpbvMnaows.png" alt="安装vue"></p>
+<p><strong>至此，前端环境配置完成</strong></p>
+<h2 id="运行项目"><a href="#运行项目" class="headerlink" title="运行项目"></a>运行项目</h2><h3 id="MySQL-数据库运行"><a href="#MySQL-数据库运行" class="headerlink" title="MySQL 数据库运行"></a>MySQL 数据库运行</h3><p>按 <code>Ctrl + Shift + Esc</code> 快捷键打开任务管理器，然后按下图操作（如果已经是正在运行可以忽略）</p>
+<p><img src="https://s2.loli.net/2024/12/01/Dit86Wak7SdjsgO.png" alt="开启MySQL服务"></p>
+<h3 id="后端-SpringBoot-项目运行"><a href="#后端-SpringBoot-项目运行" class="headerlink" title="后端 SpringBoot 项目运行"></a>后端 SpringBoot 项目运行</h3><p>打开 IDEA</p>
+<ol>
+<li><p>选择 <code>File -&gt; Open</code>，选择从 <strong>我微信发的压缩包</strong> 中解压出的 <code>cqupt_chat</code> 中的 <code>springboot</code> 文件夹打开</p>
+</li>
+<li><p>双击打开 <code>springboot/src/main/java/com.example/SpringbootApplication</code> 文件, 按下图操作</p>
+</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/12/01/VDL85BO6Mdlk3xQ.png" alt="后端运行"></p>
+<h3 id="前端-Vue-项目运行"><a href="#前端-Vue-项目运行" class="headerlink" title="前端 Vue 项目运行"></a>前端 Vue 项目运行</h3><p>打开 Visual Studio Code</p>
+<ol>
+<li>找到从 <strong>我微信发的压缩包</strong> 中解压出的 <code>cqupt_chat</code> 中的 <code>vue</code> 文件夹打开</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/12/01/gSjo7J3cDaFkAEL.png" alt="打开项目"></p>
+<p><img src="https://s2.loli.net/2024/12/01/rajvJ7OZ4BxAmdY.png" alt="启用npm脚本"></p>
+<p><img src="https://s2.loli.net/2024/12/01/kEXFihyQWSjDLNr.png" alt="前端运行"></p>
+<h3 id="项目启动完毕"><a href="#项目启动完毕" class="headerlink" title="项目启动完毕"></a>项目启动完毕</h3><p>大家的账号为 <code>姓名</code></p>
+<p>密码默认 <code>123456</code></p>
+<p>登录后就可以使用了</p>
+<p><img src="https://s2.loli.net/2024/12/01/LodAMt1zsXNTcxC.png" alt="登录页面"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>开发</category>
+      </categories>
+      <tags>
+        <tag>重庆邮电大学</tag>
+        <tag>前后端分离</tag>
+        <tag>Vue</tag>
+        <tag>SpringBoot</tag>
+        <tag>薪火杯</tag>
+        <tag>环境配置教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>高考很大，生活更大</title>
+    <url>/2021/06/07/%E9%AB%98%E8%80%83%E5%BE%88%E5%A4%A7%EF%BC%8C%E7%94%9F%E6%B4%BB%E6%9B%B4%E5%A4%A7/The%20National%20College%20Entrance%20Examination%20of%202021/</url>
+    <content><![CDATA[<h6 id="——写在高考日"><a href="#——写在高考日" class="headerlink" title="——写在高考日"></a>——写在高考日</h6><span id="more"></span>
+<p>写给考生和未来的自己：</p>
+<p>人的畏惧来源大致有二：一是过去的不可更改性；二是未来的不可预知性。而高考正好占了这两点。过去不可更改：你是学霸也好，学渣也罢，无论你复习得怎么样都成了定数。“当天上星河转命已定盘，待绝笔墨痕干宿敌已来犯”，高考这个宿敌来了。被高考煎熬了许久，也该向这个死敌宣战了。不论你高考的目的如何，不论你为了谁，为了什么而踏进考场，这都是一场与你自己的较量，既然选择了远方，便只顾风雨兼程，愿你们前程似锦，未来可期。</p>
+<p>多年之后总有一个瞬间，你会意识到高考也许是你此生最简单的一场考试。因为有太多人和你一样在乎你的这场考试，甚至比你更在乎。你可以在十字路口，单凭一张准考证拦下警车。在那个时刻，单凭「高考」两个字，你可以在路上一路畅行无碍。那时你根本想象不到，接下来的人生有多少「考试」要独自面对。你会碰上无数次来不及和赶不上的时刻，你会发现将那两个字替换成任何别的情景，心仪工作的面试，心爱女孩的约会，除非关乎生死的大事，否则都不会再有这样的魔力。</p>
+<p>据说高考阅卷老师批阅作文，平均时间是一篇 40 秒。曾经人们为此愤愤，觉得在这样短的时间内做决断真是草率。可是接下来的人生中，你会发现 40 秒的时间，简直是尊重。你会用多长时间决定，一个观点你是赞同还是反对？你会用多长时间决定，一本书要不要买下来？你会用多长时间决定，投奔一家公司？你会用多长时间决定，一个人值不值得做你的朋友？你会用多长时间决定，奔向或逃离一座城市？你会用多长时间决定，爱上一个人，然后闯进 ta 的生活？够 40 秒吗？</p>
+<p>在高考之前，人生似乎是一条单行线，几乎所有的人都要排着队，从一条路上穿过。高考之后，是穿过山谷进入平原。眼前有无数方向，以前排成一队的所有人，踏上了不同的小径。路，越来越多，与你结伴的人，越来越少。你曾经痛恨学校安排的课程，老师布置的作业，枯燥乏味的课本和成堆的辅导书，和那个唯一的目标——高考。你想的最多的是，高考过后，你的人生你来做主。突然有一天，你发现你真的有了掌控权。你决定自己每天要学些什么，你决定自己每天要做些什么，你决定你的目标是什么。你发现，这一切原来没有那么简单。你让自己不堪重负，或是无所事事，找来找去总是找不到那个平衡点。这时你又开始怀念，那些曾经安排好的课程，安排好的作业，安排好的目标，安排好的日子。你花了更多的时间，花了更多的金钱，只为再给自己找一个老师，找一段「安排」。到底是只有唯一答案的考卷更难，还是满是正确答案的人生更难？这道题，本身就很难。</p>
+<p>你要忍，忍到春暖花开；你要走，走到灯火通明；你要看过世界辽阔，再评判是好是坏；你要卯足劲变好，再旗鼓相当站在不敢想象的人身边；你要变成想象中的样子，这件事，一步都不能让。上人生的旅途罢，前途很远，也很暗。然而不要怕，不怕的人的面前才有路。</p>
+<p>高考很大，生活更大。</p>
+<p><img src="https://gitee.com/DTX-QAQ/Amor-Vooc.github.io/raw/master/%E5%9B%BE%E7%89%87/%E9%AB%98%E8%80%83%E5%BE%88%E5%A4%A7%EF%BC%8C%E7%94%9F%E6%B4%BB%E6%9B%B4%E5%A4%A7/%E8%B7%83%E9%BE%99%E9%97%A8.jpg" alt="跃龙门"></p>
+]]></content>
+      <categories>
+        <category>文章</category>
+      </categories>
+      <tags>
+        <tag>高考</tag>
+        <tag>文章</tag>
       </tags>
   </entry>
 </search>
