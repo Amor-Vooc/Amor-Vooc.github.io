@@ -33,45 +33,17 @@
     <category term="开发" scheme="https://amor-vooc-github-io.pages.dev/categories/%E6%8A%80%E6%9C%AF/%E5%BC%80%E5%8F%91/"/>
     
     
-    <category term="重庆邮电大学" scheme="https://amor-vooc-github-io.pages.dev/tags/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6/"/>
-    
     <category term="前后端分离" scheme="https://amor-vooc-github-io.pages.dev/tags/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB/"/>
     
     <category term="Vue" scheme="https://amor-vooc-github-io.pages.dev/tags/Vue/"/>
     
     <category term="SpringBoot" scheme="https://amor-vooc-github-io.pages.dev/tags/SpringBoot/"/>
     
+    <category term="重庆邮电大学" scheme="https://amor-vooc-github-io.pages.dev/tags/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6/"/>
+    
     <category term="薪火杯" scheme="https://amor-vooc-github-io.pages.dev/tags/%E8%96%AA%E7%81%AB%E6%9D%AF/"/>
     
     <category term="环境配置教程" scheme="https://amor-vooc-github-io.pages.dev/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基于 Root 环境下的 Fake Location 虚拟定位</title>
-    <link href="https://amor-vooc-github-io.pages.dev/2024/11/02/%E5%9F%BA%E4%BA%8ERoot%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84Fake%20Location%E8%99%9A%E6%8B%9F%E5%AE%9A%E4%BD%8D%E6%95%99%E7%A8%8B/Fake-Location/"/>
-    <id>https://amor-vooc-github-io.pages.dev/2024/11/02/%E5%9F%BA%E4%BA%8ERoot%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84Fake%20Location%E8%99%9A%E6%8B%9F%E5%AE%9A%E4%BD%8D%E6%95%99%E7%A8%8B/Fake-Location/</id>
-    <published>2024-11-02T13:59:41.000Z</published>
-    <updated>2024-11-03T09:00:38.082Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;strong&gt;文章内含已Root虚拟机资源。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;成功实现虚拟定位后，可实现包括但不限于以下操作：减轻校园跑步打卡压力、游戏改战区、点亮地图/足迹……&lt;br&gt;&lt;img src=&quot;https://s2.loli.net/2024/03/09/2eWFJYGtjyEfwci.jpg&quot; alt=&quot;41d10a457499b9070bc577c17c34a0efa7540f39.jpg&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="技术" scheme="https://amor-vooc-github-io.pages.dev/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="破解" scheme="https://amor-vooc-github-io.pages.dev/categories/%E6%8A%80%E6%9C%AF/%E7%A0%B4%E8%A7%A3/"/>
-    
-    
-    <category term="同天智慧校园" scheme="https://amor-vooc-github-io.pages.dev/tags/%E5%90%8C%E5%A4%A9%E6%99%BA%E6%85%A7%E6%A0%A1%E5%9B%AD/"/>
-    
-    <category term="破解" scheme="https://amor-vooc-github-io.pages.dev/tags/%E7%A0%B4%E8%A7%A3/"/>
-    
-    <category term="重庆邮电大学" scheme="https://amor-vooc-github-io.pages.dev/tags/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6/"/>
-    
-    <category term="Root" scheme="https://amor-vooc-github-io.pages.dev/tags/Root/"/>
     
   </entry>
   
