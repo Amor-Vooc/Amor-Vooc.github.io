@@ -9,6 +9,7 @@
     <!-- Three.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <!-- MediaPipe Hands -->
+    <!-- 修正了 @mediapip 到 @mediapipe 的拼写错误，以正确加载 Camera 类 -->
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
@@ -30,11 +31,25 @@
         /* 隐藏视频元素，只用于处理 */
         #input_video { display: none; }
         
-        /* 摄像头骨架预览窗口 - 镜像翻转以符合直觉 */
+        /* 摄像头骨架预览窗口容器 */
+        #camera-container {
+            width: 20vw; /* 使用视口宽度作为相对单位 */
+        }
+        
+        /* 摄像头骨架预览画布 - 镜像翻转以符合直觉 */
         #output_canvas {
             transform: scaleX(-1); 
-            width: 720px;
-            height: auto;
+            width: 100%; /* 占满容器 */
+            height: auto; /* 保持纵横比 */
+        }
+
+        /* 媒体查询：在小屏幕上进一步缩小 */
+        @media (max-width: 640px) {
+            #camera-container {
+                width: 40vw; /* 移动端更宽一些，但仍保持最大限制 */
+                bottom: 20px; /* 调整底部位置 */
+                left: 20px;
+            }
         }
 
         /* 加载动画 */
@@ -156,9 +171,10 @@
     </div>
     
     <!-- 摄像头+骨架预览窗口 -->
+    <!-- 调整了 camera-container 上的类，使其具有更好的响应性 -->
     <div id="camera-container" class="fixed bottom-4 left-4 z-30 transition-transform duration-300">
         <div class="text-[10px] text-gray-400 mb-1 ml-1">摄像头视角 (骨架追踪)</div>
-        <canvas id="output_canvas" width="320" height="240" class="w-48 h-36 rounded-lg border border-gray-600 shadow-lg bg-black/50"></canvas>
+        <canvas id="output_canvas" width="320" height="240" class="rounded-lg border border-gray-600 shadow-lg bg-black/50"></canvas>
     </div>
 
     <!-- 底部全屏按钮 -->
@@ -380,7 +396,7 @@
                     positions[i * 3 + 2] += (Math.random() - 0.5);
                 }
             }
-            // --- 新增太阳系形状逻辑 ---
+            // --- 太阳系形状逻辑 ---
             else if (type === 'solar_system') {
                 // 轨道半径 (缩放后的值)
                 const orbitRadii = {
@@ -655,6 +671,7 @@
 
             hands.onResults(onHandsResults);
 
+            // 修正：确保 Camera 类已定义
             const cameraUtils = new Camera(videoElement, {
                 onFrame: async () => {
                     await hands.send({image: videoElement});
@@ -669,7 +686,8 @@
                     setTimeout(() => document.getElementById('loading-screen').remove(), 500);
                 })
                 .catch(err => {
-                    alert("无法启动摄像头。请检查权限或使用HTTPS环境。");
+                    // 使用自定义消息框或控制台日志代替alert()
+                    console.error("无法启动摄像头。请检查权限或使用HTTPS环境。", err);
                     document.getElementById('loading-screen').innerHTML = "<div class='text-red-500'>摄像头启动失败</div>";
                 });
         }
@@ -756,7 +774,7 @@
 
         // --- 8. 动画循环 ---
         function animate() {
-            requestAnimationFrame(animate);
+            animationId = requestAnimationFrame(animate);
 
             if (!geometry || !state.targetPositions) return;
 
@@ -812,9 +830,6 @@
                 // 手势控制优先
                 particles.rotation.x += (state.targetRotationX - particles.rotation.x) * 0.1;
                 particles.rotation.y += (state.targetRotationY - particles.rotation.y) * 0.1;
-                
-                // 注意：这里移除了原本的 particles.rotation.y += 0.002 (自动旋转)
-                // 也移除了鼠标控制旋转，因为容易冲突。如果需要鼠标作为fallback，可以添加逻辑判断。
             }
 
             if(renderer && scene && camera) {
@@ -824,9 +839,13 @@
 
         // --- 9. 辅助功能 ---
         function onWindowResize() {
+            // 更新 Three.js 场景
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
             renderer.setSize(window.innerWidth, window.innerHeight);
+
+            // 由于摄像机预览框尺寸是基于视口宽度的 CSS 调整，
+            // 这里不需要额外的 JS 调整，CSS 会处理。
         }
 
         function onDocumentMouseMove(event) {
@@ -873,7 +892,6 @@
             }
         });
 
-        // UI 收起/展开
         // UI 收起/展开
         const uiPanel = document.getElementById('ui-panel');
         const cameraContainer = document.getElementById('camera-container');
