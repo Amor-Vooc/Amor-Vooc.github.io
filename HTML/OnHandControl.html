@@ -9,7 +9,6 @@
     <!-- Three.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <!-- MediaPipe Hands -->
-    <!-- 修正了 @mediapip 到 @mediapipe 的拼写错误，以正确加载 Camera 类 -->
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
@@ -34,6 +33,7 @@
         /* 摄像头骨架预览窗口容器 */
         #camera-container {
             width: 20vw; /* 使用视口宽度作为相对单位 */
+            height: auto;
         }
         
         /* 摄像头骨架预览画布 - 镜像翻转以符合直觉 */
@@ -49,6 +49,26 @@
                 width: 40vw; /* 移动端更宽一些，但仍保持最大限制 */
                 bottom: 20px; /* 调整底部位置 */
                 left: 20px;
+            }
+        }
+
+        /* 横屏特殊样式 */
+        @media (max-height: 600px) and (orientation: landscape) {
+            #ui-panel {
+                max-height: 45vh !important;
+                max-width: 30vw !important;
+                top: 10px !important;
+                padding: 12px !important;
+                font-size: 0.9em !important;
+            }
+        }
+
+        /* 小高度横屏 */
+        @media (max-height: 400px) and (orientation: landscape) {
+            #ui-panel {
+                max-height: 40vh !important;
+                max-width: 30vw !important;
+                padding: 8px !important;
             }
         }
 
@@ -108,7 +128,7 @@
         <span>⚙️</span>
     </button>
 
-    <div id="ui-panel" class="fixed top-4 left-4 w-72 p-5 rounded-2xl glass-panel text-white z-40 transition-transform duration-300">
+    <div id="ui-panel" class="fixed top-4 left-4 p-5 rounded-2xl glass-panel text-white z-40 transition-transform duration-300 w-full max-w-sm max-h-[85vh] overflow-y-auto">
         <div class="flex justify-between items-center mb-4 border-b border-gray-700 pb-2">
             <h1 class="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">粒子控制器</h1>
             <button id="toggle-ui" class="text-gray-400 hover:text-white text-xs">收起</button>
