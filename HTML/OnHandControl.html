@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="baidu-site-verification" content="codeva-52PVUyDuJW" />
   <title>
-    邮宝聊天室项目运行环境配置 |  Amano陽菜&amp;丁同勖
+     Amano陽菜&amp;丁同勖
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -94,217 +94,932 @@ var _hmt = _hmt || [];
     <main class="content on">
       <section class="outer">
   <article
-  id="post-邮宝聊天室环境配置"
-  class="article article-type-post"
+  id="page-"
+  class="article article-type-page"
   itemscope
   itemprop="blogPost"
   data-scroll-reveal
 >
   <div class="article-inner">
-    
-    <header class="article-header">
        
-<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  邮宝聊天室项目运行环境配置
-</h1>
- 
-
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2024/11/30/%E9%82%AE%E5%AE%9D%E8%81%8A%E5%A4%A9%E5%AE%A4%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Fake-Location/" class="article-date">
-  <time datetime="2024-11-30T13:59:41.000Z" itemprop="datePublished">2024-11-30</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a> / <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/%E5%BC%80%E5%8F%91/">开发</a>
-  </div>
-  
-<div class="word_count">
-    <span class="post-time">
-        <span class="post-meta-item-icon">
-            <i class="ri-quill-pen-line"></i>
-            <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">1.3k</span>
-        </span>
-    </span>
-
-    <span class="post-time">
-        &nbsp; | &nbsp;
-        <span class="post-meta-item-icon">
-            <i class="ri-book-open-line"></i>
-            <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">4 分钟</span>
-        </span>
-    </span>
-</div>
- 
-    </div>
-      
-    <div class="tocbot"></div>
-
-
-
-
-  
     <div class="article-entry" itemprop="articleBody">
        
-  <p>本教程仅供 <strong>薪火杯组内成员</strong> 配置运行环境的教程，不公开项目源码。</p>
-<span id="more"></span>
+  <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D粒子手势交互系统</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- MediaPipe Hands -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
 
-<h1 id="邮宝聊天室项目运行环境配置"><a href="#邮宝聊天室项目运行环境配置" class="headerlink" title="邮宝聊天室项目运行环境配置"></a>邮宝聊天室项目运行环境配置</h1><h2 id="需要安装的软件"><a href="#需要安装的软件" class="headerlink" title="需要安装的软件"></a>需要安装的软件</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/javase/jdk22-archive-downloads.html">jdk</a></li>
-<li><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn">node.js</a></li>
-<li><a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/installer/">MySQL</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.alipan.com/s/ycfqZdqffBL">Navicat Premium 17</a> 和 <a target="_blank" rel="noopener" href="https://dtx-qaq.lanzoul.com/ixvN92gpxwhg">破解补丁</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.jetbrains.com/zh-cn/idea/download/?section=windows">IDEA</a></li>
-<li><a target="_blank" rel="noopener" href="https://code.visualstudio.com/">Visual Studio Code (如果有IDEA终极版就不用了)</a></li>
-<li><a target="_blank" rel="noopener" href="https://dtx-qaq.lanzoul.com/iW81N2gpsm2b">maven (我已经帮你们打包好了)</a></li>
-</ul>
-<h3 id="jdk-安装教程"><a href="#jdk-安装教程" class="headerlink" title="jdk 安装教程"></a>jdk 安装教程</h3><p><a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/javase/jdk22-archive-downloads.html">点击打开 jdk 下载页面</a></p>
-<p>点击图片所示位置下载对应版本</p>
-<p><img src="https://s2.loli.net/2024/11/30/ClxY2HhIBnUr56G.png" alt="jdk下载"></p>
-<p>下载完成后根据 <a target="_blank" rel="noopener" href="https://www.bilibili.com/opus/996875387017363456">jdk 安装教程</a> 进行安装。</p>
-<p><strong>！！！一定要记住自己的安装路径！！！</strong>。</p>
-<p>配置环境变量 <strong>JAVA_HOME</strong> 时注意修改成 <strong>自己的安装路径</strong>。</p>
-<h3 id="node-js-安装教程"><a href="#node-js-安装教程" class="headerlink" title="node.js 安装教程"></a>node.js 安装教程</h3><p><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn">点击打开 node.js 下载页面</a></p>
-<p>一路默认安装即可。</p>
-<p>安装完成后，使用 <code>Win + R</code> 打开运行框，输入 <code>cmd</code> 后回车打开命令行，在命令行输入 <code>node -v</code> 和 <code>npm -v</code> 验证是否安装成功（成功安装会显示版本号，不成功会报错，报错来找我）。</p>
-<p>安装完成后，由于仓库默认下载位置在国外，我们要把下载源切换为国内华为源，防止下载过慢甚至出错。</p>
-<p>在刚刚打开的命令行中输入命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https://mirrors.huaweicloud.com/repository/npm/</span><br></pre></td></tr></table></figure>
+    <style>
+        body { margin: 0; overflow: hidden; background-color: #050505; font-family: 'Segoe UI', sans-serif; }
+        canvas { display: block; }
+        
+        /* 玻璃拟态 UI */
+        .glass-panel {
+            background: rgba(20, 20, 25, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
 
-<p>来设置成华为镜像源。</p>
-<h3 id="MySQL-安装教程"><a href="#MySQL-安装教程" class="headerlink" title="MySQL 安装教程"></a>MySQL 安装教程</h3><p><a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/installer/">点击打开 MySQL 下载页面</a></p>
-<p>点击图片所示位置下载对应版本</p>
-<p><img src="https://s2.loli.net/2024/11/30/Ru7lv6fms4ZeQ2K.png" alt="MySQL下载"></p>
-<p>下载完成后根据 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1zC41187tM?spm_id_from=333.788.videopod.episodes&vd_source=641ddec1506b8f023585079febd43f1e&p=2">MySQL 安装教程</a> 进行安装。</p>
-<p><strong>注意：一定要记住自己的设置的数据库密码！！！，建议就为 123456</strong></p>
-<h3 id="Navicat-安装教程"><a href="#Navicat-安装教程" class="headerlink" title="Navicat 安装教程"></a>Navicat 安装教程</h3><p><a target="_blank" rel="noopener" href="https://www.alipan.com/s/ycfqZdqffBL">点击打开 Navicat Premium 17 下载页面</a></p>
-<p>默认安装即可。<strong>记住安装路径</strong> 后面破解会用到！！！！</p>
-<p><a target="_blank" rel="noopener" href="https://dtx-qaq.lanzoul.com/ixvN92gpxwhg">点击下载破解补丁</a></p>
-<p>下载完后解压，跟着步骤破解：</p>
-<ol>
-<li>运行一下已经安装的 Navicat 。然后完全退出程序</li>
-<li>双击无限试用 Navicat.bat 脚本</li>
-<li>将 winmm.dll 拖进 navicat 的安装路径下</li>
-</ol>
-<p>破解完成后，打开 Navicat ，按下方图示连接你的 MySQL 数据库：</p>
-<p><img src="https://s2.loli.net/2024/11/30/3ySWzhN7K1VqjXG.png" alt="新建连接"></p>
-<p><img src="https://s2.loli.net/2024/11/30/xfB4EhV9tCPSXqd.png" alt="输入账号密码"></p>
-<p>点击确定即可</p>
-<h3 id="IDEA-安装教程"><a href="#IDEA-安装教程" class="headerlink" title="IDEA 安装教程"></a>IDEA 安装教程</h3><p><a target="_blank" rel="noopener" href="https://www.jetbrains.com/zh-cn/idea/download/?section=windows">点击打开 IDEA 下载页面</a></p>
-<p><img src="https://s2.loli.net/2024/11/30/O3TkcUPfi2FgE7I.png" alt="选择版本下载"></p>
-<p>下载完后默认打安装就行</p>
-<h3 id="Visual-Studio-Code-安装教程"><a href="#Visual-Studio-Code-安装教程" class="headerlink" title="Visual Studio Code 安装教程"></a>Visual Studio Code 安装教程</h3><p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/">点击打开 Visual Studio Code 下载页面</a></p>
-<p>下载完后默认安装就行</p>
-<h2 id="配置项目运行环境"><a href="#配置项目运行环境" class="headerlink" title="配置项目运行环境"></a>配置项目运行环境</h2><h3 id="下载并解压我在微信群分享的压缩包"><a href="#下载并解压我在微信群分享的压缩包" class="headerlink" title="下载并解压我在微信群分享的压缩包"></a>下载并解压我在微信群分享的压缩包</h3><h3 id="配置-MySQL-数据库"><a href="#配置-MySQL-数据库" class="headerlink" title="配置 MySQL 数据库"></a>配置 MySQL 数据库</h3><p>打开 Navicat</p>
-<ol>
-<li>右键位置 1 ，打开菜单，新建数据库</li>
-</ol>
-<p><img src="https://s2.loli.net/2024/11/30/X3ace9xYTVn6NyK.png" alt="新建数据库"></p>
-<ol start="2">
-<li>输入数据库名称 <code>cqupt_chat</code> ，调节字符集和排序规则和下图一致，点击确定</li>
-</ol>
-<p><img src="https://s2.loli.net/2024/11/30/7AeyUmMk2PLT9w8.png" alt="调节字符集和排序规则"></p>
-<ol start="3">
-<li>双击你刚刚新建的 <code>cqupt_chat</code> 数据库，前面的图标变绿后，再右键它打开菜单，选择 <code>运行 SQL 文件</code></li>
-</ol>
-<p><img src="https://s2.loli.net/2024/11/30/lvd7ngexsEHTq5j.png" alt="运行 SQL 文件"></p>
-<ol start="4">
-<li>按步骤选择从 <strong>我微信发的压缩包</strong> 中解压出的 <code>cqupt_chat.sql</code> 文件</li>
-</ol>
-<p><img src="https://s2.loli.net/2024/11/30/SFh6nO5kuJ23x4s.png" alt="PixPin_2024-11-30_19-06-19.png"></p>
-<ol start="5">
-<li>修改数据库访问权限，按图示操作</li>
-</ol>
-<p><img src="https://s2.loli.net/2024/11/30/3l1jROeuxIFdkT8.png" alt="打开命令列"></p>
-<p>依次输入以下命令（一定要带结尾分号）：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">use mysql;</span><br></pre></td></tr></table></figure>
+        /* 隐藏视频元素，只用于处理 */
+        #input_video { display: none; }
+        
+        /* 摄像头骨架预览窗口 - 镜像翻转以符合直觉 */
+        #output_canvas {
+            transform: scaleX(-1); 
+            width: 720px;
+            height: auto;
+        }
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select user,host from user;</span><br></pre></td></tr></table></figure>
+        /* 加载动画 */
+        .loader {
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border-left-color: #4f46e5;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update user set host=&#x27;%&#x27; where user=&#x27;root&#x27;;</span><br></pre></td></tr></table></figure>
+        /* 自定义滚动条 */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #444; border-radius: 3px; }
+        
+        input[type="range"] {
+            -webkit-appearance: none;
+            background: transparent;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            background: #ffffff;
+            margin-top: -6px;
+            cursor: pointer;
+        }
+        input[type="range"]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 4px;
+            background: #4b5563;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flush privileges;</span><br></pre></td></tr></table></figure>
+    <!-- 视频输入 (隐藏) -->
+    <video id="input_video"></video>
 
-<p><img src="https://s2.loli.net/2024/11/30/vIpXWyogQTzFS3A.png" alt="运行结果"></p>
-<h3 id="配置后端-SpringBoot-项目"><a href="#配置后端-SpringBoot-项目" class="headerlink" title="配置后端 SpringBoot 项目"></a>配置后端 SpringBoot 项目</h3><p>打开 IDEA</p>
-<ol>
-<li><p>右上角 <code>File -&gt; Open</code>，选择从 <strong>我微信发的压缩包</strong> 中解压出的 <code>cqupt_chat</code> 中的 <code>springboot</code> 文件夹打开</p>
-</li>
-<li><p>调整 <code>Maven</code> 设置</p>
-</li>
-</ol>
-<p><a target="_blank" rel="noopener" href="https://dtx-qaq.lanzoul.com/iW81N2gpsm2b">点击下载 Maven</a> 后，解压到随便一个位置，但是要记住位置，后面要用。</p>
-<p><img src="https://s2.loli.net/2024/11/30/2JEYemTuQMiyHl1.png" alt="打开设置"></p>
-<ul>
-<li><p><code>Maven 主路径</code> 选择刚刚解压的 Maven 文件夹位置。</p>
-</li>
-<li><p><code>用户设置文件</code> 勾选 <code>重写</code> ，然后选择刚刚解压的 Maven 文件夹位置下的 <code>conf</code> 文件夹下的 <code>setting.xml</code> 文件。</p>
-</li>
-</ul>
-<p><img src="https://s2.loli.net/2024/11/30/zgsXiYhMKFBVA16.png" alt="调整 Maven 设置"></p>
-<ol start="3">
-<li>调整编码</li>
-</ol>
-<p><img src="https://s2.loli.net/2024/11/30/wEsjS2eGqV3TzKu.png" alt="调整编码"></p>
-<ol start="4">
-<li>加载 Maven 依赖</li>
-</ol>
-<p><img src="https://s2.loli.net/2024/11/30/KIn93hrWVQu1EZR.png" alt="开始加载依赖"></p>
-<p>下载依赖时右下角应该有一个蓝色的进度条，等一段时间依赖下载完成后消失，重新打开 IDEA ，这时 <code>pom.xml</code> 文件应该没有红色字体。</p>
-<p><img src="https://s2.loli.net/2024/11/30/8UFo1ldr9C6tYmK.png" alt="没有红色文字"></p>
-<ol start="5">
-<li>配置数据库连接</li>
-</ol>
-<ul>
-<li><p>在 IDEA 中双击打开 <code>springboot/src/main/resources/application.yml</code> 文件</p>
-</li>
-<li><p>修改 <code>password</code> 为你自己的数据库密码</p>
-</li>
-<li><p>3 的部分为之前导入的数据库名字 <code>cqupt_chat</code> （默认也是 <code>cqupt_chat</code> ）。</p>
-</li>
-</ul>
-<p><img src="https://s2.loli.net/2024/12/01/x7CdwvkW5cRmEUs.png" alt="PixPin_2024-11-30_23-57-03.png"></p>
-<p><strong>至此，后端环境配置完成</strong></p>
-<h3 id="配置前端-Vue-项目"><a href="#配置前端-Vue-项目" class="headerlink" title="配置前端 Vue 项目"></a>配置前端 Vue 项目</h3><p>打开 Visual Studio Code</p>
-<ol>
-<li>找到从 <strong>我微信发的压缩包</strong> 中解压出的 <code>cqupt_chat</code> 中的 <code>vue</code> 文件夹打开</li>
-</ol>
-<p><img src="https://s2.loli.net/2024/12/01/htuJ8dvY1q6eNfC.png" alt="打开文件夹"></p>
-<p><img src="https://s2.loli.net/2024/12/01/gSjo7J3cDaFkAEL.png" alt="打开项目"></p>
-<ol start="2">
-<li>在集成终端中（打开方式见下图）按顺序输入</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g @vue/cli</span><br></pre></td></tr></table></figure>
-<p>等待上一条命令执行结束，输入</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+    <!-- 加载遮罩 -->
+    <div id="loading-screen" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black transition-opacity duration-500">
+        <div class="loader mb-4"></div>
+        <div class="text-white text-lg tracking-widest">正在初始化摄像头与AI模型...</div>
+        <div class="text-gray-500 text-sm mt-2">请允许摄像头权限以启用手势控制</div>
+    </div>
 
-<p>这两个命令用来安装依赖，<strong>每个命令运行可能都需要一段时间</strong>，耐心等待。</p>
-<p><img src="https://s2.loli.net/2024/12/01/CAN6GkpbvMnaows.png" alt="安装vue"></p>
-<p><strong>至此，前端环境配置完成</strong></p>
-<h2 id="运行项目"><a href="#运行项目" class="headerlink" title="运行项目"></a>运行项目</h2><h3 id="MySQL-数据库运行"><a href="#MySQL-数据库运行" class="headerlink" title="MySQL 数据库运行"></a>MySQL 数据库运行</h3><p>按 <code>Ctrl + Shift + Esc</code> 快捷键打开任务管理器，然后按下图操作（如果已经是正在运行可以忽略）</p>
-<p><img src="https://s2.loli.net/2024/12/01/Dit86Wak7SdjsgO.png" alt="开启MySQL服务"></p>
-<h3 id="后端-SpringBoot-项目运行"><a href="#后端-SpringBoot-项目运行" class="headerlink" title="后端 SpringBoot 项目运行"></a>后端 SpringBoot 项目运行</h3><p>打开 IDEA</p>
-<ol>
-<li><p>选择 <code>File -&gt; Open</code>，选择从 <strong>我微信发的压缩包</strong> 中解压出的 <code>cqupt_chat</code> 中的 <code>springboot</code> 文件夹打开</p>
-</li>
-<li><p>双击打开 <code>springboot/src/main/java/com.example/SpringbootApplication</code> 文件, 按下图操作</p>
-</li>
-</ol>
-<p><img src="https://s2.loli.net/2024/12/01/VDL85BO6Mdlk3xQ.png" alt="后端运行"></p>
-<h3 id="前端-Vue-项目运行"><a href="#前端-Vue-项目运行" class="headerlink" title="前端 Vue 项目运行"></a>前端 Vue 项目运行</h3><p>打开 Visual Studio Code</p>
-<ol>
-<li>找到从 <strong>我微信发的压缩包</strong> 中解压出的 <code>cqupt_chat</code> 中的 <code>vue</code> 文件夹打开</li>
-</ol>
-<p><img src="https://s2.loli.net/2024/12/01/gSjo7J3cDaFkAEL.png" alt="打开项目"></p>
-<p><img src="https://s2.loli.net/2024/12/01/rajvJ7OZ4BxAmdY.png" alt="启用npm脚本"></p>
-<p><img src="https://s2.loli.net/2024/12/01/kEXFihyQWSjDLNr.png" alt="前端运行"></p>
-<h3 id="项目启动完毕"><a href="#项目启动完毕" class="headerlink" title="项目启动完毕"></a>项目启动完毕</h3><p>大家的账号为 <code>姓名</code></p>
-<p>密码默认 <code>123456</code></p>
-<p>登录后就可以使用了</p>
-<p><img src="https://s2.loli.net/2024/12/01/LodAMt1zsXNTcxC.png" alt="登录页面"></p>
- 
+    <!-- UI 控制面板 -->
+
+    <!-- 独立的设置按钮 (默认隐藏，点击后展开面板) -->
+    <button id="reopen-btn" class="fixed top-4 left-4 z-50 bg-gray-800/80 backdrop-blur text-white px-4 py-2 rounded-lg shadow-lg hover:bg-gray-700 transition hidden flex items-center gap-2 border border-gray-600">
+        <span>⚙️</span>
+    </button>
+
+    <div id="ui-panel" class="fixed top-4 left-4 w-72 p-5 rounded-2xl glass-panel text-white z-40 transition-transform duration-300">
+        <div class="flex justify-between items-center mb-4 border-b border-gray-700 pb-2">
+            <h1 class="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">粒子控制器</h1>
+            <button id="toggle-ui" class="text-gray-400 hover:text-white text-xs">收起</button>
+        </div>
+
+        <!-- 形状选择 -->
+        <div class="mb-5">
+            <label class="text-xs text-gray-400 uppercase font-bold tracking-wider mb-2 block">模型形状</label>
+            <!-- 更改为 3 列布局，添加太阳系选项 -->
+            <div class="grid grid-cols-3 gap-2">
+                <button onclick="changeShape('heart')" class="bg-gray-700 hover:bg-pink-600 transition p-2 rounded text-xs">❤️ 爱心</button>
+                <button onclick="changeShape('flower')" class="bg-gray-700 hover:bg-yellow-600 transition p-2 rounded text-xs">🌸 花朵</button>
+                <button onclick="changeShape('saturn')" class="bg-gray-700 hover:bg-blue-600 transition p-2 rounded text-xs">🪐 土星</button>
+                <button onclick="changeShape('sphere')" class="bg-gray-700 hover:bg-green-600 transition p-2 rounded text-xs">⚪ 球体</button>
+                <button onclick="changeShape('dna')" class="bg-gray-700 hover:bg-purple-600 transition p-2 rounded text-xs">🧬 DNA</button>
+                <!-- 新增太阳系选项 -->
+                <button onclick="changeShape('solar_system')" class="bg-gray-700 hover:bg-orange-500 transition p-2 rounded text-xs">☀️ 太阳系</button>
+            </div>
+        </div>
+
+        <!-- 图片上传 -->
+        <div class="mb-5">
+            <label class="text-xs text-gray-400 uppercase font-bold tracking-wider mb-2 block">自定义图片形状</label>
+            <label class="flex items-center justify-center w-full px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded cursor-pointer transition border border-dashed border-gray-500">
+                <span class="text-xs">📂 上传图片 (.png/.jpg)</span>
+                <input type="file" id="image-upload" accept="image/*" class="hidden" onchange="handleImageUpload(this)">
+            </label>
+            <p class="text-[10px] text-gray-500 mt-1">*建议使用黑色背景的简单图形</p>
+        </div>
+
+        <!-- 颜色控制 -->
+        <div class="mb-5">
+            <label class="text-xs text-gray-400 uppercase font-bold tracking-wider mb-2 block">渐变颜色</label>
+            <div class="flex items-center justify-between mb-2">
+                <span class="text-xs text-gray-300">起点色</span>
+                <input type="color" id="color-start" value="#00ffff" class="bg-transparent border-none h-6 w-8 cursor-pointer">
+            </div>
+            <div class="flex items-center justify-between">
+                <span class="text-xs text-gray-300">终点色</span>
+                <input type="color" id="color-end" value="#ff00ff" class="bg-transparent border-none h-6 w-8 cursor-pointer">
+            </div>
+        </div>
+
+        <!-- 手势状态 -->
+        <div class="mt-4 pt-4 border-t border-gray-700">
+            <div class="flex justify-between items-center">
+                <span class="text-xs text-gray-400">手势检测状态:</span>
+                <span id="hand-status" class="text-xs font-bold text-red-500">未检测</span>
+            </div>
+            <div class="flex justify-between items-center mt-2">
+                <span class="text-xs text-gray-400">控制强度:</span>
+                <div class="w-24 h-2 bg-gray-700 rounded-full overflow-hidden">
+                    <div id="gesture-bar" class="h-full bg-green-500 w-0 transition-all duration-100"></div>
+                </div>
+            </div>
+            <div class="flex justify-between items-center mt-2">
+                 <span class="text-[10px] text-gray-500 italic">移动手掌控制旋转，捏合手指缩放</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 摄像头+骨架预览窗口 -->
+    <div id="camera-container" class="fixed bottom-4 left-4 z-30 transition-transform duration-300">
+        <div class="text-[10px] text-gray-400 mb-1 ml-1">摄像头视角 (骨架追踪)</div>
+        <canvas id="output_canvas" width="320" height="240" class="w-48 h-36 rounded-lg border border-gray-600 shadow-lg bg-black/50"></canvas>
+    </div>
+
+    <!-- 底部全屏按钮 -->
+    <button id="fullscreen-btn" onclick="toggleFullScreen()" class="fixed bottom-4 right-4 p-3 bg-white/10 hover:bg-white/20 backdrop-blur rounded-full text-white transition z-40" title="全屏模式">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+        </svg>
+    </button>
+
+    <script>
+        // --- 1. 全局变量与初始化 ---
+        let scene, camera, renderer, particles, geometry;
+        let animationId;
+        const PARTICLE_COUNT = 15000; // 粒子总数
+        const PARTICLE_SIZE = 0.15;
+        
+        // 状态管理
+        const state = {
+            currentShape: 'heart',
+            handDistance: 0, // 0-1 之间
+            targetPositions: [], // 目标形状的坐标数组
+            originalPositions: [], // 用于存储图片生成的坐标
+            colorStart: null, // 在 initThree 中初始化
+            colorEnd: null,   // 在 initThree 中初始化
+            isHandDetected: false,
+            // 新增：旋转控制
+            targetRotationX: 0,
+            targetRotationY: 0
+        };
+
+        // 临时变量，将在 initThree 中初始化，避免 ReferenceError
+        let tempVec;
+        let mouse;
+
+        // --- 2. Three.js 场景设置 ---
+        function initThree() {
+            // 安全地初始化依赖 THREE 的变量
+            state.colorStart = new THREE.Color('#00ffff');
+            state.colorEnd = new THREE.Color('#ff00ff');
+            tempVec = new THREE.Vector3();
+            mouse = new THREE.Vector2();
+
+            scene = new THREE.Scene();
+            // 添加一点雾化效果，增加深邃感
+            scene.fog = new THREE.FogExp2(0x050505, 0.02);
+
+            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera.position.z = 30;
+
+            renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+            document.body.appendChild(renderer.domElement);
+
+            // 初始化粒子
+            createParticleSystem();
+            
+            // 监听窗口大小变化
+            window.addEventListener('resize', onWindowResize, false);
+            
+            // 监听鼠标移动（作为备用输入，或者仅用于微调）
+            document.addEventListener('mousemove', onDocumentMouseMove, false);
+
+            // 开始动画循环
+            animate();
+        }
+
+        // --- 3. 粒子系统核心 ---
+        function createParticleSystem() {
+            geometry = new THREE.BufferGeometry();
+            const positions = new Float32Array(PARTICLE_COUNT * 3);
+            const colors = new Float32Array(PARTICLE_COUNT * 3);
+            
+            // 初始随机分布
+            for (let i = 0; i < PARTICLE_COUNT; i++) {
+                positions[i * 3] = (Math.random() - 0.5) * 100;
+                positions[i * 3 + 1] = (Math.random() - 0.5) * 100;
+                positions[i * 3 + 2] = (Math.random() - 0.5) * 100;
+                
+                colors[i * 3] = 1;
+                colors[i * 3 + 1] = 1;
+                colors[i * 3 + 2] = 1;
+            }
+
+            geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+            geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+            // 创建材质
+            const material = new THREE.PointsMaterial({
+                size: PARTICLE_SIZE,
+                vertexColors: true,
+                blending: THREE.AdditiveBlending,
+                depthWrite: false,
+                transparent: true,
+                opacity: 0.8
+            });
+
+            particles = new THREE.Points(geometry, material);
+            scene.add(particles);
+
+            // 初始化目标位置数组
+            state.targetPositions = new Float32Array(PARTICLE_COUNT * 3);
+            
+            // 生成初始形状
+            generateShape('heart');
+            updateColors();
+        }
+
+        // --- 4. 形状生成算法 ---
+        function generateShape(type) {
+            state.currentShape = type;
+            const positions = state.targetPositions;
+
+            if (type === 'heart') {
+                // 使用拒绝采样法,基于数学隐函数生成实心体积
+                // 公式: (x^2 + 9/4y^2 + z^2 - 1)^3 - x^2*z^3 - 9/80*y^2*z^3 < 0
+                
+                let i = 0;
+                // 为了防止死循环（虽然极不可能），设置一个安全计数
+                let attempt = 0; 
+                
+                while (i < PARTICLE_COUNT) {
+                    // 1. 在包围盒内生成随机点
+                    // 心形公式大约在 [-1.5, 1.5] 范围内
+                    const x = (Math.random() * 3 - 1.5);
+                    const y = (Math.random() * 3 - 1.5);
+                    const z = (Math.random() * 3 - 1.5);
+
+                    // 2. 计算是否在心形内部
+                    const x2 = x * x;
+                    const y2 = y * y;
+                    const z2 = z * z;
+                    const z3 = z2 * z;
+                    
+                    const a = x2 + (9/4) * y2 + z2 - 1;
+                    const a3 = a * a * a;
+                    
+                    // 核心判断公式
+                    if (a3 - x2 * z3 - (9/80) * y2 * z3 <= 0) {
+                        const scale = 11; // 调整大小，数值越大心越大
+                        
+                        positions[i * 3] = x * scale;
+                        positions[i * 3 + 1] = z * scale - 2; // -2 是为了稍微向上偏移一点，让视觉中心居中
+                        positions[i * 3 + 2] = y * scale;
+
+                        i++; // 只有点在心形内部时，才算作有效粒子
+                    }
+                    
+                    attempt++;
+                    // 安全出口：如果计算太久无法填满（极罕见情况），则强制退出防止浏览器卡死
+                    if (attempt > PARTICLE_COUNT * 100) break;
+                }
+            }
+            else if (type === 'flower') {
+                for (let i = 0; i < PARTICLE_COUNT; i++) {
+                    const u = Math.random() * Math.PI * 2;
+                    const v = Math.random(); 
+                    // 玫瑰线 r = cos(k * theta)
+                    const k = 4; 
+                    const r = 10 * Math.cos(k * u) * v + 3; // +3 保证中心有实体
+                    
+                    positions[i * 3] = r * Math.cos(u);
+                    positions[i * 3 + 1] = r * Math.sin(u);
+                    positions[i * 3 + 2] = (Math.random() - 0.5) * 5 * (1-v); // 中心厚边缘薄
+                }
+            }
+            else if (type === 'saturn') {
+                 for (let i = 0; i < PARTICLE_COUNT; i++) {
+                    if (i < PARTICLE_COUNT * 0.7) {
+                        // 球体主体
+                        const radius = 8;
+                        const theta = Math.random() * Math.PI * 2;
+                        const phi = Math.acos(2 * Math.random() - 1);
+                        positions[i * 3] = radius * Math.sin(phi) * Math.cos(theta);
+                        positions[i * 3 + 1] = radius * Math.sin(phi) * Math.sin(theta);
+                        positions[i * 3 + 2] = radius * Math.cos(phi);
+                    } else {
+                        // 光环
+                        const angle = Math.random() * Math.PI * 2;
+                        const dist = 12 + Math.random() * 8;
+                        positions[i * 3] = Math.cos(angle) * dist;
+                        positions[i * 3 + 1] = (Math.random() - 0.5) * 0.5; // 压扁
+                        positions[i * 3 + 2] = Math.sin(angle) * dist;
+                        
+                        // 倾斜光环
+                        const x = positions[i * 3];
+                        const y = positions[i * 3 + 1];
+                        const tiltAngle = Math.PI / 6;
+                        positions[i * 3] = x * Math.cos(tiltAngle) - y * Math.sin(tiltAngle);
+                        positions[i * 3 + 1] = x * Math.sin(tiltAngle) + y * Math.cos(tiltAngle);
+                    }
+                }
+            }
+            else if (type === 'sphere') {
+                 for (let i = 0; i < PARTICLE_COUNT; i++) {
+                    const radius = 12;
+                    const theta = Math.random() * Math.PI * 2;
+                    const phi = Math.acos(2 * Math.random() - 1);
+                    
+                    positions[i * 3] = radius * Math.sin(phi) * Math.cos(theta);
+                    positions[i * 3 + 1] = radius * Math.sin(phi) * Math.sin(theta);
+                    positions[i * 3 + 2] = radius * Math.cos(phi);
+                }
+            }
+            else if (type === 'dna') {
+                for (let i = 0; i < PARTICLE_COUNT; i++) {
+                    const t = (i / PARTICLE_COUNT) * Math.PI * 10; // 5 turns
+                    const radius = 6;
+                    // 双螺旋
+                    const offset = (i % 2 === 0) ? 0 : Math.PI;
+                    
+                    positions[i * 3] = Math.cos(t + offset) * radius;
+                    positions[i * 3 + 1] = (i / PARTICLE_COUNT - 0.5) * 30; // height
+                    positions[i * 3 + 2] = Math.sin(t + offset) * radius;
+                    
+                    // 添加噪点，让它看起来更像云团
+                    positions[i * 3] += (Math.random() - 0.5);
+                    positions[i * 3 + 1] += (Math.random() - 0.5);
+                    positions[i * 3 + 2] += (Math.random() - 0.5);
+                }
+            }
+            // --- 新增太阳系形状逻辑 ---
+            else if (type === 'solar_system') {
+                // 轨道半径 (缩放后的值)
+                const orbitRadii = {
+                    sun: 0,
+                    mercury: 3,
+                    venus: 5,
+                    earth: 7,
+                    mars: 9,
+                    jupiter: 15,
+                    saturn: 18,
+                    uranus: 22,
+                    neptune: 25
+                };
+                
+                // 粒子分配百分比
+                const particleAllocation = {
+                    sun: PARTICLE_COUNT * 0.10, // 太阳
+                    mercury: PARTICLE_COUNT * 0.03, // 水星
+                    venus: PARTICLE_COUNT * 0.05,  // 金星
+                    earth: PARTICLE_COUNT * 0.05,  // 地球
+                    mars: PARTICLE_COUNT * 0.03,   // 火星
+                    jupiter: PARTICLE_COUNT * 0.08, // 木星
+                    saturn: PARTICLE_COUNT * 0.08,  // 土星
+                    uranus: PARTICLE_COUNT * 0.05,  // 天王星
+                    neptune: PARTICLE_COUNT * 0.05, // 海王星
+                };
+
+                // 计算用于轨道线的粒子数
+                const allocatedCount = Object.values(particleAllocation).reduce((a, b) => a + b, 0);
+                const orbitParticleCount = PARTICLE_COUNT - Math.round(allocatedCount);
+                
+                let i = 0;
+                const scale = 1.0; // 整体缩放
+
+                // 1. 生成行星和太阳的主体粒子
+                const bodies = ['sun', 'mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune'];
+
+                bodies.forEach(body => {
+                    const count = Math.round(particleAllocation[body]);
+                    const radius = orbitRadii[body];
+                    // 调整行星和太阳的粒子团大小
+                    const planetSize = body === 'sun' ? 4 : (body === 'jupiter' ? 2.5 : (body === 'saturn' ? 2 : 1.2)); 
+                    const angle = Math.random() * Math.PI * 2; // 随机的初始轨道角度
+                    
+                    // 轨道在 XZ 平面上
+                    const baseX = Math.cos(angle) * radius * scale;
+                    const baseY = 0; 
+                    const baseZ = Math.sin(angle) * radius * scale;
+
+                    for (let k = 0; k < count && i < PARTICLE_COUNT; k++) {
+                        // 在行星主体内随机分布
+                        const theta = Math.random() * Math.PI * 2;
+                        const phi = Math.acos(2 * Math.random() - 1);
+                        const r = Math.random() * planetSize;
+                        
+                        const offsetX = r * Math.sin(phi) * Math.cos(theta);
+                        const offsetY = r * Math.sin(phi) * Math.sin(theta);
+                        const offsetZ = r * Math.cos(phi);
+
+                        positions[i * 3] = baseX + offsetX;
+                        positions[i * 3 + 1] = baseY + offsetY;
+                        positions[i * 3 + 2] = baseZ + offsetZ;
+                        i++;
+                    }
+
+                    // 特殊处理：土星环
+                    if (body === 'saturn') {
+                        const ringRadius = 2.5;
+                        const ringWidth = 1.0;
+                        const ringParticles = Math.round(count * 1.5);
+
+                        for (let k = 0; k < ringParticles && i < PARTICLE_COUNT; k++) {
+                            const ringAngle = Math.random() * Math.PI * 2;
+                            const dist = ringRadius + Math.random() * ringWidth;
+                            
+                            const x = Math.cos(ringAngle) * dist;
+                            const z = Math.sin(ringAngle) * dist;
+                            const y = (Math.random() - 0.5) * 0.2; // 极薄层
+                            
+                            // 倾斜光环
+                            const tiltAngle = Math.PI / 6;
+                            const tiltedX = x * Math.cos(tiltAngle) - y * Math.sin(tiltAngle);
+                            const tiltedY = x * Math.sin(tiltAngle) + y * Math.cos(tiltAngle);
+
+                            positions[i * 3] = baseX + tiltedX;
+                            positions[i * 3 + 1] = baseY + tiltedY;
+                            positions[i * 3 + 2] = baseZ + z;
+                            i++;
+                        }
+                    }
+                });
+
+                // 2. 生成轨道粒子 (在每个轨道上均匀分布)
+                // 轨道线的粒子数按轨道半径比例分配
+                const orbitBodies = bodies.slice(1); // 排除太阳
+                const totalRadius = orbitBodies.map(b => orbitRadii[b]).reduce((a, b) => a + b, 0);
+
+                orbitBodies.forEach(body => {
+                    const radius = orbitRadii[body];
+                    // 根据轨道半径的比例分配粒子
+                    const count = Math.round(orbitParticleCount * (radius / totalRadius));
+                    
+                    for (let k = 0; k < count && i < PARTICLE_COUNT; k++) {
+                        // 沿着圆形轨道随机分布
+                        const angle = Math.random() * Math.PI * 2;
+                        positions[i * 3] = Math.cos(angle) * radius * scale;
+                        positions[i * 3 + 1] = (Math.random() - 0.5) * 0.1; // 保持扁平
+                        positions[i * 3 + 2] = Math.sin(angle) * radius * scale;
+                        i++;
+                    }
+                });
+
+
+                // 3. 填充剩余的粒子到背景/随机位置 (如果 i < PARTICLE_COUNT)
+                while (i < PARTICLE_COUNT) {
+                    positions[i * 3] = (Math.random() - 0.5) * 50;
+                    positions[i * 3 + 1] = (Math.random() - 0.5) * 50;
+                    positions[i * 3 + 2] = (Math.random() - 0.5) * 50;
+                    i++;
+                }
+            }
+            // --- 太阳系形状逻辑结束 ---
+        }
+
+        // --- 5. 图片处理 (自定义形状) ---
+        function handleImageUpload(input) {
+            const file = input.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = new Image();
+                img.onload = function() {
+                    processImageToParticles(img);
+                };
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function processImageToParticles(image) {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            
+            // 缩放图片以减少计算量，保持纵横比
+            const maxSize = 200; 
+            let width = image.width;
+            let height = image.height;
+            
+            if (width > height) {
+                if (width > maxSize) {
+                    height *= maxSize / width;
+                    width = maxSize;
+                }
+            } else {
+                if (height > maxSize) {
+                    width *= maxSize / height;
+                    height = maxSize;
+                }
+            }
+
+            canvas.width = width;
+            canvas.height = height;
+            ctx.drawImage(image, 0, 0, width, height);
+            
+            const imageData = ctx.getImageData(0, 0, width, height);
+            const data = imageData.data;
+            const validPixels = [];
+
+            // 扫描像素
+            for (let y = 0; y < height; y++) {
+                for (let x = 0; x < width; x++) {
+                    const index = (y * width + x) * 4;
+                    const r = data[index];
+                    const g = data[index + 1];
+                    const b = data[index + 2];
+                    const a = data[index + 3];
+
+                    // 阈值过滤 (非透明且亮度较高)
+                    const brightness = (r + g + b) / 3;
+                    if (a > 128 && brightness > 30) {
+                        validPixels.push({
+                            x: (x - width / 2) * 0.15, // 居中并缩放
+                            y: -(y - height / 2) * 0.15 // Canvas Y轴向下，3D Y轴向上，需翻转
+                        });
+                    }
+                }
+            }
+
+            // 更新目标位置
+            state.currentShape = 'custom';
+            const positions = state.targetPositions;
+            
+            for (let i = 0; i < PARTICLE_COUNT; i++) {
+                // 如果像素点少于粒子数，随机重复取样
+                const pixel = validPixels[Math.floor(Math.random() * validPixels.length)];
+                if (pixel) {
+                    positions[i * 3] = pixel.x;
+                    positions[i * 3 + 1] = pixel.y;
+                    positions[i * 3 + 2] = (Math.random() - 0.5) * 2; // 扁平带一点厚度
+                } else {
+                    // 只有在图片完全黑或者没像素时才会走到这
+                    positions[i * 3] = (Math.random() - 0.5) * 10;
+                    positions[i * 3 + 1] = (Math.random() - 0.5) * 10;
+                    positions[i * 3 + 2] = (Math.random() - 0.5) * 10;
+                }
+            }
+        }
+
+        // --- 6. 颜色渐变逻辑 ---
+        function updateColors() {
+            if (!geometry || !state.colorStart || !state.colorEnd) return;
+            
+            const colors = geometry.attributes.color.array;
+            const positions = state.targetPositions; // 使用目标位置作为颜色映射基准
+            
+            const colorStart = state.colorStart;
+            const colorEnd = state.colorEnd;
+
+            for (let i = 0; i < PARTICLE_COUNT; i++) {
+                // 根据Y轴位置做渐变 (-15 到 15 范围)
+                let y = positions[i * 3 + 1];
+                let alpha = (y + 10) / 20; // 归一化
+                alpha = Math.max(0, Math.min(1, alpha));
+
+                colors[i * 3] = THREE.MathUtils.lerp(colorStart.r, colorEnd.r, alpha);
+                colors[i * 3 + 1] = THREE.MathUtils.lerp(colorStart.g, colorEnd.g, alpha);
+                colors[i * 3 + 2] = THREE.MathUtils.lerp(colorStart.b, colorEnd.b, alpha);
+            }
+            geometry.attributes.color.needsUpdate = true;
+        }
+
+        // 监听颜色输入
+        document.getElementById('color-start').addEventListener('input', (e) => {
+            if(state.colorStart) {
+                state.colorStart.set(e.target.value);
+                updateColors();
+            }
+        });
+        document.getElementById('color-end').addEventListener('input', (e) => {
+            if(state.colorEnd) {
+                state.colorEnd.set(e.target.value);
+                updateColors();
+            }
+        });
+
+        // UI 切换形状
+        window.changeShape = (type) => {
+            generateShape(type);
+            updateColors(); // 形状改变后重新计算颜色映射
+        };
+
+        // --- 7. MediaPipe Hands 设置 ---
+        function initMediaPipe() {
+            const videoElement = document.getElementById('input_video');
+            const canvasElement = document.getElementById('output_canvas');
+            
+            // 确保画布分辨率与视频处理分辨率一致，但CSS控制显示大小
+            canvasElement.width = 640;
+            canvasElement.height = 480;
+
+            const hands = new Hands({locateFile: (file) => {
+                return `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`;
+            }});
+
+            hands.setOptions({
+                maxNumHands: 1,
+                modelComplexity: 1,
+                minDetectionConfidence: 0.5,
+                minTrackingConfidence: 0.5
+            });
+
+            hands.onResults(onHandsResults);
+
+            const cameraUtils = new Camera(videoElement, {
+                onFrame: async () => {
+                    await hands.send({image: videoElement});
+                },
+                width: 640,
+                height: 480
+            });
+            
+            cameraUtils.start()
+                .then(() => {
+                    document.getElementById('loading-screen').style.opacity = '0';
+                    setTimeout(() => document.getElementById('loading-screen').remove(), 500);
+                })
+                .catch(err => {
+                    alert("无法启动摄像头。请检查权限或使用HTTPS环境。");
+                    document.getElementById('loading-screen').innerHTML = "<div class='text-red-500'>摄像头启动失败</div>";
+                });
+        }
+
+        // 手势识别回调 - 修改后包含绘制逻辑
+        function onHandsResults(results) {
+            const handStatus = document.getElementById('hand-status');
+            const gestureBar = document.getElementById('gesture-bar');
+            
+            // 绘制逻辑
+            const canvasElement = document.getElementById('output_canvas');
+            const canvasCtx = canvasElement.getContext('2d');
+            
+            canvasCtx.save();
+            canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
+            // 绘制摄像头原始画面
+            canvasCtx.drawImage(results.image, 0, 0, canvasElement.width, canvasElement.height);
+            
+            if (results.multiHandLandmarks && results.multiHandLandmarks.length > 0) {
+                state.isHandDetected = true;
+                handStatus.innerText = "已连接";
+                handStatus.className = "text-xs font-bold text-green-500";
+                
+                const landmarks = results.multiHandLandmarks[0];
+                
+                // 绘制骨架
+                drawConnectors(canvasCtx, landmarks, HAND_CONNECTIONS, {color: '#00FF00', lineWidth: 4});
+                drawLandmarks(canvasCtx, landmarks, {color: '#FF0000', lineWidth: 2, radius: 4});
+
+                // --- 1. 捏合计算 (Scale/Explosion) ---
+                const thumbTip = landmarks[4];
+                const indexTip = landmarks[8];
+                
+                const distance = Math.sqrt(
+                    Math.pow(thumbTip.x - indexTip.x, 2) + 
+                    Math.pow(thumbTip.y - indexTip.y, 2)
+                );
+                let normalizedDist = (distance - 0.02) * 5; 
+                //state.handDistance = Math.max(0, Math.min(1, normalizedDist));
+                let clampedDist = Math.max(0, Math.min(1, normalizedDist));
+                state.handDistance = 1 - clampedDist;
+                gestureBar.style.width = `${state.handDistance * 100}%`;
+
+                // --- 2. 手掌位置计算 (Rotation) ---
+                // 计算手掌的中心点 (简单取所有点的平均值)
+                let centerX = 0;
+                let centerY = 0;
+                for (let lm of landmarks) {
+                    centerX += lm.x;
+                    centerY += lm.y;
+                }
+                centerX /= landmarks.length;
+                centerY /= landmarks.length;
+
+                // MediaPipe 的坐标系: x (0左 - 1右), y (0上 - 1下)
+                // 映射到旋转角度:
+                // x: 0.5 是中心。往左(<0.5) 旋转负，往右(>0.5) 旋转正
+                // y: 0.5 是中心。往上(<0.5) 旋转负，往下(>0.5) 旋转正
+                
+                const rotationSensitivity = 2.5; // 旋转灵敏度
+                
+                // X轴位移控制 Y轴旋转 (左右转)
+                // 反转左右旋转方向：将映射取反
+                state.targetRotationY = -(centerX - 0.5) * rotationSensitivity * Math.PI; 
+                
+                // Y轴位移控制 X轴旋转 (上下转)
+                state.targetRotationX = (centerY - 0.5) * rotationSensitivity * Math.PI;
+
+            } else {
+                state.isHandDetected = false;
+                handStatus.innerText = "未检测";
+                handStatus.className = "text-xs font-bold text-red-500";
+                
+                // 缓慢复位
+                state.handDistance *= 0.9;
+                gestureBar.style.width = `${state.handDistance * 100}%`;
+                
+                // 旋转缓慢回正 (可选，或者保持当前角度)
+                state.targetRotationX *= 0.95;
+                state.targetRotationY *= 0.95;
+            }
+            canvasCtx.restore();
+        }
+
+        // --- 8. 动画循环 ---
+        function animate() {
+            requestAnimationFrame(animate);
+
+            if (!geometry || !state.targetPositions) return;
+
+            const positions = geometry.attributes.position.array;
+            const targetPositions = state.targetPositions;
+            
+            // 基础时间
+            const time = Date.now() * 0.001;
+
+            // 交互系数
+            const expansionFactor = 1 + state.handDistance * 2.5; 
+            const explosionFactor = state.handDistance * 5;
+
+            for (let i = 0; i < PARTICLE_COUNT; i++) {
+                const px = i * 3;
+                const py = i * 3 + 1;
+                const pz = i * 3 + 2;
+
+                let tx = targetPositions[px];
+                let ty = targetPositions[py];
+                let tz = targetPositions[pz];
+
+                // 1. 应用手势缩放
+                tx *= expansionFactor;
+                ty *= expansionFactor;
+                tz *= expansionFactor;
+
+                // 2. 应用手势扩散/爆炸
+                if (state.handDistance > 0.1) {
+                    tx += (Math.random() - 0.5) * explosionFactor;
+                    ty += (Math.random() - 0.5) * explosionFactor;
+                    tz += (Math.random() - 0.5) * explosionFactor;
+                }
+
+                // 3. 自身轻微动画
+                if (!state.isHandDetected) {
+                    const wave = Math.sin(time + tx * 0.1) * 0.2;
+                    tx += wave;
+                    ty += wave;
+                }
+
+                // 4. 物理插值更新
+                positions[px] += (tx - positions[px]) * 0.08;
+                positions[py] += (ty - positions[py]) * 0.08;
+                positions[pz] += (tz - positions[pz]) * 0.08;
+            }
+
+            geometry.attributes.position.needsUpdate = true;
+
+            // --- 旋转逻辑更新 ---
+            if (particles) {
+                // 平滑插值到目标角度
+                // 手势控制优先
+                particles.rotation.x += (state.targetRotationX - particles.rotation.x) * 0.1;
+                particles.rotation.y += (state.targetRotationY - particles.rotation.y) * 0.1;
+                
+                // 注意：这里移除了原本的 particles.rotation.y += 0.002 (自动旋转)
+                // 也移除了鼠标控制旋转，因为容易冲突。如果需要鼠标作为fallback，可以添加逻辑判断。
+            }
+
+            if(renderer && scene && camera) {
+                renderer.render(scene, camera);
+            }
+        }
+
+        // --- 9. 辅助功能 ---
+        function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+
+        function onDocumentMouseMove(event) {
+            if(mouse) {
+                mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+                mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+            }
+        }
+
+        // 全屏控制与图标切换
+        const fullscreenBtn = document.getElementById('fullscreen-btn');
+        
+        // 定义图标路径
+        // 放大图标 (向外箭头)
+        const iconEnter = `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+        </svg>`;
+        
+        // 缩小图标 (向内箭头)
+        const iconExit = `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25" />
+        </svg>`;
+
+        function toggleFullScreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+
+        // 监听全屏状态变化 (覆盖按键Esc退出的情况)
+        document.addEventListener('fullscreenchange', () => {
+            if (document.fullscreenElement) {
+                // 进入全屏时：显示缩小图标
+                fullscreenBtn.innerHTML = iconExit;
+                fullscreenBtn.title = "退出全屏";
+            } else {
+                // 退出全屏时：显示放大图标
+                fullscreenBtn.innerHTML = iconEnter;
+                fullscreenBtn.title = "全屏模式";
+            }
+        });
+
+        // UI 收起/展开
+        // UI 收起/展开
+        const uiPanel = document.getElementById('ui-panel');
+        const cameraContainer = document.getElementById('camera-container');
+        const closeBtn = document.getElementById('toggle-ui'); // 面板里的“收起”按钮
+        const reopenBtn = document.getElementById('reopen-btn'); // 面板外的“设置”按钮
+
+        // 收起功能
+        function hideUI() {
+            // 1. 移动面板和摄像头到屏幕外
+            uiPanel.style.transform = 'translateX(-110%)';
+            if(cameraContainer) cameraContainer.style.transform = 'translateX(-150%)';
+            
+            // 2. 显示外部的“设置”按钮
+            reopenBtn.classList.remove('hidden');
+        }
+
+        // 展开功能
+        function showUI() {
+            // 1. 恢复面板和摄像头位置
+            uiPanel.style.transform = 'translateX(0)';
+            if(cameraContainer) cameraContainer.style.transform = 'translateX(0)';
+            
+            // 2. 隐藏外部的“设置”按钮
+            reopenBtn.classList.add('hidden');
+        }
+
+        // 绑定事件
+        closeBtn.addEventListener('click', hideUI);
+        reopenBtn.addEventListener('click', showUI);
+
+
+        // 启动 - 必须在 window.onload 之后，确保 Three.js 脚本已加载
+        window.onload = function() {
+            initThree();
+            initMediaPipe();
+        };
+
+    </script>
+</body>
+</html> 
       <!-- reward -->
       
       <div id="reword-out">
@@ -374,27 +1089,15 @@ var _hmt = _hmt || [];
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://amor-vooc-github-io.pages.dev/2024/11/30/%E9%82%AE%E5%AE%9D%E8%81%8A%E5%A4%A9%E5%AE%A4%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Fake-Location/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://amor-vooc-github-io.pages.dev/HTML/OnHandControl.html" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/" rel="tag">Vue</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB/" rel="tag">前后端分离</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/" rel="tag">环境配置教程</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%96%AA%E7%81%AB%E6%9D%AF/" rel="tag">薪火杯</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6/" rel="tag">重庆邮电大学</a></li></ul>
-
     </footer>
   </div>
 
    
-  <nav class="article-nav">
-    
-    
-      <a href="/2024/07/15/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/BlogMove/" class="article-nav-link">
-        <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">博客静态托管迁移记录</div>
-      </a>
-    
-  </nav>
-
    
 <!-- valine评论 -->
 <div id="vcomments-box">
@@ -1101,7 +1804,7 @@ var _hmt = _hmt || [];
 </style>
 
  
-     
+   
 </article>
 
 </section>
@@ -1259,23 +1962,6 @@ var _hmt = _hmt || [];
 <script src="/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
-
-
-<script src="/js/tocbot.min.js"></script>
-
-<script>
-  tocbot.init({
-    tocSelector: '.tocbot',
-    contentSelector: '.article-entry',
-    headingSelector: 'h1, h2, h3, h4, h5, h6',
-    hasInnerContainers: true,
-    scrollSmooth: true,
-    scrollContainer: 'main',
-    positionFixedSelector: '.tocbot',
-    positionFixedClass: 'is-position-fixed',
-    fixedSidebarOffset: 'auto'
-  });
-</script>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
