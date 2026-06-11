@@ -1,34 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
-    <url>/2026/06/10/%E5%AE%9E%E9%AA%8C%E4%BB%8B%E7%BB%8D%E8%A7%86%E9%A2%91%E8%84%9A%E6%9C%AC/cmq7yzoz4000hvk60g1w47k8u/</url>
-    <content><![CDATA[<h1 id="Titanic-SVM-实验介绍视频脚本（约-5-分钟）"><a href="#Titanic-SVM-实验介绍视频脚本（约-5-分钟）" class="headerlink" title="Titanic SVM 实验介绍视频脚本（约 5 分钟）"></a>Titanic SVM 实验介绍视频脚本（约 5 分钟）</h1><h2 id="0-00-0-25-开场与任务说明"><a href="#0-00-0-25-开场与任务说明" class="headerlink" title="0:00-0:25 开场与任务说明"></a>0:00-0:25 开场与任务说明</h2><p>画面提示：展示实验报告封面或 Kaggle Titanic 题目页面。</p>
-<p>口播：<br>大家好，本次实验的题目是 Kaggle 上的 Titanic - Machine Learning from Disaster。我使用 Python 语言和支持向量机 SVM，完成乘客是否生还的二分类预测。实验的主要流程包括数据读取、探索性分析、缺失值处理、结合实际背景的特征工程、SVM 模型训练与验证，最后生成 Kaggle 要求格式的提交文件。</p>
-<h2 id="0-25-1-05-数据集与问题理解"><a href="#0-25-1-05-数据集与问题理解" class="headerlink" title="0:25-1:05 数据集与问题理解"></a>0:25-1:05 数据集与问题理解</h2><p>画面提示：展示 <code>titanic/train.csv</code>、<code>test.csv</code> 和代码中的读取部分。</p>
-<p>口播：<br>训练集一共有 891 条样本，包含 PassengerId、Pclass、Name、Sex、Age、SibSp、Parch、Ticket、Fare、Cabin、Embarked 和标签 Survived。测试集有 418 条样本，没有 Survived 标签，需要模型预测。Survived 等于 1 表示乘客生还，等于 0 表示未生还。</p>
-<p>在训练集中，整体生还率约为 38.38%。这说明数据本身并不是完全均衡的，所以后续评估时不能只看模型是否能预测多数类别，还需要观察 Precision、Recall、F1 和混淆矩阵。</p>
-<h2 id="1-05-2-05-结合实际背景的数据分析"><a href="#1-05-2-05-结合实际背景的数据分析" class="headerlink" title="1:05-2:05 结合实际背景的数据分析"></a>1:05-2:05 结合实际背景的数据分析</h2><p>画面提示：展示 <code>outputs/metrics.json</code> 中按性别和舱位等级统计的结果，或展示报告中的统计表。</p>
-<p>口播：<br>Titanic 这个题目不能只机械地填补缺失值，还要考虑真实背景。根据训练集统计，女性乘客的生还率为 74.20%，男性乘客的生还率只有 18.89%，差异非常明显。这和历史中的“妇女和儿童优先”救援背景一致。</p>
-<p>再看舱位等级，头等舱乘客生还率为 62.96%，二等舱为 47.28%，三等舱只有 24.24%。这说明 Pclass 和 Fare 这类字段能够反映乘客所在区域、经济条件和逃生机会，因此应该保留。</p>
-<p>年龄方面，儿童群体的生还率也相对较高。所以在特征工程中，我没有只保留原始 Age，而是额外构造了 IsChild 和 WomanOrChild，用来体现儿童以及女性或儿童这类更可能优先获救的群体。</p>
-<h2 id="2-05-3-05-缺失值处理与特征工程"><a href="#2-05-3-05-缺失值处理与特征工程" class="headerlink" title="2:05-3:05 缺失值处理与特征工程"></a>2:05-3:05 缺失值处理与特征工程</h2><p>画面提示：展示 <code>TitanicFeatureEngineer</code> 类中的 <code>fit</code>、<code>transform</code>、<code>_extract_title</code> 部分。</p>
-<p>口播：<br>数据中缺失比较明显的字段是 Age、Cabin 和 Embarked。Age 在训练集中缺失 177 个，在测试集中缺失 86 个。如果直接用全局平均数填充，会丢失很多人群差异。因此我先从 Name 中提取 Title，也就是 Mr、Mrs、Miss、Master 等称谓，再结合 Sex 和 Pclass，用分组中位数填充 Age。如果某个分组没有可用中位数，再回退到更粗的分组或全局中位数。</p>
-<p>Cabin 缺失很多，所以我没有直接使用原始舱号文本，而是构造 HasCabin，表示是否有舱位记录。Embarked 使用训练集众数填充，Fare 使用相同舱位等级的中位数填充。</p>
-<p>特征工程方面，除了原始的 Pclass、Sex、Age、SibSp、Parch、Fare、Embarked，我还构造了 Title、FamilySize、IsAlone、IsFemale、IsChild、WomanOrChild、HasCabin 和 AgeBand。这些特征都和 Titanic 的实际背景有关，可以帮助模型学习更有意义的分类边界。</p>
-<h2 id="3-05-4-00-SVM-建模流程"><a href="#3-05-4-00-SVM-建模流程" class="headerlink" title="3:05-4:00 SVM 建模流程"></a>3:05-4:00 SVM 建模流程</h2><p>画面提示：展示 <code>build_pipeline()</code>、<code>GridSearchCV</code> 和模型训练部分。</p>
-<p>口播：<br>模型部分使用 scikit-learn 的 Pipeline 组织完整流程。首先通过自定义的 <code>TitanicFeatureEngineer</code> 生成特征，然后用 <code>ColumnTransformer</code> 分别处理数值特征和类别特征。</p>
-<p>数值特征使用 <code>StandardScaler</code> 标准化，因为 SVM 对特征尺度比较敏感。如果 Age、Fare 和 FamilySize 的数值范围差异太大，会影响距离和分类间隔的计算。类别特征使用 <code>OneHotEncoder</code> 进行独热编码，例如 Sex、Pclass、Embarked、Title 和 AgeBand。</p>
-<p>分类器选择 RBF 核的 SVC。RBF 核可以处理非线性分类边界，适合 Titanic 这种由性别、年龄、舱位、家庭关系等多个因素共同影响的任务。我使用 8:2 的分层划分得到训练集和验证集，并通过 GridSearchCV 对 C 和 gamma 做小范围搜索，最终选择的最佳参数是 C 等于 10，gamma 等于 0.05。</p>
-<h2 id="4-00-4-40-实验结果"><a href="#4-00-4-40-实验结果" class="headerlink" title="4:00-4:40 实验结果"></a>4:00-4:40 实验结果</h2><p>画面提示：展示终端运行结果、<code>outputs/metrics.json</code>、<code>submission_svm.csv</code> 和报告中的结果表。</p>
-<p>口播：<br>在验证集上，模型的 Accuracy 为 0.7933，Precision 为 0.75，Recall 为 0.6957，F1 值为 0.7218。混淆矩阵中，真实未生还且预测未生还的样本为 94 个，真实未生还但预测生还的样本为 16 个；真实生还但预测未生还的样本为 21 个，真实生还且预测生还的样本为 48 个。</p>
-<p>从结果看，模型对未生还样本的识别相对稳定，但对生还样本仍存在一定漏判。测试集预测后生成了 <code>submission_svm.csv</code>，共 418 行，包含 PassengerId 和 Survived 两列，符合 Kaggle 提交格式。其中预测生还 141 人，预测未生还 277 人。Kaggle 官网分数可以在后续提交后补充到报告中。</p>
-<h2 id="4-40-5-10-总结"><a href="#4-40-5-10-总结" class="headerlink" title="4:40-5:10 总结"></a>4:40-5:10 总结</h2><p>画面提示：展示实验报告最后的总结部分。</p>
-<p>口播：<br>本次实验让我完整实践了一个机器学习分类任务的流程。比较重要的体会是，数据预处理不能只看字段是否缺失，还要理解字段背后的业务含义。比如 Titanic 数据中女性、儿童、头等舱乘客的生还率都更高，这些实际情况应该体现在特征设计中。</p>
-<p>同时，SVM 对特征尺度敏感，所以标准化是必要步骤。通过 Pipeline 可以把特征工程、编码、标准化和模型训练组织在一起，减少手动处理带来的错误。后续如果继续优化，可以尝试更细致的票号特征、更多交叉验证实验，或者与随机森林、梯度提升树等模型进行对比。以上就是本次实验介绍，谢谢大家。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>邮宝聊天室项目运行环境配置</title>
     <url>/2024/11/30/%E9%82%AE%E5%AE%9D%E8%81%8A%E5%A4%A9%E5%AE%A4%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Fake-Location/</url>
     <content><![CDATA[<p>本教程仅供 <strong>薪火杯组内成员</strong> 配置运行环境的教程，不公开项目源码。</p>
