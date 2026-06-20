@@ -6,7 +6,7 @@
   <link href="https://amor-vooc-github-io.pages.dev/atom.xml" rel="self"/>
   
   <link href="https://amor-vooc-github-io.pages.dev/"/>
-  <updated>2024-11-30T16:59:50.578Z</updated>
+  <updated>2024-11-30T16:59:52.000Z</updated>
   <id>https://amor-vooc-github-io.pages.dev/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://amor-vooc-github-io.pages.dev/2024/11/30/%E9%82%AE%E5%AE%9D%E8%81%8A%E5%A4%A9%E5%AE%A4%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Fake-Location/"/>
     <id>https://amor-vooc-github-io.pages.dev/2024/11/30/%E9%82%AE%E5%AE%9D%E8%81%8A%E5%A4%A9%E5%AE%A4%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Fake-Location/</id>
     <published>2024-11-30T13:59:41.000Z</published>
-    <updated>2024-11-30T16:59:50.578Z</updated>
+    <updated>2024-11-30T16:59:52.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;本教程仅供 &lt;strong&gt;薪火杯组内成员&lt;/strong&gt; 配置运行环境的教程，不公开项目源码。&lt;/p&gt;</summary>
@@ -52,7 +52,7 @@
     <link href="https://amor-vooc-github-io.pages.dev/2024/07/15/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/BlogMove/"/>
     <id>https://amor-vooc-github-io.pages.dev/2024/07/15/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/BlogMove/</id>
     <published>2024-07-15T15:34:14.000Z</published>
-    <updated>2024-08-31T04:48:00.119Z</updated>
+    <updated>2024-08-31T04:48:02.000Z</updated>
     
     
       
@@ -70,11 +70,11 @@
     <category term="博客" scheme="https://amor-vooc-github-io.pages.dev/categories/%E6%8A%80%E6%9C%AF/%E5%8D%9A%E5%AE%A2/"/>
     
     
-    <category term="技术" scheme="https://amor-vooc-github-io.pages.dev/tags/%E6%8A%80%E6%9C%AF/"/>
-    
     <category term="博客" scheme="https://amor-vooc-github-io.pages.dev/tags/%E5%8D%9A%E5%AE%A2/"/>
     
     <category term="Github Pages" scheme="https://amor-vooc-github-io.pages.dev/tags/Github-Pages/"/>
+    
+    <category term="技术" scheme="https://amor-vooc-github-io.pages.dev/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -129,7 +129,7 @@
     <link href="https://amor-vooc-github-io.pages.dev/2022/11/01/%E6%9E%81%E9%80%92%E4%BA%91%E8%AF%BEWindows%E7%89%88%E8%BE%85%E5%8A%A9%E5%A5%97%E4%BB%B6/gtClass-Auto/"/>
     <id>https://amor-vooc-github-io.pages.dev/2022/11/01/%E6%9E%81%E9%80%92%E4%BA%91%E8%AF%BEWindows%E7%89%88%E8%BE%85%E5%8A%A9%E5%A5%97%E4%BB%B6/gtClass-Auto/</id>
     <published>2022-11-01T02:51:02.000Z</published>
-    <updated>2024-06-06T16:23:00.186Z</updated>
+    <updated>2024-06-06T16:23:02.000Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;极递云课-自动签到-amp-解除锁屏-amp-显示教师控件-amp-自动上课并切换课堂&quot;&gt;&lt;a href=&quot;#极递云课-自动签到-amp-解除锁屏-amp-显示教师控件-amp-自动上课并切换课堂&quot; class=&quot;headerlink&quot; title=&quot;极递云课 自动签到 &amp;amp; 解除锁屏 &amp;amp; 显示教师控件 &amp;amp; 自动上课并切换课堂&quot;&gt;&lt;/a&gt;极递云课 自动签到 &amp;amp; 解除锁屏 &amp;amp; 显示教师控件 &amp;amp; 自动上课并切换课堂&lt;/h1&gt;&lt;p&gt;&lt;code&gt;“极递云课第三方登录器”仅 合肥皖智中学 可用（不知道莲花校区行不行），其他学校软件会无法正常登陆&lt;/code&gt;&lt;br&gt;&lt;code&gt;“极递云课小助手”普遍适用&lt;/code&gt;&lt;/p&gt;</summary>

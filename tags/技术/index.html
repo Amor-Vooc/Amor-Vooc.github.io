@@ -30,6 +30,9 @@
 <link rel="stylesheet" href="/css/custom.css">
 
   
+<link rel="stylesheet" href="/css/liquid-glass.css">
+
+  
   
 <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
 
@@ -76,7 +79,25 @@ var _hmt = _hmt || [];
 
 </html>
 
-<body>
+
+<body style="--liquid-cover-image: url('/images/cover7.jpg')">
+  <svg class="liquid-glass-svg" aria-hidden="true" focusable="false" width="0" height="0">
+  <defs>
+    <filter id="liquid-glass" x="-10%" y="-10%" width="120%" height="120%" primitiveUnits="objectBoundingBox">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.018" numOctaves="2" seed="17" result="map" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.028" result="blur" />
+      <feDisplacementMap in="blur" in2="map" scale="0.085" xChannelSelector="R" yChannelSelector="G" result="refract" />
+      <feComposite in="refract" in2="SourceGraphic" operator="over" />
+    </filter>
+    <filter id="liquid-glass-strong" x="-12%" y="-12%" width="124%" height="124%" primitiveUnits="objectBoundingBox">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02 0.032" numOctaves="2" seed="23" result="map" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.018" result="blur" />
+      <feDisplacementMap in="blur" in2="map" scale="0.12" xChannelSelector="R" yChannelSelector="G" result="refract" />
+      <feComposite in="refract" in2="SourceGraphic" operator="over" />
+    </filter>
+  </defs>
+</svg>
+
   <div id="app">
     
       <canvas class="fireworks"></canvas>
@@ -412,6 +433,9 @@ var _hmt = _hmt || [];
 
 <script src="/dist/main.js"></script>
 
+
+<script src="/js/liquid-glass.js"></script>
+
 <!-- ImageViewer -->
 
 <!-- Root element of PhotoSwipe. Must have class pswp. -->
@@ -604,6 +628,7 @@ var _hmt = _hmt || [];
 
 
 <!-- CanvasBackground -->
+
 
 
     
