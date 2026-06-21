@@ -30,6 +30,60 @@
 
   portalArticleToc();
 
+  const sidebar = document.querySelector(".sidebar");
+  const content = document.querySelector(".content");
+  const sidebarButton = document.querySelector(".navbar-toggle");
+  const mobileQuery = window.matchMedia("(max-width: 768px)");
+
+  const syncSidebarButton = () => {
+    if (!sidebar || !sidebarButton) return;
+    const isOpen = sidebar.classList.contains("on");
+    sidebarButton.setAttribute("aria-expanded", String(isOpen));
+    sidebarButton.setAttribute("aria-label", isOpen ? "收起侧边导航" : "展开侧边导航");
+    sidebarButton.setAttribute("title", isOpen ? "收起侧边导航" : "展开侧边导航");
+  };
+
+  const closeMobileSidebar = () => {
+    if (!mobileQuery.matches || !sidebar) return;
+    sidebar.classList.remove("on");
+    content && content.classList.remove("on");
+    syncSidebarButton();
+  };
+
+  if (sidebar && sidebarButton) {
+    if (!sidebar.id) sidebar.id = "site-sidebar";
+    sidebarButton.setAttribute("aria-controls", sidebar.id);
+    sidebarButton.setAttribute("type", "button");
+
+    sidebarButton.addEventListener("click", () => requestAnimationFrame(syncSidebarButton));
+    sidebar.querySelectorAll(".nav-item-link").forEach((link) => {
+      link.addEventListener("click", closeMobileSidebar);
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!mobileQuery.matches || !sidebar.classList.contains("on")) return;
+      if (sidebar.contains(event.target)) return;
+      closeMobileSidebar();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeMobileSidebar();
+    });
+
+    mobileQuery.addEventListener("change", () => {
+      if (mobileQuery.matches) {
+        closeMobileSidebar();
+      } else {
+        sidebar.classList.add("on");
+        content && content.classList.add("on");
+        syncSidebarButton();
+      }
+    });
+
+    new MutationObserver(syncSidebarButton).observe(sidebar, { attributes: true, attributeFilter: ["class"] });
+    syncSidebarButton();
+  }
+
   const darkButton = document.getElementById("todark");
   if (!darkButton) return;
 
